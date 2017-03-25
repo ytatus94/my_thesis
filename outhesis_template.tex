@@ -1,0 +1,252 @@
+%-------------------------------------------------------------------------------
+%% outhesis_template.tex
+%% version 1.0
+%% Chris McRaven <mcraven@physics.ou.edu>
+%%
+%% 'outhesis.cls' is a class file for a master or phd thesis that
+%% conforms to the requirements of the graduate college at the
+%% University of Oklahoma. This file is a hacked version of 'book.cls,'
+%% that includes all of the formatting requirements set forth in
+%% the document 'DissertationInstPacket.pdf' available at
+%% http://gradweb.ou.edu/Current/Forms/doctoral/DissertationPagination.pdf
+%%
+%% This class file relies on a few packages to work.  You must have the
+%% following packages installed:
+%%  amsfonts, amsmath, amssymb, tikz, lineno, microtype, hyperref
+%%
+%% Most of these packages are included in distributions of latex.  If you
+%% get a lot of errors when compiling, check that these packages are
+%% installed.
+%%
+%% By default, the class file will conform to the requirements, but three
+%% options are provided for assistance in proofing the document.
+%%
+%% linenumbers -- turns on linenumbers in the left margin
+%% summarypage -- places a page at the beginning of the document listing 
+%%                the number of tables, figures, and bibliography items.
+%% hyperlinks -- hyperlinks the citations and references for easier
+%%                navigation in the document in a reader which supports
+%%                hyperlinks.
+%%
+%-------------------------------------------------------------------------------
+
+\newcommand*{\ATLASLATEXPATH}{atlas_latex/}
+
+%\documentclass[linenumbers,summarypage,hyperlinks]{outhesis}
+%\documentclass[linenumbers,hyperlinks]{outhesis}
+\documentclass[hyperlinks]{outhesis}
+%\documentclass{outhesis}
+
+
+
+%-------------------------------------------------------------------------------
+% Extra packages:
+%-------------------------------------------------------------------------------
+% Style file with biblatex options for ATLAS documents.
+\usepackage{\ATLASLATEXPATH atlasbiblatex}
+
+\usepackage[margin=1.0in]{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+%\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{graphicx}
+\usepackage{subcaption} %These packages gives the author the ability to have subfigures within figures, or subtables within table floats.
+\usepackage{hyperref}
+\usepackage{slashed} % Dirac slash notation
+\usepackage{amsmath}
+\usepackage{authblk}
+\usepackage{multirow}
+
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+%\title{Introduction to Supersymmetry}
+%\author{Yu-Ting Shen}
+%\affil{Homer L. Dodge Department of Physics and Astronomy\\
+%The University of Oklahoma}
+%\date{} % delete this line to display the current date
+
+\newcommand{\HRule}{\rule{\linewidth}{0.3mm}}
+
+
+
+
+\usepackage[toc]{appendix}
+\usepackage{xspace}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{slashed}
+\usepackage{graphicx}
+\usepackage[labelsep=colon,labelfont=bf,font=singlespacing,width=\textwidth,compatibility=false]{caption}
+\usepackage{booktabs}
+\usepackage{multirow,bigdelim}
+\usepackage[compat=1.1.0]{tikz-feynman}
+
+% For a bibliography style, you must have the appropriate .bst file
+% \bibliographystyle{apj}
+%\bibliographystyle{prsty}
+%\bibliographystyle{atlasBibStyleWithTitle}
+
+\usepackage{newcommand-def}
+
+
+%-------------------------------------------------------------------------------
+% Content
+%-------------------------------------------------------------------------------
+ 
+%%Begin document
+\begin{document}
+
+%% Place Dissertation information here
+\author{Yu-Ting Shen}
+\university{University of Oklahoma}
+\college{Graduate College}
+\department{Homer L. Dodge Department of Physics and Astronomy}
+\title{This is the thesis title}
+\address{Norman, Oklahoma}
+\yr{2017}
+\dgname{Doctor of Philosophy}
+%% List your committee members here
+\committee{{Dr. Patrick Skubic, Chair}, Dr. Michael Strauss, {Dr. Ron Kantowski}, Dr. Deborah Watson, {Dr. S. Lakshmivarahan}}
+
+%% Put your dedication here. This is completely optional. Delete it if you don't need it.
+\begin{dedication}
+To my past, present, and future family.
+
+\begin{quotation}
+\raggedright{\emph{``You're braver than you believe, and stronger than you seem, and smarter than you think.''}} \\
+\raggedleft{- A.A. Milne, Christopher Robin} 
+\end{quotation}
+
+\end{dedication}
+
+%% Put your acknowledgements here. This is completely optional. Delete it if you don't need it.
+\begin{acknowledgements}
+I would like to deeply thank all of my teachers and professors over the 20 years of my academic journey, for instilling in me a deep, unquenchable desire to learn. 
+\begin{quotation}
+\raggedright{\emph{``If you don't know, the thing to do is not to get scared, but to learn.''}} \\
+\raggedleft{- Ayn Rand, Atlas Shrugged}
+\end{quotation}
+
+I would also like to thank all of my family and friends who have helped motivate and encourage me in my pursuit of this degree. 
+\begin{quotation}
+\raggedright{\emph{``It's the job that's never started as takes longest to finish.''}} \\
+\raggedleft{- J.R.R. Tolkien, The Lord of the Rings}
+\end{quotation}
+
+Lastly, I would like to thank my wife for not only supporting me through the entire process, but actually pushing me to be the best me I could be. Thank you for living this adventure with me!
+\begin{quotation}
+\raggedright{\emph{``I am a wife-made man.''}} \\
+\raggedleft{- Danny Kaye} 
+\end{quotation}
+\begin{quotation}
+\raggedright{\emph{``I knew when I met you an adventure was going to happen.''}} \\
+\raggedleft{- A.A. Milne, Winnie the Pooh} 
+\end{quotation}
+\end{acknowledgements}
+
+%% Put your abstract here.
+\begin{abstract}
+%In the context of the recently discovered Higgs boson at a mass of 125 \GeV, 
+This work presents two searches for a high-mass Higgs boson in the $\hwwlnqq$ decay channel using the ATLAS detector to analyze the high-energy proton-proton collisions provided by the Large Hadron Collider at two different center-of-mass energies, $\sqrt{s} = 8\TeV$ in 2012 and $\sqrt{s} = 13\TeV$ in 2015, corresponding to two independent datasets with sizes given by their integrated luminosities of $20.3 \text{ fb}^{-1}$ and $3.2 \text{ fb}^{-1}$, respectively. 
+
+No significant excess of data above the expected background is observed in either analysis, so upper limits are set on the production cross-section times branching ratio, as a function of the hypothesized boson mass, for the various signal models tested. The derived limits substantially improve upon previous results.
+\end{abstract}
+
+\frontmatter
+
+\maketitle
+
+\mainmatter
+
+%% You can put any part of the text in separate file with 
+%% the \input{} command. This keeps the master document simpler.
+
+\chapter{Introduction}
+\label{chapter:introduction}
+\graphicspath{{figures/introduction/}}
+\input{chapter_introduction}
+
+
+\chapter{Theoretical Foundations}
+\label{chapter:theory}
+\graphicspath{{figures/theoretical_foundations/}}
+\input{chapter_theoretical_foundations}
+
+
+\chapter{The ATLAS Experiment at LHC}
+\label{chapter:altas_experiment}
+\graphicspath{{figures/atlas_experiment/}}
+\input{chapter_atlas_experiment}
+
+
+\chapter{The Electron Isolation Efficiency and Scale Factors}
+\label{chapter:electron_isolation}
+\graphicspath{{figures/electron_isolation}}
+\input{chapter_electron_isolation}
+
+
+\chapter{The Real Lepton Efficiencies}
+\label{chapter:real_lepton_efficiencies}
+\graphicspath{{figures/real_lepton_efficiencies}}
+\input{chapter_real_lepton_efficiencies}
+
+
+
+%\FloatBarrier
+
+
+\chapter{Conclusion}
+\label{chapter:conclusion}
+\graphicspath{{figures/conclusion/}}
+\input{chapter_conclusion}
+
+%------------------------------------------------------------------------------- 
+\clearpage
+
+%\appendix
+%\part*{Appendix}
+%\addcontentsline{toc}{part}{Appendix}
+
+%\section{Simulated samples, cross-sections and equivalent luminosities}
+%\label{app:samples}
+%\input{appendix_samples}
+%\clearpage
+%-------------------------------------------------------------------------------
+
+\clearpage
+
+%\printbibliography
+\clearpage
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{unsrt}
+%% You need a file named `outhesis_references.bib' to use BibTex here
+%\bibliography{outhesis_references}
+\bibliography{bib_atlas_experiment}
+
+
+
+% \appendix{A}
+% \input{appendices/appendixA}
+%\begin{appendices}
+%\input{chapter_hardware}
+%\input{chapter_auxiliaryPlots8TeV}
+%\input{chapter_JSSuncSmoothing}
+%\end{appendices}
+
+
+% \backmatter
+
+
+\end{document}
+
+
