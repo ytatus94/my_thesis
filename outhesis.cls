@@ -14,7 +14,7 @@
 %%  amsfonts, amsmath, amssymb, tikz, lineno, microtype, hyperref
 %%
 %% Most of these packages are included in distributions of latex.  If you
-%% get alot of errors when compiling, check that these packages are
+%% get a lot of errors when compiling, check that these packages are
 %% installed.
 %%
 %% By default, the class file will conform to the requirements, but three

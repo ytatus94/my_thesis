@@ -1,0 +1,322 @@
+%% Eduardo Martinez Pedroza.
+%%
+%% Note from the author:  My dissertation document was created with this file. It passed the general formatting guidelines for PhD dissertations
+%% of the Graduate College at the University of Oklahoma. I accept no responsibility in connection with the use of this file. Use it under your own risk.
+%%
+
+\documentclass[12pt]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Standard AMS packages
+\usepackage{amssymb, amsmath, amsthm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  For mathematical diagrams
+\usepackage{xypic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For inserting graphic files
+\usepackage{graphicx} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hyper-references
+%\usepackage[pdftex, plainpages=false]{hyperref}   %To be use with PDF-TEX
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graduate college required margins
+\usepackage[left=1.5in, top=1.3in, right=1.3in, bottom=1.2in]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% line spacing
+\usepackage{setspace}
+    %\singlespacing
+    %\onehalfspacing
+    \doublespacing
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Personal Environments and Commands
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}{Example}
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% My commands
+\newcommand{\reals}{\mathbb{R}}   %Real numbers' symbol
+\newcommand{\hyperbolic}{\mathbb{H}}  %Hyperbolic symbol
+\newcommand{\complex}{\mathbb{C}} %Complex numbers' symbol
+\newcommand{\integers}{\mathbb{Z}}   %Integer numbers' symbol
+\newcommand{\presentation}[2]{\langle \, #1  \, | \, #2 \,  \rangle}
+\newcommand{\GammaH}{Cayley (G, X\cup \widetilde{\mathcal{H}}) }
+\newcommand{\Hs}{\{ H_i \}_{i=1}^m}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% THESIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{Your Thesis title goes here}
+\author{Your Full Name}
+\date{month year}
+
+\pagenumbering{roman}
+{%% PAGE NUMBERING ROMAN
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TITLE PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\singlespacing
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+{ %\large
+UNIVERSITY OF OKLAHOMA
+\par
+\vspace{0.16in}
+GRADUATE COLLEGE
+\par
+\vspace{1.2in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+COMBINATION OF QUASICONVEX SUBGROUPS IN
+\par
+\vspace{0.17in}
+RELATIVELY HYPERBOLIC GROUPS
+\par
+\vspace{1.2in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A DISSERTATION
+\par
+\vspace{0.17in}
+SUBMITTED TO THE GRADUATE FACULTY
+\par
+\vspace{0.17in}
+in partial fulfillment of the requirements for the
+\par
+\vspace{0.17in}
+Degree of
+\par
+\vspace{0.17in}
+DOCTOR OF PHILOSOPHY
+\par
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+By
+\par
+\vspace{0.17in}
+EDUARDO MARTINEZ PEDROZA
+\par
+%\vspace{0.05in}
+Norman, Oklahoma
+\par
+%\vspace{0.05in}
+2008
+}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIGNATURE PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\begin{center}
+{%\large
+COMBINATION OF QUASICONVEX SUBGROUPS IN
+\par
+%\vspace{0.17in}
+RELATIVELY HYPERBOLIC GROUPS
+\par
+\vspace{0.9in}
+A DISSERTATION APPROVED FOR THE
+\par
+%\vspace{0.17in}
+DEPARTMENT OF MATHEMATICS
+\par
+\vspace{0.9in}
+BY
+\par
+\vfill
+\begin{flushright}
+\begin{tabular}{cr}
+\hline
+\  \  \  \  \  \  \  & Dr. Noel Brady, Chair\\
+ \\ &  \\
+  \\ &  \\
+\hline
+  & Dr. Max Forester \\
+\\ & \\
+ \\ &  \\
+\hline
+ & Dr. Darryl McCullough \\
+\\   & \\
+ \\ &  \\
+\hline
+ & Dr. Krishnan Shankar \\
+ \\ &  \\
+  \\ &  \\
+\hline
+   & Dr. Stephen Weldon \\
+\end{tabular}
+\end{flushright}
+}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COPYRIGHT PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\   \
+\par
+\vfill
+\begin{center}
+\copyright \    Copyright by EDUARDO MARTINEZ PEDROZA \   2008
+
+All rights reserved.
+\end{center}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACKNOWLEDGEMENTS PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Acknowledgements}
+
+First, I wish to express my gratitude to my research advisor, Professor Noel Brady, for teaching me a great deal of mathematics,
+for encouraging to explore and work in mathematics,  for his guidance and unconditional support during all these years of graduate school,
+and for being a excellent mentor.  I am grateful for having had the opportunity to work with him.
+
+I also wish to thank ....
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TABLE OF CONTENTS PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\singlespacing
+\tableofcontents
+%\listoffigures
+}
+\newpage
+
+} %% END PAGE NUMBERING ROMAN
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INTRODUCTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+
+In this thesis, we consider problems concerning .....
+
+If $G$ is a countable group and $\mathcal{H}$ is a collection of subgroups of $G$, the notion of \emph{relative hyperbolicity} for the pair $(G, \mathcal{H})$  has been defined by
+different authors ~\cite{BO99, DS05, Fa98, Gr87, GM06, HK08, Os06, Ya99}.  All these definitions are equivalent when ....
+
+\begin{displaymath}
+\xymatrix{
+                                                                            & & L \ar@{->}[lldd]_{\sigma} \ar@{->}[rrdd]^{\tau}         & &                                                                  \\
+                                                                            & &                                                                                     & &                                                                      \\
+    H \ar@{->}[rr]^{\imath_H} \ar@{->}[dddrr]_\alpha                &   &   H\ast_L K \ar@{-->}[ddd]^{\exists ! \rho}   & &  K \ar@{->}[ll]_{\imath_K}  \ar@{->}[dddll]^\beta           \\
+                                                                            & &                                                                                     & &                                                                         \\
+                                                                            & &                                                                                     & &                                                                         \\
+                                                                            & & G                                                                                   & &
+}
+\end{displaymath}
+
+
+\section{Main Results and Applications}
+
+The main results are .....
+
+\subsection{Examples of Relatively Hyperbolic Groups}
+
+\begin{theorem}[S.M.\ Gersten \cite{Ge96} - B.\ Bowditch \cite{BO99} ] \label{thm:gersten_bowditch}
+Let $H$ be a quasiconvex subgroup of a word-hyperbolic group $G$. Suppose $|gHg^{-1} \cap H |$ is finite whenever $g \not \in H$. Then $G$ is relatively hyperbolic with respect to $\Hs$.
+\end{theorem}
+
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{2-manifold-cusp-t.mps}
+\end{center}
+\caption[Punctured torus group as a relatively hyperbolic group]
+{The puncture torus with a complete hyperbolic structure of finite area and the preimage of a cusp neighborhood in the universal cover.}
+\label{fig:2-manifold}
+\end{figure}
+
+Let $F_2(a, b)$ be .....  (see Figure ~\ref{fig:2-manifold}).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{
+\singlespacing
+
+\bibliographystyle{plain}
+\bibliography{Xbib}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DEDICATION PAGE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newpage
+\newpage
+\pagenumbering{roman}
+
+\thispagestyle{empty}
+{\singlespacing
+\begin{center}
+{
+\par
+\vspace{1.2in}
+%\large
+DEDICATION
+\par
+\vspace{0.17in}
+to
+\par
+\vspace{1.2in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+My parents
+\par
+\vspace{0.17in}
+Luis Eduardo Martinez Villarraga, and
+\par
+\vspace{0.17in}
+Esperanza Pedroza Paipa
+\par
+\vspace{1.2in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For
+\par
+\vspace{0.17in}
+Encouraging me to follow my dreams
+\par
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}
+\end{center}
+}
+
+\end{document}

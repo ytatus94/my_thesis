@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Marcastel:1621583}
+Fabienne Marcastel.
+\newblock Cern's accelerator complex. la cha{\^\i}ne des acc{\'e}l{\'e}rateurs
+  du cern.
+\newblock {\em OPEN-PHO-CHART-2013-001}, Oct 2013.
 
 \bibitem{1748-0221-3-08-S08001}
 Lyndon Evans and Philip Bryant.
@@ -43,6 +49,12 @@ James Pinfold, R~Soluk, Y~Yao, S~Cecchini, G~Giacomelli, M~Giorgini,
 \newblock Technical design report of the moedal experiment.
 \newblock {\em CERN-LHCC-2009-006}, (CERN-LHCC-2009-006. MoEDAL-TDR-001), Jun
   2009.
+
+\bibitem{1288863}
+L.~Rossi.
+\newblock The lhc superconducting magnets.
+\newblock In {\em Proceedings of the 2003 Particle Accelerator Conference},
+  volume~1, pages 141--145 Vol.1, May 2003.
 
 \bibitem{CERN-COURIER-Sep192008}
 The lhc sees its first circulating beam.
