@@ -6,15 +6,15 @@ Fabienne Marcastel.
   du cern.
 \newblock {\em OPEN-PHO-CHART-2013-001}, Oct 2013.
 
-\bibitem{1748-0221-3-08-S08001}
-Lyndon Evans and Philip Bryant.
-\newblock Lhc machine.
-\newblock {\em Journal of Instrumentation}, 3(08):S08001, 2008.
-
 \bibitem{1748-0221-3-08-S08003}
 The~ATLAS Collaboration.
 \newblock The atlas experiment at the cern large hadron collider.
 \newblock {\em Journal of Instrumentation}, 3(08):S08003, 2008.
+
+\bibitem{1748-0221-3-08-S08001}
+Lyndon Evans and Philip Bryant.
+\newblock Lhc machine.
+\newblock {\em Journal of Instrumentation}, 3(08):S08001, 2008.
 
 \bibitem{1748-0221-3-08-S08004}
 The~CMS Collaboration.
@@ -58,5 +58,18 @@ L.~Rossi.
 
 \bibitem{CERN-COURIER-Sep192008}
 The lhc sees its first circulating beam.
+
+\bibitem{Palestini:681459}
+S~Palestini.
+\newblock {The muon spectrometer of the ATLAS experiment (talk presented at the
+  "8th Topical Seminar on Innovative Particle and Radiation Detectors", 21-24
+  Oct. 2002, Siena, Italy)}.
+\newblock Technical Report ATL-MUON-2004-001, CERN, Geneva, Feb 2003.
+\newblock Contribution to the proceedings : 8th Topical Seminar on Innovative
+  Particle and Radiation Detectors, 21-24 Oct. 2002, Siena, Italy.
+
+\bibitem{0910.2767}
+E.~Diehl and for the ATLAS~muon collaboration.
+\newblock Atlas muon detector commissioning, 2009.
 
 \end{thebibliography}
