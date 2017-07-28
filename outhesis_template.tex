@@ -45,6 +45,15 @@
 % Style file with biblatex options for ATLAS documents.
 \usepackage{\ATLASLATEXPATH atlasbiblatex}
 
+% Useful macros
+\usepackage{\ATLASLATEXPATH atlasphysics}
+% See doc/atlas-physics.pdf for a list of the defined symbols.
+% Default options are:
+%   true:  journal, misc, particle, unit, xref
+%   false: BSM, hion, math, process, other, texmf
+% See the package for details on the options.
+
+
 \usepackage[margin=1.0in]{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 %\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 \usepackage{graphicx}
@@ -58,15 +67,21 @@
 \geometry{a4paper} % or letter or a5paper or ... etc
 % \geometry{landscape} % rotated page geometry
 
-% See the ``Article customise'' template for come common customisations
+%\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{listings}
+%\usepackage{graphicx}
+%\usepackage{textpos}  % for putting logo
+%\usepackage{color}    % for setting font color
+%\usepackage{hyperref} % for url
+%\usepackage{tikz}     % transparent background image
+%\usepackage{eurosym}  % euro sign
+%\usepackage{multirow} %
+%\usepackage{appendixnumberbeamer} % count presentation slides only
+%\usepackage{pbox} % new line in cell of table
+%\usepackage{tabularx} % can change the table width
 
-%\title{Introduction to Supersymmetry}
-%\author{Yu-Ting Shen}
-%\affil{Homer L. Dodge Department of Physics and Astronomy\\
-%The University of Oklahoma}
-%\date{} % delete this line to display the current date
-
-\newcommand{\HRule}{\rule{\linewidth}{0.3mm}}
+%\newcommand{\HRule}{\rule{\linewidth}{0.3mm}}
 
 %%%%%
 %%%%%
@@ -98,9 +113,9 @@
 \usepackage[toc]{appendix}
 \usepackage{xspace}
 %\usepackage{subfigure}
-\usepackage{subcaption}
-\usepackage{slashed}
-\usepackage{graphicx}
+%\usepackage{subcaption}
+%\usepackage{slashed}
+%\usepackage{graphicx}
 \usepackage[labelsep=colon,labelfont=bf,font=singlespacing,width=\textwidth,compatibility=false]{caption}
 \usepackage{booktabs}
 \usepackage{multirow,bigdelim}
@@ -111,14 +126,14 @@
 %\bibliographystyle{prsty}
 %\bibliographystyle{atlasBibStyleWithTitle}
 
-\usepackage{newcommand-def}
+%\usepackage{thesis-def}
 
 
 %-------------------------------------------------------------------------------
 % Content
 %-------------------------------------------------------------------------------
  
-%%Begin document
+%%% BEGIN DOCUMENT
 \begin{document}
 
 %% Place Dissertation information here
@@ -180,6 +195,8 @@ Here is the abstract
 
 \mainmatter
 
+\hypersetup{linkcolor=blue}
+
 %% You can put any part of the text in separate file with 
 %% the \input{} command. This keeps the master document simpler.
 
@@ -195,10 +212,10 @@ Here is the abstract
 \input{chapter_the_standard_model}
 
 
-%\chapter{Suppersymmetry}
-%\label{chapter:Suppersymmetry}
-%\graphicspath{{figures/Suppersymmetry/}}
-%\input{chapter_Suppersymmetry}
+\chapter{Suppersymmetry}
+\label{chapter:Suppersymmetry}
+\graphicspath{{figures/Suppersymmetry/}}
+\input{chapter_Suppersymmetry}
 
 
 \chapter{The ATLAS Experiment at LHC}
@@ -218,7 +235,10 @@ Here is the abstract
 \graphicspath{{figures/real_lepton_efficiencies}}
 \input{chapter_real_lepton_efficiencies}
 
-
+\chapter{Results}
+\label{chapter:results}
+\graphicspath{{figures/results/}}
+\input{chapter_conclusion}
 
 %\FloatBarrier
 
@@ -275,5 +295,4 @@ Here is the abstract
 
 
 \end{document}
-
 

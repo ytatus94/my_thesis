@@ -134,7 +134,8 @@
 }
 \DeclareOption{hyperlinks}{\@hyperreftrue
   \AtEndOfClass{%
-  \RequirePackage[final,backref,colorlinks,citecolor=darkgreen]{hyperref}
+  %\RequirePackage[final,backref,colorlinks,citecolor=darkgreen]{hyperref}
+  \RequirePackage[final,backref,colorlinks,citecolor=blue]{hyperref}
   }%
 }
 \DeclareOption{nolistoffigures}{\@loffalse}
@@ -161,7 +162,7 @@
   \RequirePackage{microtype}  % improves compiling with pdflatex
 }
 \usetikzlibrary{shapes,decorations}
-\definecolor{darkgreen}{rgb}{0,0.5,0}
+%\definecolor{darkgreen}{rgb}{0,0.5,0}
 \input{bk1\@ptsize.clo}
 \setlength\lineskip{1\p@}
 \setlength\normallineskip{1\p@}
@@ -294,6 +295,7 @@
   \ifvoid\ackbox\else\unvbox\ackbox\par\fi
 %   \input{frontmatter/acknowledgements}
   \renewcommand{\baselinestretch}{1.0}\small
+  \hypersetup{linkcolor=black}
   \tableofcontents
   \if@lot\listoftables\par\fi
   \if@lof\listoffigures\par\fi
@@ -481,18 +483,21 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-%  \vspace*{0\p@}%
+  \vspace*{50\p@}%
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
-        \large\bfseries \@chapapp\space \thechapter
+        %\large\bfseries \@chapapp\space \thechapter
+        \huge\bfseries \@chapapp\space \thechapter
         \par\nobreak
-        \vskip 10\p@
+        %\vskip 10\p@
+        \vskip 20\p@
       \fi
     \fi
     \interlinepenalty\@M
-    \renewcommand{\baselinestretch}{1.2}\Large \bfseries #1\par\nobreak
-    \vskip 10\p@
+    %\renewcommand{\baselinestretch}{1.2}\Large \bfseries #1\par\nobreak
+    \renewcommand{\baselinestretch}{1.2}\Huge \bfseries #1\par\nobreak
+    \vskip 40\p@
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -501,25 +506,26 @@
                    \@afterheading
                  \fi}
 \def\@makeschapterhead#1{%
-%  \vspace*{0\p@}%
+  \vspace*{50\p@}%
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
-    \Large \bfseries  #1\par\nobreak
-    \vskip 10\p@
+    %\Large \bfseries  #1\par\nobreak
+    \Huge \bfseries  #1\par\nobreak
+    \vskip 40\p@
   }}
 \newcommand\section{\@startsection {section}{1}{\z@}%
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
-                                   {\normalfont\large\bfseries}}
+                                   {\normalfont\Large\bfseries}}
 \newcommand\subsection{\@startsection{subsection}{2}{\z@}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
-                                     {\normalfont\bfseries}}
+                                     {\normalfont\large\bfseries}}
 \newcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
-                                     {\normalfont\normalsize\itseries}}
+                                     {\normalfont\normalsize\bfseries}}
 \newcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
                                     {3.25ex \@plus1ex \@minus.2ex}%
                                     {-1em}%
@@ -862,7 +868,7 @@
     \parindent 1em%
     \noindent
     \hb@xt@1.8em{\hss\@makefnmark}\renewcommand{\baselinestretch}{1.0}\footnotesize#1}
-\newcommand\contentsname{Table of Contents}
+\newcommand\contentsname{Contents}
 \newcommand\listfigurename{List of Figures}
 \newcommand\listtablename{List of Tables}
 \newcommand\bibname{References}
