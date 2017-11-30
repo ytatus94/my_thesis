@@ -42,27 +42,28 @@
 %-------------------------------------------------------------------------------
 % Extra packages:
 %-------------------------------------------------------------------------------
-% Style file with biblatex options for ATLAS documents.
-\usepackage{\ATLASLATEXPATH atlasbiblatex}
-
-% Useful macros
-\usepackage{\ATLASLATEXPATH atlasphysics}
 % See doc/atlas-physics.pdf for a list of the defined symbols.
 % Default options are:
 %   true:  journal, misc, particle, unit, xref
 %   false: BSM, hion, math, process, other, texmf
 % See the package for details on the options.
 
-
+%\usepackage{\ATLASLATEXPATH atlasbiblatex} % Style file with biblatex options for ATLAS documents.
+\usepackage{\ATLASLATEXPATH atlasphysics} % Useful macros
 \usepackage[margin=1.0in]{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 %\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 \usepackage{graphicx}
-\usepackage{subcaption} %These packages gives the author the ability to have subfigures within figures, or subtables within table floats.
-\usepackage{hyperref}
+\usepackage{subfigure}
+%\usepackage{subcaption} %These packages gives the author the ability to have subfigures within figures, or subtables within table floats.
+\usepackage[labelsep=colon,labelfont=bf,font=singlespacing,width=\textwidth,compatibility=false]{caption}
+\usepackage{hyperref} % for url
 \usepackage{slashed} % Dirac slash notation
 \usepackage{amsmath}
 \usepackage{authblk}
 \usepackage{multirow}
+\usepackage{booktabs} % enable the use of \toprule, \midrule, and \bottomrule
+\usepackage{color} % for setting font color
+
 
 \geometry{a4paper} % or letter or a5paper or ... etc
 % \geometry{landscape} % rotated page geometry
@@ -70,13 +71,9 @@
 %\usepackage[english]{babel}
 %\usepackage[utf8x]{inputenc}
 %\usepackage{listings}
-%\usepackage{graphicx}
 %\usepackage{textpos}  % for putting logo
-%\usepackage{color}    % for setting font color
-%\usepackage{hyperref} % for url
 %\usepackage{tikz}     % transparent background image
 %\usepackage{eurosym}  % euro sign
-%\usepackage{multirow} %
 %\usepackage{appendixnumberbeamer} % count presentation slides only
 %\usepackage{pbox} % new line in cell of table
 %\usepackage{tabularx} % can change the table width
@@ -110,16 +107,10 @@
 %%%%%  
 
 
-\usepackage[toc]{appendix}
-\usepackage{xspace}
-%\usepackage{subfigure}
-%\usepackage{subcaption}
-%\usepackage{slashed}
-%\usepackage{graphicx}
-\usepackage[labelsep=colon,labelfont=bf,font=singlespacing,width=\textwidth,compatibility=false]{caption}
-\usepackage{booktabs}
-\usepackage{multirow,bigdelim}
-\usepackage[compat=1.1.0]{tikz-feynman}
+%\usepackage[toc]{appendix}
+%\usepackage{xspace}
+%\usepackage{multirow,bigdelim}
+%\usepackage[compat=1.1.0]{tikz-feynman}
 
 % For a bibliography style, you must have the appropriate .bst file
 % \bibliographystyle{apj}
@@ -207,9 +198,9 @@ Here is the abstract
 
 
 \chapter{The Standard Model}
-\label{chapter:the_standard_model}
-\graphicspath{{figures/the_standard_model/}}
-\input{chapter_the_standard_model}
+\label{chapter:standard_model}
+\graphicspath{{figures/standard_model/}}
+\input{chapter_standard_model}
 
 
 \chapter{Suppersymmetry}
@@ -224,29 +215,28 @@ Here is the abstract
 \input{chapter_atlas_experiment}
 
 
-\chapter{The Electron Isolation Efficiency and Scale Factors}
-\label{chapter:electron_isolation}
-\graphicspath{{figures/electron_isolation}}
-\input{chapter_electron_isolation}
+%\chapter{The Electron Isolation Efficiency and Scale Factors}
+%\label{chapter:electron_isolation}
+%\graphicspath{{figures/electron_isolation}}
+%\input{chapter_electron_isolation}
 
 
-\chapter{The Real Lepton Efficiencies}
-\label{chapter:real_lepton_efficiencies}
-\graphicspath{{figures/real_lepton_efficiencies}}
-\input{chapter_real_lepton_efficiencies}
+%\chapter{The Real Lepton Efficiencies}
+%\label{chapter:real_lepton_efficiencies}
+%\graphicspath{{figures/real_lepton_efficiencies}}
+%\input{chapter_real_lepton_efficiencies}
 
-\chapter{Results}
-\label{chapter:results}
-\graphicspath{{figures/results/}}
-\input{chapter_conclusion}
+%\chapter{Results}
+%\label{chapter:results}
+%\graphicspath{{figures/results/}}
+%\input{chapter_conclusion}
 
 %\FloatBarrier
 
-
-\chapter{Conclusion}
-\label{chapter:conclusion}
-\graphicspath{{figures/conclusion/}}
-\input{chapter_conclusion}
+%\chapter{Conclusion}
+%\label{chapter:conclusion}
+%\graphicspath{{figures/conclusion/}}
+%\input{chapter_conclusion}
 
 %------------------------------------------------------------------------------- 
 \clearpage
@@ -278,7 +268,8 @@ Here is the abstract
 \bibliographystyle{unsrt}
 %% You need a file named `outhesis_references.bib' to use BibTex here
 %\bibliography{outhesis_references}
-\bibliography{bib_atlas_experiment}
+\bibliography{bib_standard_model,bib_atlas_experiment}
+%\bibliography{}
 
 
 

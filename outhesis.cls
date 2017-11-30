@@ -295,7 +295,8 @@
   \ifvoid\ackbox\else\unvbox\ackbox\par\fi
 %   \input{frontmatter/acknowledgements}
   \renewcommand{\baselinestretch}{1.0}\small
-  \hypersetup{linkcolor=black}
+  \hypersetup{
+    linkcolor=blue}
   \tableofcontents
   \if@lot\listoftables\par\fi
   \if@lof\listoffigures\par\fi
