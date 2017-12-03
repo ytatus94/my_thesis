@@ -150,6 +150,44 @@ Because the SM is based on a $SU(3)_{C} \otimes SU(2)_{L} \otimes U(1)_{Y}$ symm
 
 \subsection{Strong interaction}
 \label{subsec:sm_strong_interaction}
+The \textit{Quantum Chromodynamics} (QCD) is the theory to describe the strong interaction.
+The gauge bosons are the eight massless gluons which carry three different colors (and anti-colors), red, green, and blue.
+Quarks interact with gluons hence they also carry color charge $C$ and can be represented in color triplets
+\begin{equation}
+\psi = 
+\left(
+\begin{matrix}
+& \psi_{r} & \\
+& \psi_{g} & \\
+& \psi_{b} &
+\end{matrix}
+\right).
+\label{eq:sm_quark_triplets}
+\end{equation}
+The QCD is based on the non-Abelian $SU(3)_{C}$ group which requires local gauge transformation
+\begin{equation}
+\psi \rightarrow \psi' = e^{i g_{s} \alpha_{a}(x) T^{a}}\psi
+\label{eq:sm_qcd_gauge_transformation_1}
+\end{equation}
+where the $g_{s}$ is the strong coupling constant, $\alpha_{a}(x)$ are arbitrary functions of space and time, and $T^{a}$ are the generators of the non-Abelian $SU(3)_{C}$ group and the summation over $a$ with $a = 1, \dots, 8$ is implied.
+The Lagrangian density is invariant under the local gauge transformation by introducing the new form of the gauge fields and the covariant derivative
+\begin{align}
+G_{\mu}^{a} & \rightarrow G_{\mu}^{a} -  \partial_{\mu} \alpha^{a}(x) - g_{s} f_{abc} \alpha^{b}(x) G_{\mu}^{c} \\
+\partial_{\mu} & \rightarrow \partial_{\mu}' = \partial_{\mu} + i g_{s} T_{a} G_{\mu}^{a}.
+\label{eq:sm_qcd_gauge_transformation_2}
+\end{align}
+And the Lagrangian density of QCD is given by
+\begin{equation}
+\mathcal{L} = \bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi - g_{s} ( \bar{\psi} \gamma^{\mu} T_{a} \psi) G_{\mu}^{a} - \frac{1}{4} G_{\mu\nu}^{a} G_{a}^{\mu\nu}
+\label{eq:sm_qcd_lagrangian}
+\end{equation}
+where the field strength tensor $G_{\mu\nu}^{a} = \partial_{\mu} G_{\nu}^{a} - \partial_{\nu} G_{\mu}^{a} - g_{s} f_{abc} G_{\mu}^{b} G_{\nu}^{c}$ causing self-interactions between the gluons.
+The strong force increases with distance between quarks, therefore, the quarks exist only as colorless compounds such as meson or baryon mentioned in Section~\ref{subsec:sm_particle_content}.
+The production of a single quark is accompanied by the creation of an anti-quark from vacuum to form a quark and anti-quark pair as a colorless compound.
+This is called \textit{hadronisation}.
+The phenomena that confined quarks in the small interaction range is called \textit{confinement}.
+But at small distance or high energy, the quarks can be considered as quasi-free particles.
+This is referred to as \textit{asymptotic freedom}.
 
 %%%
 %%%
