@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 12/06/2017
+* Add EW interaction
+
 ### 12/03/2017
 * Add strong interaction
 

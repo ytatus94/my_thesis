@@ -125,7 +125,7 @@ The gravitational force is not a part of the SM and the graviton is a theoretica
 
 \subsection{Local Gauge Theory}
 \label{subsec:sm_gauge_theory}
-The Lagrangian density of the SM for the free fields listed in the Equation~\ref{eq:sm_lagrangian} is invariant under local gauge transformation.
+The Lagrangian density of the SM for the free fields\footnote{This is the Lagrangian density of QED. The three terms are fermion kinematic term, photon kinematic term, and interaction, respectively.} listed in the Equation~\ref{eq:sm_lagrangian} is invariant under local gauge transformation\footnote{In Dirac representation, the four contravariant gamma matrices are $\gamma^{0} = \left(\begin{matrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & -1 & 0\\0 & 0 & 0 & -1\end{matrix}\right)$, $\gamma^{1} = \left(\begin{matrix}0 & 0 & 0 & 1\\0 & 0 & 1 & 0\\0 & -1 & 0 & 0\\-1 & 0 & 0 & 0\end{matrix}\right)$, $\gamma^{2} = \left(\begin{matrix}0 & 0 & 0 & -i\\0 & 0 & i & 0\\0 & i & 0 & 0\\-i & 0 & 0 & 0\end{matrix}\right)$, $\gamma^{3} = \left(\begin{matrix}0 & 0 & 1 & 0\\0 & 0 & 0 & -1\\-1 & 0 & 0 & 0\\0 & 1 & 0 & 0\end{matrix}\right)$}
 \begin{equation}
 \mathcal{L} = \bar{\psi}(i\gamma^{\mu}\partial_{\mu} - m)\psi + e\bar{\psi}\gamma^{\mu}\psi\bm{A}_{\mu} - \frac{1}{4}\bm{F}_{\mu\nu}\bm{F}^{\mu\nu}
 \label{eq:sm_lagrangian}
@@ -141,7 +141,7 @@ By intruducing the gauge term, i.e. the vector field, the interacting force can 
 The gauge field can be associated to particular spin one gauge bosons which mediate the force.
 The number of the mediating gauge bosons is equal to the dimension of the symmetry group.
 From the group theory, the dimension of an unitary group $U(n)$ is $n^{2}$ and the dimension of a special unitary group $SU(n)$ is $n^{2} - 1$.
-Because the SM is based on a $SU(3)_{C} \otimes SU(2)_{L} \otimes U(1)_{Y}$ symmetry gauge group, the number of mediators are 8 for $SU(3)$, 3 for $SU(2)$, and 1 for $U(1)$ corresponding to 8 gluons for the strong interaction, 3 gauge bosons ($W^{\pm}$ and $Z^{0}$) for weak interaction, and 1 photon for the electromagnetic interaction.
+Because the SM is based on a $SU(3)_{C} \otimes SU(2)_{L} \otimes U(1)_{Y}$ symmetry gauge group, the number of mediators are 8 for $SU(3)_{C}$, 3 for $SU(2)_{L}$, and 1 for $U(1)_{Y}$ corresponding to 8 gluons for the strong interaction, 3 gauge bosons ($W^{\pm}$ and $Z^{0}$) for weak interaction, and 1 photon for the electromagnetic interaction.
 
 
 %%%
@@ -169,19 +169,20 @@ The QCD is based on the non-Abelian $SU(3)_{C}$ group which requires local gauge
 \psi \rightarrow \psi' = e^{i g_{s} \alpha_{a}(x) T^{a}}\psi
 \label{eq:sm_qcd_gauge_transformation_1}
 \end{equation}
-where the $g_{s}$ is the strong coupling constant, $\alpha_{a}(x)$ are arbitrary functions of space and time, and $T^{a}$ are the generators of the non-Abelian $SU(3)_{C}$ group and the summation over $a$ with $a = 1, \dots, 8$ is implied.
+where the $g_{s}$ is the strong coupling constant, $\alpha_{a}(x)$ are arbitrary functions of space-time, and $T^{a}$ are the generators of the non-Abelian $SU(3)_{C}$ group and the summation over $a$ with $a = 1, \dots, 8$ is implied.
 The Lagrangian density is invariant under the local gauge transformation by introducing the new form of the gauge fields and the covariant derivative
 \begin{align}
-G_{\mu}^{a} & \rightarrow G_{\mu}^{a} -  \partial_{\mu} \alpha^{a}(x) - g_{s} f_{abc} \alpha^{b}(x) G_{\mu}^{c} \\
-\partial_{\mu} & \rightarrow \partial_{\mu}' = \partial_{\mu} + i g_{s} T_{a} G_{\mu}^{a}.
+\bm{G}_{\mu}^{a} & \rightarrow \bm{G}_{\mu}^{a} -  \partial_{\mu} \alpha^{a}(x) - g_{s} f_{abc} \alpha^{b}(x) \bm{G}_{\mu}^{c} \\
+\partial_{\mu} & \rightarrow D_{\mu} = \partial_{\mu} + i g_{s} T_{a} \bm{G}_{\mu}^{a}
 \label{eq:sm_qcd_gauge_transformation_2}
 \end{align}
-And the Lagrangian density of QCD is given by
+where $f_{abc}$ is the structure constant. 
+The Lagrangian density of QCD is given by
 \begin{equation}
-\mathcal{L} = \bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi - g_{s} ( \bar{\psi} \gamma^{\mu} T_{a} \psi) G_{\mu}^{a} - \frac{1}{4} G_{\mu\nu}^{a} G_{a}^{\mu\nu}
+\mathcal{L}_{QCD} = \bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi - g_{s} ( \bar{\psi} \gamma^{\mu} T_{a} \psi) \bm{G}_{\mu}^{a} - \frac{1}{4} \bm{G}_{\mu\nu}^{a} \bm{G}_{a}^{\mu\nu}
 \label{eq:sm_qcd_lagrangian}
 \end{equation}
-where the field strength tensor $G_{\mu\nu}^{a} = \partial_{\mu} G_{\nu}^{a} - \partial_{\nu} G_{\mu}^{a} - g_{s} f_{abc} G_{\mu}^{b} G_{\nu}^{c}$ causing self-interactions between the gluons.
+where the field strength tensor $\bm{G}_{\mu\nu}^{a} = \partial_{\mu} \bm{G}_{\nu}^{a} - \partial_{\nu} \bm{G}_{\mu}^{a} - g_{s} f_{abc} \bm{G}_{\mu}^{b} \bm{G}_{\nu}^{c}$ causing self-interactions between the gluons.
 The strong force increases with distance between quarks, therefore, the quarks exist only as colorless compounds such as meson or baryon mentioned in Section~\ref{subsec:sm_particle_content}.
 The production of a single quark is accompanied by the creation of an anti-quark from vacuum to form a quark and anti-quark pair as a colorless compound.
 This is called \textit{hadronisation}.
@@ -195,6 +196,64 @@ This is referred to as \textit{asymptotic freedom}.
 
 \subsection{Electroweak interaction}
 \label{subsec:sm_ewk_interaction}
+Fermi formulated the first weak interaction theory in 1933~\cite{BF01351864}, however, the theory only holds for energie less than 100~{\GeV}.
+Glashow, Salam, and Weinberg (GSW) proposed a new model~\cite{BF02726525,PhysRevLett.19.1264,0029-55826190469-2} which unifies electromagnetic and weak forces to become \textit{electroweak} (EW) force and this new \textit{GSW model} can apply to the energy greater than 100~{\GeV}.
+The EW theory is based on $SU(2)_{L} \otimes U(1)_{Y}$ gauge symmetry where the subscripts $L$ denotes the left-handedness because only the left-handed fermions (and right-handed anti-fermions) and $Y$ denotes the weak hypercharge, a new quantum number, which relates to the electric charge $Q$ and the weak isospin $I_{3}$ by the \textit{Gell-Mann-Nishijima relation}~\cite{PTP.10.581,BF02748000}:
+\begin{equation}
+Y = 2(Q - I_{3}).
+\end{equation}
+The left-handed and right-handed fermion field $\psi$ can be decomposed into two components:
+\begin{align}
+\psi & = P_{L}\psi + P_{R}\psi\\
+     & = \psi_{L} + \psi_{R}
+\end{align}
+where the projection operators $P_{L}$ and $P_{R}$ are defined as\footnote{$\gamma^{5}$ is the product of the four gamma matrices. $\gamma^{5} = i \gamma^{0} \gamma^{1} \gamma^{2} \gamma^{3} = \left(\begin{matrix}0 & 0 & 1 & 0\\0 & 0 & 0 & 1\\1 & 0 & 0 & 0\\0 & 1 & 0 & 0\end{matrix}\right)$}
+\begin{align}
+P_{L} & = \frac{1}{2} (1 - \gamma^{5})\\
+P_{R} & = \frac{1}{2} (1 + \gamma^{5}).
+\end{align}
+The projection operators satisfy $P_{L}P_{R} = 0$ and $P_{L} + P_{R} = 1$.
+Experimental observations show the right-handed neutrinos don't participate in all the interactions described in the SM so the $\psi_{R}$ is a singlet and $I_{3} = 0$ \footnote{The left-handed fermion state $\psi_{L}$ is a dobulet.}.
+The local gauge transformations of the $SU(2)_{L} \otimes U(1)_{Y}$ are
+\begin{align}
+\psi_{L} & \rightarrow \psi_{L}' = e^{i \alpha_{a}(x) T^{a}}e^{i \beta(x) Y} \psi_{L}\\
+\psi_{R} & \rightarrow \psi_{R}' = e^{i \beta(x) Y} \psi_{R}
+\end{align}
+where $T^{a} = \frac{\sigma^{a}}{2}$ are the generators of $SU(2)_{L}$ with Pauli matrix $\sigma^{a}$\footnote{The Pauli matrices are $\sigma_{1}=\left(\begin{matrix}0 & 1\\1 & 0\end{matrix}\right)$, $\sigma_{2}=\left(\begin{matrix}0 & -i\\i & 0\end{matrix}\right)$, and $\sigma_{3}=\left(\begin{matrix}1 & 0\\0 & -1\end{matrix}\right)$} and $Y$ is the generator of $U(1)_{Y}$.
+The $\alpha_{a}(x)$ and $\beta(x)$ depend on the space-time.
+The covariant derivative with respect to the $SU(2)_{L} \otimes U(1)_{Y}$ is
+\begin{equation}
+D_{\mu} = \partial_{\mu} + i g_{W} T_{a} \bm{W}_{\mu}^{a} + i g_{Y} Y \bm{B}_{\mu}
+\end{equation}
+where $g_{W}$ and $g_{Y}$ are coulping constants and $\bm{W}_{\mu}^{a}$ ($a = 1, 2, 3$) and $\bm{B}_{\mu}$ are the gauge fields.
+The gauge fields $\bm{W}_{\mu}^{a}$ and $\bm{B}_{\mu}$ transform under the $SU(2)_{L} \otimes U(1)_{Y}$ symmetry as
+\begin{align}
+\bm{W}_{\mu}^{a} & \rightarrow \bm{W}_{\mu}^{a} - \frac{1}{g_{W}} \partial_{\mu} \alpha^{a}(x) - \epsilon^{abc} \alpha^{b}(x) \bm{W}_{\mu}^{c}\\
+\bm{B}_{\mu} & \rightarrow \bm{B}_{\mu} - \frac{1}{g_{Y}} \partial_{\mu} \beta(x)
+\end{align}
+where $\epsilon^{abc}$ is the Levi-Civita tensor.
+The Lagrangian density of the EW is given by
+\begin{equation}
+\mathcal{L}_{EW} = \bar{\psi}_{L} (i \gamma^{\mu} D_{\mu} - m) \psi_{L} + \bar{\psi}_{R} (i \gamma^{\mu} D_{\mu} - m) \psi_{R} - \frac{1}{4} \bm{W}_{\mu\nu}^{a} \bm{W}_{a}^{\mu\nu} - \frac{1}{4} \bm{B}_{\mu\nu} \bm{B}^{\mu\nu}
+\end{equation}
+where $\bm{W}_{\mu\nu}^{a}$ and $\bm{B}_{\mu\nu}$ are the field strength tensors
+\begin{align}
+\bm{W}_{\mu\nu}^{a} & = \partial_{\mu} \bm{W}_{\nu}^{a} - \partial_{\nu} \bm{W}_{\mu}^{a} - g_{W} \epsilon^{abc} \bm{W}_{\mu}^{b} \bm{W}_{\nu}^{c}\\
+\bm{B}_{\mu\nu} & = \partial_{\mu} \bm{B}_{\nu} - \partial_{\nu} \bm{B}_{\mu}
+\end{align}
+and $\bar{\psi} \equiv \psi^{\dagger} \gamma^{0}$ is the adjoint spinor of $\psi$\footnote{$\psi^{\dagger}$ is the hermitian conjugate of $\psi$}.
+Therefore, the mass eigenstates are mixture of the gauge fields
+\begin{align}
+W_{\mu}^{\pm} & = \frac{1}{\sqrt{2}} (W_{\mu}^{1} \mp i W_{\mu}^{2})\\
+\left(\begin{matrix}A_{\mu}\\Z_{\mu}\end{matrix}\right) & = \left(\begin{matrix}\cos\theta_{W} & \sin\theta_{W}\\-\sin\theta_{W} & \cos\theta_{W} \end{matrix}\right) \left(\begin{matrix}B_{\mu}\\W_{\mu}^{3}\end{matrix}\right)
+\end{align}
+
+
+
+\subsubsection{Spontaneous symmetry breaking}
+\label{subsubsec:sm_ssb}
+\subsubsection{Higgs mechanism}
+\label{subsubsec:sm_Higgs_mechanism}
 
 %%%
 %%%
