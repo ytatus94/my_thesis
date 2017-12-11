@@ -1,5 +1,5 @@
 This chapter outlines the theoretical and mathematical concepts of the high energy particle physics.
-The Standard Model of particle physics (SM)~\cite{BF02726525,Glashow,PhysRevLett.19.1264,Herrero:1998eq,CBO9780511791406} is developed since the early 1970s and it has successfully explained almost all experimental results.
+The Standard Model of particle physics (SM)~\cite{BF02726525,0029-55826190469-2,PhysRevLett.19.1264,Herrero:1998eq,CBO9780511791406} is developed since the early 1970s and it has successfully explained almost all experimental results.
 The SM is a well-tested and the most successful physics theory to describe the nature of the elementary particles and their interactions.
 An overview of the SM is given in Section~\ref{sec:sm}.
 After that, some of the open questions are mentioned in Section~\ref{sec:sm_bsm}.
@@ -102,13 +102,13 @@ Table~\ref{tab:sm_fundamental_forces} shows the four fundamental forces, the rel
 \begin{tabular}{cccccc}
 \hline
 \hline
-Force & Rel. Strength & Range [m]& Theory & Mediator & Mass [{\GeV}]\\
+Force           & Rel. Strength & Range [m]  & Theory             & Mediator                     & Mass [{\GeV}]\\
 \hline
-Strong & $10$ & $10^{-15}$ & Chromodynamics & Gluon & 0\\
-Weak & $10^{-13}$ & $10^{-18}$ & Flavourdynamics & $W^{\pm}$ and $Z^{0}$ bosons & 80.4/91.2\\
-Electromagnetic & $10^{-2}$ & $\infty$ & Electrodynamics & Photon & 0\\
+Strong          & $10$          & $10^{-15}$ & Chromodynamics     & Gluon                        & 0\\
+Weak            & $10^{-13}$    & $10^{-18}$ & Flavourdynamics    & $W^{\pm}$ and $Z^{0}$ bosons & 80.4/91.2\\
+Electromagnetic & $10^{-2}$     & $\infty$   & Electrodynamics    & Photon                       & 0\\
 \hline
-Gravitational & $10^{-42}$ & $\infty$ & General relativity & Graviton & -\\
+Gravitational   & $10^{-42}$    & $\infty$   & General relativity & Graviton                     & -\\
 \hline
 \hline
 \end{tabular}
@@ -134,7 +134,7 @@ where $\bm{F}_{\mu\nu} = \partial_{\mu}\bm{A}_{\nu} - \partial_{\nu}\bm{A}_{\mu}
 The local gauge transformation means the scalar field $\psi$ and the vector field $\bm{A}_{\mu}$ transform as
 \begin{align}
 \psi(x) & \rightarrow \psi'(x) = e^{i\theta(x)}\psi(x)\\
-\bm{A}_{\mu}(x) & \rightarrow \bm{A}_{\mu}'(x) = \bm{A}_{\mu}(x) + \frac{1}{e}\partial_{\mu}\theta(x)
+\bm{A}_{\mu}(x) & \rightarrow \bm{A}_{\mu}'(x) = \bm{A}_{\mu}(x) + \frac{1}{e}\partial_{\mu}\theta(x).
 \label{eq:sm_gauge_transformation}
 \end{align}
 By intruducing the gauge term, i.e. the vector field, the interacting force can be obtained by calculating the derivatives of the \textit{Euler-Lagrange equations}.
@@ -198,62 +198,207 @@ This is referred to as \textit{asymptotic freedom}.
 \label{subsec:sm_ewk_interaction}
 Fermi formulated the first weak interaction theory in 1933~\cite{BF01351864}, however, the theory only holds for energie less than 100~{\GeV}.
 Glashow, Salam, and Weinberg (GSW) proposed a new model~\cite{BF02726525,PhysRevLett.19.1264,0029-55826190469-2} which unifies electromagnetic and weak forces to become \textit{electroweak} (EW) force and this new \textit{GSW model} can apply to the energy greater than 100~{\GeV}.
-The EW theory is based on $SU(2)_{L} \otimes U(1)_{Y}$ gauge symmetry where the subscripts $L$ denotes the left-handedness because only the left-handed fermions (and right-handed anti-fermions) and $Y$ denotes the weak hypercharge, a new quantum number, which relates to the electric charge $Q$ and the weak isospin $I_{3}$ by the \textit{Gell-Mann-Nishijima relation}~\cite{PTP.10.581,BF02748000}:
+The EW theory is based on $SU(2)_{L} \otimes U(1)_{Y}$ gauge symmetry where the subscripts $L$ denotes the left-handedness because only the left-handed fermions (and right-handed anti-fermions) and $Y$ denotes the weak hypercharge, a new quantum number, which relates to the electric charge $Q$ and the weak isospin $I_{3}$ by the \textit{Gell-Mann-Nishijima relation}~\cite{PTP.10.581,BF02748000}
 \begin{equation}
 Y = 2(Q - I_{3}).
+\label{eq:sm_hypercharge}
 \end{equation}
-The left-handed and right-handed fermion field $\psi$ can be decomposed into two components:
+The left-handed and right-handed fermion field $\psi$ can be decomposed into two components
 \begin{align}
 \psi & = P_{L}\psi + P_{R}\psi\\
      & = \psi_{L} + \psi_{R}
+\label{eq:sm_fermion_field_components}
 \end{align}
 where the projection operators $P_{L}$ and $P_{R}$ are defined as\footnote{$\gamma^{5}$ is the product of the four gamma matrices. $\gamma^{5} = i \gamma^{0} \gamma^{1} \gamma^{2} \gamma^{3} = \left(\begin{matrix}0 & 0 & 1 & 0\\0 & 0 & 0 & 1\\1 & 0 & 0 & 0\\0 & 1 & 0 & 0\end{matrix}\right)$}
 \begin{align}
 P_{L} & = \frac{1}{2} (1 - \gamma^{5})\\
 P_{R} & = \frac{1}{2} (1 + \gamma^{5}).
+\label{eq:sm_projection_operators}
 \end{align}
 The projection operators satisfy $P_{L}P_{R} = 0$ and $P_{L} + P_{R} = 1$.
-Experimental observations show the right-handed neutrinos don't participate in all the interactions described in the SM so the $\psi_{R}$ is a singlet and $I_{3} = 0$ \footnote{The left-handed fermion state $\psi_{L}$ is a dobulet.}.
+Experimental observations show the right-handed neutrinos don't participate in all the interactions described in the SM so the $\psi_{R}$ is a singlet and $I_{3} = 0$\footnote{The left-handed fermion state $\psi_{L}$ is a dobulet.}.
 The local gauge transformations of the $SU(2)_{L} \otimes U(1)_{Y}$ are
 \begin{align}
 \psi_{L} & \rightarrow \psi_{L}' = e^{i \alpha_{a}(x) T^{a}}e^{i \beta(x) Y} \psi_{L}\\
 \psi_{R} & \rightarrow \psi_{R}' = e^{i \beta(x) Y} \psi_{R}
+\label{eq:sm_local_gauge_transformations_ew_1}
 \end{align}
 where $T^{a} = \frac{\sigma^{a}}{2}$ are the generators of $SU(2)_{L}$ with Pauli matrix $\sigma^{a}$\footnote{The Pauli matrices are $\sigma_{1}=\left(\begin{matrix}0 & 1\\1 & 0\end{matrix}\right)$, $\sigma_{2}=\left(\begin{matrix}0 & -i\\i & 0\end{matrix}\right)$, and $\sigma_{3}=\left(\begin{matrix}1 & 0\\0 & -1\end{matrix}\right)$} and $Y$ is the generator of $U(1)_{Y}$.
 The $\alpha_{a}(x)$ and $\beta(x)$ depend on the space-time.
 The covariant derivative with respect to the $SU(2)_{L} \otimes U(1)_{Y}$ is
 \begin{equation}
 D_{\mu} = \partial_{\mu} + i g_{W} T_{a} \bm{W}_{\mu}^{a} + i g_{Y} Y \bm{B}_{\mu}
+\label{eq:sm_derivative_ew}
 \end{equation}
 where $g_{W}$ and $g_{Y}$ are coulping constants and $\bm{W}_{\mu}^{a}$ ($a = 1, 2, 3$) and $\bm{B}_{\mu}$ are the gauge fields.
 The gauge fields $\bm{W}_{\mu}^{a}$ and $\bm{B}_{\mu}$ transform under the $SU(2)_{L} \otimes U(1)_{Y}$ symmetry as
 \begin{align}
 \bm{W}_{\mu}^{a} & \rightarrow \bm{W}_{\mu}^{a} - \frac{1}{g_{W}} \partial_{\mu} \alpha^{a}(x) - \epsilon^{abc} \alpha^{b}(x) \bm{W}_{\mu}^{c}\\
 \bm{B}_{\mu} & \rightarrow \bm{B}_{\mu} - \frac{1}{g_{Y}} \partial_{\mu} \beta(x)
+\label{eq:sm_local_gauge_transformations_ew_2}
 \end{align}
 where $\epsilon^{abc}$ is the Levi-Civita tensor.
 The Lagrangian density of the EW is given by
 \begin{equation}
 \mathcal{L}_{EW} = \bar{\psi}_{L} (i \gamma^{\mu} D_{\mu} - m) \psi_{L} + \bar{\psi}_{R} (i \gamma^{\mu} D_{\mu} - m) \psi_{R} - \frac{1}{4} \bm{W}_{\mu\nu}^{a} \bm{W}_{a}^{\mu\nu} - \frac{1}{4} \bm{B}_{\mu\nu} \bm{B}^{\mu\nu}
+\label{eq:sm_Lagrangian_ew}
 \end{equation}
 where $\bm{W}_{\mu\nu}^{a}$ and $\bm{B}_{\mu\nu}$ are the field strength tensors
 \begin{align}
 \bm{W}_{\mu\nu}^{a} & = \partial_{\mu} \bm{W}_{\nu}^{a} - \partial_{\nu} \bm{W}_{\mu}^{a} - g_{W} \epsilon^{abc} \bm{W}_{\mu}^{b} \bm{W}_{\nu}^{c}\\
 \bm{B}_{\mu\nu} & = \partial_{\mu} \bm{B}_{\nu} - \partial_{\nu} \bm{B}_{\mu}
+\label{eq:sm_field_strangth_tensors}
 \end{align}
 and $\bar{\psi} \equiv \psi^{\dagger} \gamma^{0}$ is the adjoint spinor of $\psi$\footnote{$\psi^{\dagger}$ is the hermitian conjugate of $\psi$}.
 Therefore, the mass eigenstates are mixture of the gauge fields
 \begin{align}
-W_{\mu}^{\pm} & = \frac{1}{\sqrt{2}} (W_{\mu}^{1} \mp i W_{\mu}^{2})\\
-\left(\begin{matrix}A_{\mu}\\Z_{\mu}\end{matrix}\right) & = \left(\begin{matrix}\cos\theta_{W} & \sin\theta_{W}\\-\sin\theta_{W} & \cos\theta_{W} \end{matrix}\right) \left(\begin{matrix}B_{\mu}\\W_{\mu}^{3}\end{matrix}\right)
+\bm{W}_{\mu}^{\pm} & = \frac{1}{\sqrt{2}} (\bm{W}_{\mu}^{1} \mp i \bm{W}_{\mu}^{2})\\
+\left(\begin{matrix}\bm{A}_{\mu}\\\bm{Z}_{\mu}\end{matrix}\right) & = \left(\begin{matrix}\cos\theta_{W} & \sin\theta_{W}\\-\sin\theta_{W} & \cos\theta_{W} \end{matrix}\right) \left(\begin{matrix}\bm{B}_{\mu}\\\bm{W}_{\mu}^{3}\end{matrix}\right).
+\label{eq:sm_mass_eigenstates}
 \end{align}
+Thus, the mass eigenstates $\bm{A}_{\mu}$, $\bm{W}_{\mu}^{\pm}$, and $\bm{Z}_{\mu}$ are identified as the photon, $\gamma$, $W^{\pm}$ and $Z^{0}$ bosons experimentally.
+The \textit{Weinberg weak mixing angle} $\theta_{W}$ is defined as
+\begin{equation}
+\tan \theta_{W} = \frac{g_{Y}}{g_{W}}.
+\label{eq:sm_mixing_angle}
+\end{equation}
+The coupling constants $g_{W}$ and $g_{Y}$ are related to the electric charge by
+\begin{equation}
+e = g_{W} \sin\theta_{W} = g_{Y} \cos\theta_{Y}.
+\label{eq:sm_coupling_constants}
+\end{equation}
+And the weak eigenstates of quark, $q'$, are the linear combinations of the mass eigenstates of quark, q, by the \textit{Cabbibo-Kobayashi-Maskawa} (CKM) matrix~\cite{PTP.49.652}
+\begin{equation}
+\left(\begin{matrix}d'\\s'\\b'\end{matrix}\right) = \left(\begin{matrix}V_{ud} & V_{us} & V_{ub}\\V_{cd} & V_{cs} & V_{cb}\\V_{td} & V_{ts} &V_{tb}\end{matrix}\right) \left(\begin{matrix}d\\s\\b\end{matrix}\right).
+\label{eq:sm_CKM_matrix}
+\end{equation}
+The CKM matrix allows the quarks changing their flavor and generation as observed in the experiment.
+Similarly, the \textit{Pontecorvo-Maki-Nakagawa-Sakata} (PMNS) matrix~\cite{PTP.28.870} is responsible for the flavor changing of the neutrinos.
 
+%%%
+%%%
+%%%
 
+%\subsubsection{Spontaneous symmetry breaking}
+%\label{subsubsec:sm_ssb}
 
-\subsubsection{Spontaneous symmetry breaking}
-\label{subsubsec:sm_ssb}
-\subsubsection{Higgs mechanism}
+%%%
+%%%
+%%%
+
+\subsubsection{Spontaneous symmetry breaking and Higgs mechanism}
 \label{subsubsec:sm_Higgs_mechanism}
+The gauge bosons of the weak interaction, $W^{\pm}$ and $Z^{0}$, are massive particles\footnote{$m_{W}=80.385 \pm 0.015$~{\GeV} and $m_{Z}=91.1876 \pm 0.0021$~{\GeV}}.
+However, the existence of the mass terms violate the gauge invariance of the $\mathcal{L}_{EW}$.
+In order to explain the mass of gauge bosons, the Englert-Brout-Higgs mechanism~\cite{PhysRev.145.1156,PhysRevLett.13.508,PhysLett.12.132,PhysRevLett.13.321,PhysRevLett.13.585} was proposed in 1964.
+A new scalar complex $SU(2)_{L}$ doublet field $\Phi$ is introduced in the Higgs mechanism
+\begin{equation}
+\Phi = \left(\begin{matrix}\Phi^{+}\\\Phi^{0}\end{matrix}\right) = \left(\begin{matrix}\Phi_{1} & i\Phi_{2}\\\Phi_{3} & i\Phi_{4}\end{matrix}\right)
+\label{eq:sm_higgs_doublet}
+\end{equation}
+with hypercharge $Y = 1$ and four degrees of freedom, $\Phi_{i}$, which are scalar fields and called the \textit{Goldstone modes}.
+The Lagrangian density for this new field, Higgs field, is
+\begin{equation}
+\mathcal{L}_{\Phi} = (D^{\mu}\Phi)^{\dagger}(D_{\mu}\Phi) - V(\Phi)
+\label{eq:sm_higgs_lagrangian}
+\end{equation}
+where the Higgs potential is defined as
+\begin{equation}
+V(\Phi) = \mu^{2}|\Phi|^{2} + \lambda|\Phi|^{4}
+\label{eq:sm_higgs_potential}
+\end{equation}
+where $\mu$ and $\lambda$ are free parameters.
+The Higgs potential is shown in Figure~\ref{fig:sm_higgs_potential} which is the rotation $U(1)$ symmetry.
+Choosing any of the points at the bottom of the Higgs potential breaks the symmetry spontaneously.
+The \textit{spontaneously symmetry breaking} (SSB) means the Lagrangian keeps invariant under certain symmetry but no longer invariant at the ground state.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=0.4]{higgspotential.png}
+\caption{An illustration of the Higgs potential which has the form of a ’Mexican hat’.
+The figure is taken from~\cite{Ellis:2013jnq}.}
+\label{fig:sm_higgs_potential}
+\end{center}
+\end{figure}
+
+Because the Higgs potential is invariant under $SU(2)_{L} \otimes U(1)_{Y}$, the parameters $\mu$ and $\lambda$ must satisfy $\mu^{2} < 0$ and $\lambda > 0$ resulting in a set of degenerate ground states where $\langle 0|\Phi|0 \rangle \neq 0$.
+Amoung the degenerate ground states, the ground state is often chosen to have the form
+\begin{equation}
+\Phi = \frac{1}{\sqrt{2}}\left(\begin{matrix}0\\v\end{matrix}\right)
+\label{eq:sm_ground_state}
+\end{equation}
+where $v = \sqrt{-\mu^{2}/\lambda}$ is the \textit{the vacuum expectation value} (VEV).
+This particular choice of the ground state breaks the $SU(2)_{L} \otimes U(1)_{Y}$ symmetries spontaneously and  ensures the unbroken electromagnetic interaction under $U(1)_{EM}$ symmetry and photon being massless.
+By introducing a massive particle, Higgs boson $H$, the Higgs field can be re-written as
+\begin{equation}
+\Phi = \frac{1}{\sqrt{2}}\left(\begin{matrix}0\\v + H\end{matrix}\right)
+\label{eq:sm_ground_state_2}
+\end{equation}
+and the kinematic term of the Lagrangian density becomes
+\begin{align}
+\mathcal{L}_{\Phi}^{\textrm{kinematic}} & = (D^{\mu}\Phi)^{\dagger}(D_{\mu}\Phi)\\
+& = \frac{1}{2}\partial_{\mu}H\partial^{\mu}H + (v + H)^{2}\Big\{\frac{g_{W}^{2}}{4} \bm{W}_{\mu}^{\dagger}\bm{W}^{\mu} + \frac{g_{W}^{2}}{8\cos^{2}\theta_{W}}\bm{Z}_{\mu}^{\dagger}\bm{Z}^{\mu}\Big\}
+\label{eq:sm_Lagrangian_kinematic_term}
+\end{align}
+and the Higgs potential is now
+\begin{equation}
+V(\Phi) = -\frac{v^{2} \lambda}{2}(v+H)^{2} + \frac{\lambda}{4}(v+H)^{4}.
+\end{equation}
+Thus the masses of the $W^{\pm}$ and $Z^{0}$ are obtained by the interaction between the gauge bosons and Higgs boson.
+The masses are defined as
+\begin{equation}
+m_{H} = v\sqrt{2\lambda}, \quad m_{W} = \frac{v}{2}g_{W}, \quad m_{Z} = \frac{v}{2}\sqrt{g_{W}^{2} + g_{Y}^{2}}, \quad m_{\gamma} = 0.
+\end{equation}
+However, the masses of fermions are obtained by the \textit{Yukawa interaction}
+\begin{equation}
+\mathcal{L}_{\textrm{Yukawa}} = y_{f} \bar{L}_{L} \Phi f_{R} + y_{f} \bar{Q}_{L} \Phi f_{R} + \textrm{h.c.}
+\end{equation}
+where the $y_{f}$ is \textit{Yukawa coupling}, $f$ stands for \{$\ell^{i}$, $u^{i}$, $d'^{i}$\} and h.c. represents the hermitian conjugate, respectively.
+The $\bar{L}_{L}$ and $\bar{Q}_{L}$ are the left-handed lepton and quark doublet and $f_{R}$ is the lepton or quark singlet.
+The mass of fermion is defined as
+\begin{equation}
+m_{f} = \frac{v}{\sqrt{2}}y_{f}
+\end{equation}
+where $y_{f}$ is a free parameter which causes the fermion mass not predictable.
+Finally, the non-zero VEV, $v$, can be related to \textit{Fermi constant}, $G_{F}$, by
+\begin{equation}
+v = \frac{1}{\sqrt{\sqrt{2} G_{F}}} \approx 246 \textrm{~{GeV}}.
+\end{equation}
+
+%%%
+%%%
+%%%
+
+\subsection{The discovery of Higgs boson}
+A lot of the SM predictions are successfully confirmed by the experimental observations besides the existance of the theoretical Higgs boson. 
+The search of the Higgs boson has became a major goal of the experimental particle physicists.
+A Higgs-like resonance was discovered and announced on July 4th 2012 by the ATLAS and CMS collaborations~\cite{Aad:2012tfa,Chatrchyan:2012xdj}.
+By combining the data with an integrated luminosities of 4.8~{\ifb} collected at $\sqrt{s} = 7$~{\TeV} in 2011 and 5.8~{\ifb} at $\sqrt{s}=8$~{\TeV} in 2012, the ATLAS experiment measured the mass of the Higgs boson to be $126.0 \pm 0.4$ (stat.) $\pm 0.4$ (syst.)~{\GeV} with significance of 5.9$\sigma$ corresponding to a background fluctuation probability of $1.7 \times 10^{-9}$~\cite{ad:2012tfa}.
+In the meantime, the CMS experiment announced the mass of the Higgs boson to be $125.3 \pm 0.4$ (stat) $\pm 0.5$ (syst.)~{\GeV} with significance 5.0$\sigma$ using integrated luminosities of up to 5.1~{\ifb} at 7 TeV and 5.3~{\ifb} at 8 TeV~\cite{Chatrchyan:2012xdj}. 
+The $H \rightarrow ZZ^{(*)} \rightarrow 4\ell$, $H \rightarrow \gamma \gamma$, and $H \rightarrow WW^{(*)} \rightarrow e\nu\mu\nu$ channels were studied by the ATLAS collaboration and the $H \rightarrow \gamma \gamma, ZZ, W^{+}W^{-}, \tau^{+}\tau^{-}$, and $b\bar{b}$ channels were studied by the CMS collaboration.
+In the Figure~\ref{fig:sm_discovery_of_Higgs} shows the local $p$-value as a function of the Higgs mass for ATLAS and CMS results, respectively.
+
+\begin{figure}[htbp]
+\begin{center}
+\begin{subfigure}[b]{0.48\textwidth}
+\begin{center}
+\includegraphics[scale=0.25]{1-s2_0-S037026931200857X-gr009_lrg.pdf}
+\caption{ATLAS results}
+\end{center}
+\end{subfigure}%
+\begin{subfigure}[b]{0.48\textwidth}
+\begin{center}
+\includegraphics[scale=0.25]{1-s2_0-S0370269312008581-gr016_lrg.pdf}
+\caption{CMS results}
+\end{center}
+\end{subfigure}
+\end{center}
+\caption{The observed local $p$-value as a function of $m_{H}$ for the ATLAS~\cite{Aad:2012tfa} and CMS~\cite{Chatrchyan:2012xdj} experiment, respectively.
+The dashed line shows the expected local $p_{0}$ for a SM Higgs boson.
+The horizontal lines denotes the $p$-values corresponding to significances of 1 to 6$\sigma$.
+}
+\label{fig:sm_discovery_of_Higgs}
+\end{figure}
 
 %%%
 %%%
@@ -271,19 +416,19 @@ Some of the unanswered questions are introduced in the rest part of this section
 \subsection{Hierarchy problem}
 \label{subsec:sm_hierarchy_problem}
 The weakest force in the SM is the weak force but the strength of the weak force is $10^{24}$ times as strong as gravitational force which doesn't incorporate into the SM.
-The large discrepancy between the weak force and the gravitational force is called the hierarchy problem~\cite{Martin:1997ns}.
-The classical potential of the SM Higgs field $H$ is
+The large discrepancy between the weak force and the gravitational force is called the hierarchy problem~\cite{Martin:1997ns,PhysLettB.452.28,maarten_brak}.
+The classical potential of the SM Higgs field $\Phi$ is
 \begin{equation}
-V = \mu^{2} |H|^2 + \lambda |H|^4.
+V(\Phi) = \mu^{2} |\Phi|^2 + \lambda |\Phi|^4.
 \end{equation}
-Since the SM requires the \textit{vacuum expectation value} (VEV) for $H$, $<H>$, at the minimum of the potential non-vanishing, this only satisfied if $\mu^{2} < 0$ and $\lambda > 0$.
+Since the SM requires the \textit{vacuum expectation value} (VEV) for $\Phi$, $<\Phi>$, at the minimum of the potential non-vanishing, this only satisfied if $\mu^{2} < 0$ and $\lambda > 0$.
 However, the parameter $\mu^{2}$ receives enormous radiative corrections causing it ultraviolet divergent as shown in Equation~\ref{eq:mu2_correction}.
 \begin{equation}
 \mu^{2} = \mu_{bare}^{2} - \frac{|\lambda_{f}|^{2}}{8\pi}\Lambda_{UV}^{2} + \mathcal{O}(\Lambda_{UV}^{2})
 \label{eq:mu2_correction}
 \end{equation}
 where $\mu_{bare}$ is the Higgs mass, $- \frac{|\lambda_{f}|^{2}}{8\pi}\Lambda_{UV}^{2}$ is the one-loop correction, and $\Lambda_{UV}$ is an ultraviolet momentum cutoff which is valid up to the Plank scale $10^{19}$~{\GeV}.
-The electroweak gauge bosons $W^{\pm}$ and $Z^{0}$ obtain their finite masses from $<H>$ so the $\mu^{2}$ cannot be divergent.
+The electroweak gauge bosons $W^{\pm}$ and $Z^{0}$ obtain their finite masses from $<\Phi>$ so the $\mu^{2}$ cannot be divergent.
 There must some unknown mechanism to protect from divergency.
 
 %%%

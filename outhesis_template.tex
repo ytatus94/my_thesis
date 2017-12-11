@@ -53,8 +53,8 @@
 \usepackage[margin=1.0in]{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 %\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 \usepackage{graphicx}
-\usepackage{subfigure}
-%\usepackage{subcaption} %These packages gives the author the ability to have subfigures within figures, or subtables within table floats.
+%\usepackage{subfigure} % obsolete. Use subcaption instead.
+\usepackage{subcaption} %These packages gives the author the ability to have subfigures within figures, or subtables within table floats.
 \usepackage[labelsep=colon,labelfont=bf,font=singlespacing,width=\textwidth,compatibility=false]{caption}
 \usepackage{hyperref} % for url
 \usepackage{slashed} % Dirac slash notation
@@ -142,38 +142,38 @@
 
 %% Put your dedication here. This is completely optional. Delete it if you don't need it.
 \begin{dedication}
-To my past, present, and future family.
-
+%To my past, present, and future family.
 \begin{quotation}
-\raggedright{\emph{``You're braver than you believe, and stronger than you seem, and smarter than you think.''}} \\
-\raggedleft{- A.A. Milne, Christopher Robin} 
+\raggedright{\emph{`Blood, sweat \& respect. First two you give, last one you earn.''}} \\
+\raggedleft{- Dwayne Johnson} 
 \end{quotation}
 
 \end{dedication}
 
 %% Put your acknowledgements here. This is completely optional. Delete it if you don't need it.
 \begin{acknowledgements}
-I would like to deeply thank all of my teachers and professors over the 20 years of my academic journey, for instilling in me a deep, unquenchable desire to learn. 
-\begin{quotation}
-\raggedright{\emph{``If you don't know, the thing to do is not to get scared, but to learn.''}} \\
-\raggedleft{- Ayn Rand, Atlas Shrugged}
-\end{quotation}
+I would like to thank everyone who have helped me.
+%I would like to deeply thank all of my teachers and professors over the 20 years of my academic journey, for instilling in me a deep, unquenchable desire to learn. 
+%\begin{quotation}
+%\raggedright{\emph{``If you don't know, the thing to do is not to get scared, but to learn.''}} \\
+%\raggedleft{- Ayn Rand, Atlas Shrugged}
+%\end{quotation}
 
-I would also like to thank all of my family and friends who have helped motivate and encourage me in my pursuit of this degree. 
-\begin{quotation}
-\raggedright{\emph{``It's the job that's never started as takes longest to finish.''}} \\
-\raggedleft{- J.R.R. Tolkien, The Lord of the Rings}
-\end{quotation}
+%I would also like to thank all of my family and friends who have helped motivate and encourage me in my pursuit of this degree. 
+%\begin{quotation}
+%\raggedright{\emph{``It's the job that's never started as takes longest to finish.''}} \\
+%\raggedleft{- J.R.R. Tolkien, The Lord of the Rings}
+%\end{quotation}
 
-Lastly, I would like to thank my wife for not only supporting me through the entire process, but actually pushing me to be the best me I could be. Thank you for living this adventure with me!
-\begin{quotation}
-\raggedright{\emph{``I am a wife-made man.''}} \\
-\raggedleft{- Danny Kaye} 
-\end{quotation}
-\begin{quotation}
-\raggedright{\emph{``I knew when I met you an adventure was going to happen.''}} \\
-\raggedleft{- A.A. Milne, Winnie the Pooh} 
-\end{quotation}
+%Lastly, I would like to thank my wife for not only supporting me through the entire process, but actually pushing me to be the best me I could be. Thank you for living this adventure with me!
+%\begin{quotation}
+%\raggedright{\emph{``I am a wife-made man.''}} \\
+%\raggedleft{- Danny Kaye} 
+%\end{quotation}
+%\begin{quotation}
+%\raggedright{\emph{``I knew when I met you an adventure was going to happen.''}} \\
+%\raggedleft{- A.A. Milne, Winnie the Pooh} 
+%\end{quotation}
 \end{acknowledgements}
 
 %% Put your abstract here.
@@ -206,8 +206,8 @@ Here is the abstract
 
 \chapter{Suppersymmetry}
 \label{chapter:Suppersymmetry}
-\graphicspath{{figures/Suppersymmetry/}}
-\input{chapter_Suppersymmetry}
+\graphicspath{{figures/suppersymmetry/}}
+\input{chapter_suppersymmetry}
 
 
 \chapter{The ATLAS Experiment at LHC}
