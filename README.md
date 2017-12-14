@@ -2,6 +2,9 @@
 This is repository for my Ph.D. thesis
 
 ### 12/14/2017
+* Finish HCAL and FCAL.
+
+### 12/14/2017
 * Use online grammar check to check chapter 2
 
 ### 12/14/2017
