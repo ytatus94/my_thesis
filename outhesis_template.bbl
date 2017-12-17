@@ -42,6 +42,11 @@ Nikiforos Nikiforou.
   of lhc operation and plans for a future upgrade.
 \newblock {\em arXiv}, arXiv:1306.6756v2, Jun 2013.
 
+\bibitem{Martinez:2016udm}
+The~ATLAS Collaboration.
+\newblock The run-2 atlas trigger system.
+\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, Feb 2016.
+
 \bibitem{BF02726525}
 Abdus Salam and J.C. Ward.
 \newblock Weak and electromagnetic interactions.
@@ -226,5 +231,10 @@ S~Palestini.
 ATLAS muon collaboration.
 \newblock Atlas muon detector commissioning.
 \newblock {\em arXiv}, arXiv:0910.2767v1, 2009.
+
+\bibitem{Kordas:2007zz}
+The~ATLAS Collaboration.
+\newblock The atlas data acquisition and trigger: concept, design and status.
+\newblock {\em Nucl. Phys. B Proc. Suppl.}, 172:178--182, Oct 2007.
 
 \end{thebibliography}
