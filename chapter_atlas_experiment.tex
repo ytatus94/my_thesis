@@ -11,6 +11,7 @@ The rest three experiments, \textit{TOTEM}~\cite{1748-0221-3-08-S08007}, \textit
 The TOTEM (TOTal Elastic and diffractive cross section Measurement)~\cite{1748-0221-3-08-S08007} experiment aims at the measurement of total cross section, elastic scattering, and diffractive dissociation.
 The LHCf (Large Hadron Collider forward)~\cite{1748-0221-3-08-S08006} experiment is intended to measure the neutral particle produced by the collider using the forward particles.
 The prime motivation of the MoEDAL (Monopole and Exotics Detector at the LHC)~\cite{Pinfold:1181486} experiment is to search directly for the magnetic monopole.
+An overview of the LHC is described in Section~\ref{sec:ae_LHC} and the detector apparatus of the ATLAS experiment is outlined in Section~\ref{sec:ae_ATLAS}.
 
 %%%
 %%%
@@ -140,7 +141,7 @@ where $\Delta \eta$ and $\Delta \phi$ are the difference in pseudorapidity and a
 %%%
 %%%
 
-\subsection{The Inner Detector and Tracking System}
+\subsection{The inner detector and tracking system}
 \label{subsec:ae_inner_detector}
 The \textit{inner detector} (ID) consists of three sub-detectors: the \textit{pixel} detector, the \textit{semi conductor tracker}  (SCT), and the \textit{transition radiation tracker} (TRT).
 The main purpose of the inner detector is to provide high precision measurements of the tracks of particles and to reconstruct the primary and secondary vertices.
@@ -166,7 +167,7 @@ The layout of the inner detector is illustrated in Figure~\ref{fig:ae_inner_dete
 %%%
 %%%
 
-\subsubsection{Pixel Detector}
+\subsubsection{Pixel detector}
 \label{subsubsec:ae_pixel}
 The innermost part of the entire ATLAS detector components is the \textit{pixel} detector which is composed of three barrel layers and three end-cap disks on each side.
 The three cylindrical barrel layers around the beam axis have radial positions of 50.5~mm, 88.5~mm, and 122.5~mm respectively and they are made of 22, 38, and 52 identical staves respectively.
@@ -179,7 +180,7 @@ The total 1,744 modules in the pixel detector lead to nearly 80 million channel 
 %%%
 %%%
 
-\subsubsection{Semi Conductor Tracker}
+\subsubsection{Semi conductor tracker}
 \label{subsubsec:ae_sct}
 On the top of the pixel detector is the \textit{semi conductor tracker} (SCT) which is a silicon strip detector.
 There are about 6.3 million readout channels which are arranged in 4088 microstrips.
@@ -192,7 +193,7 @@ Therefore, the electrons cannot be distinguished from photons above $|\eta| > 2.
 %%%
 %%%
 
-\subsubsection{Transition Radiation Tracker}
+\subsubsection{Transition radiation tracker}
 \label{subsubsec:ae_trt}
 The outermost component of the inner detector is the \textit{transition radiation tracker} (TRT) which consists of 4~mm diameter straw tubes filled with the xenon-based gas mixture.
 The gas mixture are ionised by charged particles when they penetrates the straws.
@@ -207,7 +208,7 @@ The TRT only provides information in the $R-\phi$ plane with an intrinsic accura
 %%%
 %%%
 
-\subsubsection{Solenoid Magnet}
+\subsubsection{Solenoid magnet}
 \label{subsubsec:ae_magnetic}
 A superconducting solenoid magnet encloses the inner detector and produces a 2~T magnetic field to bend the trajectories of the charged particles.
 A cooling system is used and shared with the \textit{electromagnetic calorimeter} (Section~\ref{subsec:ae_calorimeter}) to reduced the deterioration of the energy measurement.
@@ -216,7 +217,7 @@ A cooling system is used and shared with the \textit{electromagnetic calorimeter
 %%%
 %%%
 
-\subsection{The Calorimeters}
+\subsection{The calorimeters}
 \label{subsec:ae_calorimeter}
 The calorimeters are used to measure the energy of particles, such as electrons, photons, and jets.
 Besides muons and neutrinos, all other particles interacting electromagnetically or hadronically are stopped in the calorimeters by absorbing their energy.
@@ -243,7 +244,7 @@ An layout view of the ATLAS calorimeter system is shown in Figure~\ref{fig:ae_ca
 %%%
 %%%
 
-\subsubsection{Electromagnetic Calorimeter}
+\subsubsection{Electromagnetic calorimeter}
 \label{subsubsec:ae_ecal}
 The \textit{electromagnetic calorimeter} (ECAL) measures the energy of electrons and photons as they interact with matter.
 The ECAL consists of accordion shaped cells of alternating layers of lead as absorber material and liquid argon (LAr) as active medium.
@@ -272,7 +273,7 @@ Figure~\ref{fig:ae_ecal} shows the cut-away view of the the accordion shaped EMB
 %%%
 %%%
 
-\subsubsection{Hadronic Calorimeter}
+\subsubsection{Hadronic calorimeter}
 \label{subsubsec:ae_hcal}
 The electromagnetic interacting particles produce narrow showers, however, the hadrons, which are heavier and penetrate medium further, produce more wide-spread hadronic showers.
 The \textit{hadronic calorimeter} (HCAL) surrounds the ECAL and is made up by a barrel and two end-caps  (HEC).
@@ -288,7 +289,7 @@ The granularity of the HCAL is coarser than the ECAL but it is sufficient for me
 %%%
 %%%
 
-\subsubsection{Forward Calorimeter}
+\subsubsection{Forward calorimeter}
 \label{subsubsec:ae_fcal}
 The \textit{forward calorimeter} (FCAL) uses the LAr as active medium and one copper and two tungsten layers as absorber materials.
 The copper layer (FCAL1) is used to measure the electromagnetic interactions whereas the two tungsten layers (FCAL2 and FCAL3) is used to measure the hadronically interactions.
@@ -346,27 +347,30 @@ Forward calorimeter & $\sigma_{E}/E = 100\% / \sqrt{E~\mathrm{(GeV)}} \oplus 10\
 %%%
 %%%
 
-\subsection{The Muon Spectrometer}
+\subsection{The muon spectrometer}
 \label{subsec:ae_the_muon_spectrometer}
 The outermost part of the ATLAS detector is the \textit{muon spectrometer}~\cite{1748-0221-3-08-S08003,Palestini:681459,Diehl:2009bw}.
-Muons have the same properties as electrons but 200 times heavier than the electrons and muons don't interact predominately by bremsstrahlung but have minimal ionising at LHC energy in the inner layers of the detector.
+Muons have the same properties as electrons but 200 times heavier than the electrons.
+Because muons don't interact predominately by bremsstrahlung, most of the muons escape the inner detector and calorimeters without being stopped.
 Only the muons with an energy less than 5~{\GeV} are stopped before the muon spectrometer.
-Therefore, muons are the only measurable particles that can penetrate the inner detector and the calorimeters.
-In order to determine the muon momentum with high precision, a detector that concentrates on the measurement of muons is necessary.
+Therefore, a detector concentrates on the measurement of high precision momentum and trajectory of muons is necessary.
+%Therefore, muons are the only measurable particles that can penetrate the inner detector and the calorimeters.
+%In order to determine the momentum with high precision and trajectory of muons, a detector that concentrates on the measurement of muons is necessary.
 
 The muon spectrometer is designed to measure the transverse momentum ($p_{\mathrm{T}}$) of muons with $p_{\mathrm{T}} > 3$~{\GeV} with a resolution of 3\% for $p_{\mathrm{T}} < 250$~{\GeV} and increasing to 10\% at 1~{\TeV}.
-It consists of large toroid magnets system and three layers of high precision tracking chambers which allow a precise measurement of the muon momentum over nearly the full solid angle.
+It consists of large toroid magnets system and high precision tracking chambers allowing a precise measurement of the muon momentum over nearly the full solid angle.
 The barrel toroid magnet system is composed of eight superconducting coils which are installed radial symmetrically around the beam pipe.
 It covers the range $|\eta| < 1.4$ and bends the trajectories of muons with the bending power 1.5 to 5.5 Tm.
 The magnetic field produced by the barrel toroid magnets provides an approximately 1~T field at the center of each coils, but is rather non-uniform, especially in the barrel-endcap transition region.
 In the endcap toroid magnets system, the magnetic field is provided by eight superconducting coils, closed in an insulation vessel extending to about 10 m in diameter, located between the first and the second station of tracking chambers.
-The endcap toroid magnets cover $1.6 < |\eta| < 2.4$ and provide a a magnetic field in the range of 1 to 2 T with bending power 1 to 7.5 Tm.
+The endcap toroid magnets cover $1.6 < |\eta| < 2.4$ and provide a magnetic field in the range of 1 to 2 T with bending power 1 to 7.5 Tm.
 
-The \textit{monitored drift tubes} (MDT) consists of cylindrical drift tubes, filled with a gas mixture of argon and carbon dioxide.
+The \textit{monitored drift tubes} (MDT) consists of cylindrical drift tubes, filled with a gas mixture of Ar and CO$_{2}$.
 A tungsten-rhenium alloyed aluminium wire in the centre of each tube collects the electrons freed by ionisation of the gas volume by traversing muons.
-The MDTs covers a full range of $|\eta| < 2.7$, while the inner layer only covers $|\eta| < 2.0$.
+The MDT covers a full range of $|\eta| < 2.7$, while the inner layer only covers $|\eta| < 2.0$.
 The \textit{cathode strip chambers} (CSC) provides a coverage range $2.0 < |\eta| < 2.7$, where MDTs would have occupancy problems.
-Both MDT and CSC are used for precision tracking in the spectrometer bending plane and end-cap inner layer, respectively.
+The CSC is made up by two discs and filled with Ar and CO$_{2}$ gas mixture.
+Both MDT and CSC are slow for trigger but they provide high precision tracking in the spectrometer bending plane and end-cap inner layer, respectively.
 The \textit{resistive plate chambers} (RPC) and \textit{thin gap chambers} (TGC) are used for triggering in barrel and end-cap, they have sufficient intrinsic time resolution of 1.5 ns and 4 ns, respectively.
 A sketch of the muon spectrometer and its four components are depicted in Figure~\ref{fig:ae_muon_spectrometer} and Table~\ref{tab:ae_muon_spectrometer_components} gives a summary of the muon spectrometer components
 
@@ -401,8 +405,52 @@ TGC & Trigger & end-cap & $1.0 < \eta < 2.4$ & 318k\\
 %%%
 %%%
 
-\subsection{The Trigger System and Data Acquisition}
-\label{subsec:trigger}
+\subsection{The trigger system and data acquisition}
+\label{subsec:ae_trigger}
+The LHC $pp$ collision rate is 40~MHz corresponding to 50~TB/s data\footnote{Assuming the typical event size is 1.3~MB.} generated by the ATLAS detector~\cite{Kordas:2007zz}.
+However, the limited rate for writing the events into disk is about 1~kHz\footnote{The data storage rate is 200~Hz in Run-1 but it is increased to about 1~kHz in Run-2.}.
+The majority of the products of the $pp$ collision are low \pt QCD processes which are not the interesting events for the analysis.  
+Hence, the three-level ATLAS trigger and data acquisition (DAQ) system is designed to pick the interesting events and reduce the data size.
+Figure~\ref{fig:ae_tdaq} shows the functional view of the ATLAS trigger/DAQ system and the brief descriptions are given in the following paragraph.
+
+\begin{figure}[htbp]
+\begin{center}
+%\includegraphics[scale=0.4]{ATLAS_TDAQ.pdf}
+%\caption{The functional view of the ATLAS trigger/DAQ system.
+%The figure is taken from~\cite{ATLAS:1999uwa}.}
+\includegraphics[scale=0.4]{ATLAS_TDAQ_Run2.pdf}
+\caption{The schematic view of the ATLAS trigger/DAQ system in Run-2.
+The figure is taken from~\cite{Martinez:2016udm}}
+\label{fig:ae_tdaq}
+\end{center}
+\end{figure}
+
+%%%
+%%%
+%%%
+
+\subsubsection{The level-1 trigger}
+\label{subsubsec:ae_LVL1}
+The initial selection is made by the hardware-based \textit{level-1} (LVL1) trigger based on reduced-granularity information from calorimeters and the muon spectrometer.
+The latency\footnote{The latency is the time interval from the $pp$ collision until trigger decision is available to the front-end electronics.} of the level-1 trigger is required to be less than 2.5~$\mu s$\footnote{The target latency for the level-1 trigger is 2.0~$\mu s$}.
+The high \pt muons are identified using only RPC and TGC.
+The high \pt $e/\gamma$, jets, hadronically decaying $\tau$-leptons, large \met and total \et objects are selected by calorimeter trigger using a number of sets of \pt thresholds\footnote{Typically, there are 6 to 8 sets of thresholds per object type.} and the energy isolation cuts can be applied. 
+The selected events are read out from the front-end electronics into \textit{readout drivers} (RODs) and written into \textit{readout buffers} (ROBs).
+The information such as the \pt, $\eta$, and $\phi$ of the candidate objects and \met and total \et are saved into \textit{region-of-interest} (ROI) and send to the high level trigger.
+The level-1 trigger reduces the event rate from the high LHC bunch crossing rate to 100~kHz.
+
+%%%
+%%%
+%%%
+
+\subsubsection{The high level trigger}
+\label{subsubsec:ae_HLT}
+The \textit{level-2} trigger and \textit{event filter} (EF) computer clusters used in Run-1 are merged into a single event professing \textit{high level trigger} (HLT) farm in Run-2.
+This combination reduces the complexity, allows resource sharing between algorithms, and results in a more flexible HLT.
+The HLT is completely software based trigger system and it uses the ROI information from the level-1 trigger and the tracking information from the inner detector.
+The full-event track reconstruction information is performed by the \textit{fast tracker} (FTK) system after each level-1 trigger and provided to the HLT.	 
+The trigger reconstruction algorithms for HLT were re-optimised to minimise the differences between the HLT and the offline analysis selections.
+The output rate of the HLT is approximately 1~kHz within a processing time about 200~$\mu s$.
 
 %%%
 %%%

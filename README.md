@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 12/17/2017
+* Finish trigger/DAQ
+
 ### 12/14/2017
 * Finish HCAL and FCAL.
 
