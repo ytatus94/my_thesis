@@ -30,6 +30,11 @@ CMS Collaboration.
 \bibitem{Ur0ol}
 
 
+\bibitem{Martin:1997ns}
+Stephen~P. Martin.
+\newblock A supersymmetry primer.
+\newblock {\em arXiv}, hep-ph/9709356, 1997.
+
 \bibitem{Marcastel:1621583}
 Fabienne Marcastel.
 \newblock Cern's accelerator complex. la cha{\^\i}ne des acc{\'e}l{\'e}rateurs
@@ -128,11 +133,6 @@ G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble.
 \newblock Global conservation laws and massless particles.
 \newblock {\em Phys. Rev. Lett.}, 13(20):585--587, Nov 1964.
 
-\bibitem{Martin:1997ns}
-Stephen~P. Martin.
-\newblock A supersymmetry primer.
-\newblock {\em arXiv}, hep-ph/9709356, 1997.
-
 \bibitem{PhysLettB.452.28}
 Piotr~H. Chankowskia, John Ellisb, Keith A.Olivec, and Stefan Pokorskia.
 \newblock Cosmological fine tuning, supersymmetry and the gauge hierarchy
@@ -171,6 +171,46 @@ Peter~J. Mohr, Barry~N. Taylor, and David~B. Newell.
 \newblock Codata recommended values of the fundamental physical constants:
   2010.
 \newblock {\em Rev. Mod. Phys.}, 84(4):1527--1605, Nov 2012.
+
+\bibitem{Wess:1974tw}
+J.~Wess and B.~Zumino.
+\newblock Supergauge transformations in four dimensions.
+\newblock {\em Nucl. Phys. B}, 70(1):39--50, Feb 1974.
+
+\bibitem{Lykken:1996xt}
+Joseph~D. Lykken.
+\newblock Introduction to supersymmetry.
+\newblock {\em arXiv}, hep-th/9612114v1, Dec 1996.
+
+\bibitem{Drees:1996ca}
+Manuel Drees.
+\newblock An introduction to supersymmetry.
+\newblock {\em arXiv}, hep-ph/9611409v1, Nov 1996.
+
+\bibitem{Bilal:2001nv}
+Adel Bilal.
+\newblock Introduction to supersymmetry.
+\newblock {\em arXiv}, hep-th/0101055v1, Jan 2001.
+
+\bibitem{Argyres:2001eva}
+Philip~C. Argyres.
+\newblock An introduction to global supersymmetry.
+\newblock 2001.
+
+\bibitem{Peskin:2008nw}
+Michael~E. Peskin.
+\newblock Supersymmetry in elementary particle physics.
+\newblock {\em arXiv}, 0801.1928v1, 2008.
+
+\bibitem{CBO9780511619250}
+Ian Aitchison.
+\newblock {\em Supersymmetry in Particle Physics}.
+\newblock Cambridge University Press, Sept 2012.
+
+\bibitem{Shadmi:2017qdk}
+Y.~Shadmi.
+\newblock Introduction to supersymmetry.
+\newblock {\em arXiv}, 1708.00772v1, Aug 2017.
 
 \bibitem{1748-0221-3-08-S08001}
 Lyndon Evans and Philip Bryant.

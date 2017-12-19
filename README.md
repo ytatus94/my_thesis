@@ -1,7 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
-### 12/18/2017
+### 12/19/2017
+* Working on chapter 3.
+
+### 12/17/2017
 * Fix some typos in chapter 4. Sent this version to Pat.
 
 ### 12/17/2017
