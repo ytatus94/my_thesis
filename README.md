@@ -1,6 +1,14 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 12/20/2107
+* Remove old empty files:
+  * chapter_Suppersymmetry.tex
+  * chapter_electron_isolation.tex 
+  * chapter_real_lepton_efficiencies.tex
+* Add correct chapter 3 tex file:
+  * chapter_suppersymmetry.tex
+
 ### 12/19/2017
 * Working on chapter 3.
 
