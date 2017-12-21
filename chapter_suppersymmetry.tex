@@ -3,16 +3,17 @@ However, the Standard Model leaves several open questions unanswered as mentione
 Many different models of new physics were proposed to explain those unanswered questions.
 Among these new models, the \textit{supersymmetry} (SUSY)~\cite{Wess:1974tw,Lykken:1996xt,Drees:1996ca,Martin:1997ns,Bilal:2001nv,Argyres:2001eva,Peskin:2008nw,CBO9780511619250,Shadmi:2017qdk} wins most physicists' favour.
 The SUSY proposed by Wess and Zumino~\cite{Wess:1974tw} at early 1970s is a symmetry relating bosonic and fermionic degrees of freedom.
-It extends the Standard Model by requiring every SM boson/fermion has a fermonic/bosonic supersymmetry partner and vice versa.
-The introduction of the supersymmetry is given in Section~\ref{sec:susy_intro} and the formulaism is depicted in Section~\ref{sec:susy_}.
+It extends the Standard Model by requiring every SM boson/fermion has a fermonic/bosonic supersymmetric partner and vice versa.
+The reason why physicists favour SUSY is described in Section~\ref{sec:susy_why_susy}.  
+The introduction of the SUSY is given in Section~\ref{sec:susy_intro} and the formulaism is depicted in Section~\ref{sec:susy_}.
 The \textit{Radiative Natural SUSY} (RNS) and the \textit{Non-Universal Higgs Mass model} with two extra parameters (NUHM2) are given in Section~\ref{sec:susy_rns} and ~\ref{sec:susy_nuhm2}, respectively.
 
 %%%
 %%%
 %%%
 
-\section{Introduction of the supersymmetry}
-\label{sec:susy_intro}
+\section{Why supersymmetry}
+\label{sec:susy_why_susy}
 The Standard Model leaves several unanswered questions, for example, the hierarchy problem (Section~\ref{subsec:sm_hierarchy_problem}), what is the candidates of dark matter (Section~\ref{subsec:sm_dm}), and why don't the running coupling constants unify at GUT level (Section~\ref{subsec:sm_grand_unification}).
 The SUSY provides good explanations for these questions.
 
@@ -60,7 +61,7 @@ The SUSY requires all the sparticles must be produced in pairs and they decay in
 If there are a lot of sparticles produced in the early Universe, they will have to decayed to LSPs and remain until the present day because the LSP is stable.
 The LSP is a weakly interacting massive particle.
 It doesn't interact electromagnetically so they cannot be scattered by photon and thus dark.
-There are 3 kinds of LSP coulee be the possible dark matter candidate, the lightest \textit{neutralino}, the lightest \textit{sneutrino} and the \textit{gravitino}.
+There are 3 kinds of LSP could be the possible dark matter candidate, the lightest \textit{neutralino}, the lightest \textit{sneutrino} and the \textit{gravitino}.
 
 %%%
 %%%
@@ -74,6 +75,105 @@ However, the current coupling constants for electromagnetic, weak, and strong in
 This problem can be solved by introducing the SUSY which modifies the renormalization group equations and make the running gauge couplings converged at the GUT scale.
 The right hand side of Figure~\ref{fig:sm_coulping_constants} shows the running gauge couplings in SUSY.
 
+%%%
+%%%
+%%%
+
+\section{Introduction of the supersymmetry}
+\label{sec:susy_intro}
+An brief overview of the SUSY are introduced in this section.
+Firstly, the mathematical foundation of the SUSY, superalgebra, is described in Section~\ref{subsec:susy_superalgebra} followed by the superspace and superfields in Section~\ref{subsec:susy_superspace_and_superfields}.
+
+%%%
+%%%
+%%%
+
+\subsection{Superalgebra}
+\label{subsec:susy_superalgebra}
+The SUSY is based on the superalgebra which is an extension of space-time Poincar\'{e} algebra.
+The Poincar\'{e} group is a product of the Lorentz group and the group of translations in space-time.
+A Lorentz group must satisfies the commutation relations
+%
+\begin{equation}
+[J^{+}_{i}, J^{+}_{j}] = i \epsilon_{ijk} J^{+}_{k}, \quad 
+[J^{-}_{i}, J^{-}_{j}] = i \epsilon_{ijk} J^{-}_{k}, \quad 
+[J^{+}_{i}, J^{-}_{j}] = 0
+\label{eq:susy_Lorentz_commutation_relations}
+\end{equation}
+%
+where $i, j, k = 1, 2, 3$.
+If the six Lorentz group generators are combined into an antisymmetric second rank tensor generator $M_{\mu\nu}$ where $M_{ij} = \epsilon_{ijk}J_{k}$ and $M_{0i} = -M_{i0} = -K_{i}$\footnote{The $J_{i}$ and $K_{i}$ with $i=1,2,3$ are rotation and boost generators in 3-dimension respectively.} and the generator of the translation groups is $P_{\mu}$, the energy-momentum operator, then the commutation relations of the Poincar\'{e} group are
+%
+\begin{align}
+[P_{\mu}, P_{\nu}] &= 0 ,\\
+[M_{\mu \nu}, P_{\lambda}] &= i (g_{\nu \lambda} P_{\mu} - g_{\mu \lambda} P_{\nu}) ,\\
+[M_{\mu \nu}, M_{\rho \sigma}] &= -i (g_{\mu \rho} M_{\nu \sigma} - g_{\mu \sigma} M_{\nu \rho} - g_{\nu \rho} M_{\mu \sigma} + g_{\nu \sigma} M_{\mu \rho}) .
+\label{eq:susy_Poincare_commutation_relations}
+\end{align}
+where the metric is 
+\begin{equation}
+g_{\mu \nu} =
+\left(
+\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1   
+\end{array}
+\right)
+\label{eq:susy_metric}
+\end{equation}
+%
+A general spin 1/2 particle state, $\chi$, can be expressed as a \textit{spinor} in the SUSY using two-component spin up $\chi_{+}$ and spin down $\chi_{-}$ column matrices
+%
+\begin{equation}
+\chi = c_{+} \chi_{+} + c_{-} \chi_{-}
+= c_{+} \left(\begin{matrix}1\\0\end{matrix}\right) + c_{-} \left(\begin{matrix}0\\1\end{matrix}\right)
+= \left(\begin{matrix}c_{+}\\c_{-}\end{matrix}\right)
+\label{eq:susy_spinor}
+\end{equation}
+%
+The solution of the Dirac equation\footnote{The Dirac equation is $(i \gamma^{\mu} \partial_{\mu} - m)\psi = 0$.}, $\psi_{D}\footnote{The Dirac spinor, $\psi_{D}$, is a four-component field which can be expressed using a four-component matrix.}$, can be expressed using the left-handed and right-handed \textit{Weyl spinors} $\psi_{L}$ and $\psi_{R}$ 
+%
+\begin{equation}
+\psi_{D} = \left(\begin{matrix}\psi_{1}\\\psi_{2}\\\psi_{3}\\\psi_{4}\end{matrix}\right)
+= \left(\begin{matrix} \left(\begin{matrix}\psi_{1}\\\psi_{2}\end{matrix}\right) \\ \left(\begin{matrix}\psi_{3}\\\psi_{4}\end{matrix}\right) \end{matrix}\right)
+= \left(\begin{matrix}\psi_{L}\\\psi_{R}\end{matrix}\right)
+\label{eq:susy_Dirac_spinor}
+\end{equation}
+%
+
+%%%
+%%%
+%%%
+
+\subsection{Superspace and superfields}
+\label{subsec:susy_superspace_and_superfields}
+
+%%%
+%%%
+%%%
+
+\subsection{$R$-parity}
+\label{subsec:susy_r_parity}
+The baryon number $B$ and lepton number $L$ are conserved in the Standard Model but violated in the SUSY.
+Therefore, a new symmetry called $R$-parity is introduced to eliminate the $B$ and $L$ violating term.
+The $R$-parity is defined as
+%
+\begin{equation}
+R \equiv (-1)^{3(B-L)+2s}
+\label{eq:susy_r_parity}
+\end{equation}
+%
+where $s$ is the spin of the particle.
+All of the SM particles have even $R$-parity ($R$ = +1), while all of the sparticles have odd $R$-parity ($R$ =  1). 
+If the $R$-parity is conserved, SUSY predicts that sparticles are produced in pairs in collider experiments.
+
+%%%
+%%%
+%%%
+
+\subsection{Soft suppersymmetry breaking}
 %%%
 %%%
 %%%

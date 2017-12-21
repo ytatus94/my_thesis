@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 12/21/2017
+* Add introduction of the susy
+
 ### 12/20/2107
 * Remove old empty files:
   * chapter_Suppersymmetry.tex
