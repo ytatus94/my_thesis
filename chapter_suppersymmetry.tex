@@ -90,6 +90,13 @@ Firstly, the mathematical foundation of the SUSY, superalgebra, is described in 
 
 \subsection{Superalgebra}
 \label{subsec:susy_superalgebra}
+
+%%%
+%%%
+%%%
+
+\subsubsection{Poincar\'{e} algebra}
+\label{subsubsec:susy_poincare}
 The SUSY is based on the superalgebra which is an extension of space-time Poincar\'{e} algebra.
 The Poincar\'{e} group is a product of the Lorentz group and the group of translations in space-time.
 A Lorentz group must satisfies the commutation relations
@@ -102,7 +109,7 @@ A Lorentz group must satisfies the commutation relations
 \end{equation}
 %
 where $i, j, k = 1, 2, 3$.
-If the six Lorentz group generators are combined into an antisymmetric second rank tensor generator $M_{\mu\nu}$ where $M_{ij} = \epsilon_{ijk}J_{k}$ and $M_{0i} = -M_{i0} = -K_{i}$\footnote{The $J_{i}$ and $K_{i}$ with $i=1,2,3$ are rotation and boost generators in 3-dimension respectively.} and the generator of the translation groups is $P_{\mu}$, the energy-momentum operator, then the commutation relations of the Poincar\'{e} group are
+If the six Lorentz group generators are combined into an antisymmetric second rank tensor generator $M_{\mu\nu}$ where $M_{ij} = \epsilon_{ijk}J_{k}$ and $M_{0i} = -M_{i0} = -K_{i}$\footnote{The $J_{i}$ and $K_{i}$ with $i=1,2,3$ are rotation and boost generators in 3-dimension respectively. And the ladder operators are defined as $J_{i}^{\pm} = \frac{1}{2} (J_{i} \pm i K_{i})$.} and the generator of the translation groups is $P_{\mu}$, the energy-momentum operator, then the commutation relations of the Poincar\'{e} group are
 %
 \begin{align}
 [P_{\mu}, P_{\nu}] &= 0 ,\\
@@ -124,7 +131,14 @@ g_{\mu \nu} =
 \label{eq:susy_metric}
 \end{equation}
 %
-A general spin 1/2 particle state, $\chi$, can be expressed as a \textit{spinor} in the SUSY using two-component spin up $\chi_{+}$ and spin down $\chi_{-}$ column matrices
+
+%%%
+%%%
+%%%
+
+\subsubsection{Spinor}
+\label{subsubsec:susy_spinor}
+A general spin $\frac{1}{2}$ particle state, $\chi$, can be expressed as a \textit{spinor} in the SUSY using two-component spin up $\chi_{+}$ and spin down $\chi_{-}$ column matrices
 %
 \begin{equation}
 \chi = c_{+} \chi_{+} + c_{-} \chi_{-}
@@ -133,7 +147,7 @@ A general spin 1/2 particle state, $\chi$, can be expressed as a \textit{spinor}
 \label{eq:susy_spinor}
 \end{equation}
 %
-The solution of the Dirac equation\footnote{The Dirac equation is $(i \gamma^{\mu} \partial_{\mu} - m)\psi = 0$.}, $\psi_{D}\footnote{The Dirac spinor, $\psi_{D}$, is a four-component field which can be expressed using a four-component matrix.}$, can be expressed using the left-handed and right-handed \textit{Weyl spinors} $\psi_{L}$ and $\psi_{R}$ 
+The solution of the Dirac equation\footnote{The Dirac equation is $(i \gamma^{\mu} \partial_{\mu} - m)\psi = 0$.}, $\psi_{D}\footnote{The Dirac spinor $\psi_{D}$ is a four-component field which can be expressed using a four-component matrix.}$, can be expressed using the left-handed and right-handed \textit{Weyl spinors} $\psi_{L}$ and $\psi_{R}$ 
 %
 \begin{equation}
 \psi_{D} = \left(\begin{matrix}\psi_{1}\\\psi_{2}\\\psi_{3}\\\psi_{4}\end{matrix}\right)
@@ -142,6 +156,26 @@ The solution of the Dirac equation\footnote{The Dirac equation is $(i \gamma^{\m
 \label{eq:susy_Dirac_spinor}
 \end{equation}
 %
+It is convenient to use the Weyl spinors to represent the building blocks for any fermion field.
+The Majorana spinor $\tilde{\psi}_{M}$ is a real solution of Dirac equation.
+It is its own charge conjugate and satisfies the Majorana condition
+%
+\begin{equation}
+\tilde{\psi}_{M} = \tilde{\psi}_{M}^{*}
+\label{eq:susy_majorana_condition}
+\end{equation}
+%
+The Majorana spinor can be expressed in terms of the Weyl spinors
+%
+\begin{equation}
+\psi_{M} = \left(\begin{matrix}\xi_{\alpha}\\\bar{\xi}^{\dot{\alpha}}\end{matrix}\right)
+%= \left(\begin{matrix}\xi_{\alpha}\\0\end{matrix}\right) + \left(\begin{matrix}0\\\bar{\xi}^{\dot{\alpha}}\end{matrix}\right)
+%= \psi_{W,L} + \psi_{W,R}
+\label{eq:susy_majorana_spinor}
+\end{equation}
+%
+where the left-handed Weyl spinor $\xi_{\alpha}$ and the right-handed Weyl spinor $\bar{\xi}^{\dot{\alpha}}$ are the Hermitian conjugate of each other.
+
 
 %%%
 %%%
