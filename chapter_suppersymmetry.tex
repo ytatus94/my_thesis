@@ -176,6 +176,21 @@ The Majorana spinor can be expressed in terms of the Weyl spinors
 %
 where the left-handed Weyl spinor $\xi_{\alpha}$ and the right-handed Weyl spinor $\bar{\xi}^{\dot{\alpha}}$ are the Hermitian conjugate of each other.
 
+%%%
+%%%
+%%%
+
+\subsubsection{Helicity}
+\label{subsubsec:susy_helicity}
+A particle with momentum $\vec{p}$ and angular momentum $\vec{J}$, then the \textit{helicity} is defined as
+%
+\begin{equation}
+h = \vec{J} \cdot \hat{p} = (\vec{L} + \vec{S}) \cdot \hat{p} = \vec{S} \cdot \hat{p}, \quad \hat{p} = \frac{\vec{p}}{|\vec{p}|}
+\label{eq:susy_helicity}
+\end{equation}
+%
+The eigenvalues of $h$ are +1 and -1 corresponding to right-handed and and left-handed eigenstates.
+Although the helicity is rotation invariant but not boost invariant, the helicity of a massless particle moving at the speed of light is Lorentz invariant.
 
 %%%
 %%%
@@ -183,6 +198,104 @@ where the left-handed Weyl spinor $\xi_{\alpha}$ and the right-handed Weyl spino
 
 \subsection{Superspace and superfields}
 \label{subsec:susy_superspace_and_superfields}
+The superspace is composed of the ordinary space-time coordinate and four anticommuting fermonic coordinates $\theta_{\alpha}$ and $\bar{\theta}_{\dot{\alpha}}$ where the spinor indices $\alpha$ and $\dot{\alpha}$ can be 1 or 2. 
+A superfield $S(x^{\mu}, \theta_{\alpha}, \bar{\theta}_{\dot{\alpha}})$ is a function in superspace.
+The general form of a superfield can be expressed in terms of $\theta$ and $\bar{\theta}$
+%
+\begin{equation}
+S(x, \theta, \bar{\theta}) = a + \theta \xi + \bar{\theta} \bar{\chi} + \theta \theta b + \bar{\theta}\bar{\theta}c + \bar{\theta}\bar{\sigma}^{\mu}\theta v_{\nu} + \theta \theta \bar{\theta} \bar{\zeta} + \bar{\theta} \bar{\theta} \theta \eta + \theta \theta \bar{\theta} \bar{\theta} d
+\label{eq:susy_superfield}
+\end{equation}
+%
+where all spinor indices are suppressed.
+The $a, b, c, d$, and $v_{\mu}$ are bosonic fields and $\xi, \bar{\chi}, \bar{\zeta}, \eta$ are fermonic fields which are complex functions of $x^{\mu}$.
+The SUSY generators $Q_{\alpha}$ and $\bar{Q}_{\dot{\alpha}}$ can be expressed as
+%
+\begin{equation}
+Q_{\alpha} = -i \frac{\partial}{\partial \theta^{\alpha}} - \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \partial_{\mu}, \quad
+\bar{Q}_{\dot{\alpha}} = i \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}} + \theta^{\beta} \sigma^{\mu}_{\beta \dot{\alpha}} \partial_{\mu}
+\label{eq:susy_susy_generators}
+\end{equation}
+%
+and the commutation relations are
+%
+\begin{equation}
+\{Q_{\alpha}, \bar{Q}_{\bar{\beta}}\} = -2i \sigma^{\mu}_{\alpha \dot{\beta}} \partial_{\mu}, \quad
+\{Q_{\alpha}, Q_{\beta}\} = \{\bar{Q}_{\dot{\alpha}}, \bar{Q}_{\dot{\beta}}\} = 0
+\label{eq:susy_susy_generator_commutation_relations}
+\end{equation}
+%
+The SUSY covariant derivatives are defined as
+%
+\begin{equation}
+D_{\alpha} = \frac{\partial}{\partial \theta^{\alpha}} + i \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \partial_{\mu}, \quad
+\bar{D}_{\dot{\alpha}} = (D_{\alpha})^{\dagger} = \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}} + i \theta^{\beta} \sigma^{\mu}_{\beta}{\dot{\alpha}} \partial_{\mu}
+\label{eq:susy_susy_covariant_derivatives}
+\end{equation}
+%
+and the commutation relations are
+%
+\begin{equation}
+\{D_{\alpha}, \bar{D}_{\bar{\beta}}\} = 2i \sigma^{\mu}_{\alpha \dot{\beta}} \partial_{\mu}, \quad
+\{D_{\alpha}, D_{\beta}\} = \{\bar{D}_{\dot{\alpha}}, \bar{D}_{\dot{\beta}}\} = 0
+\label{eq:susy_susy_covariant_derivatives_commutation_relations}
+\end{equation}
+%
+The SUSY covariant derivatives anticommute with the SUSY generators\footnote{$\{D_{\alpha}, Q_{\beta}\} = \{D_{\alpha}, \bar{Q}_{\dot{\beta}}\}= \{\bar{D}_{\dot{\alpha}}, Q_{\beta}\} = \{\bar{D}_{\dot{\alpha}}, \bar{Q}_{\dot{\beta}}\} =0$}.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Chiral superfields and vector superfields}
+\label{subsec:susy_chiral_superfields_and_vector_superfields}
+The spin 0 bosons and spin 1/2 fermions are described using the \textit{chiral superfield} and the spin 1 gauge bosons are described using the \textit{vector superfields}. $V(x, \theta, \bar{\theta})$.
+The chiral superfield, $\Phi(x, \theta, \bar{\theta})$, satisfies the condition\footnote{The antichiral superfield satisfies $D_{\alpha}\Phi^{*} = 0$ where $\Phi^{*}$ is the complex conjugate of $\Phi$.}
+%
+\begin{equation}
+\bar{D}_{\dot{\alpha}} \Phi = 0
+\label{eq:susy_chiral_superfield_condition}
+\end{equation}
+%
+If we redefine the new coordinates $(y^{\mu}, \theta)$ and $(\bar{y}^{\mu}, \bar{\theta})$ in the superface\footnote{The chiral coordinate is $(y^{\mu}, \theta)$ and the antichiral coordinate is $(\bar{y}^{\mu}, \bar{\theta})$},
+%
+\begin{equation}
+y^{\mu} = x^{\mu} + i \theta \sigma^{\mu} \bar{\theta}, \quad \bar{y}^{\mu} = x^{\mu} - i \theta \sigma^{\mu} \bar{\theta}
+\label{eq:susy_chiral_coordinate}
+\end{equation}
+%
+then the covariant derivatives become
+%
+\begin{equation}
+D_{\alpha} = \frac{\partial}{\partial \theta^{\alpha}} + 2i \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \frac{\partial}{\partial y^{\mu}}, \quad \bar{D}_{\dot{\alpha}} = \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}}
+\label{eq:susy_chiral_covariant_derivative}
+\end{equation}
+%
+And the general form of a chiral superfield can be expressed in terms of the chiral coordinate $(y^{\mu}, \theta)$ only
+%
+\begin{equation}
+\Phi(y, \theta) = \phi(y) + \sqrt{2} \theta \psi(y) + \theta \theta F(y)
+\label{eq:susy_chiral_superfield_general_form}
+\end{equation}
+%
+The vector superfield, $V$, is a real field\footnote{The vector superfield satisfies $V(x, \theta, \bar{\theta}) = V^{\dagger}(x, \theta, \bar{\theta})$.} and the general form is
+%
+\begin{align}
+V(x, \theta, \bar{\theta}) &= C + i \theta \chi - i \bar{\theta} \bar{\chi} + \theta \sigma^{\mu} \bar{\theta} v_{\mu} + \frac{i}{2} \theta \theta (M + iN) - \frac{i}{2} \bar{\theta} \bar{\theta}(M - iN)\\
+&+ i \theta \theta \bar{\theta} (\bar{\lambda} + \frac{i}{2} \bar{\sigma}^{\mu} \partial_{\mu} \chi) - i \bar{\theta} \bar{\theta} \theta (\lambda - \frac{i}{2} \sigma^{\mu} \partial_{\mu} \bar{\chi}) + \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} (D - \frac{1}{2} \partial^{2} C)
+\label{eq:susy_vector_superfield_general_form}
+\end{align}
+%
+where the $C, M, N, D$ are real scalars, the $\chi, \lambda$ are Weyl spinors, and the $v_{\mu}$ is a vector field.
+By applying the Wess-Zumino gauge, the general form can be reduced into
+%
+\begin{equation}
+V_{WZ} = \theta \sigma^{\mu} \bar{\theta} v_{\mu} + i \theta \theta \bar{\theta} \bar{\lambda} - i \bar{\theta} \bar{\theta} \theta \lambda + \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} D
+\label{eq:susy_vector_superfield_reduced_form}
+\end{equation}
+%
+The non-vanishing power of $V_{WZ}$ is $V^{2}_{WZ} = \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} v_{\mu} v^{\mu}$.
+All the higher power of $V_{WZ}$ are all vanishing $V^{n}_{WZ} = 0, n \ge 3$.
 
 %%%
 %%%
@@ -207,7 +320,25 @@ If the $R$-parity is conserved, SUSY predicts that sparticles are produced in pa
 %%%
 %%%
 
-\subsection{Soft suppersymmetry breaking}
+\subsection{Suppersymmetry breaking}
+\label{sybsec:susy_soft_susy_breaking}
+The supermultiplets are the single particle states in SUSY theory and it corresponds to the irreducible representations of the super-Poincar\'{e} algebra.
+A supermultiplet contains boson and fermion with the same degrees of freedom and all particles in the same supermultiplet have the same mass.
+However, no any sparticles have been observed from the experiments.
+Therefore, the SUSY must be spontaneously broken and the sparticles must be heavier than their SM partners.
+The scalar superpotential $V$ can be represented by the auxiliary fields $F_{i}$ and $D_{a}$
+%
+\begin{equation}
+V = F^{*i}F_{i} + \frac{1}{2} \sum_{a} D^{a} D_{a}
+\label{eq:susy_scalar_superpotential}
+\end{equation}
+%
+A state $|\Omega \rangle$ is called a vacuum state if $E_{\Omega} = \langle \Omega | H | \Omega \rangle = 0$.
+This happens when the potential $V$ has a minimum.
+There are two kinds of vacuums, the true vacuum and the false vacuum which correspond to the global minimum and the local minimum of the scalar potential $V$, respectively.
+For example, when $F_{i} = D_{a} = 0$, then $V = 0$ is a global minimum.
+The $\langle F \rangle = 0$ is called $F$-term breaking and the $\langle D \rangle = 0$ is called $D$-term breaking.
+
 %%%
 %%%
 %%%
@@ -270,22 +401,16 @@ In the chiral supermultiplets, the spin 0 fields are complex scalars and the spi
 \label{tab:susy_particle_contents}
 \end{table}%
 
-
- 
-
 %%%
 %%%
 %%%
 
-\section{}
-\label{sec:susy_}
-
-%%%
-%%%
-%%%
-
-\section{The radiative natural SUSY}
+\section{The radiatively-driven natural SUSY}
 \label{sec:susy_rns}
+The radiatively-driven natural SUSY (RNS)~\cite{Baer:2013xua} allows the masses of $Z$ and Higgs bosons around 100~{\GeV} and the masses of $\tilde{g}$ and $\tilde{q}$ beyond the {\TeV} scale.
+Maintaining the Higgs mass $m_{h} \sim 125$~{\GeV} and the $Z$ boson mass $m_{Z} = 91.2$~{\GeV} and requiring no large cancellations at the electroweak scale, the RNS expects the mass of light higgsinos to be 100 \textendash 300~{\GeV}, the mass of electroweak gauginos to be 300 \textendash 1200~{\GeV}, the masses of $\tilde{g}, \tilde{t}$, and $\tilde{b}$ to be 1 \textendash 4~{\TeV}, and the masses of $\tilde{u}, \tilde{d}, \tilde{s}, \tilde{c}$ exist in the 5 \textendash 30~{\TeV} range.
+
+
 
 %%%
 %%%

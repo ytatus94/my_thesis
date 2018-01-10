@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/10/2018
+* Work on RNS and NUHM2
+* Add Makefile (still working on it)
+
 ### 12/23/2017
 * Work on susy
 
