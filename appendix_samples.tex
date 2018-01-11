@@ -1,0 +1,54 @@
+The Monte Carlo (MC) simulated samples are used to model the SUSY signals and to estimate the SM background.
+The MC samples are processed using a ATLAS detector full simulation or a fast simulation based on {\GEANT}4~\cite{} simulation package.
+The full simulation simulates the detailed properties of the ATLAS detector while the fast simulation uses a parameterized calorimeter response and simulates ID and MS based on {\GEANT}4.
+
+%%%
+%%%
+%%%
+
+\section{Samples used for strong interaction}
+\label{sec:app_samples_strong}
+
+Table~\ref{tab:app_sample_strong} shows the event generator, parton shower, cross-section normalization, PDF set, and the set of tunned parameters for modelling for all samples.
+
+\begin{table}[htp]
+%\begin{center}
+\resizebox{\textwidth}{!}{% <------ Don't forget this %
+\begin{tabular}{cccccc}
+\hline
+\hline
+Physics process & Event generator & Parton shower & Cross-section normalization & PDF set & Set of tunned parameters\\
+\hline
+\hline
+$t\bar{t}+X$\\
+$t\bar{t}W, t\bar{t}Z/\gamma^{*}$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186 & NLO & NNPDF2.3LO & A14\\
+$t\bar{t}H$ & MG5\_{\scriptsize A}MC@NLO 2.3.2 & {\PYTHIA} 8.186 & NLO & NNPDF2.3LO & A14\\
+4$t$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186 & NLO & NNPDF2.3LO & A14\\
+Dibosno\\
+$ZZ, WZ$ & {\SHERPA} 2.2.1 & {\SHERPA} 2.2.1 & NLO & NNPDF2.3LO & {\SHERPA} default\\
+Other (inc. $W^{\pm}W^{\pm}$) & {\SHERPA} 2.1.1 & {\SHERPA} 2.1.1 & NLO & CT10 & {\SHERPA} default\\
+Rare\\
+$t\bar{t}WW, t\bar{t}WZ$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186 & NLO & NNPDF2.3LO & A14\\
+$tZ, tWZ, tt\bar{t}$  & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186 & LO & NNPDF2.3LO & A14\\
+$WH, ZH$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186 & NLO & NNPDF2.3LO & A14\\
+Triboson & {\SHERPA} 2.1.1 & {\SHERPA} 2.1.1 & NLO & CT10 & {\SHERPA} default\\
+\hline
+\hline
+\end{tabular}
+%\end{center}
+}
+\caption{}
+\label{tab:app_sample_strong}
+\end{table}%
+
+
+%%%
+%%%
+%%%
+
+\section{Samples used for weak interaction}
+\label{sec:app_samples}
+
+%%%
+%%%
+%%%

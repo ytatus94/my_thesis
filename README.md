@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/11/2018
+* Add appendix
+
 ### 01/10/2018
 * Work on RNS and NUHM2
 * Add Makefile (still working on it)
