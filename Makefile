@@ -9,6 +9,7 @@ TEX = pdflatex
 BIB = bibtex
 
 all: $(THESIS).pdf
+	acroread $(THESIS).pdf
 
 .PHONY: clean
 

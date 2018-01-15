@@ -212,6 +212,13 @@ Y.~Shadmi.
 \newblock Introduction to supersymmetry.
 \newblock {\em arXiv}, 1708.00772v1, Aug 2017.
 
+\bibitem{Baer:2013xua}
+Howard Baer, Vernon Barger, Peisi Huang, Dan Mickelson, Azar Mustafayev,
+  Warintorn Sreethawong, and Xerxes Tata.
+\newblock {Radiatively-driven natural supersymmetry at the LHC}.
+\newblock {\em JHEP}, 12:013, 2013.
+\newblock [Erratum: JHEP06,053(2015)].
+
 \bibitem{1748-0221-3-08-S08001}
 Lyndon Evans and Philip Bryant.
 \newblock Lhc machine.
@@ -276,5 +283,27 @@ ATLAS muon collaboration.
 The~ATLAS Collaboration.
 \newblock The atlas data acquisition and trigger: concept, design and status.
 \newblock {\em Nucl. Phys. B Proc. Suppl.}, 172:178--182, Oct 2007.
+
+\bibitem{Agostinelli:2002hh}
+S.~Agostinelli et~al.
+\newblock {GEANT4: A Simulation toolkit}.
+\newblock {\em Nucl. Instrum. Meth.}, A506:250--303, 2003.
+
+\bibitem{ATLAS:1300517}
+Coll ATLAS, M~Beckingham, M~Duehrssen, E~Schmidt, M~Shapiro, M~Venturi,
+  J~Virzi, I~Vivarelli, M~Werner, S~Yamamoto, and T~Yamanaka.
+\newblock {The simulation principle and performance of the ATLAS fast
+  calorimeter simulation FastCaloSim}.
+\newblock Technical Report ATL-PHYS-PUB-2010-013, CERN, Geneva, Oct 2010.
+
+\bibitem{Martin:2009iq}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt.
+\newblock {Parton distributions for the LHC}.
+\newblock {\em Eur. Phys. J.}, C63:189--285, 2009.
+
+\bibitem{Lange:2001uf}
+D.~J. Lange.
+\newblock {The EvtGen particle decay simulation package}.
+\newblock {\em Nucl. Instrum. Meth.}, A462:152--155, 2001.
 
 \end{thebibliography}
