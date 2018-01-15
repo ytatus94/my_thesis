@@ -1,6 +1,14 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/15/2018
+* Add introduction
+
+### 01/15/2018
+* Add 3 appendices
+* Add bib for appendix
+* Modify Makefile
+
 ### 01/11/2018
 * Add appendix
 

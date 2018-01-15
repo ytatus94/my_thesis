@@ -10,30 +10,38 @@ The~ATLAS Collaboration.
 \newblock The atlas experiment at the cern large hadron collider.
 \newblock {\em Journal of Instrumentation}, 3(08):S08003, 2008.
 
+\bibitem{Aaboud:2016wna}
+Morad Aaboud et~al.
+\newblock {Dark matter interpretations of ATLAS searches for the electroweak
+  production of supersymmetric particles in $ \sqrt{s}=8 $ TeV proton-proton
+  collisions}.
+\newblock {\em JHEP}, 09:175, 2016.
+
 \bibitem{Ellis:2013jnq}
 John Ellis.
 \newblock Higgs physics.
 \newblock {\em arXiv}, arXiv:1312.5672v1, 2015.
 
 \bibitem{Aad:2012tfa}
-ATLAS Collaboration.
-\newblock Observation of a new particle in the search for the standard model
-  higgs boson with the atlas detector at the lhc.
-\newblock {\em Phys. Lett. B}, 716(1):1--29, Sept 2012.
+Georges Aad et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the ATLAS detector at the LHC}.
+\newblock {\em Phys. Lett.}, B716:1--29, 2012.
 
 \bibitem{Chatrchyan:2012xdj}
-CMS Collaboration.
-\newblock Observation of a new boson at a mass of 125 gev with the cms
-  experiment at the lhc.
-\newblock {\em Phys. Lett. B}, 716(1):30--61, Sept 2012.
+Serguei Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys. Lett.}, B716:30--61, 2012.
 
 \bibitem{Ur0ol}
 
 
 \bibitem{Martin:1997ns}
 Stephen~P. Martin.
-\newblock A supersymmetry primer.
-\newblock {\em arXiv}, hep-ph/9709356, 1997.
+\newblock {A Supersymmetry primer}.
+\newblock 1997.
+\newblock [Adv. Ser. Direct. High Energy Phys.18,1(1998)].
 
 \bibitem{Marcastel:1621583}
 Fabienne Marcastel.
@@ -51,6 +59,68 @@ Nikiforos Nikiforou.
 The~ATLAS Collaboration.
 \newblock The run-2 atlas trigger system.
 \newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, Feb 2016.
+
+\bibitem{Weinberg:1975gm}
+Steven Weinberg.
+\newblock {Implications of Dynamical Symmetry Breaking}.
+\newblock {\em Phys. Rev.}, D13:974--996, 1976.
+\newblock [Addendum: Phys. Rev.D19,1277(1979)].
+
+\bibitem{Gildener:1976ai}
+Eldad Gildener.
+\newblock {Gauge Symmetry Hierarchies}.
+\newblock {\em Phys. Rev.}, D14:1667, 1976.
+
+\bibitem{Susskind:1978ms}
+Leonard Susskind.
+\newblock {Dynamics of Spontaneous Symmetry Breaking in the Weinberg-Salam
+  Theory}.
+\newblock {\em Phys. Rev.}, D20:2619--2625, 1979.
+
+\bibitem{Wess:1973kz}
+J.~Wess and B.~Zumino.
+\newblock {A Lagrangian Model Invariant Under Supergauge Transformations}.
+\newblock {\em Phys. Lett.}, 49B:52, 1974.
+
+\bibitem{Wess:201649}
+J~Wess and B~Zumino.
+\newblock {Supergauge transformations in four dimensions}.
+\newblock {\em Nucl. Phys. B}, 70(CERN-TH-1753. 1):39--50, 1974.
+
+\bibitem{Golfand:1971iw}
+{\relax Yu}.~A. Golfand and E.~P. Likhtman.
+\newblock {Extension of the Algebra of Poincare Group Generators and Violation
+  of p Invariance}.
+\newblock {\em JETP Lett.}, 13:323--326, 1971.
+\newblock [Pisma Zh. Eksp. Teor. Fiz.13,452(1971)].
+
+\bibitem{Fayet:1976et}
+Pierre Fayet.
+\newblock {Supersymmetry and Weak, Electromagnetic and Strong Interactions}.
+\newblock {\em Phys. Lett.}, 64B:159, 1976.
+
+\bibitem{Fayet:1977yc}
+Pierre Fayet.
+\newblock {Spontaneously Broken Supersymmetric Theories of Weak,
+  Electromagnetic and Strong Interactions}.
+\newblock {\em Phys. Lett.}, 69B:489, 1977.
+
+\bibitem{Farrar:1978xj}
+Glennys~R. Farrar and Pierre Fayet.
+\newblock {Phenomenology of the Production, Decay, and Detection of New
+  Hadronic States Associated with Supersymmetry}.
+\newblock {\em Phys. Lett.}, 76B:575--579, 1978.
+
+\bibitem{Barbieri:1987fn}
+Riccardo Barbieri and G.~F. Giudice.
+\newblock {Upper Bounds on Supersymmetric Particle Masses}.
+\newblock {\em Nucl. Phys.}, B306:63--76, 1988.
+
+\bibitem{deCarlos:1993rbr}
+B.~de~Carlos and J.~A. Casas.
+\newblock {One loop analysis of the electroweak breaking in supersymmetric
+  models and the fine tuning problem}.
+\newblock {\em Phys. Lett.}, B309:320--328, 1993.
 
 \bibitem{BF02726525}
 Abdus Salam and J.C. Ward.
