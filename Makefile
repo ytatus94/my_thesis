@@ -15,7 +15,8 @@ all: $(THESIS).pdf
 
 clean:
 #	rm -rf *.aux *.lof *.log *.lot *.toc *.bbl *.blg *.brf *.out *pdf
-	rm -rf *.aux *.lof *.log *.lot *.toc *.bbl *.blg *.brf *.out
+#	rm -rf *.aux *.lof *.log *.lot *.toc *.bbl *.blg *.brf *.out
+	rm -rf *.aux *.lof *.log *.lot *.toc *.blg *.brf *.out
 
 $(THESIS).aux: $(THESIS).tex
 	$(TEX) $(THESIS)
