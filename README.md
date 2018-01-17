@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/17/2018
+* Minor modifications
+
 ### 01/16/2018
 * Finish introduction except the last paragraph.
 

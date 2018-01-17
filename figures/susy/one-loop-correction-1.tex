@@ -1,0 +1,13 @@
+\input{header.tx}
+% KEEP SIZE LOW SO THE LETTERS ARE LARGE
+\begin{fmfgraph*}(100,360)
+
+\fmfleft{i}
+\fmfright{o}
+\fmf{dashes,label=$H$,label.side=left,tension=1.5}{i,v1}
+\fmf{dashes,tension=1.5}{v2,o}
+\fmf{plain,left,label=$f$,label.side=left,tension=0.1}{v1,v2}
+\fmf{plain,left}{v2,v1}
+
+\end{fmfgraph*}
+\input{footer.tx}
