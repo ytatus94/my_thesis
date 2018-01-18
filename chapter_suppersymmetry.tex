@@ -4,7 +4,7 @@ Many different models of new physics were proposed to explain those unanswered q
 Among these new models, the \textit{supersymmetry} (SUSY)~\cite{Wess:1974tw,Lykken:1996xt,Drees:1996ca,Martin:1997ns,Bilal:2001nv,Argyres:2001eva,Peskin:2008nw,CBO9780511619250,Shadmi:2017qdk} wins most physicists' favour.
 The SUSY proposed by Wess and Zumino~\cite{Wess:1974tw} at early 1970s is a symmetry relating bosonic and fermionic degrees of freedom.
 It extends the SM by requiring every SM boson/fermion has a fermonic/bosonic supersymmetric partner and vice versa.
-The reason why physicists favour SUSY is described in Section~\ref{sec:susy_why_susy} and the introduction of the SUSY is given in Section~\ref{sec:susy_intro} and the formulaism is depicted in Section~\ref{sec:susy_}.
+The reason why physicists favour SUSY is described in Section~\ref{sec:susy_why_susy} and the introduction of the SUSY as well as the formulaism are given in Section~\ref{sec:susy_intro}.
 The \textit{Radiative Natural SUSY} (RNS) and the \textit{Non-Universal Higgs Mass model} with two extra parameters (NUHM2) are given in Section~\ref{sec:susy_rns} and ~\ref{sec:susy_nuhm2}, respectively.
 
 %%%
@@ -425,10 +425,57 @@ In the chiral supermultiplets, the spin 0 fields are complex scalars and the spi
 %%%
 %%%
 
-\section{The radiatively-driven natural SUSY}
+\section{The radiative natural SUSY}
 \label{sec:susy_rns}
-The radiatively-driven natural SUSY (RNS)~\cite{Baer:2013xua} allows the masses of $Z$ and Higgs bosons around 100~{\GeV} and the masses of $\tilde{g}$ and $\tilde{q}$ beyond the {\TeV} scale.
-Maintaining the Higgs mass $m_{h} \sim 125$~{\GeV} and the $Z$ boson mass $m_{Z} = 91.2$~{\GeV} and requiring no large cancellations at the electroweak scale, the RNS expects the mass of light higgsinos to be 100 \textendash 300~{\GeV}, the mass of electroweak gauginos to be 300 \textendash 1200~{\GeV}, the masses of $\tilde{g}, \tilde{t}$, and $\tilde{b}$ to be 1 \textendash 4~{\TeV}, and the masses of $\tilde{u}, \tilde{d}, \tilde{s}, \tilde{c}$ exist in the 5 \textendash 30~{\TeV} range.
+The radiative natural SUSY (RNS)~\cite{Baer:2013xua, Baer:2012up, Baer:2012se, Baer:2012cf} maintains the Higgs mass \mh $\sim 125$~{\GeV} and $Z$ boson mass \mZ = 91.2~{\GeV} and requires no large cancellations at the electroweak scale.
+The RNS also expects the light higgsino masses to be 100 $\sim$ 300~{\GeV}, the electroweak gaugino masses 300 $\sim$ 1200~{\GeV}, the masses of $\tilde{g}$, $\tilde{t}$, and $\tilde{b}$ to be 1 $\sim$ 4~{\TeV}, and the masses of $\tilde{u}$, $\tilde{d}$, $\tilde{s}$, $\tilde{c}$ exist in the 5 $\sim$ 30~{\TeV} range.
+In SUSY models, the $Z$ boson mass can be obtained from the minimization condition on the Higgs sector scalar potential
+%
+\begin{equation}
+\frac{m_{Z}^{2}}{2} = \frac{m^{2}_{H_{d}} + \Sigma^{d}_{d} - (m^{2}_{H_{u}} + \Sigma^{u}_{u})\tan^{2}\beta      }{\tan^{2}\beta - 1} - \mu^{2}
+\label{eq:susy_minimization_condition}
+\end{equation}
+%
+where $\Sigma^{d}_{d}$ and $\Sigma^{u}_{u}$ are ratiative corrections including the contributions from various particles and sparticles Yukawa and gauge coulpings to the Higgs sector.
+Requiring no large cancellations means each term on the right-hand-side of Equation~\ref{eq:susy_minimization_condition} have similar order of magnitude camparable to $\frac{m_{Z}^{2}}{2}$.
+Hence, the electroweak fine-tuning (EWFT) is small.
+The EWFT parameter is defined as
+%
+\begin{equation}
+\Delta_{EW} =  max_{i} \frac{|C_{i}|}{(m_{Z}^{2}/2)} 
+\label{eq:susy_ewft}
+\end{equation}
+%
+which depends only on the weak scale parameters of the theory.
+Low $\Delta_{EW}$ value means less fine-tuning.
+For example, $\Delta_{EW} = 1 \sim 30$ correspond to $3 \sim 15 \%$ fine-tuning.
+The $C_{i}$ represents $C_{H_{d}}$, $C_{H_{u}}$, $C_{\mu}$, $C_{\Sigma^{d}_{d}(k)}$, and $C_{\Sigma^{u}_{u}(k)}$
+%
+\begin{align}
+C_{H_{d}} &= \frac{m^{2}_{H_{d}}}{\tan^{2}\beta - 1}\\
+C_{H_{u}} &= \frac{-m^{2}_{H_{u}}\tan^{2}\beta}{\tan^{2}\beta - 1}\\
+C_{\mu} &= -\mu^{2}\\
+C_{\Sigma^{d}_{d}(k)} &= \frac{\Sigma^{d}_{d}}{\tan^{2}\beta - 1}\\
+C_{\Sigma^{u}_{u}(k)} &= \frac{-\Sigma^{u}_{u}\tan^{2}\beta}{\tan^{2}\beta - 1}
+\label{eq:susy_ci}
+\end{align}
+% 
+where $k$ denotes the various loop contributions included in Equation~\ref{eq:susy_minimization_condition}.
+The small EWFT value, $\Delta_{EW} \leq 30$, requires
+%
+\begin{itemize}
+\item The higgsino mass $100 < |\mu| < 300$~{\GeV}. 
+\item $m_{H_{u}}(M_{\text{GUT}}) \sim (1.3 \sim 2) m_{0}$. This leads to $m^{2}_{H_{u}} \sim - \frac{m^{2}_{Z}}{2}$ at the weak scale.
+\item $A_{0} \sim \pm 1.6 m_{0}$. This results in large radiative corrections of $\widetilde{t}_{i}$ whilst maintain \mh to the $\sim$125~{\GeV}.
+\end{itemize}
+%
+In the RNS framework, the masses of the higgsino-like gauginos $\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{0}_{2}$ lie in 100 to 300~{\GeV} and the mass gap between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ is 10 $\sim$ 30~{\GeV}.
+The masses of third generation squarks are $m_{\widetilde{t}_{1}} \sim 1$ to 2~{\TeV} and $m_{\widetilde{t}_{2}}$, $m_{\widetilde{b}_{1}} \sim 2$ to 4~{\TeV}.
+The gluino mass, $m_{\widetilde{g}}$, is about 1 to 5~{\TeV} and the masses of first and second generation sferminos, $m_{\widetilde{q}}, m_{\widetilde{\ell}}$, are about 5 to 10~{\TeV}.
+
+
+
+
 
 
 

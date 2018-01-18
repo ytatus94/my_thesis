@@ -1,27 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{PDG}
-K.A.~Olive et~al (Particle Data~Group).
-\newblock Review of particle physics.
-\newblock {\em Chin. Phys. C}, 38(9):090001, 2014.
-
-\bibitem{1748-0221-3-08-S08003}
-The~ATLAS Collaboration.
-\newblock The atlas experiment at the cern large hadron collider.
-\newblock {\em Journal of Instrumentation}, 3(08):S08003, 2008.
-
-\bibitem{Aaboud:2016wna}
-Morad Aaboud et~al.
-\newblock {Dark matter interpretations of ATLAS searches for the electroweak
-  production of supersymmetric particles in $ \sqrt{s}=8 $ TeV proton-proton
-  collisions}.
-\newblock {\em JHEP}, 09:175, 2016.
-
-\bibitem{Ellis:2013jnq}
-John Ellis.
-\newblock Higgs physics.
-\newblock {\em arXiv}, arXiv:1312.5672v1, 2015.
-
 \bibitem{Aad:2012tfa}
 Georges Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
@@ -33,32 +11,6 @@ Serguei Chatrchyan et~al.
 \newblock {Observation of a new boson at a mass of 125 GeV with the CMS
   experiment at the LHC}.
 \newblock {\em Phys. Lett.}, B716:30--61, 2012.
-
-\bibitem{Ur0ol}
-
-
-\bibitem{Martin:1997ns}
-Stephen~P. Martin.
-\newblock {A Supersymmetry primer}.
-\newblock 1997.
-\newblock [Adv. Ser. Direct. High Energy Phys.18,1(1998)].
-
-\bibitem{Marcastel:1621583}
-Fabienne Marcastel.
-\newblock Cern's accelerator complex. la cha{\^\i}ne des acc{\'e}l{\'e}rateurs
-  du cern.
-\newblock {\em OPEN-PHO-CHART-2013-001}, Oct 2013.
-
-\bibitem{Nikiforou:2013nba}
-Nikiforos Nikiforou.
-\newblock Performance of the atlas liquid argon calorimeter after three years
-  of lhc operation and plans for a future upgrade.
-\newblock {\em arXiv}, arXiv:1306.6756v2, Jun 2013.
-
-\bibitem{Martinez:2016udm}
-The~ATLAS Collaboration.
-\newblock The run-2 atlas trigger system.
-\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, Feb 2016.
 
 \bibitem{Weinberg:1975gm}
 Steven Weinberg.
@@ -94,6 +46,12 @@ J~Wess and B~Zumino.
 \newblock {\em JETP Lett.}, 13:323--326, 1971.
 \newblock [Pisma Zh. Eksp. Teor. Fiz.13,452(1971)].
 
+\bibitem{Martin:1997ns}
+Stephen~P. Martin.
+\newblock {A Supersymmetry primer}.
+\newblock 1997.
+\newblock [Adv. Ser. Direct. High Energy Phys.18,1(1998)].
+
 \bibitem{Fayet:1976et}
 Pierre Fayet.
 \newblock {Supersymmetry and Weak, Electromagnetic and Strong Interactions}.
@@ -110,6 +68,13 @@ Glennys~R. Farrar and Pierre Fayet.
 \newblock {Phenomenology of the Production, Decay, and Detection of New
   Hadronic States Associated with Supersymmetry}.
 \newblock {\em Phys. Lett.}, 76B:575--579, 1978.
+
+\bibitem{Aaboud:2016wna}
+Morad Aaboud et~al.
+\newblock {Dark matter interpretations of ATLAS searches for the electroweak
+  production of supersymmetric particles in $ \sqrt{s}=8 $ TeV proton-proton
+  collisions}.
+\newblock {\em JHEP}, 09:175, 2016.
 
 \bibitem{Barbieri:1987fn}
 Riccardo Barbieri and G.~F. Giudice.
@@ -197,6 +162,11 @@ Emmy Noether.
 \newblock Invariant variation problems.
 \newblock {\em Transport Theory and Statistical Physics}, 1(3):186--207, 1971.
 
+\bibitem{PDG}
+K.A.~Olive et~al (Particle Data~Group).
+\newblock Review of particle physics.
+\newblock {\em Chin. Phys. C}, 38(9):090001, 2014.
+
 \bibitem{BF01351864}
 E.~Fermi.
 \newblock Versuch einer theorie der β-strahlen. i.
@@ -248,6 +218,11 @@ G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble.
 \newblock Global conservation laws and massless particles.
 \newblock {\em Phys. Rev. Lett.}, 13(20):585--587, Nov 1964.
 
+\bibitem{Ellis:2013jnq}
+John Ellis.
+\newblock Higgs physics.
+\newblock {\em arXiv}, arXiv:1312.5672v1, 2015.
+
 \bibitem{PhysLettB.452.28}
 Piotr~H. Chankowskia, John Ellisb, Keith A.Olivec, and Stefan Pokorskia.
 \newblock Cosmological fine tuning, supersymmetry and the gauge hierarchy
@@ -286,6 +261,9 @@ Peter~J. Mohr, Barry~N. Taylor, and David~B. Newell.
 \newblock Codata recommended values of the fundamental physical constants:
   2010.
 \newblock {\em Rev. Mod. Phys.}, 84(4):1527--1605, Nov 2012.
+
+\bibitem{Ur0ol}
+
 
 \bibitem{Wess:1974tw}
 J.~Wess and B.~Zumino.
@@ -334,10 +312,34 @@ Howard Baer, Vernon Barger, Peisi Huang, Dan Mickelson, Azar Mustafayev,
 \newblock {\em JHEP}, 12:013, 2013.
 \newblock [Erratum: JHEP06,053(2015)].
 
+\bibitem{Baer:2012up}
+Howard Baer, Vernon Barger, Peisi Huang, Azar Mustafayev, and Xerxes Tata.
+\newblock {Radiative natural SUSY with a 125 GeV Higgs boson}.
+\newblock {\em Phys. Rev. Lett.}, 109:161802, 2012.
+
+\bibitem{Baer:2012se}
+Howard Baer.
+\newblock {Radiative natural supersymmetry with mixed axion/higgsino cold dark
+  matter}.
+\newblock 2012.
+\newblock [AIP Conf. Proc.1534,39(2012)].
+
+\bibitem{Baer:2012cf}
+Howard Baer, Vernon Barger, Peisi Huang, Dan Mickelson, Azar Mustafayev, and
+  Xerxes Tata.
+\newblock {Radiative natural supersymmetry: Reconciling electroweak fine-tuning
+  and the Higgs boson mass}.
+\newblock {\em Phys. Rev.}, D87(11):115028, 2013.
+
 \bibitem{1748-0221-3-08-S08001}
 Lyndon Evans and Philip Bryant.
 \newblock Lhc machine.
 \newblock {\em Journal of Instrumentation}, 3(08):S08001, 2008.
+
+\bibitem{1748-0221-3-08-S08003}
+The~ATLAS Collaboration.
+\newblock The atlas experiment at the cern large hadron collider.
+\newblock {\em Journal of Instrumentation}, 3(08):S08003, 2008.
 
 \bibitem{1748-0221-3-08-S08004}
 The~CMS Collaboration.
@@ -373,6 +375,12 @@ James Pinfold, R~Soluk, Y~Yao, S~Cecchini, G~Giacomelli, M~Giorgini,
 \newblock {\em CERN-LHCC-2009-006}, CERN-LHCC-2009-006(MoEDAL-TDR-001), Jun
   2009.
 
+\bibitem{Marcastel:1621583}
+Fabienne Marcastel.
+\newblock Cern's accelerator complex. la cha{\^\i}ne des acc{\'e}l{\'e}rateurs
+  du cern.
+\newblock {\em OPEN-PHO-CHART-2013-001}, Oct 2013.
+
 \bibitem{1288863}
 L.~Rossi.
 \newblock The lhc superconducting magnets.
@@ -381,6 +389,12 @@ L.~Rossi.
 
 \bibitem{CERN-COURIER-Sep192008}
 The lhc sees its first circulating beam.
+
+\bibitem{Nikiforou:2013nba}
+Nikiforos Nikiforou.
+\newblock Performance of the atlas liquid argon calorimeter after three years
+  of lhc operation and plans for a future upgrade.
+\newblock {\em arXiv}, arXiv:1306.6756v2, Jun 2013.
 
 \bibitem{Palestini:681459}
 S~Palestini.
@@ -398,6 +412,11 @@ ATLAS muon collaboration.
 The~ATLAS Collaboration.
 \newblock The atlas data acquisition and trigger: concept, design and status.
 \newblock {\em Nucl. Phys. B Proc. Suppl.}, 172:178--182, Oct 2007.
+
+\bibitem{Martinez:2016udm}
+The~ATLAS Collaboration.
+\newblock The run-2 atlas trigger system.
+\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, Feb 2016.
 
 \bibitem{Agostinelli:2002hh}
 S.~Agostinelli et~al.
