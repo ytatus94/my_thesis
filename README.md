@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/19/2018
+* Add NUHM2
+
 ### 01/18/2018
 * Add RNS
 
