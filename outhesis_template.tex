@@ -143,21 +143,20 @@
 %% Put your dedication here. This is completely optional. Delete it if you don't need it.
 \begin{dedication}
 %To my past, present, and future family.
-\begin{quotation}
-\raggedright{\emph{`Blood, sweat \& respect. First two you give, last one you earn.''}} \\
-\raggedleft{- Dwayne Johnson} 
-\end{quotation}
-
+    \begin{quotation}
+        \raggedright{\emph{`Blood, sweat \& respect. First two you give, last one you earn.''}} \\
+        \raggedleft{- Dwayne Johnson} 
+    \end{quotation}
 \end{dedication}
 
 %% Put your acknowledgements here. This is completely optional. Delete it if you don't need it.
 \begin{acknowledgements}
-\input{acknowledgement}
+    \input{acknowledgement}
 \end{acknowledgements}
 
 %% Put your abstract here.
 %\begin{abstract}
-%\input{abstract}
+%   \input{abstract}
 %\end{abstract}
 
 \frontmatter
@@ -195,27 +194,32 @@
 \input{chapter_atlas_experiment}
 
 
-%\chapter{}
-%\label{chapter:}
-%\graphicspath{{figures/}
-%\input{chapter_}
+\chapter{Data set and simulated events}
+\label{chapter:data}
+\graphicspath{figures/data}
+\input{chapter_data}
 
-%\chapter{}
-%\label{chapter:}
-%\graphicspath{{figures/}
-%\input{chapter_}
+\chapter{Event reconstruction and selection}
+\label{chapter:event_reconstruction_and_selection}
+\graphicspath{figures/event_reconstruction}
+\input{chapter_event_reconstruction}
 
-%\chapter{}
-%\label{chapter:}
-%\graphicspath{{figures/}
-%\input{chapter_}
+\chapter{Background estimation}
+\label{chapter:bkg_estimation}
+\graphicspath{figures/bkg_estimation}
+\input{chapter_bkg_estimation}
+
+\chapter{Results}
+\label{chapter:results}
+\graphicspath{figures/results}
+\input{chapter_results}
+
+\chapter{Conclusion}
+\label{chapter:conclusion}
+\graphicspath{figures/conclusion}
+\input{chapter_conclusion}
 
 %\FloatBarrier
-
-%\chapter{}
-%\label{chapter:}
-%\graphicspath{{figures/}
-%\input{chapter_}
 
 %------------------------------------------------------------------------------- 
 \clearpage
@@ -264,7 +268,7 @@
 \bibliographystyle{unsrt}
 %% You need a file named `outhesis_references.bib' to use BibTex here
 %\bibliography{outhesis_references}
-\bibliography{bib_introduction,bib_standard_model,bib_atlas_experiment,bib_susy,bib_appendix}
+\bibliography{bib_introduction,bib_standard_model,bib_atlas_experiment,bib_susy,bib_data,bib_appendix}
 
 
 
@@ -272,4 +276,3 @@
 
 
 \end{document}
-

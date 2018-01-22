@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/22/2018
+* Add samples
+
 ### 01/19/2018
 * Add NUHM2
 

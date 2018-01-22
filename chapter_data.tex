@@ -1,0 +1,116 @@
+This chapter describes the collision data and simulated event samples used in searching for electroweak production of SUSY states in the compressed scenarios.
+The collision data are presented in Sect.~\ref{sec:data_collision_data} and the Monte Carlo (MC) simulated event samples are detailed in Sect.~\ref{sec:data_MC_samples}.
+The samples used for searching the strongly-produced SUSY particles in final states with two same-sign or three lepton and jets (SS/3L+jets) can be found in the App.~\ref{sec:app_samples_strong}.
+
+
+\section{Collision data}
+\label{sec:data_collision_data}
+The $pp$ collision data used in this analysis were collected by the ATLAS detector at $\sqrt{s} = 13$~{\TeV} during 2015 and 2016 at LHC.
+The data corresponds to an integrated luminosity of 36.1 \ifb (3.2 \ifb in 2015 and 32.9 \ifb in 2016) with a combined uncertainty of 2.1\% after applying beam, detector, and data-quality requirements.
+The combined uncertainty is derived following the methodology similar to those described in Ref.~\cite{Aaboud:2016hhf}.
+The average number of $pp$ interactions per bunch crossing (pile-up) is 13.5 in the 2015 data set and is 25 in the 2016 data set.
+The data samples are required to satisfy the following good runs list (GRLs) as recommended by the ATLAS collaboration
+%
+\begin{itemize}
+    \item {\scriptsize \texttt{data15\_13TeV.periodAllYear\_DetStatus-v79-repro20-02\_DQDefects-00-02-02\_PHYS\_StandardGRL\_All\_Good\_25ns.xml}}
+    \item {\scriptsize \texttt{data16\_13TeV.periodAllYear\_DetStatus-v88-pro20-21\_DQDefects-00-02-04\_PHYS\_StandardGRL\_All\_Good\_25ns.xml}}
+\end{itemize}
+%
+Events are selected using different inclusive \met triggers depending on the run period as listed in Table.~\ref{tab:data_triggers}.
+Two new triggers, \texttt{HLT\_mu4\_j125\_xe90\_mht} and \texttt{HLT\_2mu4\_j85\_xe50\_mht}, are developed for compressed scenarios starting from run number 308084.
+However, these new triggers only contribute a small gain compared to the inclusive \met triggers.
+This analysis uses inclusive \met triggers only.
+
+\begin{table}[htp]
+    \begin{center}
+        \begin{tabular}{cc}
+            \hline
+            \hline
+            Run period & \met trigger\\
+            \hline
+            2015 & \texttt{HLT\_xe70\_mht}\\
+            A-D3 & \texttt{HLT\_xe90\_mht\_L1XE50}\\
+            D4-F1 & \texttt{HLT\_xe100\_mht\_L1XE50}\\
+            F1- & \texttt{HLT\_xe110\_mht\_L1XE50}\\
+            \hline
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{The inclusive \met trigger used in this analysis.}
+    \label{tab:data_triggers}
+\end{table}%
+
+%%%
+%%%
+%%%
+
+\section{Monte Carlo simulated event samples}
+\label{sec:data_MC_samples}
+MC samples are used to model the SUSY signals and to estimated the SM background.
+All SM background MC samples were processed through a detailed ATLAS detector simulation based on {\GEANT}4~\cite{Agostinelli:2002hh} and the SUSY signal samples were simulated by a fast simulation (AF2) that parameterizes the calorimeter response~\cite{ATLAS:2010bfa}.
+To simulate the effects of additional $pp$ collisions (pile-up) in the same and nearby bunch crossings, inelastic interactions were generated using the soft QCD processes of {\PYTHIA} 8.186~\cite{Sjostrand:2007gs} with A2 tune~\cite{ATLAS:2012uec} and the MSTW2008LO PDF set~\cite{Martin:2009iq}.
+These MC events were overlaid onto each simulated hard-scatter event and reweighted to match the pile-up conditions observed in the data.
+
+%%%
+%%%
+%%%
+
+\subsection{The SM background samples}
+\label{subsec:data_sm_bkg_samples}
+The {\SHERPA} 2.1.1, 2.2.1, and 2.2.2 ~\cite{Gleisberg:2008ta} were used to produce the $Z^{(*)}/\gamma^{*}$ + jets, diboson, and triboson events.
+The matrix elements (ME) were calculated for up to two partons at next-to-leading order (NLO) and up to four partons at leading order (LO) depending on the process.
+The $Z^{(*)}/\gamma^{*}$ + jets and diboson samples cover the dilepton invarant masses from 0.5~{\GeV} for $Z^{(*)}/\gamma^{*} \to e^{+}e^{-}/\mu^{+}\mu^{-}$ and from 3.8~{\GeV} for $Z^{(*)}/\gamma^{*} \to \tau^{+}\tau^{-}$.
+The {\POWHEG}-Box v1 and v2 interfaced to {\PYTHIA} 6.428 were used to simulated \ttbar and single-top production at NLO in the ME.
+The Higgs boson production were generated using {\POWHEG}-Box v2 interfaced to {\PYTHIA} 8.186.
+A Higgs boson in association with a $W$ or $Z$ boson production was simulated using MG5\_{\scriptsize A}MC@NLO 2.2.2 with {\PYTHIA} 8.186 and the ATLAS A14 tune.
+The processes containing \ttbar and at least one electroweak bosons were produced using MG5\_{\scriptsize A}MC@NLO 2.2.1, 2.2.2, 2.3.2, 2.3.3 with {\PYTHIA} 6.4.28 or 8.186.
+These processes were generated at NLO in the ME except for $t + Z$ and $t +$ \ttbar which were produced at LO.
+Table~\ref{tab:data_mc_samples} summarizes the event generator configurations of the ME, parton shower, PDF set, and the cross-section normalization.
+Except those produced by {\SHERPA} event generator, the \textsc{EVTGEN}\xspace v1.2.0~\cite{Lange:2001uf} was used to model the decay of bottom and charm hadrons in all MC samples.
+
+\begin{table}[ht]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{lllll}
+            \hline
+            \hline
+            Process                     & Matrix element                                      & Parton shower   & PDF set         & Cross-section\\
+            \hline
+            $Z^{(*)}/\gamma^{*}$ + jets & \multicolumn{2}{c}{{\SHERPA} 2.2.1}                                   & NNPDF 3.0 NNLO  & NNLO\\
+            Diboson                     & \multicolumn{2}{c}{{\SHERPA} 2.1.1 / 2.2.1 / 2.2.2}                   & NNPDF 3.0 NNLO  & Generator NLO\\
+            Triboson                    & \multicolumn{2}{c}{{\SHERPA} 2.2.1}                                   & NNPDF 3.0 NNLO  & Generator LO, NLO\\
+            \hline
+            \ttbar                      & {\POWHEG}-Box v2                                    & {\PYTHIA} 6.428 & NLO CT10        & NNLO + NNLL\\
+            $t$ ($s$-channel)           & {\POWHEG}-Box v1                                    & {\PYTHIA} 6.428 & NLO CT10        & NNLO + NNLL\\
+            $t$ ($t$-channel)           & {\POWHEG}-Box v1                                    & {\PYTHIA} 6.428 & NLO CT10f4      & NNLO + NNLL\\
+            $t + W$                     & {\POWHEG}-Box v1                                    & {\PYTHIA} 6.428 & NLO CT10        & NNLO + NNLL\\
+            \hline
+            $h(\to \ell\ell, WW)$       & {\POWHEG}-Box v2                                    & {\PYTHIA} 8.186 & NLO CTEQ6L1     & NLO\\
+            $h + W/Z$                   & MG5\_{\scriptsize A}MC@NLO 2.2.2                    & {\PYTHIA} 8.186 & NNPDF 2.3 LO    & NLO\\
+            \hline
+            \ttbar + $W/Z/\gamma^{*}$   & MG5\_{\scriptsize A}MC@NLO 2.3.3                    & {\PYTHIA} 8.186 & NNPDF 3.0 LO    & NLO\\
+            \ttbar + $WW$/\ttbar        & MG5\_{\scriptsize A}MC@NLO 2.2.2                    & {\PYTHIA} 8.186 & NNPDF 2.3 LO    & NLO\\
+            $t + Z$                     & MG5\_{\scriptsize A}MC@NLO 2.2.1                    & {\PYTHIA} 6.428 & NNPDF 2.3 LO    & LO\\
+            $t + WZ$                    & MG5\_{\scriptsize A}MC@NLO 2.3.2                    & {\PYTHIA} 8.186 & NNPDF 2.3 LO    & NLO\\
+            $t$ + \ttbar                & MG5\_{\scriptsize A}MC@NLO 2.2.2                    & {\PYTHIA} 8.186 & NNPDF 2.3 LO    & LO\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    %\end{center}
+    \caption{The MC simulated samples of SM background process.}
+    \label{tab:data_mc_samples}
+\end{table}%
+
+%%%
+%%%
+%%%
+
+\subsection{The SUSY signal samples}
+\label{subsec:data_susy_signal_samples}
+The NUHM2 model allows the masses of the Higgs doublets $m_{H_{u}}$ and $m_{H_{d}}$ differ from the universal scalar mass $m_{0}$ at the GUT scale.
+The parameters of the NUHM2 model were fixed to $m_{0} = 5$~{\TeV}, $m_{A} = 1$~{\TeV}, $A_{0} = -1.6 m_{0}$, $\tan\beta = 15$, and $\mu = 150$~{\GeV}.
+The parameter $m_{1/2}$ is a free parameter and it is varied from 350 to 800~{\GeV}.
+These parameters are choosen based on Ref.~\cite{Baer:2013xua}.
+These parameter settings lead to RNS with low EWFT which keeps the Higgs boson mass about 125~{\GeV}, the masses of $\tilde{g}$ and $\tilde{q}$ about {\TeV} scale, and the light Higgsino mass about $\mu$.
+The mass spectra and decay branching ratios were calculated using \textsc{IsAJET}\xspace v7.84~\cite{Baer:1999sp}.

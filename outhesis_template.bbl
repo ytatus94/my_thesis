@@ -442,10 +442,53 @@ The~ATLAS Collaboration.
 \newblock The atlas data acquisition and trigger: concept, design and status.
 \newblock {\em Nucl. Phys. B Proc. Suppl.}, 172:178--182, Oct 2007.
 
+\bibitem{Aaboud:2016hhf}
+Morad Aaboud et~al.
+\newblock {Luminosity determination in pp collisions at $\sqrt{s}$ = 8 TeV
+  using the ATLAS detector at the LHC}.
+\newblock {\em Eur. Phys. J.}, C76(12):653, 2016.
+
 \bibitem{Agostinelli:2002hh}
 S.~Agostinelli et~al.
 \newblock {GEANT4: A Simulation toolkit}.
 \newblock {\em Nucl. Instrum. Meth.}, A506:250--303, 2003.
+
+\bibitem{ATLAS:2010bfa}
+ATLAS Collaboration.
+\newblock {The simulation principle and performance of the ATLAS fast
+  calorimeter simulation FastCaloSim}.
+\newblock 2010.
+
+\bibitem{Sjostrand:2007gs}
+Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
+\newblock {A Brief Introduction to PYTHIA 8.1}.
+\newblock {\em Comput. Phys. Commun.}, 178:852--867, 2008.
+
+\bibitem{ATLAS:2012uec}
+{Summary of ATLAS Pythia 8 tunes}.
+\newblock 2012.
+
+\bibitem{Martin:2009iq}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt.
+\newblock {Parton distributions for the LHC}.
+\newblock {\em Eur. Phys. J.}, C63:189--285, 2009.
+
+\bibitem{Gleisberg:2008ta}
+T.~Gleisberg, Stefan. Hoeche, F.~Krauss, M.~Schonherr, S.~Schumann, F.~Siegert,
+  and J.~Winter.
+\newblock {Event generation with SHERPA 1.1}.
+\newblock {\em JHEP}, 02:007, 2009.
+
+\bibitem{Lange:2001uf}
+D.~J. Lange.
+\newblock {The EvtGen particle decay simulation package}.
+\newblock {\em Nucl. Instrum. Meth.}, A462:152--155, 2001.
+
+\bibitem{Baer:1999sp}
+Howard Baer, Frank~E. Paige, Serban~D. Protopopescu, and Xerxes Tata.
+\newblock {ISAJET 7.48: A Monte Carlo event generator for p p, anti-p, p, and
+  e+ e- reactions}.
+\newblock 1999.
 
 \bibitem{ATLAS:1300517}
 Coll ATLAS, M~Beckingham, M~Duehrssen, E~Schmidt, M~Shapiro, M~Venturi,
@@ -453,15 +496,5 @@ Coll ATLAS, M~Beckingham, M~Duehrssen, E~Schmidt, M~Shapiro, M~Venturi,
 \newblock {The simulation principle and performance of the ATLAS fast
   calorimeter simulation FastCaloSim}.
 \newblock Technical Report ATL-PHYS-PUB-2010-013, CERN, Geneva, Oct 2010.
-
-\bibitem{Martin:2009iq}
-A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt.
-\newblock {Parton distributions for the LHC}.
-\newblock {\em Eur. Phys. J.}, C63:189--285, 2009.
-
-\bibitem{Lange:2001uf}
-D.~J. Lange.
-\newblock {The EvtGen particle decay simulation package}.
-\newblock {\em Nucl. Instrum. Meth.}, A462:152--155, 2001.
 
 \end{thebibliography}

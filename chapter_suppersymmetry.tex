@@ -35,32 +35,31 @@ The Figure~\ref{fig:susy_one_loop_corrections} shows the Feymann diagram for the
 %\end{center}
 %\end{figure}
 \begin{figure}[htbp]
-\begin{center}
-\begin{subfigure}[b]{0.48\textwidth}
-\begin{center}
-\includegraphics[scale=1]{one-loop-correction-1.pdf}
-\caption{}
-\end{center}
-\end{subfigure}%
-\begin{subfigure}[b]{0.48\textwidth}
-\begin{center}
-\includegraphics[scale=1]{one-loop-correction-2.pdf}
-\caption{}
-\end{center}
-\end{subfigure}
-\end{center}
-\caption{The Feymann diagram for the one loop correction to the Higgs squared mass due to (a) a fermion $f$ and (b) a scalar $S$.
-The figure is taken from~\cite{Martin:1997ns}.
-}
-\label{fig:susy_one_loop_corrections}
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \begin{center}
+                \includegraphics[scale=1]{one-loop-correction-1.pdf}
+                \caption{}
+            \end{center}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.48\textwidth}
+            \begin{center}
+                \includegraphics[scale=1]{one-loop-correction-2.pdf}
+                \caption{}
+            \end{center}
+        \end{subfigure}
+    \end{center}
+    \caption{The Feymann diagram for the one loop correction to the Higgs squared mass due to (a) a fermion $f$ and (b) a scalar $S$.
+    The figure is taken from~\cite{Martin:1997ns}.}
+    \label{fig:susy_one_loop_corrections}
 \end{figure}
 
 
 The corrections are
 %
 \begin{align}
-\Delta m_{H}^{2} &= - \frac{|\lambda_{f}^{2}|}{8\pi^{2}} \Lambda_{UV}^{2} + \cdots, \quad \mathrm{fermion}\\
-\Delta m_{H}^{2} &= \frac{\lambda_{S}}{16\pi^{2}} \Lambda_{UV}^{2} + \cdots, \quad \mathrm{boson}
+    \Delta m_{H}^{2} &= - \frac{|\lambda_{f}^{2}|}{8\pi^{2}} \Lambda_{UV}^{2} + \cdots, \quad \mathrm{fermion}\\
+    \Delta m_{H}^{2} &= \frac{\lambda_{S}}{16\pi^{2}} \Lambda_{UV}^{2} + \cdots, \quad \mathrm{boson}
 \end{align}
 %
 where the $\Lambda_{UV}$ is an ultraviolet momentum cutoff which is valid up to the Plank scale $10^{19}$~{\GeV}.
@@ -122,33 +121,34 @@ The Poincar\'{e} group is a product of the Lorentz group and the group of transl
 A Lorentz group must satisfies the commutation relations
 %
 \begin{equation}
-[J^{+}_{i}, J^{+}_{j}] = i \epsilon_{ijk} J^{+}_{k}, \quad 
-[J^{-}_{i}, J^{-}_{j}] = i \epsilon_{ijk} J^{-}_{k}, \quad 
-[J^{+}_{i}, J^{-}_{j}] = 0
-\label{eq:susy_Lorentz_commutation_relations}
+    [J^{+}_{i}, J^{+}_{j}] = i \epsilon_{ijk} J^{+}_{k}, \quad 
+    [J^{-}_{i}, J^{-}_{j}] = i \epsilon_{ijk} J^{-}_{k}, \quad 
+    [J^{+}_{i}, J^{-}_{j}] = 0
+    \label{eq:susy_Lorentz_commutation_relations}
 \end{equation}
 %
 where $i, j, k = 1, 2, 3$.
 If the six Lorentz group generators are combined into an antisymmetric second rank tensor generator $M_{\mu\nu}$ where $M_{ij} = \epsilon_{ijk}J_{k}$ and $M_{0i} = -M_{i0} = -K_{i}$\footnote{The $J_{i}$ and $K_{i}$ with $i=1,2,3$ are rotation and boost generators in 3-dimension respectively. And the ladder operators are defined as $J_{i}^{\pm} = \frac{1}{2} (J_{i} \pm i K_{i})$.} and the generator of the translation groups is $P_{\mu}$, the energy-momentum operator, then the commutation relations of the Poincar\'{e} group are
 %
 \begin{align}
-[P_{\mu}, P_{\nu}] &= 0 ,\\
-[M_{\mu \nu}, P_{\lambda}] &= i (g_{\nu \lambda} P_{\mu} - g_{\mu \lambda} P_{\nu}) ,\\
-[M_{\mu \nu}, M_{\rho \sigma}] &= -i (g_{\mu \rho} M_{\nu \sigma} - g_{\mu \sigma} M_{\nu \rho} - g_{\nu \rho} M_{\mu \sigma} + g_{\nu \sigma} M_{\mu \rho}) .
-\label{eq:susy_Poincare_commutation_relations}
+    [P_{\mu}, P_{\nu}] &= 0 ,\\
+    [M_{\mu \nu}, P_{\lambda}] &= i (g_{\nu \lambda} P_{\mu} - g_{\mu \lambda} P_{\nu}) ,\\
+    [M_{\mu \nu}, M_{\rho \sigma}] &= -i (g_{\mu \rho} M_{\nu \sigma} - g_{\mu \sigma} M_{\nu \rho} - g_{\nu \rho} M_{\mu \sigma} + g_{\nu \sigma} M_{\mu \rho}) .
+    \label{eq:susy_Poincare_commutation_relations}
 \end{align}
+%
 where the metric is 
 \begin{equation}
-g_{\mu \nu} =
-\left(
-\begin{array}{cccc}
-1 & 0 & 0 & 0\\
-0 & -1 & 0 & 0\\
-0 & 0 & -1 & 0\\
-0 & 0 & 0 & -1   
-\end{array}
-\right)
-\label{eq:susy_metric}
+    g_{\mu \nu} =
+    \left(
+        \begin{array}{cccc}
+            1 & 0  & 0  & 0\\
+            0 & -1 & 0  & 0\\
+            0 & 0  & -1 & 0\\
+            0 & 0  & 0  & -1   
+        \end{array}
+    \right)
+    \label{eq:susy_metric}
 \end{equation}
 %
 
@@ -161,19 +161,19 @@ g_{\mu \nu} =
 A general spin $\frac{1}{2}$ particle state, $\chi$, can be expressed as a \textit{spinor} in the SUSY using two-component spin up $\chi_{+}$ and spin down $\chi_{-}$ column matrices
 %
 \begin{equation}
-\chi = c_{+} \chi_{+} + c_{-} \chi_{-}
-= c_{+} \left(\begin{matrix}1\\0\end{matrix}\right) + c_{-} \left(\begin{matrix}0\\1\end{matrix}\right)
-= \left(\begin{matrix}c_{+}\\c_{-}\end{matrix}\right)
-\label{eq:susy_spinor}
+    \chi = c_{+} \chi_{+} + c_{-} \chi_{-}
+    = c_{+} \left(\begin{matrix}1\\0\end{matrix}\right) + c_{-} \left(\begin{matrix}0\\1\end{matrix}\right)
+    = \left(\begin{matrix}c_{+}\\c_{-}\end{matrix}\right)
+    \label{eq:susy_spinor}
 \end{equation}
 %
 The solution of the Dirac equation\footnote{The Dirac equation is $(i \gamma^{\mu} \partial_{\mu} - m)\psi = 0$.}, $\psi_{D}\footnote{The Dirac spinor $\psi_{D}$ is a four-component field which can be expressed using a four-component matrix.}$, can be expressed using the left-handed and right-handed \textit{Weyl spinors} $\psi_{L}$ and $\psi_{R}$ 
 %
 \begin{equation}
-\psi_{D} = \left(\begin{matrix}\psi_{1}\\\psi_{2}\\\psi_{3}\\\psi_{4}\end{matrix}\right)
-= \left(\begin{matrix} \left(\begin{matrix}\psi_{1}\\\psi_{2}\end{matrix}\right) \\ \left(\begin{matrix}\psi_{3}\\\psi_{4}\end{matrix}\right) \end{matrix}\right)
-= \left(\begin{matrix}\psi_{L}\\\psi_{R}\end{matrix}\right)
-\label{eq:susy_Dirac_spinor}
+    \psi_{D} = \left(\begin{matrix}\psi_{1}\\\psi_{2}\\\psi_{3}\\\psi_{4}\end{matrix}\right)
+    = \left(\begin{matrix} \left(\begin{matrix}\psi_{1}\\\psi_{2}\end{matrix}\right) \\ \left(\begin{matrix}\psi_{3}\\\psi_{4}\end{matrix}\right) \end{matrix}\right)
+    = \left(\begin{matrix}\psi_{L}\\\psi_{R}\end{matrix}\right)
+    \label{eq:susy_Dirac_spinor}
 \end{equation}
 %
 It is convenient to use the Weyl spinors to represent the building blocks for any fermion field.
@@ -181,17 +181,17 @@ The Majorana spinor $\tilde{\psi}_{M}$ is a real solution of Dirac equation.
 It is its own charge conjugate and satisfies the Majorana condition
 %
 \begin{equation}
-\tilde{\psi}_{M} = \tilde{\psi}_{M}^{*}
-\label{eq:susy_majorana_condition}
+    \tilde{\psi}_{M} = \tilde{\psi}_{M}^{*}
+    \label{eq:susy_majorana_condition}
 \end{equation}
 %
 The Majorana spinor can be expressed in terms of the Weyl spinors
 %
 \begin{equation}
-\psi_{M} = \left(\begin{matrix}\xi_{\alpha}\\\bar{\xi}^{\dot{\alpha}}\end{matrix}\right)
-%= \left(\begin{matrix}\xi_{\alpha}\\0\end{matrix}\right) + \left(\begin{matrix}0\\\bar{\xi}^{\dot{\alpha}}\end{matrix}\right)
-%= \psi_{W,L} + \psi_{W,R}
-\label{eq:susy_majorana_spinor}
+    \psi_{M} = \left(\begin{matrix}\xi_{\alpha}\\\bar{\xi}^{\dot{\alpha}}\end{matrix}\right)
+    %= \left(\begin{matrix}\xi_{\alpha}\\0\end{matrix}\right) + \left(\begin{matrix}0\\\bar{\xi}^{\dot{\alpha}}\end{matrix}\right)
+    %= \psi_{W,L} + \psi_{W,R}
+    \label{eq:susy_majorana_spinor}
 \end{equation}
 %
 where the left-handed Weyl spinor $\xi_{\alpha}$ and the right-handed Weyl spinor $\bar{\xi}^{\dot{\alpha}}$ are the Hermitian conjugate of each other.
@@ -205,8 +205,8 @@ where the left-handed Weyl spinor $\xi_{\alpha}$ and the right-handed Weyl spino
 A particle with momentum $\vec{p}$ and angular momentum $\vec{J}$, then the \textit{helicity} is defined as
 %
 \begin{equation}
-h = \vec{J} \cdot \hat{p} = (\vec{L} + \vec{S}) \cdot \hat{p} = \vec{S} \cdot \hat{p}, \quad \hat{p} = \frac{\vec{p}}{|\vec{p}|}
-\label{eq:susy_helicity}
+    h = \vec{J} \cdot \hat{p} = (\vec{L} + \vec{S}) \cdot \hat{p} = \vec{S} \cdot \hat{p}, \quad \hat{p} = \frac{\vec{p}}{|\vec{p}|}
+    \label{eq:susy_helicity}
 \end{equation}
 %
 The eigenvalues of $h$ are +1 and -1 corresponding to right-handed and and left-handed eigenstates.
@@ -223,8 +223,8 @@ A superfield $S(x^{\mu}, \theta_{\alpha}, \bar{\theta}_{\dot{\alpha}})$ is a fun
 The general form of a superfield can be expressed in terms of $\theta$ and $\bar{\theta}$
 %
 \begin{equation}
-S(x, \theta, \bar{\theta}) = a + \theta \xi + \bar{\theta} \bar{\chi} + \theta \theta b + \bar{\theta}\bar{\theta}c + \bar{\theta}\bar{\sigma}^{\mu}\theta v_{\nu} + \theta \theta \bar{\theta} \bar{\zeta} + \bar{\theta} \bar{\theta} \theta \eta + \theta \theta \bar{\theta} \bar{\theta} d
-\label{eq:susy_superfield}
+    S(x, \theta, \bar{\theta}) = a + \theta \xi + \bar{\theta} \bar{\chi} + \theta \theta b + \bar{\theta}\bar{\theta}c + \bar{\theta}\bar{\sigma}^{\mu}\theta v_{\nu} + \theta \theta \bar{\theta} \bar{\zeta} + \bar{\theta} \bar{\theta} \theta \eta + \theta \theta \bar{\theta} \bar{\theta} d
+    \label{eq:susy_superfield}
 \end{equation}
 %
 where all spinor indices are suppressed.
@@ -232,33 +232,33 @@ The $a, b, c, d$, and $v_{\mu}$ are bosonic fields and $\xi, \bar{\chi}, \bar{\z
 The SUSY generators $Q_{\alpha}$ and $\bar{Q}_{\dot{\alpha}}$ can be expressed as
 %
 \begin{equation}
-Q_{\alpha} = -i \frac{\partial}{\partial \theta^{\alpha}} - \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \partial_{\mu}, \quad
-\bar{Q}_{\dot{\alpha}} = i \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}} + \theta^{\beta} \sigma^{\mu}_{\beta \dot{\alpha}} \partial_{\mu}
-\label{eq:susy_susy_generators}
+    Q_{\alpha} = -i \frac{\partial}{\partial \theta^{\alpha}} - \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \partial_{\mu}, \quad
+    \bar{Q}_{\dot{\alpha}} = i \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}} + \theta^{\beta} \sigma^{\mu}_{\beta \dot{\alpha}} \partial_{\mu}
+    \label{eq:susy_susy_generators}
 \end{equation}
 %
 and the commutation relations are
 %
 \begin{equation}
-\{Q_{\alpha}, \bar{Q}_{\bar{\beta}}\} = -2i \sigma^{\mu}_{\alpha \dot{\beta}} \partial_{\mu}, \quad
-\{Q_{\alpha}, Q_{\beta}\} = \{\bar{Q}_{\dot{\alpha}}, \bar{Q}_{\dot{\beta}}\} = 0
-\label{eq:susy_susy_generator_commutation_relations}
+    \{Q_{\alpha}, \bar{Q}_{\bar{\beta}}\} = -2i \sigma^{\mu}_{\alpha \dot{\beta}} \partial_{\mu}, \quad
+    \{Q_{\alpha}, Q_{\beta}\} = \{\bar{Q}_{\dot{\alpha}}, \bar{Q}_{\dot{\beta}}\} = 0
+    \label{eq:susy_susy_generator_commutation_relations}
 \end{equation}
 %
 The SUSY covariant derivatives are defined as
 %
 \begin{equation}
-D_{\alpha} = \frac{\partial}{\partial \theta^{\alpha}} + i \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \partial_{\mu}, \quad
-\bar{D}_{\dot{\alpha}} = (D_{\alpha})^{\dagger} = \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}} + i \theta^{\beta} \sigma^{\mu}_{\beta}{\dot{\alpha}} \partial_{\mu}
-\label{eq:susy_susy_covariant_derivatives}
+    D_{\alpha} = \frac{\partial}{\partial \theta^{\alpha}} + i \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \partial_{\mu}, \quad
+    \bar{D}_{\dot{\alpha}} = (D_{\alpha})^{\dagger} = \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}} + i \theta^{\beta} \sigma^{\mu}_{\beta}{\dot{\alpha}} \partial_{\mu}
+    \label{eq:susy_susy_covariant_derivatives}
 \end{equation}
 %
 and the commutation relations are
 %
 \begin{equation}
-\{D_{\alpha}, \bar{D}_{\bar{\beta}}\} = 2i \sigma^{\mu}_{\alpha \dot{\beta}} \partial_{\mu}, \quad
-\{D_{\alpha}, D_{\beta}\} = \{\bar{D}_{\dot{\alpha}}, \bar{D}_{\dot{\beta}}\} = 0
-\label{eq:susy_susy_covariant_derivatives_commutation_relations}
+    \{D_{\alpha}, \bar{D}_{\bar{\beta}}\} = 2i \sigma^{\mu}_{\alpha \dot{\beta}} \partial_{\mu}, \quad
+    \{D_{\alpha}, D_{\beta}\} = \{\bar{D}_{\dot{\alpha}}, \bar{D}_{\dot{\beta}}\} = 0
+    \label{eq:susy_susy_covariant_derivatives_commutation_relations}
 \end{equation}
 %
 The SUSY covariant derivatives anticommute with the SUSY generators\footnote{$\{D_{\alpha}, Q_{\beta}\} = \{D_{\alpha}, \bar{Q}_{\dot{\beta}}\}= \{\bar{D}_{\dot{\alpha}}, Q_{\beta}\} = \{\bar{D}_{\dot{\alpha}}, \bar{Q}_{\dot{\beta}}\} =0$}.
@@ -273,45 +273,45 @@ The spin 0 bosons and spin 1/2 fermions are described using the \textit{chiral s
 The chiral superfield, $\Phi(x, \theta, \bar{\theta})$, satisfies the condition\footnote{The antichiral superfield satisfies $D_{\alpha}\Phi^{*} = 0$ where $\Phi^{*}$ is the complex conjugate of $\Phi$.}
 %
 \begin{equation}
-\bar{D}_{\dot{\alpha}} \Phi = 0
-\label{eq:susy_chiral_superfield_condition}
+    \bar{D}_{\dot{\alpha}} \Phi = 0
+    \label{eq:susy_chiral_superfield_condition}
 \end{equation}
 %
 If we redefine the new coordinates $(y^{\mu}, \theta)$ and $(\bar{y}^{\mu}, \bar{\theta})$ in the superface\footnote{The chiral coordinate is $(y^{\mu}, \theta)$ and the antichiral coordinate is $(\bar{y}^{\mu}, \bar{\theta})$},
 %
 \begin{equation}
-y^{\mu} = x^{\mu} + i \theta \sigma^{\mu} \bar{\theta}, \quad \bar{y}^{\mu} = x^{\mu} - i \theta \sigma^{\mu} \bar{\theta}
-\label{eq:susy_chiral_coordinate}
+    y^{\mu} = x^{\mu} + i \theta \sigma^{\mu} \bar{\theta}, \quad \bar{y}^{\mu} = x^{\mu} - i \theta \sigma^{\mu} \bar{\theta}
+    \label{eq:susy_chiral_coordinate}
 \end{equation}
 %
 then the covariant derivatives become
 %
 \begin{equation}
-D_{\alpha} = \frac{\partial}{\partial \theta^{\alpha}} + 2i \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \frac{\partial}{\partial y^{\mu}}, \quad \bar{D}_{\dot{\alpha}} = \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}}
-\label{eq:susy_chiral_covariant_derivative}
+    D_{\alpha} = \frac{\partial}{\partial \theta^{\alpha}} + 2i \sigma^{\mu}_{\alpha \dot{\beta}} \bar{\theta}^{\dot{\beta}} \frac{\partial}{\partial y^{\mu}}, \quad \bar{D}_{\dot{\alpha}} = \frac{\partial}{\partial \bar{\theta}^{\dot{\alpha}}}
+    \label{eq:susy_chiral_covariant_derivative}
 \end{equation}
 %
 And the general form of a chiral superfield can be expressed in terms of the chiral coordinate $(y^{\mu}, \theta)$ only
 %
 \begin{equation}
-\Phi(y, \theta) = \phi(y) + \sqrt{2} \theta \psi(y) + \theta \theta F(y)
-\label{eq:susy_chiral_superfield_general_form}
+    \Phi(y, \theta) = \phi(y) + \sqrt{2} \theta \psi(y) + \theta \theta F(y)
+    \label{eq:susy_chiral_superfield_general_form}
 \end{equation}
 %
 The vector superfield, $V$, is a real field\footnote{The vector superfield satisfies $V(x, \theta, \bar{\theta}) = V^{\dagger}(x, \theta, \bar{\theta})$.} and the general form is
 %
 \begin{align}
-V(x, \theta, \bar{\theta}) &= C + i \theta \chi - i \bar{\theta} \bar{\chi} + \theta \sigma^{\mu} \bar{\theta} v_{\mu} + \frac{i}{2} \theta \theta (M + iN) - \frac{i}{2} \bar{\theta} \bar{\theta}(M - iN)\\
-&+ i \theta \theta \bar{\theta} (\bar{\lambda} + \frac{i}{2} \bar{\sigma}^{\mu} \partial_{\mu} \chi) - i \bar{\theta} \bar{\theta} \theta (\lambda - \frac{i}{2} \sigma^{\mu} \partial_{\mu} \bar{\chi}) + \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} (D - \frac{1}{2} \partial^{2} C)
-\label{eq:susy_vector_superfield_general_form}
+    V(x, \theta, \bar{\theta}) &= C + i \theta \chi - i \bar{\theta} \bar{\chi} + \theta \sigma^{\mu} \bar{\theta} v_{\mu} + \frac{i}{2} \theta \theta (M + iN) - \frac{i}{2} \bar{\theta} \bar{\theta}(M - iN)\\
+    &+ i \theta \theta \bar{\theta} (\bar{\lambda} + \frac{i}{2} \bar{\sigma}^{\mu} \partial_{\mu} \chi) - i \bar{\theta} \bar{\theta} \theta (\lambda - \frac{i}{2} \sigma^{\mu} \partial_{\mu} \bar{\chi}) + \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} (D - \frac{1}{2} \partial^{2} C)
+    \label{eq:susy_vector_superfield_general_form}
 \end{align}
 %
 where the $C, M, N, D$ are real scalars, the $\chi, \lambda$ are Weyl spinors, and the $v_{\mu}$ is a vector field.
 By applying the Wess-Zumino gauge, the general form can be reduced into
 %
 \begin{equation}
-V_{WZ} = \theta \sigma^{\mu} \bar{\theta} v_{\mu} + i \theta \theta \bar{\theta} \bar{\lambda} - i \bar{\theta} \bar{\theta} \theta \lambda + \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} D
-\label{eq:susy_vector_superfield_reduced_form}
+    V_{WZ} = \theta \sigma^{\mu} \bar{\theta} v_{\mu} + i \theta \theta \bar{\theta} \bar{\lambda} - i \bar{\theta} \bar{\theta} \theta \lambda + \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} D
+    \label{eq:susy_vector_superfield_reduced_form}
 \end{equation}
 %
 The non-vanishing power of $V_{WZ}$ is $V^{2}_{WZ} = \frac{1}{2} \theta \theta \bar{\theta} \bar{\theta} v_{\mu} v^{\mu}$.
@@ -328,8 +328,8 @@ Therefore, a new symmetry called $R$-parity is introduced to eliminate the $B$ a
 The $R$-parity is defined as
 %
 \begin{equation}
-R \equiv (-1)^{3(B-L)+2s}
-\label{eq:susy_r_parity}
+    R \equiv (-1)^{3(B-L)+2s}
+    \label{eq:susy_r_parity}
 \end{equation}
 %
 where $s$ is the spin of the particle.
@@ -349,8 +349,8 @@ Therefore, the SUSY must be spontaneously broken and the sparticles must be heav
 The scalar superpotential $V$ can be represented by the auxiliary fields $F_{i}$ and $D_{a}$
 %
 \begin{equation}
-V = F^{*i}F_{i} + \frac{1}{2} \sum_{a} D^{a} D_{a}
-\label{eq:susy_scalar_superpotential}
+    V = F^{*i}F_{i} + \frac{1}{2} \sum_{a} D^{a} D_{a}
+    \label{eq:susy_scalar_superpotential}
 \end{equation}
 %
 A state $|\Omega \rangle$ is called a vacuum state if $E_{\Omega} = \langle \Omega | H | \Omega \rangle = 0$.
@@ -390,35 +390,35 @@ The Higgsinos and gauginos mixing states are two \textit{charginos} $\tilde{\chi
 Table~\ref{tab:susy_particle_contents} shows the particle contents in the MSSM.
 
 \begin{table}[htp]
-%\begin{center}
-\resizebox{\textwidth}{!}{% <------ Don't forget this %
-\begin{tabular}{ccccccc}
-\hline
-\hline
-Supermultiplet & Names & Symbol & spin 0 & spin 1/2 & spin 1 & $SU(3)_{C} \otimes SU(2)_{L} \otimes U(1)_{Y}$\\
-\hline
-\multirow{3}{*}{Chiral} & \multirow{3}{3cm}{squarks, quarks ($\times 3$ families)} &Q & ($\widetilde{u}_{L}$, \quad $\widetilde{d}_{L})$ & $(u_{L}, \quad d_{L})$ & - & $\mathbf{3} \otimes \mathbf{2}\otimes \frac{1}{6}$\\
-& & $\overline{u}$ & $\widetilde{u}^{*}_{R}$ & $u^{\dag}_{R}$ & - & $\overline{\mathbf{3}} \otimes \mathbf{1} \otimes -\frac{2}{3}$\\
-& & $\overline{d}$ & $\widetilde{d}^{*}_{R}$ & $d^{\dag}_{R}$ & - & $\overline{\mathbf{3}} \otimes \mathbf{1} \otimes \frac{1}{3}$\\
-\hline
-\multirow{2}{*}{Chiral} & \multirow{2}{3cm}{sleptons, leptons ($\times 3$ families)} & L & $(\widetilde{\nu}, \quad \widetilde{e}_{L})$ & $(\nu, \quad e_{L})$ & - & $\mathbf{1} \otimes \mathbf{2} \otimes -\frac{1}{2}$\\
-& & $\overline{e}$ & $\widetilde{e}^{*}_{R}$ & $e^{\dag}_{R}$ & - & $\mathbf{1} \otimes \mathbf{1} \otimes 1$\\
-\hline
-\multirow{2}{*}{Chiral}  & \multirow{2}{*}{Higgs, higgsinos} & $H_{u}$ & $(H^{+}_{u}, \quad H^{0}_{u})$ & $(\widetilde{H}^{+}_{u}, \quad \widetilde{H}^{0}_{u})$ & - & $\mathbf{1} \otimes \mathbf{2} \otimes +\frac{1}{2}$\\
-& & $H_{d}$ & $(H^{0}_{d}, \quad H^{-}_{d})$ & $(\widetilde{H}^{0}_{d}, \quad \widetilde{H}^{-}_{d})$ & - & $\mathbf{1} \otimes \mathbf{2} \otimes -\frac{1}{2}$\\
-\hline
-\hline
-\multirow{3}{*}{Gauge} & gluino, gluon & - & - & $\widetilde{g}$ & $g$ & $\mathbf{8} \otimes \mathbf{1} \otimes 0$\\
-& winos, $W$ bosons & - & - & $\widetilde{W}^{\pm}$, $\widetilde{W}^{0}$ & $W^{\pm}$, $W^{0}$ & $\mathbf{1} \otimes \mathbf{3} \otimes 0$\\
-& bino, $B$ boson & - & - & $\widetilde{B}^{0}$ & $B^{0}$ & $\mathbf{1} \otimes \mathbf{1} \otimes 0$\\
-\hline
-\hline
-\end{tabular}
-%\end{center}
-}
-\caption{Chiral supermultiplets and gauge supermultiplets in the MSSM.
-In the chiral supermultiplets, the spin 0 fields are complex scalars and the spin 1/2 fields are left-handed two-component Weyl spinors.}
-\label{tab:susy_particle_contents}
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{ccccccc}
+            \hline
+            \hline
+            Supermultiplet          & Names                                                      & Symbol         & spin 0                                           & spin 1/2                                               & spin 1 & $SU(3)_{C} \otimes SU(2)_{L} \otimes U(1)_{Y}$\\
+            \hline
+            \multirow{3}{*}{Chiral} & \multirow{3}{3cm}{squarks, quarks ($\times 3$ families)}   & Q              & ($\widetilde{u}_{L}$, \quad $\widetilde{d}_{L})$ & $(u_{L}, \quad d_{L})$                                 & -                  & $\mathbf{3} \otimes \mathbf{2}\otimes \frac{1}{6}$\\
+                                    &                                                            & $\overline{u}$ & $\widetilde{u}^{*}_{R}$                          & $u^{\dag}_{R}$                                         & -                  & $\overline{\mathbf{3}} \otimes \mathbf{1} \otimes -\frac{2}{3}$\\
+                                    &                                                            & $\overline{d}$ & $\widetilde{d}^{*}_{R}$                          & $d^{\dag}_{R}$                                         & -                  & $\overline{\mathbf{3}} \otimes \mathbf{1} \otimes \frac{1}{3}$\\
+            \hline
+            \multirow{2}{*}{Chiral} & \multirow{2}{3cm}{sleptons, leptons ($\times 3$ families)} & L              & $(\widetilde{\nu}, \quad \widetilde{e}_{L})$     & $(\nu, \quad e_{L})$                                   & -                  & $\mathbf{1} \otimes \mathbf{2} \otimes -\frac{1}{2}$\\
+                                    &                                                            & $\overline{e}$ & $\widetilde{e}^{*}_{R}$                          & $e^{\dag}_{R}$                                         & -                  & $\mathbf{1} \otimes \mathbf{1} \otimes 1$\\
+            \hline
+            \multirow{2}{*}{Chiral} & \multirow{2}{*}{Higgs, higgsinos}                          & $H_{u}$        & $(H^{+}_{u}, \quad H^{0}_{u})$                   & $(\widetilde{H}^{+}_{u}, \quad \widetilde{H}^{0}_{u})$ & -                  & $\mathbf{1} \otimes \mathbf{2} \otimes +\frac{1}{2}$\\
+                                    &                                                            & $H_{d}$        & $(H^{0}_{d}, \quad H^{-}_{d})$                   & $(\widetilde{H}^{0}_{d}, \quad \widetilde{H}^{-}_{d})$ & -                  & $\mathbf{1} \otimes \mathbf{2} \otimes -\frac{1}{2}$\\
+            \hline
+            \hline
+            \multirow{3}{*}{Gauge}  & gluino, gluon                                              & -              & -                                                & $\widetilde{g}$                                        & $g$                & $\mathbf{8} \otimes \mathbf{1} \otimes 0$\\
+                                    & winos, $W$ bosons                                          & -              & -                                                & $\widetilde{W}^{\pm}$, $\widetilde{W}^{0}$             & $W^{\pm}$, $W^{0}$ & $\mathbf{1} \otimes \mathbf{3} \otimes 0$\\
+                                    & bino, $B$ boson                                            & -              & -                                                & $\widetilde{B}^{0}$                                    & $B^{0}$            & $\mathbf{1} \otimes \mathbf{1} \otimes 0$\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    %\end{center}
+    \caption{Chiral supermultiplets and gauge supermultiplets in the MSSM.
+    In the chiral supermultiplets, the spin 0 fields are complex scalars and the spin 1/2 fields are left-handed two-component Weyl spinors.}
+    \label{tab:susy_particle_contents}
 \end{table}%
 
 %%%
@@ -433,8 +433,8 @@ It also expects the light higgsino masses to be 100 $\sim$ 300~{\GeV}, the elect
 In SUSY models, the $Z$ boson mass can be obtained from the minimization condition on the Higgs sector scalar potential
 %
 \begin{equation}
-\frac{m_{Z}^{2}}{2} = \frac{m^{2}_{H_{d}} + \Sigma^{d}_{d} - (m^{2}_{H_{u}} + \Sigma^{u}_{u})\tan^{2}\beta      }{\tan^{2}\beta - 1} - \mu^{2}
-\label{eq:susy_minimization_condition}
+    \frac{m_{Z}^{2}}{2} = \frac{m^{2}_{H_{d}} + \Sigma^{d}_{d} - (m^{2}_{H_{u}} + \Sigma^{u}_{u})\tan^{2}\beta      }{\tan^{2}\beta - 1} - \mu^{2}
+    \label{eq:susy_minimization_condition}
 \end{equation}
 %
 where $\Sigma^{d}_{d}$ and $\Sigma^{u}_{u}$ are ratiative corrections including the contributions from various particles and sparticles Yukawa and gauge coulpings to the Higgs sector.
@@ -443,8 +443,8 @@ Therefore, no large electroweak fine-tuning (EWFT) is required to obtain \mZ = 9
 The EWFT parameter is defined as
 %
 \begin{equation}
-\Delta_{EW} =  max_{i} \frac{|C_{i}|}{(m_{Z}^{2}/2)} 
-\label{eq:susy_ewft}
+    \Delta_{EW} =  max_{i} \frac{|C_{i}|}{(m_{Z}^{2}/2)} 
+    \label{eq:susy_ewft}
 \end{equation}
 %
 which depends only on the weak scale parameters of the theory.
@@ -453,21 +453,21 @@ For example, $\Delta_{EW} = 1 \sim 30$ correspond to $3 \sim 15 \%$ fine-tuning.
 The $C_{i}$ represents $C_{H_{d}}$, $C_{H_{u}}$, $C_{\mu}$, $C_{\Sigma^{d}_{d}(k)}$, and $C_{\Sigma^{u}_{u}(k)}$
 %
 \begin{align}
-C_{H_{d}} &= \frac{m^{2}_{H_{d}}}{\tan^{2}\beta - 1}\\
-C_{H_{u}} &= \frac{-m^{2}_{H_{u}}\tan^{2}\beta}{\tan^{2}\beta - 1}\\
-C_{\mu} &= -\mu^{2}\\
-C_{\Sigma^{d}_{d}(k)} &= \frac{\Sigma^{d}_{d}}{\tan^{2}\beta - 1}\\
-C_{\Sigma^{u}_{u}(k)} &= \frac{-\Sigma^{u}_{u}\tan^{2}\beta}{\tan^{2}\beta - 1}
-\label{eq:susy_ci}
+    C_{H_{d}} &= \frac{m^{2}_{H_{d}}}{\tan^{2}\beta - 1}\\
+    C_{H_{u}} &= \frac{-m^{2}_{H_{u}}\tan^{2}\beta}{\tan^{2}\beta - 1}\\
+    C_{\mu} &= -\mu^{2}\\
+    C_{\Sigma^{d}_{d}(k)} &= \frac{\Sigma^{d}_{d}}{\tan^{2}\beta - 1}\\
+    C_{\Sigma^{u}_{u}(k)} &= \frac{-\Sigma^{u}_{u}\tan^{2}\beta}{\tan^{2}\beta - 1}
+    \label{eq:susy_ci}
 \end{align}
 % 
 where $k$ denotes the various loop contributions included in Equation~\ref{eq:susy_minimization_condition}.
 In order to get a small EWFT value, $\Delta_{EW} \leq 30$, the RNS has to satisfy
 %
 \begin{itemize}
-\item The light higgsino mass $100 < |\mu| < 300$~{\GeV}. 
-\item $m_{H_{u}}(M_{\text{GUT}}) \sim (1.3 \sim 2) m_{0}$. This leads to $m^{2}_{H_{u}} \sim - \frac{m^{2}_{Z}}{2}$ at the weak scale.
-\item $A_{0} \sim \pm 1.6 m_{0}$. This results in large radiative corrections of $\widetilde{t}_{i}$ whilst maintain \mh to the $\sim$125~{\GeV}.
+    \item The light higgsino mass $100 < |\mu| < 300$~{\GeV}. 
+    \item $m_{H_{u}}(M_{\text{GUT}}) \sim (1.3 \sim 2) m_{0}$. This leads to $m^{2}_{H_{u}} \sim - \frac{m^{2}_{Z}}{2}$ at the weak scale.
+    \item $A_{0} \sim \pm 1.6 m_{0}$. This results in large radiative corrections of $\widetilde{t}_{i}$ whilst maintain \mh to the $\sim$125~{\GeV}.
 \end{itemize}
 %
 In the RNS framework, the masses of the higgsino-like gauginos $\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{0}_{2}$ lie in 100 to 300~{\GeV} and the mass gap between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ is 10 $\sim$ 30~{\GeV}.
@@ -490,28 +490,28 @@ The RNS can be generated from SUSY GUT type models using non-universal Higgs mas
 The NUHM2 decouples the mass parameters $m^{2}_{H_{u}}$ and $m^{2}_{H_{d}}$ at the GUT scale such that
 %
 \begin{equation}
-m^{2}_{H_{u}} \neq m^{2}_{H_{d}} \neq m^{2}_{0}(M_{\text{GUT}})
-\label{eq:susy_nuhm2_decouple}
+    m^{2}_{H_{u}} \neq m^{2}_{H_{d}} \neq m^{2}_{0}(M_{\text{GUT}})
+    \label{eq:susy_nuhm2_decouple}
 \end{equation}
 %
 and uses the weak scale parameters $\mu$ and $m_{A}$ to replace the $m^{2}_{H_{u}}$ and $m^{2}_{H_{d}}$.
 %
 \begin{align}
-\mu^{2} &= \frac{m^{2}_{H_{d}} - m^{2}_{H_{u}}\tan^{2}\beta}{\tan^{2}\beta - 1} - \frac{m^{2}_{Z}}{2}\\
-m^{2}_{A} &= m^{2}_{H_{d}} + m^{2}_{H_{u}} + 2\mu^{2}
-\label{eq:susy_weak_scale_parameters}
+    \mu^{2} &= \frac{m^{2}_{H_{d}} - m^{2}_{H_{u}}\tan^{2}\beta}{\tan^{2}\beta - 1} - \frac{m^{2}_{Z}}{2}\\
+    m^{2}_{A} &= m^{2}_{H_{d}} + m^{2}_{H_{u}} + 2\mu^{2}
+    \label{eq:susy_weak_scale_parameters}
 \end{align}
 %
 If the value of NUHM2 free parameters are chosen as the following ranges
 %
 \begin{itemize}
-\item $m_{0} \sim 1$ to 7~{\TeV},
-\item $m_{1/2} \sim 0.3$ to 1.5~{\TeV},
-\item $A_{0} \sim \pm(1$ to $2) m_{0}$,
-\item $\tan\beta \sim 5$ to 50,
-\item $\mu \sim 100$ to 300~{\GeV},
-\item $m_{A} \sim 1$~{\GeV}
+    \item $m_{0} \sim 1$ to 7~{\TeV},
+    \item $m_{1/2} \sim 0.3$ to 1.5~{\TeV},
+    \item $A_{0} \sim \pm(1$ to $2) m_{0}$,
+    \item $\tan\beta \sim 5$ to 50,
+    \item $\mu \sim 100$ to 300~{\GeV},
+    \item $m_{A} \sim 1$~{\GeV}
 \end{itemize}
 %
 then the low EWFT can be achieved whilst keep all the SUSY spectrum and maintain $123 < m_{H} < 127$~{\GeV}.
-Comparing with the well-known mSUGRA/CMSSM models which have the lowest $\Delta_{EW} \sim 200$, the $\Delta_{EW}$ in the NUHM2 model is about 10 only.  
+Comparing with the well-known mSUGRA/CMSSM models which have the lowest $\Delta_{EW} \sim 200$, the $\Delta_{EW}$ in the NUHM2 model is about 10 only.
