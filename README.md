@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/23/2108
+* Work on samples, almost done but need to insert figures.
+
 ### 01/22/2018
 * Add samples
 
