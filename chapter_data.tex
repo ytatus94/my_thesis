@@ -68,7 +68,7 @@ The Higgs boson production were generated using {\POWHEG}-Box v2 interfaced to {
 A Higgs boson in association with a $W$ or $Z$ boson production was simulated using MG5\_{\scriptsize A}MC@NLO 2.2.2 with {\PYTHIA} 8.186 and the ATLAS A14 tune.
 The processes containing \ttbar and at least one electroweak bosons were produced using MG5\_{\scriptsize A}MC@NLO 2.2.1, 2.2.2, 2.3.2, 2.3.3 with {\PYTHIA} 6.4.28 or 8.186.
 These processes were generated at NLO in the ME except for $t + Z$ and $t +$ \ttbar which were produced at LO.
-Table~\ref{tab:data_mc_samples} summarizes the event generator configurations of the ME, parton shower, PDF set, and the cross-section normalization.
+Table~\ref{tab:data_mc_samples} summarizes the event generator configurations of the ME, parton shower (PS), PDF set, and the cross-section normalization.
 Except those produced by {\SHERPA} event generator, the \textsc{Evtgen}\xspace v1.2.0~\cite{Lange:2001uf} was used to model the decay of bottom and charm hadrons in all MC samples.
 
 \begin{table}[ht]
@@ -116,7 +116,7 @@ Except those produced by {\SHERPA} event generator, the \textsc{Evtgen}\xspace v
 The NUHM2 model allows the masses of the Higgs doublets $m_{H_{u}}$ and $m_{H_{d}}$ differ from the universal scalar mass $m_{0}$ at the GUT scale.
 The parameters of the NUHM2 model were fixed to $m_{0} = 5$~{\TeV}, $m_{A} = 1$~{\TeV}, $A_{0} = -1.6 m_{0}$, $\tan\beta = 15$, $\mu = 150$~{\GeV}, and the $m_{1/2}$ is varied from 350 to 800~{\GeV} as suggested in Ref.~\cite{Baer:2013xua}.
 These parameter settings lead to RNS with low EWFT which keeps the Higgs boson mass about 125~{\GeV}, the masses of $\tilde{g}$ and $\tilde{q}$ about {\TeV} scale, and the light Higgsino mass about $\mu$.
-The mass spectra and decay branching ratios were calculated using \textsc{Isajet}\xspace v7.84~\cite{Baer:1999sp} and the cross-sections were calculated to NLO in the strong coupling constant using \textsc{Prospino}\xspace v2.1~\cite{Beenakker:1999xh}.
+The mass spectra and decay branching ratios were calculated using \textsc{Isajet}\xspace v7.84~\cite{Baer:1999sp} and the cross-sections and the theoretical uncertainties were calculated to NLO using \textsc{Prospino}\xspace v2.1~\cite{Beenakker:1999xh}.
 
 %%%
 %%%
@@ -126,12 +126,12 @@ The mass spectra and decay branching ratios were calculated using \textsc{Isajet
 \label{subsubsec:data_NUHM2_mass_spectra}
 Figure~\ref{fig:data_mass_spectra} shows the mass spectra of the charginos $\widetilde{\chi}^{\pm}_{1,2}$ and neutralinos $\widetilde{\chi}^{0}_{1,2,3,4}$ as a function of $m_{1/2}$ in the NUHM2 model and the mass splitting spectra between electroweakinos as a function of $m_{1/2}$ are shown in Fig.~\ref{fig:data_mass_splitting_spectra}.
 The masses of lower mass electroweakinos $\widetilde{\chi}^{0}_{1,2}$ and $\widetilde{\chi}^{\pm}_{1}$ are roughtly flat when $m_{1/2} > 500$~{\GeV}, however, the masses of higher mass electroweakinos $\widetilde{\chi}^{0}_{3,4}$ and $\widetilde{\chi}^{\pm}_{2}$ increased with $m_{1/2}$.
-The mass differences between the lower mass electroweakinos decrease with $m_{1/2}$ and the mass splitting between $\widetilde{\chi}^{0}_{3}$ and the lower mass chargino $\widetilde{\chi}^{\pm}_{1}$ or neutralinos $\widetilde{\chi}^{0}_{1,2}$ increase with $m_{1/2}$.
+The mass splittings between the lower mass electroweakinos decrease with $m_{1/2}$ and the mass splittings between $\widetilde{\chi}^{0}_{3}$ and the lower mass chargino $\widetilde{\chi}^{\pm}_{1}$ or neutralinos $\widetilde{\chi}^{0}_{1,2}$ increase with $m_{1/2}$.
 In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly in the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$ but it varied such that the mass ratio varies from 1.61 to 1.21 as shown in Table~\ref{tab:data_mass_splitting_ratio}.
 
 \begin{figure}[htbp]
     \begin{center}
-        %\includegraphics[scale=1.0]{}
+        \includegraphics[scale=0.5]{mass_spectra.pdf}
         \caption{The mass spectra of the charginos $\widetilde{\chi}^{\pm}_{1,2}$ and neutralinos $\widetilde{\chi}^{0}_{1,2,3,4}$ as a function of $m_{1/2}$ in the NUHM2 model.
         The $m_{\widetilde{\chi}^{0}_{1}}$, $m_{\widetilde{\chi}^{0}_{2}}$, and $m_{\widetilde{\chi}^{\pm}_{1}}$ are roughtly flat when $m_{1/2} > 500$~{\GeV}.
         The $m_{\widetilde{\chi}^{0}_{3}}$, $m_{\widetilde{\chi}^{0}_{4}}$, and $m_{\widetilde{\chi}^{\pm}_{2}}$ are heavier and increase with $m_{1/2}$.}
@@ -141,10 +141,10 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
 
 \begin{figure}[htbp]
     \begin{center}
-        %\includegraphics[scale=1.0]{}
+        \includegraphics[scale=0.5]{mass_difference.pdf}
         \caption{The mass splitting spectra between charginos and neutralinos in the NUHM2 model.
-        The mass differences between ($\widetilde{\chi}^{0}_{3}$, $\widetilde{\chi}^{0}_{1,2}$) and ($\widetilde{\chi}^{0}_{3}$, $\widetilde{\chi}^{\pm}_{1}$) increase with $m_{1/2}$.
-        The mass differences between ($\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{1}$), ($\widetilde{\chi}^{0}_{2}$, $\widetilde{\chi}^{0}_{1}$), and ($\widetilde{\chi}^{0}_{2}$, $\widetilde{\chi}^{\pm}_{1}$) decress with $m_{1/2}$.}
+        The mass differences $\Delta m(\widetilde{\chi}^{0}_{3}, \widetilde{\chi}^{0}_{1,2})$ and $\Delta m(\widetilde{\chi}^{0}_{3}, \widetilde{\chi}^{\pm}_{1})$ increase with $m_{1/2}$.
+        The mass differences $\Delta m(\widetilde{\chi}^{\pm}_{1}, \widetilde{\chi}^{0}_{1})$, $\Delta m(\widetilde{\chi}^{0}_{2}, \widetilde{\chi}^{0}_{1})$, and $\Delta m(\widetilde{\chi}^{0}_{2}, \widetilde{\chi}^{\pm}_{1})$ decress with $m_{1/2}$.}
         \label{fig:data_mass_splitting_spectra}
     \end{center}
 \end{figure}
@@ -168,7 +168,8 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
             \end{tabular}
         }
     \end{center}
-    \caption{The masses of $\widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2}$, and $\widetilde{\chi}^{\pm}_{1}$ and the ratios of the mass difference between ($m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{\pm}_{1}}$) and ($m_{\widetilde{\chi}^{\pm}_{1}} - m_{\widetilde{\chi}^{0}_{1}}$).}
+    \caption{The masses of $\widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2}$, and $\widetilde{\chi}^{\pm}_{1}$ and the ratios of the mass difference between ($m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{\pm}_{1}}$) and ($m_{\widetilde{\chi}^{\pm}_{1}} - m_{\widetilde{\chi}^{0}_{1}}$).
+    The $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$.}
     \label{tab:data_mass_splitting_ratio}
 \end{table}%
 
@@ -180,19 +181,31 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
 \label{subsubsed:data_NUHM2_cross_sections}
 The electroweakinos are divide into two categories, compressed and accessible, in the NUHM2 model.
 The compressed category contains the lower mass charginos $\widetilde{\chi}^{\pm}_{1}$ and neutralinos $\widetilde{\chi}^{0}_{1,2}$ and the accessible category contains the higher mass charginos $\widetilde{\chi}^{\pm}_{2}$ and neutralinos $\widetilde{\chi}^{0}_{3,4}$.
-Figure~\ref{fig:data_NUHM2_cross_sections} shows the cross-sections for different combinations of electroweakino production and the detail values can be found in App.~\ref{app:cross_sections}.
+Figures~\ref{fig:data_NUHM2_cross_sections_individual} and \ref{fig:data_NUHM2_cross_sections} show the cross-sections for different combinations of electroweakino production and the detail values can be found in App.~\ref{app:cross_sections}.
 The largest cross-section is the compressed + compressed production and is almost independent of $m_{1/2}$.
-The cross-section of compressed + accessible and accessible + accessible productions are much smaller than the compressed + compressed production and they decrese quickly when $m_{1/2}$ increases.
+The cross-section of compressed + accessible and accessible + accessible productions are much smaller than the compressed + compressed production and they decrease quickly when $m_{1/2}$ increases.
 Therefore, only the different combinations of compressed production are considered in this analysis.
 The compressed + compressed production has cross-section about $pb$ scale at 13~{\TeV}, hence the Higgsino analysis is expected to have good sensitivity for NUHM2 model.
 
 \begin{figure}[htbp]
     \begin{center}
-        %\includegraphics[scale=1.0]{}
-        \caption{The NUHM2 cross-sections.
-        The cross-sections of individual combination are presented in dashed lines and the cross-sections for compressed + compressed, compressed + accessible, and accessible + accessible are represented in solid lines.}
-        \label{fig:data_NUHM2_cross_sections}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \begin{center}
+                \includegraphics[scale=0.4]{Xsec_weak_individual.pdf}
+                \caption{}
+                \label{fig:data_NUHM2_cross_sections_individual}
+            \end{center}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.48\textwidth}
+            \begin{center}
+                \includegraphics[scale=0.4]{Xsec_weak.pdf}
+                \caption{}
+                \label{fig:data_NUHM2_cross_sections}
+            \end{center}
+        \end{subfigure}
     \end{center}
+    \caption{The NUHM2 cross-sections for (a) different combinations of compressed + compressed production and (b) all compressed + compressed, compressed + accessible, and accessible + accessible productions.}
+    \label{fig:intro_feynman_diagrams}
 \end{figure}
 
 %%%
@@ -205,7 +218,7 @@ The compressed category contains $\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}
 Therefore, the compressed + compressed productions can be specified by $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{2}$, $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{2}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$.
 Because the highest sensitivity of this analysis is expected using 2 leptons, only the productions containing 2 leptons are considered.
 The $R$-parity conservation requires $\widetilde{\chi}^{0}_{1}$, which is LSP, to be stable, therefore, the $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{1}$ production doesn't pass 2 leptons requirement.
-The cross-section of $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{2}$ production is very low so it can be neglected.
+The cross-section of $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{2}$ production is very small so it can be neglected.
 The $\widetilde{\chi}^{\pm}_{1}$ decays into a $W^{\pm}$ and a $\widetilde{\chi}^{0}_{1}$, therefore, the $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{\pm}_{1}$ doesn't produce 2 leptons in the final state.
 Only the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ productions are consider in this analysis.
 
@@ -215,7 +228,7 @@ Since the $\widetilde{\chi}^{0}_{2} \to \gamma \widetilde{\chi}^{0}_{1}$ has ver
 
 \begin{table}[htb]
     \begin{center}
-        {\scriptsize
+        {\tiny
             \begin{tabular}{lll}
                 \hline
                 \hline
@@ -252,7 +265,7 @@ Since the $\widetilde{\chi}^{0}_{2} \to \gamma \widetilde{\chi}^{0}_{1}$ has ver
             \end{tabular}
         }
     \end{center}
-    \caption{The possible $\widetilde{\chi}^{0}_{2}$ decays in NUHM2 with $m_{1/2}=600$~{\GeV}.
+    \caption{The possible $\widetilde{\chi}^{0}_{2}$ decays in NUHM2 model with $m_{1/2}=600$~{\GeV}.
     The $\widetilde{\chi}_{2}^{0} \to \gamma \widetilde{\chi}^{0}_{1}$ has the lowest branching ratio hence it is not considered in our study.
     The rest of the decays are catogrized into 4 types as shown in the third column.}
     \label{tab:data_NUHM2_n2_decays}
@@ -260,18 +273,18 @@ Since the $\widetilde{\chi}^{0}_{2} \to \gamma \widetilde{\chi}^{0}_{1}$ has ver
 
 The MC samples for the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ generated by $pp$ collision are produced where four kinds of $\widetilde{\chi}^{0}_{2}$ decay are specified to determine the dominant one and the $\widetilde{\chi}^{\pm}_{1}$ decay is assumed to be $\widetilde{\chi}^{\pm}_{1} \to W^{\pm} \widetilde{\chi}^{0}_{1} \to f\bar{f} \widetilde{\chi}^{0}_{1}$.
 Since $\widetilde{\chi}^{0}_{2} \to q\bar{q} \widetilde{\chi}^{0}_{1}$ and $\widetilde{\chi}^{0}_{2} \to \nu\bar{\nu} \widetilde{\chi}^{0}_{1}$ do not satisfy the 2 leptons requirement, the $\widetilde{\chi}^{0}_{2}$ decay should be dominated by $\widetilde{\chi}^{0}_{2} \to W^{\pm} \widetilde{\chi}^{\mp}_{1}$ and $\widetilde{\chi}^{0}_{2} \to \ell^{+}\ell^{-} \widetilde{\chi}^{0}_{1}$.
-Table~\ref{tab:data_nuhm2_n2_decay_efficiency_and_percentage} shows the 2 leptons filter efficiency for the $\widetilde{\chi}^{0}_{2}$ decays considered, the number of events in each decay type, and the percentage in the $\widetilde{\chi}^{0}_{2}$.
+Table~\ref{tab:data_nuhm2_n2_decay_efficiency_and_percentage} shows the 2 leptons filter efficiency for the $\widetilde{\chi}^{0}_{2}$ decays considered, the number of events in each decay type, and the contributions to the whole $\widetilde{\chi}^{0}_{2}$ decay.
 Because the $\tilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \tilde{\chi}^{0}_{1}$ contributes more than 99\%, the other 3 decays can be negelected.
 Although $\tilde{\chi}^{0}_{2} \to q \bar{q} \tilde{\chi}^{0}_{1}$ and $\tilde{\chi}^{0}_{2} \to \nu \bar{\nu} \tilde{\chi}^{0}_{1}$ are expected to contribute nothing, due to the presence of the fake leptons, there are some contributions.
 This is expected, as no requirement on the truth matching was used in the selection.
 
 \begin{table}[htb]
     \begin{center}
-        {\footnotesize
+        {\scriptsize
             \begin{tabular}{cccccc}
                 \hline
                 \hline
-                \multirow{3}{*}{Decay type}                                       & \multirow{3}{*}{$\mathcal{BR}$} & \multicolumn{2}{c}{Filter efficiency}                                                                                  & \multirow{3}{*}{$N_{\    mathrm{event}}$} & \multirow{3}{*}{$N_{\mathrm{event}}/N_{\mathrm{total}}$}\\
+                \multirow{3}{*}{Decay type}                                       & \multirow{3}{*}{$\mathcal{BR}$} & \multicolumn{2}{c}{Filter efficiency}                                                                                  & \multirow{3}{*}{$N_{\mathrm{event}}$} & \multirow{3}{*}{$N_{\mathrm{event}}/N_{\mathrm{total}}$}\\
                                                                                   &                                 & $p p \to \tilde{\chi}^{0}_{2} \tilde{\chi}^{+}_{1}$        & $p p \to \tilde{\chi}^{0}_{2} \tilde{\chi}^{-}_{1}$\\
                                                                                   &                                 & $ \tilde{\chi}^{+}_{1} \to f \bar{f} \tilde{\chi}^{0}_{1}$ & $\tilde{\chi}^{-}_{1} \to f \bar{f} \tilde{\chi}^{0}_{1}$\\
                 \hline
@@ -300,5 +313,59 @@ This is expected, as no requirement on the truth matching was used in the select
 \subsubsection{The NUHM2 generation}
 \label{subsubsec:data_NUHM2_generation}
 The NUHM2 signal events were generated using MG5\_{\scriptsize A}MC@NLO v2.4.2 with NNPDF23LO PDF set up to two extra partons in the ME.
-The {\MADSPIN}~\ref{Artoisenet:2012st} were used to decay the electroweakinos which were required to produce at least two leptons in the final state.
-Then the results were interfaced with {\PYTHIA} v8.186 using the A14 tune to model the parton shower (PS) and hadronization.
+The {\MADSPIN}~\cite{Artoisenet:2012st} were used to decay the electroweakinos which were required to produce at least two leptons in the final state.
+Then the results were interfaced with {\PYTHIA} v8.186 using the A14 tune to model the parton shower and hadronization.
+A filter required 2 leptons of at least 3~{\GeV} and \met $\ge 50$~{\GeV} was added at the generator level.
+Table~\ref{tab:data_NUHM2_mcprod} lists the NUHM2 MC production samples used in this analysis.
+The $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ productions are considered in each $m_{1/2}$ mass point.
+The relative branching ratios were calculated using SUSY-HIT v1.5b~\cite{Djouadi:2006bz} and were used in the event weighting.
+In the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$ productions, the $\widetilde{\chi}^{0}_{2}$ decays via $\widetilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ and the $\widetilde{\chi}^{\pm}_{1}$ decays via $\widetilde{\chi}^{\pm}_{1} \to f\bar{f} \widetilde{\chi}^{0}_{1}$.
+But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ production, the $\widetilde{\chi}^{\pm}_{1}$ decays via $\widetilde{\chi}^{\pm}_{1} \to \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$.
+
+\begin{table}[htb]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        {\tiny
+            \begin{tabular}{llllllll}
+                \hline
+                \hline
+                $m_{1/2}$ [GeV] & DSID   & Production                                         & Cross-section [pb] & Process                                                                 & BF           & Filter Efficiency & Relative uncertainty\\
+                \hline
+                350             & 394305 & $\widetilde{\chi}^{+}_{1}\widetilde{\chi}^{-}_{1}$ & 0.9548695995       & $\widetilde{\chi}^{\pm}_{1} \rightarrow l \nu \widetilde{\chi}^{0}_{1}$ &  0.333257248 &  0.129920         &  0.07280905\\
+                350             & 394306 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{-}_{1}$ & 0.3983657446       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.101384714 &  0.252870         &  0.08599203\\
+                350             & 394307 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{+}_{1}$ & 0.6833463531       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.101384714 &  0.255780         &  0.06443308\\
+                350             & 394308 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{0}_{1}$ & 0.5835187445       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.101384714 &  0.227680         &  0.07193879\\
+                \hline
+                400             & 394309 & $\widetilde{\chi}^{+}_{1}\widetilde{\chi}^{-}_{1}$ & 0.8415837349       & $\widetilde{\chi}^{\pm}_{1} \rightarrow l \nu \widetilde{\chi}^{0}_{1}$ &  0.333237877 &  0.122010         &  0.07397928\\
+                400             & 394310 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{-}_{1}$ & 0.3976839861       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.102934938 &  0.220640         &  0.08518583\\
+                400             & 394311 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{+}_{1}$ & 0.6845201512       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.102934938 &  0.223890         &  0.06476776\\
+                400             & 394312 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{0}_{1}$ & 0.6255603991       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.102934938 &  0.204160         &  0.07158509\\
+                \hline
+                500             & 394313 & $\widetilde{\chi}^{+}_{1}\widetilde{\chi}^{-}_{1}$ & 0.7280789222       & $\widetilde{\chi}^{\pm}_{1} \rightarrow l \nu \widetilde{\chi}^{0}_{1}$ &  0.333195704 &  0.108220         &  0.07328355\\
+                500             & 394314 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{-}_{1}$ & 0.3955900373       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.105384522 &  0.189240         &  0.08416802\\
+                500             & 394315 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{+}_{1}$ & 0.6819165298       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.105384522 &  0.188060         &  0.06356555\\
+                500             & 394316 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{0}_{1}$ & 0.6603094819       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.105384522 &  0.176020         &  0.07005129\\
+                \hline
+                600             & 394317 & $\widetilde{\chi}^{+}_{1}\widetilde{\chi}^{-}_{1}$ & 0.6745140438       & $\widetilde{\chi}^{\pm}_{1} \rightarrow l \nu \widetilde{\chi}^{0}_{1}$ &  0.333158828 &  0.100020         &  0.07398616\\
+                600             & 394318 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{-}_{1}$ & 0.3930396433       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.107603552 &  0.168710         &  0.08337329\\
+                600             & 394319 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{+}_{1}$ & 0.6791453722       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.107603552 &  0.169260         &  0.06375124\\
+                600             & 394320 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{0}_{1}$ & 0.6656504736       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.107603552 &  0.153530         &  0.07047924\\
+                \hline
+                700             & 394321 & $\widetilde{\chi}^{+}_{1}\widetilde{\chi}^{-}_{1}$ & 0.6438838471       & $\widetilde{\chi}^{\pm}_{1} \rightarrow l \nu \widetilde{\chi}^{0}_{1}$ &  0.333131205 &  0.093538         &  0.07295880\\
+                700             & 394322 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{-}_{1}$ & 0.3913281838       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.109700775 &  0.158010         &  0.08575382\\
+                700             & 394323 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{+}_{1}$ & 0.6766070496       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.109700775 &  0.158740         &  0.06427279\\
+                700             & 394324 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{0}_{1}$ & 0.6643270342       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.109700775 &  0.137880         &  0.07021531\\
+                \hline
+                800             & 394325 & $\widetilde{\chi}^{+}_{1}\widetilde{\chi}^{-}_{1}$ & 0.6240319555       & $\widetilde{\chi}^{\pm}_{1} \rightarrow l \nu \widetilde{\chi}^{0}_{1}$ &  0.333112432 &  0.087180         &  0.07242344\\
+                800             & 394326 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{-}_{1}$ & 0.3906074836       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.111642916 &  0.139150         &  0.08243869\\
+                800             & 394327 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{+}_{1}$ & 0.6748686972       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.111642916 &  0.146310         &  0.06282954\\
+                800             & 394328 & $\widetilde{\chi}^{0}_{2}\widetilde{\chi}^{0}_{1}$ & 0.6598118363       & $\widetilde{\chi}^{0}_{2} \rightarrow l l \widetilde{\chi}^{0}_{1}$     &  0.111642916 &  0.128250         &  0.06943069\\
+                \hline
+                \hline
+            \end{tabular}
+        }
+    }
+    %\end{center}
+    \caption{The NUHM2 MC sample dataset ID (DSID), productions, cross-sections, and decay processes and its relevant branghing ratios, the filter efficiencies, and the uncertainties.}
+    \label{tab:data_NUHM2_mcprod}
+\end{table}%

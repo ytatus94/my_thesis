@@ -497,11 +497,16 @@ W.~Beenakker, M.~Klasen, M.~Kramer, T.~Plehn, M.~Spira, and P.~M. Zerwas.
 \newblock {\em Phys. Rev. Lett.}, 83:3780--3783, 1999.
 \newblock [Erratum: Phys. Rev. Lett.100,029901(2008)].
 
-\bibitem{ATLAS:1300517}
-Coll ATLAS, M~Beckingham, M~Duehrssen, E~Schmidt, M~Shapiro, M~Venturi,
-  J~Virzi, I~Vivarelli, M~Werner, S~Yamamoto, and T~Yamanaka.
-\newblock {The simulation principle and performance of the ATLAS fast
-  calorimeter simulation FastCaloSim}.
-\newblock Technical Report ATL-PHYS-PUB-2010-013, CERN, Geneva, Oct 2010.
+\bibitem{Artoisenet:2012st}
+Pierre Artoisenet, Rikkert Frederix, Olivier Mattelaer, and Robbert Rietkerk.
+\newblock {Automatic spin-entangled decays of heavy resonances in Monte Carlo
+  simulations}.
+\newblock {\em JHEP}, 03:015, 2013.
+
+\bibitem{Djouadi:2006bz}
+A.~Djouadi, M.~M. Muhlleitner, and M.~Spira.
+\newblock {Decays of supersymmetric particles: The Program SUSY-HIT
+  (SUspect-SdecaY-Hdecay-InTerface)}.
+\newblock {\em Acta Phys. Polon.}, B38:635--644, 2007.
 
 \end{thebibliography}
