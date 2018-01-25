@@ -424,6 +424,7 @@ Table~\ref{tab:susy_particle_contents} shows the particle contents in the MSSM.
 The radiative natural SUSY (RNS)~\cite{Baer:2013xua, Baer:2012up, Baer:2012se, Baer:2012cf} is based on MSSM and it may be vaild all the way up to the GUT scale\footnote{The GUT scale is about $M_{\text{GUT}} \approx 2 \times 10^{16}$~{\GeV}.}.
 The RNS maintains the Higgs mass \mh $\sim 125$~{\GeV} and $Z$ boson mass \mZ = 91.2~{\GeV} and requires no large cancellations at the electroweak scale.
 It also expects the light higgsino masses to be 100 $\sim$ 300~{\GeV}, the electroweak gaugino masses 300 $\sim$ 1200~{\GeV}, the masses of $\tilde{g}$, $\tilde{t}$, and $\tilde{b}$ to be 1 $\sim$ 4~{\TeV}, and the masses of $\tilde{u}$, $\tilde{d}$, $\tilde{s}$, $\tilde{c}$ exist in the 5 $\sim$ 30~{\TeV} range.
+
 In SUSY models, the $Z$ boson mass can be obtained from the minimization condition on the Higgs sector scalar potential
 %
 \begin{equation}
@@ -433,7 +434,7 @@ In SUSY models, the $Z$ boson mass can be obtained from the minimization conditi
 %
 where $\Sigma^{d}_{d}$ and $\Sigma^{u}_{u}$ are ratiative corrections including the contributions from various particles and sparticles Yukawa and gauge coulpings to the Higgs sector.
 Requiring no large cancellations means each term on the right-hand-side of Equation~\ref{eq:susy_minimization_condition} are individually comparable to the left-hand-side, $m_{Z}^{2}/2$.
-Therefore, no large electroweak fine-tuning (EWFT) is required to obtain \mZ = 91.2~{\GeV}.
+Therefore, no large electroweak fine-tuning (EWFT) is required to obtain \mZ = 91.2~{\GeV} and leads to a model with electroweak naturalness.
 The EWFT parameter is defined as
 %
 \begin{equation}
@@ -443,7 +444,7 @@ The EWFT parameter is defined as
 %
 which depends only on the weak scale parameters of the theory.
 Low $\Delta_{EW}$ value means less fine-tuning.
-For example, $\Delta_{EW} = 1 \sim 30$ correspond to $3 \sim 15 \%$ fine-tuning.
+For example, $\Delta_{EW} = 10 \sim 30$ correspond to $3 \sim 10 \%$ fine-tuning.
 The $C_{i}$ represents $C_{H_{d}}$, $C_{H_{u}}$, $C_{\mu}$, $C_{\Sigma^{d}_{d}(k)}$, and $C_{\Sigma^{u}_{u}(k)}$
 %
 \begin{align}
@@ -464,12 +465,20 @@ In order to get a small EWFT value, $\Delta_{EW} \leq 30$, the RNS has to satisf
     \item $A_{0} \sim \pm 1.6 m_{0}$. This results in large radiative corrections of $\widetilde{t}_{i}$ whilst maintain \mh to the $\sim$125~{\GeV}.
 \end{itemize}
 %
-In the RNS framework, the masses of the higgsino-like gauginos $\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{0}_{2}$ lie in 100 to 300~{\GeV} and the mass gap between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ is 10 $\sim$ 30~{\GeV}.
+In the RNS framework, which allows fine-tining at 5 $\sim$ 10\% level, the masses of the higgsino-like gauginos $\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{0}_{2}$ lie in 100 to 300~{\GeV} and the mass gap between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ is 10 $\sim$ 30~{\GeV}.
 The masses of third generation squarks are $m_{\widetilde{t}_{1}} \sim 1$ to 2~{\TeV} and $m_{\widetilde{t}_{2}}$, $m_{\widetilde{b}_{1}} \sim 2$ to 4~{\TeV}.
 The gluino mass, $m_{\widetilde{g}}$, is about 1 to 5~{\TeV} and the masses of first and second generation sferminos, $m_{\widetilde{q}}, m_{\widetilde{\ell}}$, are about 5 to 10~{\TeV}.
+And the light Higgs scalar mass is keeping at 125~{\GeV}.
+The typical mass spectra of RNS is shown in Fig.~\ref{fig:susy_RNS_mass_spectra}.
 
-
-
+\begin{figure}[htb]
+    \begin{center}
+        \includegraphics[scale=0.5,angle=270]{mass_hierarchy_xerxes_not.pdf}
+        \caption{Typical sparticle mass spectra of RNS.
+        The figure is taken from~\cite{Baer:2013gva}.}
+        \label{fig:susy_RNS_mass_spectra}
+    \end{center}
+\end{figure}
 
 
 
@@ -488,7 +497,7 @@ The NUHM2 decouples the mass parameters $m^{2}_{H_{u}}$ and $m^{2}_{H_{d}}$ at t
     \label{eq:susy_nuhm2_decouple}
 \end{equation}
 %
-and uses the weak scale parameters $\mu$ and $m_{A}$ to replace the $m^{2}_{H_{u}}$ and $m^{2}_{H_{d}}$.
+and it usually uses the weak scale parameters $\mu$ and $m_{A}$ to replace the $m^{2}_{H_{u}}$ and $m^{2}_{H_{d}}$.
 %
 \begin{align}
     \mu^{2} &= \frac{m^{2}_{H_{d}} - m^{2}_{H_{u}}\tan^{2}\beta}{\tan^{2}\beta - 1} - \frac{m^{2}_{Z}}{2}\\

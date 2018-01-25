@@ -2,25 +2,27 @@
 This is repository for my Ph.D. thesis
 
 ### 01/25/2018
-* Change all bib to inspire version
+* Change all bib to inspire version.
+* Finish the RNS section.
+* Work on the NUHM2 section.
 
 ### 01/24/2018
-* Finish chapter 5
+* Finish chapter 5 data set and MC samples.
 
 ### 01/23/2108
-* Work on samples, almost done but need to insert figures.
+* Work on data set and samples, almost done but need to insert figures.
 
 ### 01/22/2018
-* Add samples
+* Add chapter 5 data set and MC samples.
 
 ### 01/19/2018
-* Add NUHM2
+* Add NUHM2 section.
 
 ### 01/18/2018
-* Add RNS
+* Add RNS section.
 
 ### 01/17/2018
-* Minor modifications
+* Minor modifications.
 
 ### 01/16/2018
 * Finish introduction except the last paragraph.
