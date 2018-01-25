@@ -34,10 +34,10 @@ J.~Wess and B.~Zumino.
 \newblock {A Lagrangian Model Invariant Under Supergauge Transformations}.
 \newblock {\em Phys. Lett.}, 49B:52, 1974.
 
-\bibitem{Wess:201649}
-J~Wess and B~Zumino.
-\newblock {Supergauge transformations in four dimensions}.
-\newblock {\em Nucl. Phys. B}, 70(CERN-TH-1753. 1):39--50, 1974.
+\bibitem{Wess:1974tw}
+J.~Wess and B.~Zumino.
+\newblock {Supergauge Transformations in Four-Dimensions}.
+\newblock {\em Nucl. Phys.}, B70:39--50, 1974.
 
 \bibitem{Golfand:1971iw}
 {\relax Yu}.~A. Golfand and E.~P. Likhtman.
@@ -132,102 +132,104 @@ Albert~M Sirunyan et~al.
   multilepton final states in proton-proton collisions at $\sqrt{s}=$ 13 TeV}.
 \newblock 2017.
 
-\bibitem{BF02726525}
-Abdus Salam and J.C. Ward.
-\newblock Weak and electromagnetic interactions.
-\newblock {\em Nuovo Cimento}, 11(4):568--577, Feb 1959.
+\bibitem{Salam:1968rm}
+Abdus Salam.
+\newblock {Weak and Electromagnetic Interactions}.
+\newblock {\em Conf. Proc.}, C680519:367--377, 1968.
 
-\bibitem{0029-55826190469-2}
-Sheldon~L. Glashow.
-\newblock Partial-symmetries of weak interactions.
-\newblock {\em Nuclear Physics}, 22(4):579--588, Feb 1961.
+\bibitem{Glashow:1961tr}
+S.~L. Glashow.
+\newblock {Partial Symmetries of Weak Interactions}.
+\newblock {\em Nucl. Phys.}, 22:579--588, 1961.
 
-\bibitem{PhysRevLett.19.1264}
+\bibitem{Weinberg:1967tq}
 Steven Weinberg.
-\newblock A model of leptons.
-\newblock {\em Phys. Rev. Lett.}, 19(21):1264--1266, Nov 1967.
+\newblock {A Model of Leptons}.
+\newblock {\em Phys. Rev. Lett.}, 19:1264--1266, 1967.
 
 \bibitem{Herrero:1998eq}
 M.~Herrero.
-\newblock The standard model.
+\newblock {The Standard model}.
 \newblock {\em NATO Sci. Ser. C}, 534:1--59, 1999.
 
-\bibitem{CBO9780511791406}
-D.~A.~Greenwood W.~N.~Cottingham.
-\newblock {\em An Introduction to the Standard Model of Particle Physics}.
-\newblock Cambridge University Press, 2 edition, 2007.
+\bibitem{Cottingham:2007zz}
+W.~N. Cottingham and D.~A. Greenwood.
+\newblock {\em {An introduction to the standard model of particle physics}}.
+\newblock Cambridge University Press, 2007.
 
-\bibitem{00411457108231446}
+\bibitem{Noether:1918zz}
 Emmy Noether.
-\newblock Invariant variation problems.
-\newblock {\em Transport Theory and Statistical Physics}, 1(3):186--207, 1971.
+\newblock {Invariant Variation Problems}.
+\newblock {\em Gott. Nachr.}, 1918:235--257, 1918.
+\newblock [Transp. Theory Statist. Phys.1,186(1971)].
 
-\bibitem{PDG}
-K.A.~Olive et~al (Particle Data~Group).
-\newblock Review of particle physics.
-\newblock {\em Chin. Phys. C}, 38(9):090001, 2014.
+\bibitem{Patrignani:2016xqp}
+C.~Patrignani et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
 
-\bibitem{BF01351864}
+\bibitem{Fermi:1934hr}
 E.~Fermi.
-\newblock Versuch einer theorie der β-strahlen. i.
-\newblock {\em Zeitschrift f{\"u}r Physik}, 88(3-4):161--177, Mar 1934.
+\newblock {An attempt of a theory of beta radiation. 1.}
+\newblock {\em Z. Phys.}, 88:161--177, 1934.
 
-\bibitem{PTP.10.581}
-Tadao Nakano and Kazuhiko Nishijima.
-\newblock Charge independence for v-particles.
-\newblock {\em Progress of Theoretical Physics}, 10(5):581--582, 1953.
+\bibitem{Nakano:1953zz}
+T.~Nakano and K.~Nishijima.
+\newblock {Charge Independence for V-particles}.
+\newblock {\em Prog. Theor. Phys.}, 10:581--582, 1953.
 
-\bibitem{BF02748000}
+\bibitem{Gell-Mann:1956iqa}
 M.~Gell-Mann.
-\newblock The interpretation of the new particles as displaced charge
-  multiplets.
-\newblock {\em Nuovo Cim}, 4(2):848--866, Apr 1956.
+\newblock {The interpretation of the new particles as displaced charge
+  multiplets}.
+\newblock {\em Nuovo Cim.}, 4(S2):848--866, 1956.
 
-\bibitem{PTP.49.652}
+\bibitem{Kobayashi:1973fv}
 Makoto Kobayashi and Toshihide Maskawa.
-\newblock Cp-violation in the renormalizable theory of weak interaction.
-\newblock {\em Progress of Theoretical Physics}, 49(2):652--657, Feb 1973.
+\newblock {CP Violation in the Renormalizable Theory of Weak Interaction}.
+\newblock {\em Prog. Theor. Phys.}, 49:652--657, 1973.
 
-\bibitem{PTP.28.870}
+\bibitem{Maki:1962mu}
 Ziro Maki, Masami Nakagawa, and Shoichi Sakata.
-\newblock Remarks on the unified model of elementary particles.
-\newblock {\em Progress of Theoretical Physics}, 28(5):870--880, Nov 1962.
+\newblock {Remarks on the unified model of elementary particles}.
+\newblock {\em Prog. Theor. Phys.}, 28:870--880, 1962.
 
-\bibitem{PhysRev.145.1156}
+\bibitem{Higgs:1966ev}
 Peter~W. Higgs.
-\newblock Spontaneous symmetry breakdown without massless bosons.
-\newblock {\em Phys. Rev.}, 145(4):1156--1163, May 1964.
+\newblock {Spontaneous Symmetry Breakdown without Massless Bosons}.
+\newblock {\em Phys. Rev.}, 145:1156--1163, 1966.
 
-\bibitem{PhysRevLett.13.508}
+\bibitem{Higgs:1964pj}
 Peter~W. Higgs.
-\newblock Broken symmetries and the masses of gauge bosons.
-\newblock {\em Phys. Rev. Lett.}, 13(16):508--509, Oct 1964.
+\newblock {Broken Symmetries and the Masses of Gauge Bosons}.
+\newblock {\em Phys. Rev. Lett.}, 13:508--509, 1964.
 
-\bibitem{PhysLett.12.132}
+\bibitem{Higgs:1964ia}
 Peter~W. Higgs.
-\newblock Broken symmetries, massless particles and gauge fields.
-\newblock {\em Physics Letters}, 12(2):132--133, Sept 1964.
+\newblock {Broken symmetries, massless particles and gauge fields}.
+\newblock {\em Phys. Lett.}, 12:132--133, 1964.
 
-\bibitem{PhysRevLett.13.321}
+\bibitem{Englert:1964et}
 F.~Englert and R.~Brout.
-\newblock Broken symmetry and the mass of gauge vector mesons.
-\newblock {\em Phys. Rev. Lett.}, 13(9):321--323, Aug 1964.
+\newblock {Broken Symmetry and the Mass of Gauge Vector Mesons}.
+\newblock {\em Phys. Rev. Lett.}, 13:321--323, 1964.
 
-\bibitem{PhysRevLett.13.585}
+\bibitem{Guralnik:1964eu}
 G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble.
-\newblock Global conservation laws and massless particles.
-\newblock {\em Phys. Rev. Lett.}, 13(20):585--587, Nov 1964.
+\newblock {Global Conservation Laws and Massless Particles}.
+\newblock {\em Phys. Rev. Lett.}, 13:585--587, 1964.
 
 \bibitem{Ellis:2013jnq}
 John Ellis.
-\newblock Higgs physics.
-\newblock {\em arXiv}, arXiv:1312.5672v1, 2015.
+\newblock {Higgs Physics}.
+\newblock In {\em {Proceedings, 2013 European School of High-Energy Physics
+  (ESHEP 2013): Paradfurdo, Hungary, June 5-18, 2013}}, pages 117--168, 2015.
 
-\bibitem{PhysLettB.452.28}
-Piotr~H. Chankowskia, John Ellisb, Keith A.Olivec, and Stefan Pokorskia.
-\newblock Cosmological fine tuning, supersymmetry and the gauge hierarchy
-  problem.
-\newblock {\em Physics Letters B}, 452(1-2):28--38, Apr 1999.
+\bibitem{Chankowski:1998za}
+Piotr~H. Chankowski, John~R. Ellis, Keith~A. Olive, and Stefan Pokorski.
+\newblock {Cosmological fine tuning, supersymmetry, and the gauge hierarchy
+  problem}.
+\newblock {\em Phys. Lett.}, B452:28--38, 1999.
 
 \bibitem{maarten_brak}
 Maarten~C. Brak.
@@ -235,75 +237,80 @@ Maarten~C. Brak.
   theories.
 \newblock Oct 2004.
 
-\bibitem{arXiv:1212.5225v3}
-WMAP Collaboration.
-\newblock Nine-year wilkinson microwave anisotropy probe (wmap) observations:
-  Final maps and results.
-\newblock {\em arXiv}, arXiv:1212.5225v3 [astro-ph.CO], 2012.
+\bibitem{Bennett:2012zja}
+C.~L. Bennett et~al.
+\newblock {Nine-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations:
+  Final Maps and Results}.
+\newblock {\em Astrophys. J. Suppl.}, 208:20, 2013.
 
 \bibitem{Ade:2013sjv}
 P.~A.~R. Ade et~al.
-\newblock Planck 2013 results. i. overview of products and scientific results.
-\newblock {\em Astron. Astrophys.}, 571, 2014.
+\newblock {Planck 2013 results. I. Overview of products and scientific
+  results}.
+\newblock {\em Astron. Astrophys.}, 571:A1, 2014.
 
-\bibitem{j.physrep.2004.08.031}
+\bibitem{Bertone:2004pz}
 Gianfranco Bertone, Dan Hooper, and Joseph Silk.
-\newblock Particle dark matter: evidence, candidates and constraints.
-\newblock {\em Physics Reports}, 405(5-6):279--390, 2005.
+\newblock {Particle dark matter: Evidence, candidates and constraints}.
+\newblock {\em Phys. Rept.}, 405:279--390, 2005.
 
-\bibitem{0031-9112-37-10-029}
-G.~Ross.
-\newblock Grand unified theories: Frontiers in physics.
-\newblock {\em Physics Bulletin}, 37(10):429, 1986.
+\bibitem{Ross:1985ai}
+Graham~G. Ross.
+\newblock {\em {GRAND UNIFIED THEORIES}}.
+\newblock 1985.
 
-\bibitem{RevModPhys.84.1527}
-Peter~J. Mohr, Barry~N. Taylor, and David~B. Newell.
-\newblock Codata recommended values of the fundamental physical constants:
-  2010.
-\newblock {\em Rev. Mod. Phys.}, 84(4):1527--1605, Nov 2012.
+\bibitem{Mohr:2015ccw}
+Peter~J. Mohr, David~B. Newell, and Barry~N. Taylor.
+\newblock {CODATA Recommended Values of the Fundamental Physical Constants:
+  2014}.
+\newblock {\em Rev. Mod. Phys.}, 88(3):035009, 2016.
 
 \bibitem{Ur0ol}
 
 
-\bibitem{Wess:1974tw}
-J.~Wess and B.~Zumino.
-\newblock Supergauge transformations in four dimensions.
-\newblock {\em Nucl. Phys. B}, 70(1):39--50, Feb 1974.
-
 \bibitem{Lykken:1996xt}
 Joseph~D. Lykken.
-\newblock Introduction to supersymmetry.
-\newblock {\em arXiv}, hep-th/9612114v1, Dec 1996.
+\newblock {Introduction to supersymmetry}.
+\newblock In {\em {Fields, strings and duality. Proceedings, Summer School,
+  Theoretical Advanced Study Institute in Elementary Particle Physics, TASI'96,
+  Boulder, USA, June 2-28, 1996}}, pages 85--153, 1996.
 
 \bibitem{Drees:1996ca}
 Manuel Drees.
-\newblock An introduction to supersymmetry.
-\newblock {\em arXiv}, hep-ph/9611409v1, Nov 1996.
+\newblock {An Introduction to supersymmetry}.
+\newblock In {\em {Current topics in physics. Proceedings, Inauguration
+  Conference of the Asia-Pacific Center for Theoretical Physics (APCTP), Seoul,
+  Korea, June 4-10, 1996. Vol. 1, 2}}, 1996.
 
 \bibitem{Bilal:2001nv}
 Adel Bilal.
-\newblock Introduction to supersymmetry.
-\newblock {\em arXiv}, hep-th/0101055v1, Jan 2001.
+\newblock {Introduction to supersymmetry}.
+\newblock 2001.
 
 \bibitem{Argyres:2001eva}
 Philip~C. Argyres.
-\newblock An introduction to global supersymmetry.
+\newblock {An Introduction to Global Supersymmetry}.
 \newblock 2001.
 
 \bibitem{Peskin:2008nw}
 Michael~E. Peskin.
-\newblock Supersymmetry in elementary particle physics.
-\newblock {\em arXiv}, 0801.1928v1, 2008.
+\newblock {Supersymmetry in Elementary Particle Physics}.
+\newblock In {\em {Proceedings of Theoretical Advanced Study Institute in
+  Elementary Particle Physics : Exploring New Frontiers Using Colliders and
+  Neutrinos (TASI 2006): Boulder, Colorado, June 4-30, 2006}}, pages 609--704,
+  2008.
 
-\bibitem{CBO9780511619250}
-Ian Aitchison.
-\newblock {\em Supersymmetry in Particle Physics}.
-\newblock Cambridge University Press, Sept 2012.
+\bibitem{Aitchison:2005cf}
+Ian J.~R. Aitchison.
+\newblock {Supersymmetry and the MSSM: An Elementary introduction}.
+\newblock 2005.
 
 \bibitem{Shadmi:2017qdk}
 Y.~Shadmi.
-\newblock Introduction to supersymmetry.
-\newblock {\em arXiv}, 1708.00772v1, Aug 2017.
+\newblock {Introduction to Supersymmetry}.
+\newblock In {\em {Proceedings, 2014 European School of High-Energy Physics
+  (ESHEP 2014): Garderen, The Netherlands, June 18 - July 01 2014}}, pages
+  95--123, 2016.
 
 \bibitem{Baer:2013xua}
 Howard Baer, Vernon Barger, Peisi Huang, Dan Mickelson, Azar Mustafayev,
@@ -355,92 +362,83 @@ Howard Baer, Azar Mustafayev, Stefano Profumo, Alexander Belyaev, and Xerxes
   SUSY models with non-universal Higgs masses}.
 \newblock {\em JHEP}, 07:065, 2005.
 
-\bibitem{1748-0221-3-08-S08001}
-Lyndon Evans and Philip Bryant.
-\newblock Lhc machine.
-\newblock {\em Journal of Instrumentation}, 3(08):S08001, 2008.
+\bibitem{Aad:2008zzm}
+G.~Aad et~al.
+\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3:S08003, 2008.
 
-\bibitem{1748-0221-3-08-S08003}
-The~ATLAS Collaboration.
-\newblock The atlas experiment at the cern large hadron collider.
-\newblock {\em Journal of Instrumentation}, 3(08):S08003, 2008.
+\bibitem{Chatrchyan:2008aa}
+S.~Chatrchyan et~al.
+\newblock {The CMS Experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08004, 2008.
 
-\bibitem{1748-0221-3-08-S08004}
-The~CMS Collaboration.
-\newblock The cms experiment at the cern lhc.
-\newblock {\em Journal of Instrumentation}, 3(08):S08004, 2008.
+\bibitem{Aamodt:2008zz}
+K.~Aamodt et~al.
+\newblock {The ALICE experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08002, 2008.
 
-\bibitem{1748-0221-3-08-S08002}
-The~ALICE Collaboration.
-\newblock The alice experiment at the cern lhc.
-\newblock {\em Journal of Instrumentation}, 3(08):S08002, 2008.
+\bibitem{Alves:2008zz}
+A.~Augusto Alves, Jr. et~al.
+\newblock {The LHCb Detector at the LHC}.
+\newblock {\em JINST}, 3:S08005, 2008.
 
-\bibitem{1748-0221-3-08-S08005}
-The~LHCb Collaboration.
-\newblock The lhcb detector at the lhc.
-\newblock {\em Journal of Instrumentation}, 3(08):S08005, 2008.
+\bibitem{Anelli:2008zza}
+G.~Anelli et~al.
+\newblock {The TOTEM experiment at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3:S08007, 2008.
 
-\bibitem{1748-0221-3-08-S08007}
-The~TOTEM Collaboration.
-\newblock The totem experiment at the cern large hadron collider.
-\newblock {\em Journal of Instrumentation}, 3(08):S08007, 2008.
+\bibitem{Adriani:2008zz}
+O.~Adriani et~al.
+\newblock {The LHCf detector at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3:S08006, 2008.
 
-\bibitem{1748-0221-3-08-S08006}
-The~LHCf Collaboration.
-\newblock The lhcf detector at the cern large hadron collider.
-\newblock {\em Journal of Instrumentation}, 3(08):S08006, 2008.
-
-\bibitem{Pinfold:1181486}
-James Pinfold, R~Soluk, Y~Yao, S~Cecchini, G~Giacomelli, M~Giorgini,
-  L~Patrizii, G~Sirri, D~H Lacarr{\`e}re, K~Kinoshita, J~Jakubek, M~Platkevic,
-  S~Posp{\'\i}sil, Z~Vykydal, T~Hott, A~Houdayer, Claude Leroy, J~Swain,
-  D~Felea, D~Hasegan, G~E Pavalas, and V"~Popa.
-\newblock Technical design report of the moedal experiment.
-\newblock {\em CERN-LHCC-2009-006}, CERN-LHCC-2009-006(MoEDAL-TDR-001), Jun
-  2009.
+\bibitem{Pinfold:2009oia}
+James Pinfold et~al.
+\newblock {Technical Design Report of the MoEDAL Experiment}.
+\newblock 2009.
 
 \bibitem{Marcastel:1621583}
 Fabienne Marcastel.
-\newblock Cern's accelerator complex. la cha{\^\i}ne des acc{\'e}l{\'e}rateurs
-  du cern.
-\newblock {\em OPEN-PHO-CHART-2013-001}, Oct 2013.
+\newblock {CERN's Accelerator Complex. La chaîne des accélérateurs du CERN}.
+\newblock Oct 2013.
+\newblock General Photo.
 
-\bibitem{1288863}
+\bibitem{Rossi:2003np}
 L.~Rossi.
-\newblock The lhc superconducting magnets.
-\newblock In {\em Proceedings of the 2003 Particle Accelerator Conference},
-  volume~1, pages 141--145 Vol.1, May 2003.
+\newblock {The LHC superconducting magnets}.
+\newblock {\em Conf. Proc.}, C030512:141, 2003.
 
 \bibitem{CERN-COURIER-Sep192008}
 The lhc sees its first circulating beam.
 
-\bibitem{Nikiforou:2013nba}
-Nikiforos Nikiforou.
-\newblock Performance of the atlas liquid argon calorimeter after three years
-  of lhc operation and plans for a future upgrade.
-\newblock {\em arXiv}, arXiv:1306.6756v2, Jun 2013.
+\bibitem{Strizenec:2014ida}
+P.~Strizenec.
+\newblock {Performance of the ATLAS Liquid Argon Calorimeter after three years
+  of LHC operation and plans for a future upgrade}.
+\newblock {\em JINST}, 9:C09007, 2014.
 
-\bibitem{Palestini:681459}
-S~Palestini.
-\newblock The muon spectrometer of the atlas experiment.
-\newblock Technical Report ATL-MUON-2004-001, CERN, Geneva, Feb 2003.
-\newblock Contribution to the proceedings : 8th Topical Seminar on Innovative
-  Particle and Radiation Detectors, 21-24 Oct. 2002, Siena, Italy.
+\bibitem{Palestini:2003dm}
+S.~Palestini.
+\newblock {The muon spectrometer of the ATLAS experiment}.
+\newblock {\em Nucl. Phys. Proc. Suppl.}, 125:337--345, 2003.
+\newblock [,337(2003)].
 
 \bibitem{Diehl:2009bw}
-ATLAS muon collaboration.
-\newblock Atlas muon detector commissioning.
-\newblock {\em arXiv}, arXiv:0910.2767v1, 2009.
+E.~Diehl.
+\newblock {ATLAS Muon Detector Commissioning}.
+\newblock In {\em {Particles and fields. Proceedings, Meeting of the Division
+  of the American Physical Society, DPF 2009, Detroit, USA, July 26-31, 2009}},
+  2009.
 
 \bibitem{Kordas:2007zz}
-The~ATLAS Collaboration.
-\newblock The atlas data acquisition and trigger: concept, design and status.
-\newblock {\em Nucl. Phys. B Proc. Suppl.}, 172:178--182, Oct 2007.
+K.~Kordas et~al.
+\newblock {The ATLAS Data Acquisition and Trigger: Concept, design and status}.
+\newblock {\em Nucl. Phys. Proc. Suppl.}, 172:178--182, 2007.
 
 \bibitem{Martinez:2016udm}
-The~ATLAS Collaboration.
-\newblock The run-2 atlas trigger system.
-\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, Feb 2016.
+A.~Ruiz Martínez.
+\newblock {The Run-2 ATLAS Trigger System}.
+\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, 2016.
 
 \bibitem{Aaboud:2016hhf}
 Morad Aaboud et~al.
