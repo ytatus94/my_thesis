@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/26/2018
+* Minor modification.
+
 ### 01/25/2018
 * Change all bib to inspire version.
 * Finish the RNS section.
