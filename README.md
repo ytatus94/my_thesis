@@ -1,6 +1,11 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/29/2018
+* Finish NUHM2 section so the SUSY chapter is finished.
+* Add new plots in `figures/`.
+* Work on event reconstruction and selection
+
 ### 01/26/2018
 * Minor modification.
 

@@ -123,7 +123,7 @@ Table~\ref{tab:sm_fundamental_forces} shows the four fundamental forces, the rel
 
 \subsection{Local Gauge Theory}
 \label{subsec:sm_gauge_theory}
-The Lagrangian density of the SM for the free fields\footnote{This is the Lagrangian density of QED. The three terms are fermion kinematic term, photon kinematic term, and interaction, respectively.} listed in the Eq.~\ref{eq:sm_lagrangian} is invariant under local gauge transformation\footnote{In Dirac representation, the four contravariant gamma matrices are $\gamma^{0} = \left(\begin{matrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & -1 & 0\\0 & 0 & 0 & -1\end{matrix}\right)$, $\gamma^{1} = \left(\begin{matrix}0 & 0 & 0 & 1\\0 & 0 & 1 & 0\\0 & -1 & 0 & 0\\-1 & 0 & 0 & 0\end{matrix}\right)$, $\gamma^{2} = \left(\begin{matrix}0 & 0 & 0 & -i\\0 & 0 & i & 0\\0 & i & 0 & 0\\-i & 0 & 0 & 0\end{matrix}\right)$, $\gamma^{3} = \left(\begin{matrix}0 & 0 & 1 & 0\\0 & 0 & 0 & -1\\-1 & 0 & 0 & 0\\0 & 1 & 0 & 0\end{matrix}\right)$}
+The Lagrangian density of the SM for the free fields\footnote{This is the Lagrangian density of QED. The three terms are fermion kinematic term, photon kinematic term, and interaction, respectively.} listed in the Eq.(~\ref{eq:sm_lagrangian}) is invariant under local gauge transformation\footnote{In Dirac representation, the four contravariant gamma matrices are $\gamma^{0} = \left(\begin{matrix}1 & 0 & 0 & 0\\0 & 1 & 0 & 0\\0 & 0 & -1 & 0\\0 & 0 & 0 & -1\end{matrix}\right)$, $\gamma^{1} = \left(\begin{matrix}0 & 0 & 0 & 1\\0 & 0 & 1 & 0\\0 & -1 & 0 & 0\\-1 & 0 & 0 & 0\end{matrix}\right)$, $\gamma^{2} = \left(\begin{matrix}0 & 0 & 0 & -i\\0 & 0 & i & 0\\0 & i & 0 & 0\\-i & 0 & 0 & 0\end{matrix}\right)$, $\gamma^{3} = \left(\begin{matrix}0 & 0 & 1 & 0\\0 & 0 & 0 & -1\\-1 & 0 & 0 & 0\\0 & 1 & 0 & 0\end{matrix}\right)$}
 %
 \begin{equation}
     \mathcal{L} = \bar{\psi}(i\gamma^{\mu}\partial_{\mu} - m)\psi + e\bar{\psi}\gamma^{\mu}\psi\bm{A}_{\mu} - \frac{1}{4}\bm{F}_{\mu\nu}\bm{F}^{\mu\nu}
@@ -443,7 +443,7 @@ In the Fig.~\ref{fig:sm_discovery_of_Higgs} shows the local $p$-value as a funct
             \end{center}
         \end{subfigure}
     \end{center}
-    \caption{The observed local $p$-value as a function of $m_{H}$ for the ATLAS~\cite{Aad:2012tfa} and CMS~\cite{Chatrchyan:2012xdj} experiment, respectively.
+    \caption{The observed local $p$-value as a function of \mH for the ATLAS~\cite{Aad:2012tfa} and CMS~\cite{Chatrchyan:2012xdj} experiment, respectively.
     The dashed line shows the expected local $p_{0}$ for a SM Higgs boson.
     The horizontal lines denotes the $p$-values corresponding to significances of 1 to 6$\sigma$.}
     \label{fig:sm_discovery_of_Higgs}
@@ -473,7 +473,7 @@ The classical potential of the SM Higgs field $\Phi$ is
 \end{equation}
 %
 Since the SM requires the VEV for $\Phi$, $\langle \Phi \rangle$, at the minimum of the potential non-vanishing, this only satisfied if $\mu^{2} < 0$ and $\lambda > 0$.
-However, the parameter $\mu^{2}$ receives enormous radiative corrections causing it ultraviolet divergent as shown in Eq.~\ref{eq:sm_mu2_correction}.
+However, the parameter $\mu^{2}$ receives enormous radiative corrections causing it ultraviolet divergent as shown in Eq.(~\ref{eq:sm_mu2_correction}).
 %
 \begin{equation}
     \mu^{2} = \mu_{bare}^{2} - \frac{|\lambda_{f}|^{2}}{8\pi}\Lambda_{UV}^{2} + \mathcal{O}(\Lambda_{UV}^{2})
@@ -503,6 +503,17 @@ The observed scientific data hints the presence of DE is necessary to explain th
 
 \subsection{Grand Unification}
 \label{subsec:sm_grand_unification}
+
+\begin{figure}[tbp]
+    \begin{center}
+        \includegraphics[scale=0.46]{running_coupling.pdf}
+        \caption{The measured running coupling constants in the SM (left) and prediction in the GUT (right).
+        The three lines show the inverse value of the coupling constant for the three fundamental forces.
+        This figure is taken from~\cite{Ur0ol}.}
+        \label{fig:sm_coulping_constants}
+    \end{center}
+\end{figure}
+
 Maxwell unified the electricity and magnetism into electromagnetism in the 1860s.
 About a century later, physicists successfully developed theory of electroweak which links the electromagnetism and the weak force.
 Because of the triumph of electroweak theory, theorists raise the question of the possibility to unify all forces.
@@ -510,16 +521,6 @@ The \textit{Grand Unified Theory} (GUT)~\cite{Ross:1985ai}, which tries to link 
 The GUT proposes that the electromagnetic force, weak force, and strong force unify to one force at the GUT scale, $\Lambda_{GUT} \approx 10^{16}$~{\GeV}.
 So the three running coupling constants~\cite{Mohr:2015ccw} are expected to be converged at the GUT scale.
 However, the current experiment results show the coupling constants still different as shown in Fig.~\ref{fig:sm_coulping_constants}.
-
-\begin{figure}[htbp]
-    \begin{center}
-        \includegraphics[scale=0.4]{Ur0ol.pdf}
-        \caption{The measured running coupling constants in the SM (left) and prediction in the GUT (right).
-        The three lines show the inverse value of the coupling constant for the three fundamental forces.
-        This figure is taken from~\cite{Ur0ol}.}
-        \label{fig:sm_coulping_constants}
-    \end{center}
-\end{figure}
 
 %%%
 %%%
