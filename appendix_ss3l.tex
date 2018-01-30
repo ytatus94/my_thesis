@@ -10,42 +10,47 @@ The simulated MC events are reweighted to the observed pile-up conditions in the
 \section{Samples used for strong interaction}
 \label{sec:app_samples_strong}
 
+
+
+
+
+
 Table~\ref{tab:app_sample_strong} shows the event generator, parton shower, cross-section normalization, PDF set~\cite{Martin:2009iq}, and the set of tunned parameters for modelling for all samples.
 Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 package~\cite{Lange:2001uf} is used to model the properties of bottom and charm hadron decays for all MC samples.
 
 \begin{table}[htp]
-%\begin{center}
-\resizebox{\textwidth}{!}{% <------ Don't forget this %
-\begin{tabular}{ccccccc}
-\hline
-\hline
-Signal/Background                                      & Physics process                   & Event generator                  & Parton shower     & Cross-section normalization & PDF set    & Set of tunned parameters\\
-\hline
-\hline
-\multirow{3}{*}{Signal}                                & RPC                               & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
-                                                       & RPV (except Figure~\ref{})        & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.210   & or                          & NNPDF2.3LO & A14\\
-                                                       & RPV (Figure~\ref{})               & {\HERWIGpp} 2.7.1                & {\HERWIGpp} 2.7.1 & NLO-Prospino2               & CTEQ6L1    & UEEE5\\
-\hline
-\multirow{3}{*}{\shortstack{$t\bar{t}+X$\\background}} & $t\bar{t}W, t\bar{t}Z/\gamma^{*}$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                       & $t\bar{t}H$                       & MG5\_{\scriptsize A}MC@NLO 2.3.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                       & 4$t$                              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-\hline
-\multirow{2}{*}{\shortstack{Dibosno\\background}}      & $ZZ, WZ$                          & {\SHERPA} 2.2.1                  & {\SHERPA} 2.2.1   & NLO                         & NNPDF2.3LO & {\SHERPA} default\\
-                                                       & Other (inc. $W^{\pm}W^{\pm}$)     & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
-\hline
-\multirow{4}{*}{\shortstack{Rare\\background}}         & $t\bar{t}WW, t\bar{t}WZ$          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                       & $tZ, tWZ, tt\bar{t}$              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & LO                          & NNPDF2.3LO & A14\\
-                                                       & $WH, ZH$                          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                       & Triboson                          & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
-\hline
-\hline
-\end{tabular}
-%\end{center}
-}
-\caption{The simulated signal and background MC samples.
-The event generator, parton shower, cross-section normalization, PDF set, and the set of tunned parameters for each samples are shown.
-The $t\bar{t}WW, t\bar{t}WZ, tZ, tWZ, tt\bar{t}, WH, ZH$ and triboson background samples are labeled in the "rare" because they contribute a very small amount to the signal region.}
-\label{tab:app_sample_strong}
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{ccccccc}
+            \hline
+            \hline
+            Signal/Background                                      & Physics process                   & Event generator                  & Parton shower     & Cross-section normalization & PDF set    & Set of tunned parameters\\
+            \hline
+            \hline
+            \multirow{3}{*}{Signal}                                & RPC                               & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
+                                                                   & RPV (except Figure~\ref{})        & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.210   & or                          & NNPDF2.3LO & A14\\
+                                                                   & RPV (Figure~\ref{})               & {\HERWIGpp} 2.7.1                & {\HERWIGpp} 2.7.1 & NLO-Prospino2               & CTEQ6L1    & UEEE5\\
+            \hline
+            \multirow{3}{*}{\shortstack{$t\bar{t}+X$\\background}} & $t\bar{t}W, t\bar{t}Z/\gamma^{*}$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                   & $t\bar{t}H$                       & MG5\_{\scriptsize A}MC@NLO 2.3.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                   & 4$t$                              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+            \hline
+            \multirow{2}{*}{\shortstack{Dibosno\\background}}      & $ZZ, WZ$                          & {\SHERPA} 2.2.1                  & {\SHERPA} 2.2.1   & NLO                         & NNPDF2.3LO & {\SHERPA} default\\
+                                                                   & Other (inc. $W^{\pm}W^{\pm}$)     & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
+            \hline
+            \multirow{4}{*}{\shortstack{Rare\\background}}         & $t\bar{t}WW, t\bar{t}WZ$          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                   & $tZ, tWZ, tt\bar{t}$              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & LO                          & NNPDF2.3LO & A14\\
+                                                                   & $WH, ZH$                          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                   & Triboson                          & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    %\end{center}
+    \caption{The simulated signal and background MC samples.
+    The event generator, parton shower, cross-section normalization, PDF set, and the set of tunned parameters for each samples are shown.
+    The $t\bar{t}WW, t\bar{t}WZ, tZ, tWZ, tt\bar{t}, WH, ZH$ and triboson background samples are labeled in the "rare" because they contribute a very small amount to the signal region.}
+    \label{tab:app_sample_strong}
 \end{table}%
 
 
@@ -53,8 +58,47 @@ The $t\bar{t}WW, t\bar{t}WZ, tZ, tWZ, tt\bar{t}, WH, ZH$ and triboson background
 %%%
 %%%
 
-\section{Samples used for weak interaction}
-\label{sec:app_samples}
+\begin{table}[htp]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{llllllllll}
+            \hline
+            \hline
+            Signal region & $N_{\mathrm{leptons}}^{\mathrm{signal}}$ & $N_{b-\mathrm{jets}}$ & $N_{\mathrm{jets}}$ & $\pt^{\mathrm{jet}}$~[{\GeV}] & \met~[{\GeV}] & $m_{\mathrm{eff}}$ & $\met/m_{\mathrm{eff}}$ & Other & Targeted signal\\
+            \hline
+            Rpc2L2bS      & $\ge 2$SS                                & $\ge 2$               & $\ge 6$             & $> 25$                        & $> 200$       & $> 600$            & $> 0.25$                & -     & Fig.~\ref{}\\
+            Rpc2L2bH      & $\ge 2$SS                                & $\ge 2$               & $\ge 6$             & $> 25$                        & -             & $> 1800$           & $> 0.15$                & -     & Fig.~\ref{}, NUHM2\\
+            \hline
+            Rpc2Lsoft1b   & $\ge 2$SS                                & $\ge 1$               & $\ge 6$             & $> 25$                        & $> 100$       & -                  & $> 0.3$                 & $20, 10 < \pt^{\ell_{1}}, \pt^{\ell_{2}} < 100$~{\GeV}     & Fig.~\ref{}\\
+            Rpc2Lsoft2b   & $\ge 2$SS                                & $\ge 2$               & $\ge 6$             & $> 25$                        & $> 200$       & $> 600$            & $> 0.25$                & $20, 10 < \pt^{\ell_{1}}, \pt^{\ell_{2}} < 100$~{\GeV}     & Fig.~\ref{}\\
+            \hline
+            Rpc2L0bS      & $\ge 2$SS                                & = 0                   & $\ge 6$             & $> 25$                        & $> 150$       & -                  & $> 0.25$                & -     & Fig.~\ref{}\\
+            Rpc2L0bH      & $\ge 2$SS                                & = 0                   & $\ge 6$             & $> 40$                        & $> 250$       & $> 900$            & -                       & -     & Fig.~\ref{}\\
+            \hline
+            Rpc3L0bS      & $\ge 3$                                  & = 0                   & $\ge 4$             & $> 40$                        & $> 200$       & $> 600$            & -                       & -     & Fig.~\ref{}\\
+            Rpc3L0bH      & $\ge 3$                                  & = 0                   & $\ge 4$             & $> 40$                        & $> 200$       & $> 1600$           & -                       & -     & Fig.~\ref{}\\
+            Rpc3L1bS      & $\ge 3$                                  & $\ge 1$               & $\ge 4$             & $> 40$                        & $> 200$       & $> 600$            & -                       & -     & Other\\
+            Rpc3L1bH      & $\ge 3$                                  & $\ge 1$               & $\ge 4$             & $> 40$                        & $> 200$       & $> 1600$           & -                       & -     & Other\\
+            \hline
+            Rpc2L1bS      & $\ge 2$SS                                & $\ge 1$               & $\ge 6$             & $> 25$                        & $> 150$       & $> 600$            & $> 0.25$                & -     & Fig.~\ref{}\\
+            Rpc2L1bH      & $\ge 2$SS                                & $\ge 1$               & $\ge 6$             & $> 25$                        & $> 250$       & -                  & $> 0.2$                 & -     & Fig.~\ref{}\\
+            \hline
+            Rpc3LSS1b     & $\ge \ell^{\pm}\ell^{\pm}\ell^{\pm}$     & $\ge 1$               & -                   & -                             & -             & -                  & -                       & veto $81 < m_{e^{\pm}e^{\pm}} < 101$~{\GeV} & Fig.~\ref{}\\
+            \hline
+            Rpv2L1bH      & $\ge 2$SS                                & $\ge 1$               & $\ge 6$             & $> 50$                        & -             & $> 2200$           & -                       & -     & Fig.~\ref{},~\ref{}\\
+            Rpv2L0b       & = 2SS                                    & = 0                   & $\ge 6$             & $> 40$                        & -             & $> 1800$           & -                       & veto $81 < m_{e^{\pm}e^{\pm}} < 101$~{\GeV} & Fig.~\ref{}\\
+            Rpv2L2bH      & $\ge 2$SS                                & $\ge 2$               & $\ge 6$             & $> 40$                        & -             & $> 2000$           & -                       & veto $81 < m_{e^{\pm}e^{\pm}} < 101$~{\GeV} & Fig.~\ref{}\\
+            Rpv2L2bS      & $\ge \ell^{-}\ell^{-}$                   & $\ge 2$               & $\ge 3$             & $> 50$                        & -             & $> 1200$           & -                       & -     & Fig.~\ref{}\\
+            Rpv2L1bS      & $\ge \ell^{-}\ell^{-}$                   & $\ge 1$               & $\ge 4$             & $> 50$                        & -             & $> 1200$           & -                       & -     & Fig.~\ref{}\\
+            Rpv2L1bM      & $\ge \ell^{-}\ell^{-}$                   & $\ge 2$               & $\ge 4$             & $> 50$                        & -             & $> 1800$           & -                       & -     & Fig.~\ref{}\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    %\end{center}
+    \caption{}
+    \label{tab:app_}
+\end{table}%
 
 %%%
 %%%

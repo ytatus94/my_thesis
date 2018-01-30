@@ -12,8 +12,45 @@ More information is provided for the electron identification, reconstruction, an
 
 \section{Object selections}
 \label{sec:event_object_selections}
-This section presents the object selection in the analysis.
-In this analysis, the objects are categories into preselected and signal.
+This section presents the object definition and selection in the analysis.
+The definition of objects used in this analysis are based on the recommendations by Combined Performance groups and are summarized in Table~\ref{tab:event_object_definitions}.
+The objects are divided into two categories: preselected and signal objects where signal objects are a subset of preselected objects.
+Unless otherwise stated, the recommendations implemented in \texttt{SUSYTools-00-08-69}~\cite{SUSYToolsV8} and \texttt{AnalysisBase 2.4.37}~\cite{AnalysisBase} are used for all the objects.
+
+\begin{table}[ht]
+    \begin{center}
+        {\scriptsize
+            \begin{tabular}{lll}
+                \hline
+                \hline
+                Property           & Preselected object                     & Signal object\\
+                \hline
+                \textbf{Electrons} &                                        &\\
+                Kinematic          & $\pt > 4.5$~{\GeV}                     & $\pt > 4.5$~{\GeV}, $|\eta| < 2.47$ (include crack)\\
+                Identification     & \texttt{VeryLooseLLH}                  & \texttt{TightLLH}\\
+                Isolation          & -                                      & \texttt{GradientLoose}\\
+                Impact parameter   & $|z_{0} \sin\theta| < 0.5$~mm          & $|d_{0}/\sigma(d_{0})| < 5$, $|z_{0} \sin\theta| < 0.5$~mm\\
+                Reco algorithm     & Veto \texttt{author==16}               & Veto \texttt{author==16}\\
+                \hline
+                \textbf{Muons}     &                                        &\\
+                Kinematic          & $\pt > 4$~{\GeV}                       & $\pt > 4$~{\GeV}, $|\eta| < 2.5$\\
+                Identification     & \texttt{Medium}                        & \texttt{Medium}\\
+                Isolation          & -                                      & \texttt{FixedCutTightTrackOnly}\\
+                Impact parameter   & $|z_{0} \sin\theta| < 0.5$~mm          & $|d_{0}/\sigma(d_{0})| < 3$, $|z_{0} \sin\theta| < 0.5$~mm\\
+                \hline
+                \textbf{Jets}
+                Kinematic          & $\pt > 20$~{\GeV}, $|\eta| < 4.5$      & $\pt > 30$~{\GeV}, $|\eta| < 2.8$\\
+                Clustering         & Anti-$k_{t}$ $R = 0.4$ \texttt{EMTopo} & Anti-$k_{t}$ $R = 0.4$ \texttt{EMTopo}\\
+                Pileup mitigation  & -                                      & JVT \texttt{Medium} for $\pt < 60$~{\GeV}, $|\eta| < 2.4$\\
+                $b$-tagging        & -                                      & $\pt > 20$~{\GeV}, $|\eta| < 2.5$, \texttt{MV2c10} \texttt{FixedCutBeff} 85\%\\
+                \hline
+                \hline
+            \end{tabular}
+        }
+    \end{center}
+    \caption{Summary of objec definitions.}
+    \label{tab:event_object_definitions}
+\end{table}%
 
 %%%
 %%%
@@ -21,6 +58,19 @@ In this analysis, the objects are categories into preselected and signal.
 
 \subsection{Electrons}
 \label{subsec:event_electrons}
+In the ATLAS experiment, electrons are reconstructed using the information from the ID tracks matched to energy clusters in the ECAL.
+
+
+
+
+
+
+The preselected electrons used in this analysis have to satisfy $\pt > 4.5$~{\GeV} and $|\eta| < 2.47$ and pass the likelihood-based \texttt{VeryLooseLLH} identification.
+The electron tracks are required to satisfy the longitudinal impact parameter $|z_{0}\sin\theta| < 0.5$~mm.
+The electrons coming from the photon conversion are rejected by veto the \texttt{author==16}.
+The signal electrons have a tighter selection criteria.
+Besides all the requirements for the preselected electrons, the signal electrons are also required to pass \texttt{TightLLH} identification, \texttt{GradientLoose} isolation, and the transverse impact parameter $|d_{0}/sigma(d_{0})| < 5$ requirements.
+A more detail description about the electron reconstruction, identification, and isolation can be found in the App.~\ref{app:electron_reconstruction_identification_isolation}.
 
 %%%
 %%%
@@ -28,7 +78,9 @@ In this analysis, the objects are categories into preselected and signal.
 
 \subsection{Muons}
 \label{subsec:event_muons}
-
+Similar to the preselected electrons, the preselected muons are reconstructed by combining the tracks information from ID and the muon spectrometer.
+The preselected muons used in this analysis have to satisfy $\pt > 4$~{\GeV} and $|\eta| < 2.5$, pass the \texttt{Medium} identification, and require $|z_{0}\sin\theta| < 0.5$~mm on the longitudinal impact parameter.
+A tighter requirement is applied on the signal muons which in addition pass the \texttt{FixedCutTightTrackOnly} isolation together with $|d_{0}/\sigma(d_{0})| < 3$ on the transverse impace parameter.
 %%%
 %%%
 %%%
@@ -70,3 +122,64 @@ In this analysis, the objects are categories into preselected and signal.
 
 \section{Signal region selection}
 \label{sec:event_signal_region_selection}
+
+
+\begin{table}[ht]
+    \begin{center}
+        {\scriptsize
+            \begin{tabular}{ll}
+                \hline
+                \hline
+                Variable                                                               & Common requirement\\
+                \hline
+                Number of leptons                                                      & = 2\\
+                Lepton charge and flavor                                               & $e^{+}e^{-}$ or $\mu^{+}\mu^{-}$\\
+                Leading lepton $\pt^{\ell_{1}}$                                        & $> 5$~{\GeV} for electron and muon\\
+                Subleading lepton  $\pt^{\ell_{2}}$                                    & $> 4.5$ (4)~{\GeV} for electron (muon)\\
+                $\Delta R_{\ell \ell}$                                                 & $> 0.05$\\
+                $m_{\ell \ell}$                                                        & $\in$ [1, 60]~{\GeV} excluding [3.0, 3.2]~{\GeV}\\
+                \met                                                                   & $> 200$~{\GeV}\\
+                Number of jets                                                         & $\ge 1$\\
+                Leading jet \pt                                                        & $> 100$~{\GeV}\\
+                $\Delta \phi(j_{1}, \mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})$          & $> 2.0$\\
+                min($\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}}))$ & $> 0.4$\\
+                Number of $b$-tagged jets                                              & = 0\\
+                $m_{\tau \tau}$                                                        & $< 0$ or $> 160$~{\GeV}\\
+                \hline
+                                                                                       & Electroweakino SRs\\
+                \hline
+                $\Delta R_{\ell \ell}$                                                 & $< 2$\\
+                $m_{T}^{\ell_{1}}$                                                     & $< 70$~{\GeV}\\
+                $\met/H_{\mathrm{T}}^{\mathrm{lep}}$                                   & $>$ max(5, 15 - 2 $\frac{m_{\ell \ell}}{1~{\GeV}}$)\\
+                Binned in                                                              & $m_{\ell \ell}$\\ 
+                \hline
+                \hline
+            \end{tabular}
+        }
+    \end{center}
+    \caption{Summary of event selection criteria.
+    Signal leptons and signal jets are used when applying all requirements.
+    The signal region binning is listed in Table~\ref{tab:event_signal_region_binning}.}
+    \label{tab:event_signal_region}
+\end{table}%
+
+\begin{table}[ht]
+    \begin{center}
+        {\scriptsize
+            \begin{tabular}{lllllllll}
+                \hline
+                \hline
+                \multicolumn{9}{c}{Electroweakino SRs}\\
+                \hline
+                Exclusive & SR$ee$-$m_{\ell \ell}$, SR$\mu\mu$-$m_{\ell \ell}$ & [1, 3] & [3.2, 5] & [5, 10] & [10, 20] & [20, 30] & [30, 40] & [40, 60]\\
+                Inclusive & SR$\ell \ell$-$m_{\ell \ell}$                      & [1, 3] & [1, 5]   & [1, 10] & [1, 20]  & [1, 30]  & [1, 40]  & [1, 60]\\
+                \hline
+                \hline
+            \end{tabular}
+        }
+    \end{center}
+    \caption{The signal region binnings for the electroweakino SRs.
+    The SR is defined by a $m_{\ell \ell}$ range in {\GeV}.
+    The exclusive bins are used to set the exclusion limits on the model and the inclusive bins are used to set the model-independent limits.}
+    \label{tab:event_signal_region_binning}
+\end{table}%
