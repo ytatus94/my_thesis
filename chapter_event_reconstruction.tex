@@ -4,7 +4,6 @@ In this chapter, the various object reconstructions and  identifications in the 
 The electron, muon, and tau objects are presented in Sect.~\ref{subsec:event_electrons},~\ref{subsec:event_muons}, and~\ref{subsec:event_Taus}, respectively.
 Followed by the photons in Sect.~\ref{subsec:event_photons}, jets in Sect.~\ref{subsec:event_jets}, and \met in Sect.~\ref{subsec:event_met}.
 Finally, the signal region selection is described in Sect.~\ref{sec:event_signal_region_selection}.
-More information is provided for the electron identification, reconstruction, and isolation in the App.~\ref{app:electron_reconstruction_identification_isolation}.
 
 %%%
 %%%
@@ -13,6 +12,7 @@ More information is provided for the electron identification, reconstruction, an
 \section{Object selections}
 \label{sec:event_object_selections}
 This section presents the object definition and selection in the analysis.
+The general object selections for ATLAS are described followed by the specific selections used for this analysis.
 The definition of objects used in this analysis are based on the recommendations by Combined Performance groups and are summarized in Table~\ref{tab:event_object_definitions}.
 The objects are divided into two categories: preselected and signal objects where signal objects are a subset of preselected objects.
 Unless otherwise stated, the recommendations implemented in \texttt{SUSYTools-00-08-69}~\cite{SUSYToolsV8} and \texttt{AnalysisBase 2.4.37}~\cite{AnalysisBase} are used for all the objects.
@@ -48,7 +48,7 @@ Unless otherwise stated, the recommendations implemented in \texttt{SUSYTools-00
             \end{tabular}
         }
     \end{center}
-    \caption{Summary of objec definitions.}
+    \caption{Summary of objec definitions used in this analysis.}
     \label{tab:event_object_definitions}
 \end{table}%
 
@@ -58,19 +58,32 @@ Unless otherwise stated, the recommendations implemented in \texttt{SUSYTools-00
 
 \subsection{Electrons}
 \label{subsec:event_electrons}
-In the ATLAS experiment, electrons are reconstructed using the information from the ID tracks matched to energy clusters in the ECAL.
 
+%%%
+%%%
+%%%
 
+\subsubsection{General electron reconstruction and identification}
+\label{subsubsec:event_electrons_general}
+In the ATLAS experiment, electron\footnote{Electrons and positrons are collectively referred to as electrons.} objects are reconstructed and identified using the information from the ID tracks matched to energy clusters in the ECAL.
+Electron candidates with $\pt > 4$~{\GeV} and $|\eta| < 2.47$ are selected using the tag-and-probe method for $Z \to ee$ and $J/\psi \to ee$ processes.
+Three likelihood based electron identification algorithms, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight} are applied to determine the signal-like reconstructed electron candidates.
+These three identifications use the same variables to define the likelihood discriminant but with different selection criteria.
+Depending on the electron identification used, the reconstruction efficiency varies from 78 to 90\% and increases with \met.
+The electron isolation varies between 90\% and 99\% depending on the isolation selection criteria.
+More detail about the electron reconstruction performance can be found in Ref.~\cite{ATLAS:2016iqc} and a detail description about the electron isolation, which is my authorship project, can be found in the App.~\ref{app:electron_isolation}.
 
+%%%
+%%%
+%%%
 
-
-
+\subsubsection{Specific to this analysis}
+\label{subsubsec:event_electrons_specific}
 The preselected electrons used in this analysis have to satisfy $\pt > 4.5$~{\GeV} and $|\eta| < 2.47$ and pass the likelihood-based \texttt{VeryLooseLLH} identification.
 The electron tracks are required to satisfy the longitudinal impact parameter $|z_{0}\sin\theta| < 0.5$~mm.
 The electrons coming from the photon conversion are rejected by veto the \texttt{author==16}.
 The signal electrons have a tighter selection criteria.
-Besides all the requirements for the preselected electrons, the signal electrons are also required to pass \texttt{TightLLH} identification, \texttt{GradientLoose} isolation, and the transverse impact parameter $|d_{0}/sigma(d_{0})| < 5$ requirements.
-A more detail description about the electron reconstruction, identification, and isolation can be found in the App.~\ref{app:electron_reconstruction_identification_isolation}.
+Besides all the requirements for the preselected electrons, the signal electrons are also required to pass \texttt{TightLLH} identification, \texttt{GradientLoose} isolation, and the transverse impact parameter $|d_{0}/\sigma(d_{0})| < 5$ requirements.
 
 %%%
 %%%
@@ -78,15 +91,60 @@ A more detail description about the electron reconstruction, identification, and
 
 \subsection{Muons}
 \label{subsec:event_muons}
-Similar to the preselected electrons, the preselected muons are reconstructed by combining the tracks information from ID and the muon spectrometer.
+
+%%%
+%%%
+%%%
+
+\subsubsection{General muon reconstruction and identification}
+\label{subsubsec:event_muons_general}
+In the ATLAS experiment, muon objects are reconstructed and identified using the information from ID and muon spectrometer in the $\pt > 4$~{\GeV} and $|\eta| < 2.7$ region.
+Muon candidates are identified by applying quality requirements to suppress background which mainly come from pion and kion decays.
+Four categories of muon identification, \texttt{Medium}, \texttt{Loose}, \texttt{Tight}, and \texttt{High}-\pt are provided for different physics analyses.
+The \texttt{Medium} minimizes the systematic uncertainties and is provided as the default selection for muons in ATLAS.
+The \texttt{Loose} maximize the reconstruction efficiency and is used for multilepton final state analyses.
+The \texttt{Tight} maximize the purity of muons and the \texttt{High}-\pt maximize the momentum resolution for $\pt > 100$~{\GeV}.
+The muon reconstruction efficiency is about 99\% in $5 < \pt < 100$~{\GeV} and $|\eta| < 2.5$ phase space.
+The muon isolation efficiency varies between 93\% and 100\% depending on the isolation selection criteria.
+More detail about the muon reconstruction performance can be found in Ref.~\cite{Aad:2016jkr}.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Specific to this analysis}
+\label{subsubsec:event_muons_specific}
+%Similar to the preselected electrons, the preselected muons are reconstructed by combining the tracks information from ID and the muon spectrometer.
 The preselected muons used in this analysis have to satisfy $\pt > 4$~{\GeV} and $|\eta| < 2.5$, pass the \texttt{Medium} identification, and require $|z_{0}\sin\theta| < 0.5$~mm on the longitudinal impact parameter.
 A tighter requirement is applied on the signal muons which in addition pass the \texttt{FixedCutTightTrackOnly} isolation together with $|d_{0}/\sigma(d_{0})| < 3$ on the transverse impace parameter.
+
 %%%
 %%%
 %%%
 
 \subsection{Taus}
 \label{subsec:event_Taus}
+
+%%%
+%%%
+%%%
+
+\subsubsection{General $\tau$ reconstruction and identification}
+\label{subsubsec:event_taus_general}
+The mass of $\tau$ lepton is 1.77~{\GeV} and the decay length is 80~$\mu$m which is too short to make $\tau$ reaches the active region of the ATLAS detector.
+The $\tau$ can decay either leptonically ($\tau \to \ell \nu_{\ell}$, $\ell = e, \mu$) or hadronically ($\tau \to$ hadrons + $\nu_{\tau}$).
+The hadronic tau decays are about 65\% of all possible decay modes and the decay products contain one charged pions (22\%) or three charged pions (72\%) of all cases.
+Tau candidates are seeded by jets using the method described in Ref.~\cite{ATLAS:2017mpa} and they are required to have $\pt > 10$~{\GeV} and $|\eta| < 2.5$ but veto the candidates in the crack region $1.37 < |\eta| < 1.52$.
+A boosted decision tree (BDT) based algorithm is used to identify the $\tau$ candidate and to reject backgrounds from quark- and gluon-initiated jets.
+Three identifications, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight} are provided with the efficiency 60\%, 55\%, and 45\% for 1-track and 50\%, 40\%, and 30\% for 3-tracks, respectively.
+More detail about the $\tau$ lepton reconstruction and identification performance can be found in Ref.~\cite{ATLAS:2017mpa}.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Specific to this analysis}
+\label{subsubsec:event_taus_specific}
 
 %%%
 %%%
@@ -99,8 +157,51 @@ A tighter requirement is applied on the signal muons which in addition pass the 
 %%%
 %%%
 
+\subsubsection{General photons reconstruction and identification}
+\label{subsubsec:event_photons_general}
+In the ATLAS experiment, photons are reconstructed using the tracking information in ID and the energy deposits in the CAL.
+To distinguish prompt photons\footnote{Prompt photons are photons not originating from hadron decays} from background photons, the photon identification is based on a set of rectangular cuts on several discriminating variables computed from the energy deposited in the ECAL and from the shower leakage to the HCAL.
+The photon identification is separately applied to the converted and unconverted photons with $25 \le E_{\mathrm{T}} \le 1500$~{\GeV} and 4 $|\eta|$ intervals.
+Two identifications, \texttt{Loose} and \texttt{Tight}, are provided.
+The \texttt{Loose} provides high efficiency with low jet rejection and the \texttt{Tight}, which is recommanded for the analyses by the Combined Performance groups, provides high fake photon rejection and good efficiency.
+The \texttt{Tight} identification efficiency starts from 84\% at low $E_{\mathrm{T}}$ and reaches around 98\% in $1.37 < |\eta| < 1.81$ region for the unconverted photons.
+Similar to the unconverted photons, the efficiency for the converted photons increases with energy and reaches up to 98\%.
+More detail about the photon reconstruction and identification can be found in Ref.~\cite{ATLAS:2011kuc}.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Specific to this analysis}
+\label{subsubsec:event_photons_specific}
+
+%%%
+%%%
+%%%
+
 \subsection{Jets}
 \label{subsec:event_jets}
+
+%%%
+%%%
+%%%
+
+\subsubsection{General jets reconstruction}
+\label{subsubsec:event_jets_general}
+
+
+Jets contain a $b$-hadron are $b$-jets.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Specific to this analysis}
+\label{subsubsec:event_jets_specific}
+Preselected jets are reconstructed with the anti-$k_{t}$ algorithm~\cite{} with radius parameter $R = 0.4$ using the input from the topological cluster in the calorimeter.
+
+Identification of $b$-jets is performed using \textit{MV2c10} algorithm~\cite{}.
+A 85\% efficiency requirement is chosen
 
 %%%
 %%%

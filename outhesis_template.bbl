@@ -525,4 +525,27 @@ A.~Djouadi, M.~M. Muhlleitner, and M.~Spira.
 \bibitem{AnalysisBase}
 
 
+\bibitem{ATLAS:2016iqc}
+The~ATLAS collaboration.
+\newblock {Electron efficiency measurements with the ATLAS detector using the
+  2015 LHC proton-proton collision data}.
+\newblock 2016.
+
+\bibitem{Aad:2016jkr}
+Georges Aad et~al.
+\newblock {Muon reconstruction performance of the ATLAS detector in
+  proton–proton collision data at $\sqrt{s}$ =13 TeV}.
+\newblock {\em Eur. Phys. J.}, C76(5):292, 2016.
+
+\bibitem{ATLAS:2017mpa}
+The~ATLAS collaboration.
+\newblock {Measurement of the tau lepton reconstruction and identification
+  performance in the ATLAS experiment using $pp$ collisions at
+  $\sqrt{s}=13~{\rm TeV}$}.
+\newblock 2017.
+
+\bibitem{ATLAS:2011kuc}
+{Expected photon performance in the ATLAS experiment}.
+\newblock 2011.
+
 \end{thebibliography}

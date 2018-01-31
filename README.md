@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 01/31/2018
+* Work on e/mu/tau/gamma.
+* e and mu are done but tau and gamma need to work on "specific for this analysis section"
+
 ### 01/30/2108
 * Work on event reconstruction and selection
 
