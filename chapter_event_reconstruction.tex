@@ -174,6 +174,7 @@ More detail about the photon reconstruction and identification can be found in R
 
 \subsubsection{Specific to this analysis}
 \label{subsubsec:event_photons_specific}
+Photons are required to pass \texttt{Tight} identification and have $\pt > 25$~{\GeV}.
 
 %%%
 %%%
@@ -188,9 +189,22 @@ More detail about the photon reconstruction and identification can be found in R
 
 \subsubsection{General jets reconstruction}
 \label{subsubsec:event_jets_general}
+In the ATLAS experiment, jets are reconstructed using the anti-$k_{t}$ algorithm with radius parameter $R = 0.4$.
+The reconstruction algorithm uses calorimeter topological clusters in $|\eta| < 4.5$ as input.
+Four jet cleaning selections, \texttt{Looser}, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight}, are provided to reject the background.
+The \texttt{Looser} has the highest efficiency, $\sim$99.8\%, and the \texttt{Tight} has the highest background rejection with efficiency 85\% at $\pt = 25$~{\GeV} and 98\% at $\pt > 50$~{\GeV}.
+More detail about the jets reconstruction using anti-$k_{t}$ algorithm can be found in Ref.~\cite{Cacciari:2008gp}.
 
+%%%
+%%%
+%%%
 
-Jets contain a $b$-hadron are $b$-jets.
+\subsubsection{$b$-tagging}
+\label{subsubsec:event_bjets}
+In the ATLAS experiment, it is very important to identify jets containing $b$ hadrons from light flavor jets\footnote{The light flavor jets mean jets containing $u$, $d$, $s$, $c$, or gluons.}.
+Many $b$-tagging algorithms were developed to maintain high $b$-tagging efficiency of real $b$-jets and to retain very low misidentification efficiency of the light flavor jets.
+The new developed multivariable algorithm, MV2, improving the $c$-jet rejection $\sim$40\% at 77\% $b$-tagging efficiency and the rejection power at high $b$-jet \pt is also improved.
+More detail about the $b$-tagging can be found in Ref.~\cite{ATL-PHYS-PUB-2015-022, ATL-PHYS-PUB-2016-012}.
 
 %%%
 %%%
@@ -198,17 +212,10 @@ Jets contain a $b$-hadron are $b$-jets.
 
 \subsubsection{Specific to this analysis}
 \label{subsubsec:event_jets_specific}
-Preselected jets are reconstructed with the anti-$k_{t}$ algorithm~\cite{} with radius parameter $R = 0.4$ using the input from the topological cluster in the calorimeter.
-
-Identification of $b$-jets is performed using \textit{MV2c10} algorithm~\cite{}.
-A 85\% efficiency requirement is chosen
-
-%%%
-%%%
-%%%
-
-\subsubsection{$b$-ets}
-\label{subsubsec:event_bjets}
+The preselected jets are reconstructed with the anti-$k_{t}$ algorithm with radius parameter $R = 0.4$ and required $\pt > 20$~{\GeV} and $|\eta| < 4.5$.
+Jets with $\pt < 60$~{\GeV} and $|\eta| < 2.4$ are required to satisfy \texttt{Medium} jet vertex tagger requirement which can suppress pileup jets.
+The MV2c10 $b$-tagging algorithm with an 85\% efficiency is applied on the preselected jets with $|\eta| < 2.5$.
+The signal jets are required to satisfy $\pt > 20$~{\GeV} and $|\eta| < 2.8$.
 
 %%%
 %%%
@@ -216,6 +223,18 @@ A 85\% efficiency requirement is chosen
 
 \subsection{Missing transverse energy}
 \label{subsec:event_met}
+The missing transverse energy \met is defined as the negative vector sum of \pt of all reconstructed objects including leptons, jets, and soft term as show in Eq.~(\ref{eq:event_met}).
+The soft term is constructed from all tracks associated to the primary vertex but not associated with any physics object.
+There two kinds of soft term, calorimeter based soft term (CST) and track based soft term (TST) are used in \met calculation.
+The CST \met is constructed form the energy deposits in the CAL not associated with hard objects and the TST \met is built form ID tracks which not match to any reconstructed object.
+More detail about the \met reconstruction performance can be found in Ref.~\cite{ATL-PHYS-PUB-2015-023}.
+%
+\begin{equation}
+    \met = - (\mathbf{p}_{\mathrm{T}}^{\mathrm{hard}} + \mathbf{p}_{\mathrm{T}}^{\mathrm{soft}})
+    \label{eq:event_met}
+\end{equation}
+%
+
 
 %%%
 %%%

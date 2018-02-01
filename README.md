@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/01/2018
+* Change the website line in bib to `@misc`
+* Finish objection definitions.
+
 ### 01/31/2018
 * Work on e/mu/tau/gamma.
 * e and mu are done but tau and gamma need to work on "specific for this analysis section"

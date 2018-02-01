@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Patrignani:2016xqp}
 C.~Patrignani et~al.
@@ -36,7 +36,8 @@ Serguei Chatrchyan et~al.
 \newblock {\em Phys. Lett.}, B716:30--61, 2012.
 
 \bibitem{Ur0ol}
-
+The accelerator complex at cern.
+\newblock \url{https://i.stack.imgur.com/Ur0ol.gif}.
 
 \bibitem{Martin:1997ns}
 Stephen~P. Martin.
@@ -432,7 +433,8 @@ L.~Rossi.
 \newblock {\em Conf. Proc.}, C030512:141, 2003.
 
 \bibitem{CERN-COURIER-Sep192008}
-The lhc sees its first circulating beam.
+Cern courier.
+\newblock \url{http://cerncourier.com/cws/article/cern/35864}.
 
 \bibitem{Palestini:2003dm}
 S.~Palestini.
@@ -520,10 +522,14 @@ A.~Djouadi, M.~M. Muhlleitner, and M.~Spira.
 \newblock {\em Acta Phys. Polon.}, B38:635--644, 2007.
 
 \bibitem{SUSYToolsV8}
-
+The susytoolsv8 twiki.
+\newblock
+  \url{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/SUSYToolsV8}.
 
 \bibitem{AnalysisBase}
-
+The analysis release twiki.
+\newblock
+  \url{https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/AnalysisRelease}.
 
 \bibitem{ATLAS:2016iqc}
 The~ATLAS collaboration.
@@ -547,5 +553,23 @@ The~ATLAS collaboration.
 \bibitem{ATLAS:2011kuc}
 {Expected photon performance in the ATLAS experiment}.
 \newblock 2011.
+
+\bibitem{Cacciari:2008gp}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {The Anti-k(t) jet clustering algorithm}.
+\newblock {\em JHEP}, 04:063, 2008.
+
+\bibitem{ATL-PHYS-PUB-2015-022}
+{Expected performance of the ATLAS $b$-tagging algorithms in Run-2}.
+\newblock Technical Report ATL-PHYS-PUB-2015-022, CERN, Geneva, Jul 2015.
+
+\bibitem{ATL-PHYS-PUB-2016-012}
+{Optimisation of the ATLAS $b$-tagging performance for the 2016 LHC Run}.
+\newblock Technical Report ATL-PHYS-PUB-2016-012, CERN, Geneva, Jun 2016.
+
+\bibitem{ATL-PHYS-PUB-2015-023}
+{Expected performance of missing transverse momentum reconstruction for the
+  ATLAS detector at $\sqrt{s}= 13~\text{TeV}$}.
+\newblock Technical Report ATL-PHYS-PUB-2015-023, CERN, Geneva, Jul 2015.
 
 \end{thebibliography}
