@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/02/2018
+* Work on METoverHT
+
 ### 02/01/2018
 * Change the website line in bib to `@misc`
 * Finish objection definitions.

@@ -145,6 +145,7 @@ More detail about the $\tau$ lepton reconstruction and identification performanc
 
 \subsubsection{Specific to this analysis}
 \label{subsubsec:event_taus_specific}
+The di-tau invariant mass $m_{\tau\tau}$ is used in this analysis and addressed in Sect.~\ref{}.
 
 %%%
 %%%
@@ -215,7 +216,7 @@ More detail about the $b$-tagging can be found in Ref.~\cite{ATL-PHYS-PUB-2015-0
 The preselected jets are reconstructed with the anti-$k_{t}$ algorithm with radius parameter $R = 0.4$ and required $\pt > 20$~{\GeV} and $|\eta| < 4.5$.
 Jets with $\pt < 60$~{\GeV} and $|\eta| < 2.4$ are required to satisfy \texttt{Medium} jet vertex tagger requirement which can suppress pileup jets.
 The MV2c10 $b$-tagging algorithm with an 85\% efficiency is applied on the preselected jets with $|\eta| < 2.5$.
-The signal jets are required to satisfy $\pt > 20$~{\GeV} and $|\eta| < 2.8$.
+The signal jets are required to satisfy $\pt > 30$~{\GeV} and $|\eta| < 2.8$.
 
 %%%
 %%%
@@ -230,11 +231,31 @@ The CST \met is constructed form the energy deposits in the CAL not associated w
 More detail about the \met reconstruction performance can be found in Ref.~\cite{ATL-PHYS-PUB-2015-023}.
 %
 \begin{equation}
-    \met = - (\mathbf{p}_{\mathrm{T}}^{\mathrm{hard}} + \mathbf{p}_{\mathrm{T}}^{\mathrm{soft}})
+    \met = - (\sum \mathbf{p}_{\mathrm{T}}^{\mathrm{hard}} + \mathbf{p}_{\mathrm{T}}^{\mathrm{soft}})
     \label{eq:event_met}
 \end{equation}
 %
 
+%%%
+%%%
+%%%
+
+\subsection{Overlap removal}
+\label{subsec:event_overlap_removal}
+After preselected objects are reconstructed, an overlap removal procedure is applied to resolve ambiguities between the reconstructed jets and leptons.
+The distance $\Delta R$ between two objects is used for overlap removal and $\Delta R$ is defined as
+%
+\begin{equation}
+    \Delta R = \sqrt{(\Delta y)^{2} + (\Delta \phi)^{2}}
+\end{equation}
+%
+where $y$ and $\phi$ are rapidity and azimuthal angle, respectively.
+The overlap removal procedure has to follow the steps listed below.
+In order to avoid the bremsstrahlung from muons followed by a photon conversion into electron pairs, electron candidate is reomved if it shares the same ID track with a muon object.
+Jet is removed from the remaining electrons if $\Delta R(\mathrm{jets}, e) < 0.2$ unless it is a $b$-jet.
+If there are less than 3 tracks of jets with $\pt > 500$~{\MeV} and the distance between jets and a muon candidate less than 0.4, i.e. $\Delta R(\mathrm{jets}, \mu) < 0.4$, then the jets are removed.
+This step can suppress muon bremsstrahlung.
+Finally, the electrons and muons are removed if the $e$ or $\mu$ lie in a distance $\Delta R(\mathrm{jets}, e/\mu) < 0.4$ of the surviving jets so that charm and bottom hadron decays are suppressed.
 
 %%%
 %%%
@@ -243,7 +264,67 @@ More detail about the \met reconstruction performance can be found in Ref.~\cite
 \section{Signal region selection}
 \label{sec:event_signal_region_selection}
 
+%%%
+%%%
+%%%
 
+\subsection{Discriminating variables}
+\label{subsec:event_discriminating_variables}
+This section provides the explaniations for various variables used to discriminate signals and background.
+The event selection criteria for signal region are summarized in Table~\ref{tab:event_signal_region}.
+%
+\begin{itemize}
+    \item \textbf{Same flavour opposite sign (SFOS) lepton pair}: This analysis requires exactly two preselected and two signal leptons in the final state.
+    These two leptons have to carry the same flavor and with opposite electric charge such as $e^{\pm}e^{\mp}$ and $\mu^{\pm}\mu^{\mp}$.
+
+    \item $\mathbf{\pt^{\ell_{1}}}$ and $\mathbf{\pt^{\ell_{2}}}$: The momentum of leading lepton $\pt^{\ell_{1}} > 5$~{\GeV} is required to suppressed fake/nonprompt leptons background and the threshold of the momentum of subleading lepton $\pt^{\ell_{2}} > 4.5$(4)~{\GeV} for electron (muon) is used to retain signal acceptance.
+
+    \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined as Eq.~\ref{eq:event_dilepton_distance}.
+    %This variable provides good discrimination between the Higgsino and slepton because the dileptons from Higgsinos have small angular separation.
+    %However, the leptons originate from the slepton don't have strong restrictions on their angular separation.
+    The $\Delta R_{\ell\ell}$ variable, which is required to greater than 0.05, suppresses the leptons originating from photon conversions or muons.
+    %
+    \begin{equation}
+        \Delta R_{\ell \ell} = \sqrt{(\eta_{\ell_{1}} - \eta_{\ell_{2}})^{2} + (\phi_{\ell_{1}} - \phi_{\ell_{2}})^{2}}
+        \label{eq:event_dilepton_distance}
+    \end{equation}
+    %
+
+    \item $\mathbf{m_{\ell\ell}}$: The dilepton invariant mass $m_{\ell\ell}$ is bounded by the mass splitting $m(\widetilde{\chi}^{0}_{2}) - m(\widetilde{\chi}^{0}_{1})$ providing the background suppression power.
+    The background originates from on-shell $Z$ decay can be suppressed if the upper bound of $m_{\ell\ell}$ is set to 60~{\GeV} and the contributions from $J/\psi$ are vetoed by required a $3 < m_{\ell\ell} < 3.2$~{\GeV} window.
+
+    \item $\mathbf{\met}$: In order to keep the \met trigger efficiency exceeding 95\%, \met is required to be greater than 200~{\GeV}.
+
+    \item $\mathbf{\pt^{j_{1}}}$: The momentum of the leading jet is required to greater than 100~{\GeV}.
+
+    \item $\mathbf{\Delta \phi(j_{1}, \pt^{\textbf{miss}})}$: The azimuthal separation between $j_{1}$ and $\mathbf{\pt^{\textrm{miss}}}$ is required to greater than 2 to suppress the QCD and $Z$+jets background.
+
+    \item \textbf{min($\mathbf{\Delta \phi(\textbf{any jet}, \pt^{\textbf{miss}})}$)}: By requiring $\Delta \phi(\textrm{any jet}, \pt^{\textbf{miss}}) > 0.4$, the effect of jet-energy mismeasurement on \met can be reduced.
+
+    \item $\mathbf{N}_{\mathbf{b}\textbf{-jet}}$: Requiring $N_{b\textrm{-jet}} = 0$, the \ttbar backgrounds can be reduced significantly.
+
+    \item $\mathbf{m^{\tau\tau}}$:
+
+    \item $\mathbf{m_{T}^{\ell_{1}}}$: The transverse mass of \met and the leading lepton is defined in Eq.~\ref{eq:event_transverse_mass}.
+    The \ttbar, $WW/WZ$, and $W$+jets background can be reduced by requiring $m_{\textrm{T}}^{\ell_{1}} < 70$~{\GeV}.
+    %
+    \begin{equation}
+        m_{\textrm{T}}^{\ell_{1}} = \sqrt{2(E_{\textrm{T}}^{\ell_{1}}\met - \mathbf{p}_{\textrm{T}}^{\ell_{1}} \cdot \mathbf{p}_{\textrm{T}}^{\textrm{miss}})}
+        \label{eq:event_transverse_mass}
+    \end{equation}
+    %
+
+    \item $\mathbf{\met/H_{T}^{lep}}$: The scalar sum of the lepton transverse momentum is defined  in Eq.~\ref{eq:event_HT}.
+    The $\met/H_{\textrm{T}}^{\textrm{lep}}$ variable is larger in the compressed signals but is smaller for the background such as \ttbar and diboson.
+    %
+    \begin{equation}
+        H_{\textrm{T}}^{\textrm{lep}} = p_{\textrm{T}}^{\ell_{1}} + p_{\textrm{T}}^{\ell_{2}}
+        \label{eq:event_HT}
+    \end{equation}
+    %
+
+\end{itemize}
+%
 \begin{table}[ht]
     \begin{center}
         {\scriptsize
@@ -282,6 +363,10 @@ More detail about the \met reconstruction performance can be found in Ref.~\cite
     The signal region binning is listed in Table~\ref{tab:event_signal_region_binning}.}
     \label{tab:event_signal_region}
 \end{table}%
+
+%%%
+%%%
+%%%
 
 \begin{table}[ht]
     \begin{center}
