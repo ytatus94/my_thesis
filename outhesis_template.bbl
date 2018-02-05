@@ -1,5 +1,28 @@
 \begin{thebibliography}{100}
 
+\bibitem{Patrignani:2016xqp}
+C.~Patrignani et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
+
+\bibitem{Aad:2008zzm}
+G.~Aad et~al.
+\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3:S08003, 2008.
+
+\bibitem{Aaboud:2016wna}
+Morad Aaboud et~al.
+\newblock {Dark matter interpretations of ATLAS searches for the electroweak
+  production of supersymmetric particles in $ \sqrt{s}=8 $ TeV proton-proton
+  collisions}.
+\newblock {\em JHEP}, 09:175, 2016.
+
+\bibitem{Ellis:2013jnq}
+John Ellis.
+\newblock {Higgs Physics}.
+\newblock In {\em {Proceedings, 2013 European School of High-Energy Physics
+  (ESHEP 2013): Paradfurdo, Hungary, June 5-18, 2013}}, pages 117--168, 2015.
+
 \bibitem{Aad:2012tfa}
 Georges Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
@@ -11,6 +34,45 @@ Serguei Chatrchyan et~al.
 \newblock {Observation of a new boson at a mass of 125 GeV with the CMS
   experiment at the LHC}.
 \newblock {\em Phys. Lett.}, B716:30--61, 2012.
+
+\bibitem{Ur0ol}
+The accelerator complex at cern.
+\newblock \url{https://i.stack.imgur.com/Ur0ol.gif}.
+
+\bibitem{Martin:1997ns}
+Stephen~P. Martin.
+\newblock {A Supersymmetry primer}.
+\newblock 1997.
+\newblock [Adv. Ser. Direct. High Energy Phys.18,1(1998)].
+
+\bibitem{Baer:2013gva}
+Howard Baer, Vernon Barger, and Dan Mickelson.
+\newblock {How conventional measures overestimate electroweak fine-tuning in
+  supersymmetric theory}.
+\newblock {\em Phys. Rev.}, D88(9):095013, 2013.
+
+\bibitem{Baer:2016usl}
+Howard Baer, Vernon Barger, Michael Savoy, and Xerxes Tata.
+\newblock {Multichannel assault on natural supersymmetry at the high luminosity
+  LHC}.
+\newblock {\em Phys. Rev.}, D94(3):035025, 2016.
+
+\bibitem{Marcastel:1621583}
+Fabienne Marcastel.
+\newblock {CERN's Accelerator Complex. La chaîne des accélérateurs du CERN}.
+\newblock Oct 2013.
+\newblock General Photo.
+
+\bibitem{Strizenec:2014ida}
+P.~Strizenec.
+\newblock {Performance of the ATLAS Liquid Argon Calorimeter after three years
+  of LHC operation and plans for a future upgrade}.
+\newblock {\em JINST}, 9:C09007, 2014.
+
+\bibitem{Martinez:2016udm}
+A.~Ruiz Martínez.
+\newblock {The Run-2 ATLAS Trigger System}.
+\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, 2016.
 
 \bibitem{Weinberg:1975gm}
 Steven Weinberg.
@@ -46,12 +108,6 @@ J.~Wess and B.~Zumino.
 \newblock {\em JETP Lett.}, 13:323--326, 1971.
 \newblock [Pisma Zh. Eksp. Teor. Fiz.13,452(1971)].
 
-\bibitem{Martin:1997ns}
-Stephen~P. Martin.
-\newblock {A Supersymmetry primer}.
-\newblock 1997.
-\newblock [Adv. Ser. Direct. High Energy Phys.18,1(1998)].
-
 \bibitem{Fayet:1976et}
 Pierre Fayet.
 \newblock {Supersymmetry and Weak, Electromagnetic and Strong Interactions}.
@@ -68,13 +124,6 @@ Glennys~R. Farrar and Pierre Fayet.
 \newblock {Phenomenology of the Production, Decay, and Detection of New
   Hadronic States Associated with Supersymmetry}.
 \newblock {\em Phys. Lett.}, 76B:575--579, 1978.
-
-\bibitem{Aaboud:2016wna}
-Morad Aaboud et~al.
-\newblock {Dark matter interpretations of ATLAS searches for the electroweak
-  production of supersymmetric particles in $ \sqrt{s}=8 $ TeV proton-proton
-  collisions}.
-\newblock {\em JHEP}, 09:175, 2016.
 
 \bibitem{Barbieri:1987fn}
 Riccardo Barbieri and G.~F. Giudice.
@@ -163,11 +212,6 @@ Emmy Noether.
 \newblock {\em Gott. Nachr.}, 1918:235--257, 1918.
 \newblock [Transp. Theory Statist. Phys.1,186(1971)].
 
-\bibitem{Patrignani:2016xqp}
-C.~Patrignani et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Chin. Phys.}, C40(10):100001, 2016.
-
 \bibitem{Fermi:1934hr}
 E.~Fermi.
 \newblock {An attempt of a theory of beta radiation. 1.}
@@ -219,12 +263,6 @@ G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble.
 \newblock {Global Conservation Laws and Massless Particles}.
 \newblock {\em Phys. Rev. Lett.}, 13:585--587, 1964.
 
-\bibitem{Ellis:2013jnq}
-John Ellis.
-\newblock {Higgs Physics}.
-\newblock In {\em {Proceedings, 2013 European School of High-Energy Physics
-  (ESHEP 2013): Paradfurdo, Hungary, June 5-18, 2013}}, pages 117--168, 2015.
-
 \bibitem{Chankowski:1998za}
 Piotr~H. Chankowski, John~R. Ellis, Keith~A. Olive, and Stefan Pokorski.
 \newblock {Cosmological fine tuning, supersymmetry, and the gauge hierarchy
@@ -253,10 +291,6 @@ P.~A.~R. Ade et~al.
 Gianfranco Bertone, Dan Hooper, and Joseph Silk.
 \newblock {Particle dark matter: Evidence, candidates and constraints}.
 \newblock {\em Phys. Rept.}, 405:279--390, 2005.
-
-\bibitem{Ur0ol}
-The accelerator complex at cern.
-\newblock \url{https://i.stack.imgur.com/Ur0ol.gif}.
 
 \bibitem{Ross:1985ai}
 Graham~G. Ross.
@@ -339,12 +373,6 @@ Howard Baer, Vernon Barger, Peisi Huang, Dan Mickelson, Azar Mustafayev, and
   and the Higgs boson mass}.
 \newblock {\em Phys. Rev.}, D87(11):115028, 2013.
 
-\bibitem{Baer:2013gva}
-Howard Baer, Vernon Barger, and Dan Mickelson.
-\newblock {How conventional measures overestimate electroweak fine-tuning in
-  supersymmetric theory}.
-\newblock {\em Phys. Rev.}, D88(9):095013, 2013.
-
 \bibitem{Ellis:2002wv}
 John~R. Ellis, Keith~A. Olive, and Yudi Santoso.
 \newblock {The MSSM parameter space with nonuniversal Higgs masses}.
@@ -368,17 +396,6 @@ Howard Baer, Azar Mustafayev, Stefano Profumo, Alexander Belyaev, and Xerxes
 \newblock {Direct, indirect and collider detection of neutralino dark matter in
   SUSY models with non-universal Higgs masses}.
 \newblock {\em JHEP}, 07:065, 2005.
-
-\bibitem{Baer:2016usl}
-Howard Baer, Vernon Barger, Michael Savoy, and Xerxes Tata.
-\newblock {Multichannel assault on natural supersymmetry at the high luminosity
-  LHC}.
-\newblock {\em Phys. Rev.}, D94(3):035025, 2016.
-
-\bibitem{Aad:2008zzm}
-G.~Aad et~al.
-\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
-\newblock {\em JINST}, 3:S08003, 2008.
 
 \bibitem{Chatrchyan:2008aa}
 S.~Chatrchyan et~al.
@@ -410,12 +427,6 @@ James Pinfold et~al.
 \newblock {Technical Design Report of the MoEDAL Experiment}.
 \newblock 2009.
 
-\bibitem{Marcastel:1621583}
-Fabienne Marcastel.
-\newblock {CERN's Accelerator Complex. La chaîne des accélérateurs du CERN}.
-\newblock Oct 2013.
-\newblock General Photo.
-
 \bibitem{Rossi:2003np}
 L.~Rossi.
 \newblock {The LHC superconducting magnets}.
@@ -424,12 +435,6 @@ L.~Rossi.
 \bibitem{CERN-COURIER-Sep192008}
 Cern courier.
 \newblock \url{http://cerncourier.com/cws/article/cern/35864}.
-
-\bibitem{Strizenec:2014ida}
-P.~Strizenec.
-\newblock {Performance of the ATLAS Liquid Argon Calorimeter after three years
-  of LHC operation and plans for a future upgrade}.
-\newblock {\em JINST}, 9:C09007, 2014.
 
 \bibitem{Palestini:2003dm}
 S.~Palestini.
@@ -448,11 +453,6 @@ E.~Diehl.
 K.~Kordas et~al.
 \newblock {The ATLAS Data Acquisition and Trigger: Concept, design and status}.
 \newblock {\em Nucl. Phys. Proc. Suppl.}, 172:178--182, 2007.
-
-\bibitem{Martinez:2016udm}
-A.~Ruiz Martínez.
-\newblock {The Run-2 ATLAS Trigger System}.
-\newblock {\em J. Phys. Conf. Ser.}, 762(1):012003, 2016.
 
 \bibitem{Aaboud:2016hhf}
 Morad Aaboud et~al.

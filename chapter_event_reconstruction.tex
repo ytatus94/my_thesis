@@ -3,7 +3,7 @@ The vertex with the largest $\sum \pt^{2}$ of the associated tracks is selected 
 In this chapter, the various object reconstructions and  identifications in the ATLAS experiment are presented.
 The electron, muon, and tau objects are presented in Sect.~\ref{subsec:event_electrons},~\ref{subsec:event_muons}, and~\ref{subsec:event_Taus}, respectively.
 Followed by the photons in Sect.~\ref{subsec:event_photons}, jets in Sect.~\ref{subsec:event_jets}, and \met in Sect.~\ref{subsec:event_met}.
-Finally, the signal region selection is described in Sect.~\ref{sec:event_signal_region_selection}.
+Finally, the signal region (SR) selection is described in Sect.~\ref{sec:event_signal_region_selection}.
 
 %%%
 %%%
@@ -145,7 +145,7 @@ More detail about the $\tau$ lepton reconstruction and identification performanc
 
 \subsubsection{Specific to this analysis}
 \label{subsubsec:event_taus_specific}
-The di-tau invariant mass $m_{\tau\tau}$ is used in this analysis and addressed in Sect.~\ref{}.
+The di-tau invariant mass $m_{\tau\tau}$ is used in this analysis and addressed in Sect.~\ref{subsec:event_discriminating_variables}.
 
 %%%
 %%%
@@ -271,7 +271,6 @@ Finally, the electrons and muons are removed if the $e$ or $\mu$ lie in a distan
 \subsection{Discriminating variables}
 \label{subsec:event_discriminating_variables}
 This section provides the explaniations for various variables used to discriminate signals and background.
-The event selection criteria for signal region are summarized in Table~\ref{tab:event_signal_region}.
 %
 \begin{itemize}
     \item \textbf{Same flavour opposite sign (SFOS) lepton pair}: This analysis requires exactly two preselected and two signal leptons in the final state.
@@ -279,7 +278,7 @@ The event selection criteria for signal region are summarized in Table~\ref{tab:
 
     \item $\mathbf{\pt^{\ell_{1}}}$ and $\mathbf{\pt^{\ell_{2}}}$: The momentum of leading lepton $\pt^{\ell_{1}} > 5$~{\GeV} is required to suppressed fake/nonprompt leptons background and the threshold of the momentum of subleading lepton $\pt^{\ell_{2}} > 4.5$(4)~{\GeV} for electron (muon) is used to retain signal acceptance.
 
-    \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined as Eq.~\ref{eq:event_dilepton_distance}.
+    \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined as Eq.~(\ref{eq:event_dilepton_distance}).
     %This variable provides good discrimination between the Higgsino and slepton because the dileptons from Higgsinos have small angular separation.
     %However, the leptons originate from the slepton don't have strong restrictions on their angular separation.
     The $\Delta R_{\ell\ell}$ variable, which is required to greater than 0.05, suppresses the leptons originating from photon conversions or muons.
@@ -295,17 +294,54 @@ The event selection criteria for signal region are summarized in Table~\ref{tab:
 
     \item $\mathbf{\met}$: In order to keep the \met trigger efficiency exceeding 95\%, \met is required to be greater than 200~{\GeV}.
 
+    \item $N_{\mathrm{jet}}$: The number of jets is required to greater than or equal to 1 because of the initial state radiation (ISR) jets.
+
     \item $\mathbf{\pt^{j_{1}}}$: The momentum of the leading jet is required to greater than 100~{\GeV}.
 
     \item $\mathbf{\Delta \phi(j_{1}, \pt^{\textbf{miss}})}$: The azimuthal separation between $j_{1}$ and $\mathbf{\pt^{\textrm{miss}}}$ is required to greater than 2 to suppress the QCD and $Z$+jets background.
 
     \item \textbf{min($\mathbf{\Delta \phi(\textbf{any jet}, \pt^{\textbf{miss}})}$)}: By requiring $\Delta \phi(\textrm{any jet}, \pt^{\textbf{miss}}) > 0.4$, the effect of jet-energy mismeasurement on \met can be reduced.
 
-    \item $\mathbf{N}_{\mathbf{b}\textbf{-jet}}$: Requiring $N_{b\textrm{-jet}} = 0$, the \ttbar backgrounds can be reduced significantly.
+    \item $\mathbf{N}_{\mathbf{b}\textbf{-jet}}$: Requiring $N_{b\textrm{-jet}} = 0$, the \ttbar and single-top backgrounds can be reduced significantly.
 
-    \item $\mathbf{m^{\tau\tau}}$:
+    \item $\mathbf{m_{\tau\tau}}$: The di-tau invariant $m_{\tau\tau}(p_{\ell_{1}}, p_{\ell_{2}}, \mathbf{p}_{\mathrm{T}}^{\mathrm{miss}})$ variable is defined as the signed square root of $m^{2}_{\tau\tau}$.
+    The $m_{\tau\tau}$ is used to reconstructed the $Z \to \tau \tau$ process where $\tau$ decays leptonically $\tau \to \ell \nu_{\ell} \nu_{\tau}$.
+    Figure~\ref{fig:event_mtautau} shows the $Z$ boson leptonic decay process.
+    %
+    \begin{figure}[htb]
+        \begin{center}
+            \input{figures/event_reconstruction/ditau_schematic.tex}
+            \caption{The illustration of the $Z \to \tau\tau$ + jets decay where $\tau$ decays leptonically $\tau \to \ell \nu_{\ell} \nu_{\tau}$.}
+            \label{fig:event_mtautau}
+        \end{center}
+    \end{figure}
+    %
+    The $m^{2}_{\tau\tau}$ is defined in Eq.~(\ref{eq:event_mtautua2})
+    %
+    \begin{equation}
+        m^{2}_{\tau\tau} \equiv 2 p_{\ell_{1}} \cdot p_{\ell_{2}} (1 + \xi_{1})(1+ \xi_{2})
+        \label{eq:event_mtautua2}
+    \end{equation}
+    %
+    where $p_{\ell_{1}}$ and $p_{\ell_{2}}$ are the momenta of the leptons and the $\xi_{1}$ and $\xi_{1}$ are the scale factor which can be determined by solving $\mathbf{p}_\mathrm{T}^\mathrm{miss} = \xi_{1} \mathbf{p}_\mathrm{T}^{\ell_{1}} + \xi_{2} \mathbf{p}_\mathrm{T}^{\ell_{2}}$.
+    From the Eq.~(\ref{eq:event_mtautua2}), the $m^{2}_{\tau\tau}$ can be negative when either $1 + \xi_{1} < 0$ or $1 + \xi_{2} < 0$.
+    This situation occurs when only one lepton moves in the same direction as $\mathbf{p}_{hadronic}$ and $|\mathbf{p}_{\ell}|$ is small. 
+    This rarely happens for highly boosted $Z \to \tau \tau$ decays but it happens with larger frequency for less boosted heavy particles which decays back-to-back.
+    The $m_{\tau\tau}$ is calculated in Eq.~(\ref{eq:event_mtautau}).
+    %
+    \begin{align}
+        m_{\tau\tau} & = \mathrm{sign}(m^{2}_{\tau\tau}) \sqrt{|m^{2}_{\tau\tau}|}\\
+                     & = 
+                     \begin{cases}
+                         \hphantom{-}\sqrt{m_{\tau\tau}^2}    & m_{\tau\tau}^2 \geq 0,\\
+                         -\sqrt{\left| m_{\tau\tau}^2\right|} & m_{\tau\tau}^2 < 0.
+                     \end{cases}
+        \label{eq:event_mtautau}
+    \end{align}
+    %
+    Despite there is a discontinuity at $m_{\tau\tau} = 0$, this variable can be used to discriminate the leptons originating from $Z\to \tau\tau$.
 
-    \item $\mathbf{m_{T}^{\ell_{1}}}$: The transverse mass of \met and the leading lepton is defined in Eq.~\ref{eq:event_transverse_mass}.
+    \item $\mathbf{m_{T}^{\ell_{1}}}$: The transverse mass of \met and the leading lepton is defined in Eq.~(\ref{eq:event_transverse_mass}).
     The \ttbar, $WW/WZ$, and $W$+jets background can be reduced by requiring $m_{\textrm{T}}^{\ell_{1}} < 70$~{\GeV}.
     %
     \begin{equation}
@@ -314,18 +350,51 @@ The event selection criteria for signal region are summarized in Table~\ref{tab:
     \end{equation}
     %
 
-    \item $\mathbf{\met/H_{T}^{lep}}$: The scalar sum of the lepton transverse momentum is defined  in Eq.~\ref{eq:event_HT}.
-    The $\met/H_{\textrm{T}}^{\textrm{lep}}$ variable is larger in the compressed signals but is smaller for the background such as \ttbar and diboson.
+    \item $\mathbf{\met/H_{T}^{lep}}$: The scalar sum of the lepton transverse momentum, $H_{\textrm{T}}^{\textrm{lep}}$, is defined  in Eq.~(\ref{eq:event_HT}).
+    The $H_{\textrm{T}}^{\textrm{lep}}$ variable has smaller value in the compressed SUSY signal and larger value in the SM background such as $WW$ or $WZ$.
     %
     \begin{equation}
         H_{\textrm{T}}^{\textrm{lep}} = p_{\textrm{T}}^{\ell_{1}} + p_{\textrm{T}}^{\ell_{2}}
         \label{eq:event_HT}
     \end{equation}
     %
-
+    The leptons coming from SM background, for example, \ttbar and diboson are harder but they are softer in the compressed SUSY signal events.
+    Therefore, for a given value of \met, the $\met/H_{\textrm{T}}^{\textrm{lep}}$ variable is larger in the compressed signals but is smaller for the background.
+    The minimal requirement of this variable is defined in Eq.~(\ref{eq:event_METOverHT}) which is adjusted event by event depending on the mass splitting.
+    %
+    \begin{equation}
+        \met/H_{\textrm{T}}^{\textrm{lep}} > \mathrm{max}[5, 15 - 2 m_{\ell\ell}/(1~{\GeV})]
+        \label{eq:event_METOverHT}
+    \end{equation}
+    %
+    Figure~\ref{fig:event_METOverHT} shows the $\met/H_{\textrm{T}}^{\textrm{lep}}$ requirement for the electroweakino SR after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
+    %
+    \begin{figure}[htb]
+        \begin{center}
+            \includegraphics[scale=0.4]{fig_03a.pdf}
+            \caption{The distribution of $\met/H_{\textrm{T}}^{\textrm{lep}}$ as function of $m_{\ell\ell}$ for the electroweakino after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
+            The red line indicates the SR selection.
+            Events in the region below this line are rejected.
+            The signal events are labled in colored circles for different mass splitting.}
+            \label{fig:event_METOverHT}
+        \end{center}
+    \end{figure}
+    %
 \end{itemize}
 %
-\begin{table}[ht]
+
+%%%
+%%%
+%%%
+
+\subsection{Signal region}
+\label{subsec:event_signal_region}
+The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region} and the $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_binning}.
+There are 14 exclusive regions and 7 inclusive regions are defined.
+The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
+When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
+
+\begin{table}[htb]
     \begin{center}
         {\scriptsize
             \begin{tabular}{ll}
@@ -360,15 +429,11 @@ The event selection criteria for signal region are summarized in Table~\ref{tab:
     \end{center}
     \caption{Summary of event selection criteria.
     Signal leptons and signal jets are used when applying all requirements.
-    The signal region binning is listed in Table~\ref{tab:event_signal_region_binning}.}
+    The SR binning is listed in Table~\ref{tab:event_signal_region_binning}.}
     \label{tab:event_signal_region}
 \end{table}%
 
-%%%
-%%%
-%%%
-
-\begin{table}[ht]
+\begin{table}[htb]
     \begin{center}
         {\scriptsize
             \begin{tabular}{lllllllll}
@@ -383,7 +448,7 @@ The event selection criteria for signal region are summarized in Table~\ref{tab:
             \end{tabular}
         }
     \end{center}
-    \caption{The signal region binnings for the electroweakino SRs.
+    \caption{The SR binnings for the electroweakino SRs.
     The SR is defined by a $m_{\ell \ell}$ range in {\GeV}.
     The exclusive bins are used to set the exclusion limits on the model and the inclusive bins are used to set the model-independent limits.}
     \label{tab:event_signal_region_binning}

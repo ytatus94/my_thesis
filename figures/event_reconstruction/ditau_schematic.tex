@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+
+    % jets
+    \definecolor{myyellow}{RGB}{249, 209, 9}
+    \definecolor{myorange}{RGB}{224, 141, 8}
+    \definecolor{myblue}{RGB}{11, 90, 142}
+    \definecolor{mygreen}{RGB}{27, 158, 163}
+    \definecolor{mylightgreen}{RGB}{186, 225, 226}
+    \draw [draw=none, opacity=0.8, fill=myyellow, rotate=10] (0,0) -- (-4,-0.5)-- (-4,0.5) -- (0,0);
+    \draw [draw=none, opacity=0.8, fill=myyellow, rotate=-25] (0,0) -- (-3,-0.3)-- (-3,0.3) -- (0,0);
+    \draw [draw=none, opacity=0.8, fill=myyellow, rotate=35] (0,0) -- (-2.5,-0.3)-- (-2.5,0.3) -- (0,0);
+    
+    \draw [-latex, ultra thick, myorange] (0,0)--(-3.5,0.2);
+    \node at (-3.5,0.3) [left] {$p_\mathrm{hadronic}$};
+    
+    % taus
+    \draw [-latex, ultra thick, myblue] (0,0)--(2,0.5) ;
+    \draw [-latex, ultra thick, myblue] (0,0)--(2,-0.5) ;   
+    \node at (1,0.3) [above] {$p_{\tau_1}$};
+    \node at (1,-0.3) [below] {$p_{\tau_2}$};
+    
+    % leptons
+    \draw [-latex, ultra thick, mygreen] (2,0.5)--(4,0.8) ;
+    \draw [-latex, ultra thick, mygreen] (2,-0.5)--(4,-1) ;      
+    \node at (4,0.8) [right] {$p_{\ell_1}$};
+    \node at (4,-1) [right] {$p_{\ell_2}$};
+    
+    % neutrinos
+    \draw [dotted, thick, gray] (2,0.5) -- (3,1.5) node [above] {$\nu_{\ell_1}$};
+    \draw [dotted, thick, gray] (2,0.5) -- (3,0.3) node [right] {$\nu_{\tau_1}$};
+    
+    \draw [dotted, thick, gray] (2,-0.5) -- (3,-2) node [below] {$\nu_{\tau_2}$};
+    \draw [dotted, thick, gray] (2,-0.5) -- (3,-0.5) node [right] {$\nu_{\ell_2}$};
+    
+    \draw [-latex, thick, dashed] (2,0.5)--(3.5,1.5) ;
+    \draw [-latex, thick, dashed] (2,-0.5)--(3.5,-1.5) ;
+    \node at (3.5,1.5) [right] {$p_{\nu_1}$};
+    \node at (3.5,-1.5) [right] {$p_{\nu_2}$};
+    
+    % MET
+    \draw [-latex, ultra thick, dashed] (0,0)--(4,0) node [right] {$\mathbf{p}_\mathrm{T}^\mathrm{miss}$};
+    
+\end{tikzpicture}
