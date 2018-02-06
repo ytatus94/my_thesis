@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/06/2018
+* Work on RLE
+
 ### 02/05/2018
 * Finish event reconstruction.
 

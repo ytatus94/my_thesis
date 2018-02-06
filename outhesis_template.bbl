@@ -572,4 +572,8 @@ Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
   ATLAS detector at $\sqrt{s}= 13~\text{TeV}$}.
 \newblock Technical Report ATL-PHYS-PUB-2015-023, CERN, Geneva, Jul 2015.
 
+\bibitem{ATLAS-CONF-2014-018}
+{Tagging and suppression of pileup jets with the ATLAS detector}.
+\newblock Technical Report ATLAS-CONF-2014-018, CERN, Geneva, May 2014.
+
 \end{thebibliography}
