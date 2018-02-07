@@ -18,7 +18,7 @@ However, no additional requirement is applied for the $Z \to \mu \mu$ decay.
 The tag lepton is used to select the probe lepton only and the probe lepton is used for the real efficiency measurements.
 In this study, the tag and probe leptons are required to match the lepton triggers listed in Table~\ref{tab:app_RLE_single_lepton_triggers}.
 
-\begin{table}[htbp]
+\begin{table}[htb]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{cccc}
@@ -43,7 +43,7 @@ In this study, the tag and probe leptons are required to match the lepton trigge
 
 Figure~\ref{fig:app_RLE_mll_distributions} shows the data-to-MC comparison of the tag-and-probe pair invariant mass distributions which indicate the need of subtracting the background especially for the probe electron with $\pt < 20$~{\GeV}.
 %
-\begin{figure}[htbp]
+\begin{figure}[htb]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
             \begin{center}
@@ -99,7 +99,7 @@ By inverting the calorimeter and track isolations, requesting the electron objec
 Three background templates are considered for the systematic study.
 The definitions of the background template are summarized in Table~\ref{tab:app_RLE_bkg_templates}.
 %
-\begin{table}[htbp]
+\begin{table}[htb]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{cccc}
@@ -161,7 +161,7 @@ The fit is mostly driven by the $60 < m_{ee}^\mathrm{template} < 80$~{\GeV} due 
 After fitting is performed, the template in the tail region $N_\mathrm{template}^\mathrm{tail}$ is normalized to the background in the tail $N_{bkg}^\mathrm{tail}$ to get the correct estimated number of background events.
 The baseline $m_{ee}$ distributions before and after applying the background subtraction using the background template are shown in Fig.~\ref{fig:app_RLE_bkg_estimations}.
 %
-\begin{figure}[htbp]
+\begin{figure}[htb]
     \begin{subfigure}[b]{0.32\textwidth}
         \begin{center}
             \includegraphics[scale=0.27]{bkg_subtraction_baseline_template_range_baseline_mll80_100_pt10_15_eta0_80_tag_trigger_matched.pdf}
@@ -221,7 +221,7 @@ Then, the background contamination in the $Z$ mass region $80 < m_{ee} < 100$~{\
 %
 Table~\ref{tab:app_RLE_bkg_estimations} summarize the background estimations in different \pt and $|\eta|$ regions.
 %
-\begin{table}[htbp]
+\begin{table}[htb]
     \begin{center}
         \begin{tabular}{cccc}
             \hline
@@ -243,7 +243,7 @@ The largest improvements are observed in the lowest \pt bin ($10 < \pt < 15$~{\G
 The background contamination is relatively small in the second lowest \pt bin ($15 < \pt < 20$~{\GeV}) providing the evidence that high purity of prompt leptons can be obtained using $Z$ tag-and-probe method.
 Table~\ref{tab:app_RLE_efficiency_before_and_after_background_subtraction} shows the real electron efficiencies before and after performing the background subtraction.
 
-\begin{table}[htbp]
+\begin{table}[htb]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{ccccc}
@@ -273,16 +273,16 @@ Table~\ref{tab:app_RLE_efficiency_before_and_after_background_subtraction} shows
 \label{sec:app_RLE_cut_efficiencies}
 Figure~\ref{fig:app_RLE_cut_efficiencies} shows the efficiencies associated to each signal cut with respect to baseline definitions.
 %
-\begin{figure}[htbp]
+\begin{figure}[htb]
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
-            \includegraphics[scale=0.27]{cut_efficiency_electron.pdf}
+            \includegraphics[scale=0.4]{cut_efficiency_electron.pdf}
             \caption{Electron}
         \end{center}
     \end{subfigure}
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
-            \includegraphics[scale=0.27]{cut_efficiency_muon.pdf}
+            \includegraphics[scale=0.4]{cut_efficiency_muon.pdf}
             \caption{Muon}
         \end{center}
     \end{subfigure}
@@ -294,60 +294,178 @@ Figure~\ref{fig:app_RLE_cut_efficiencies} shows the efficiencies associated to e
     \label{fig:app_RLE_cut_efficiencies}
 \end{figure}
 %
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The real lepton efficiency is defined as the ratio between the number of prompt leptons passing the signal lepton definitions and the number of prompt leptons passing the baseline lepton definitions (as presented in section~\ref{sec:objects}). Thus, it measures the efficiency of the signal lepton definition cuts with respect to the baseline ones.
-
-
-
-
-The left plot in Figure~\ref{fig:RLE_cut_efficiencies} shows that the prompt electron efficiency increases from $\sim$62\% in the $10<\pt<\SI{15}{GeV}$ region to $\sim$98\% when $\pt>\SI{80}{GeV}$.
-The dominant contribution to the electron efficiency losses is the calorimeter isolation.
-The loose to medium likelilihood (LH) cut efficiency increases from $\sim$92\% to $\sim$96\% in the $10<\pt<\SI{30}{GeV}$ region then reaches a plateau for $30<\pt<\SI{50}{GeV}$ and increases again to $\sim$98\% when $\pt>\SI{60}{GeV}$.
-The calorimeter isolation cut efficiency increases from $\sim$ 69\% in the $10<\pt<\SI{15}{GeV}$ region to $\sim$98\% when $\pt>\SI{70}{GeV}$.
-The efficiency associated to the track isolation cut is $\sim$89\% for $10<\pt<\SI{15}{GeV}$ and increases up to $\sim$100\% when $\pt>\SI{60}{GeV}$.
-The contribution of the longitudinal impact parameter cut to the real efficiency is $\sim$98\% for $10<\pt<\SI{15}{GeV}$ and increases up to $\sim$100\% when $\pt>\SI{15}{GeV}$.
-
-As the same muon identification is used for the baseline and the signal definitions, the muon efficiencies are much higher than the electron ones (Figure~\ref{fig:RLE_cut_efficiencies}, right hand side).
-The associated efficiencies computed using $Z\to \mu \mu$ events increase from $\sim$80\% for $10<\pt<\SI{15}{GeV}$ to $\sim$98\% when $\pt>\SI{50}{GeV}$.
-The dominant contribution to the muon efficiency is the track isolation cut. The associated efficiency increases from $\sim$82\% to 98\% when $\pt>\SI{50}{GeV}$.
-Another difference with the electron case is that a transverse impact parameter cut is used in the muon signal definitions while this cut is already applied at the baseline level in the electron case.
-The contributions of the longitudinal and transverse impact parameter cuts on muon efficiency are very small because the cut efficiency of transverse impact parameter is $\sim$99\% and the longitudinal one is 100\%.
+The prompt electron efficiency increases with \pt from $\sim$62\% to $\sim$98\% and the efficiency losses are dominated by the calorimeter isolation.
+The calorimeter isolation cut efficiency increases with \pt from $\sim$ 69\% to $\sim$98\%.
+The loose to medium likelilihood (LH) cut efficiency increases from $\sim$92\% to $\sim$96\% in the $10< \pt < 30$~{\GeV} then reaches a plateau when $30 < \pt < 50$~{\GeV} and increases again to $\sim$98\% when $\pt > 60$~{\GeV}.
+The track isolation cut efficiency increases from $\sim$89\% at low \pt to $\sim$100\% when $\pt > 60$~{\GeV}.
+The longitudinal impact parameter cut efficiency increases from $\sim$98\% at low \pt to $\sim$100\% when $\pt > 15$~{\GeV}.
+The cut efficiencies for muon are much higher than the electron case because the same muon identification is used for the baseline and the signal muon definitions.
+The associated efficiencies computed using $Z\to \mu \mu$ events increase from $\sim$80\% for $10 < \pt < 15$~{\GeV} to $\sim$98\% when $\pt > 50$~{\GeV}.
+The dominant contribution is the track isolation cut efficiency which increases from $\sim$82\% to 98\% when $\pt > 50$~{\GeV}.
+The transverse and longitudinal impact parameter cut efficiencies are $\sim$99\% and 100\%, respectively.
+For the electron case, the transverse impact parameter cut is already applied at the baseline level
 
 %%%
 %%%
 %%%
 
-\subsubsection{Real lepton efficiencies}
-\label{subsubsec:RLE_results}
-
-Figure~\ref{fig:RLE_real_efficiency_total_systematics} shows the real lepton efficiencies as a function of \pt and $|\eta|$ used by the matrix method.
-The three $|\eta|$ binnings used for the electron case are driven by the electromagnetic calorimeter geometry.
-The background subtraction has been applied on the $10<\pt<\SI{15}{GeV}$ and $15<\pt<\SI{20}{GeV}$ for the electron case.
-Because the crack region, $1.37<|\eta|<1.52$, is not considered in the analysis, this region is removed from the real electron efficiency study.
+\section{Real lepton efficiencies}
+\label{sec:app_RLE}
+The real lepton efficiencies as a function of \pt and $|\eta|$ are shown in Fig~\ref{fig:app_RLE_real_efficiency_total_systematics} where the background subtraction has been applied on the electron case in $10 < \pt < 15$~{\GeV} and $15 < \pt < 20$~{\GeV}.
+%
+\begin{figure}[htb]
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{real_electron_efficiency_total_systematics.pdf}
+            \caption{Electron}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{real_muon_efficiency_total_systematics.pdf}
+            \caption{Muon}
+        \end{center}
+    \end{subfigure}
+    \caption{The real lepton efficiencies as a function of \pt and $|\eta|$ measured using the $Z$ tag-and-probe method.
+    For the real electron efficiencies measurement, the $|\eta|$ binning in the creak region is removed.
+    A homogeneous $|\eta|$ binnings are used for the muon case.}
+    \label{fig:app_RLE_real_efficiency_total_systematics}
+\end{figure}
+%
 The uncertainties are the quadratic sum of the statistical uncertainties and the measurement systematic uncertainties.
-The electron efficiencies in $1.52<|\eta|<2.01$ are lower than the other two $|\eta|$ regions.
-This is expected as the electron identification is better in the central region of the calorimeter. 
+The 3 $|\eta|$ binnings for the electron case are driven by the geometry of ECAL.
+The crack region, $1.37<|\eta|<1.52$, is removed from the real electron efficiency study.
+It is expected that the electron efficiencies in $1.52<|\eta|<2.01$ are lower because the electron identification is better in the central region of the ECAL.
+
+%%%
+%%%
+%%%
+
+\subsection{Tag-and-probe method and truth matching comparisons}
+\label{subsec:app_RLE_truth_matched}
+The truth matched information in the $Z \to \ell \ell$ MC samples are used to verify the accuracy of $Z$ tag-and-probe method.
+Figure~\ref{fig:app_RLE_TandP_truth_match_comparisons} shows the real lepton efficiencies as a function of \pt, $|\eta|$, and $\Delta R(\ell, \mathrm{jet})$ using $Z$ tag-and-probe method and truth matching.
+%
+\begin{figure}[htb]
+    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_electron_pt.pdf}
+    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_electron_eta.pdf}
+    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_electron_dRjet.pdf}\\
+    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_muon_pt.pdf}
+    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_muon_eta.pdf}
+    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_muon_dRjet.pdf}
+    \caption{The real lepton efficiencies computed by $Z$ tag-and-probe method (red dots) and truth matching (blue triangles).
+    The electron cases are on the top row and muon cases are at the bottom row.
+    The three columns from the left to the right are the real lepton efficiencies as a function \pt, $|\eta|$, and $\Delta R(\ell, \mathrm{jet})$, respectively.
+    The lower pads show the ratio with respect to the $Z$ tag-and-probe method.}
+    \label{fig:app_RLE_TandP_truth_match_comparisons}
+\end{figure}
+%
+The associated uncertainties are statistical uncertainties only.
+For the real electron efficiencies, the largest difference is $\sim$7\% in low \pt and no differences can be seen when $\pt > 50$~{\GeV}; the largest difference is $\sim$3\% in ; the larger differences in $\Delta R(e, \mathrm{jet})$ exist when $\Delta R(e, \mathrm{jet}) < 0.4$.
+Because the overlap removal has been applied on the baseline electrons, the $\Delta R(e, \mathrm{jet}) < 0.4$ region lacks statistics.
+For the real muon efficiencies, the differences are less then 1\% for \pt and $|\eta|$.
+However, the differences are larger for $\Delta R(\mu, \mathrm{jet}) < 0.4$ also because of the overlap removal.
+The small differences between two methods indicate the robust of $Z$ tag-and-probe method and the differences may be considered as the systematic uncertainties.
+
+%%%
+%%%
+%%%
+
+\subsection{Data-to-MC comparisons}
+\label{subsec:RLE_data_to_mc_comparisons}
+The real lepton efficiencies calculating by data and $Z\to \ell\ell$ MC samples are compared.
+All 2015 and 2016 data are considered corresponding to an integrated luminosity of 36.5 \ifb.
+All the lepton scale factors are applied on the MC samples and the simulation is reweighted to the pile-up observed in data.
+Figure~\ref{fig:app_RLE_real_efficiency_pt_eta_dRjet} shows the real efficiencies as a function of \pt, $|\eta|$ and $\Delta R(\ell, \mathrm{jet})$ using data and $Z\to \ell \ell$ MC samples, respectively.
+The associated uncertainties are statistical uncertainties only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  computed using the $Z$ tag-and-probe method in  are compared to those using the simulated  processes.
+
+All the MC  provided by the CP group are applied and the simulation is reweighted to the pile-up observed in the data.
+%Besides, an additional truth match is added for the MC lepton selection.
+
+The associated uncertainties correspond to the statistical uncertainties only.
+A reasonable data to MC agreement is observed except the low $\Delta R(\ell, jet)$ region because of lacking statistics.
+The real electron efficiencies as a function of $|\eta|$ computed using the $Z\to ee$ MC are slightly lower than the one computed using data.
+The differences come from the efficiencies drop of $Z\to ee$ MC in the $40<\pt<\SI{50}{GeV}$. 
 
 \begin{figure}[htbp]
-\includegraphics[width=0.48\textwidth]{real_electron_efficiency_total_systematics.pdf}
-\includegraphics[width=0.48\textwidth]{real_muon_efficiency_total_systematics.pdf}
-\caption{The real lepton efficiencies as a function of \pt and $|\eta|$ measured using the $Z$ tag-and-probe method.
-The left plot corresponds to the real electron efficiencies in three $|\eta|$ regions and the right plot stands for the real muon efficiencies in four $|\eta|$ regions.
-The $|\eta|$ binning used for the real electron efficiencies measurement corresponds to the geometry of the electromagnetic calorimeter and removing the creak region.
-A homogeneous $|\eta|$ binning has been chosen for the muon case.}
-\label{fig:RLE_real_efficiency_total_systematics}
+    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_electron_pt.pdf}
+    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_electron_eta.pdf}
+    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_electron_dRjet.pdf}\\
+    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_muon_pt.pdf}
+    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_muon_eta.pdf}
+    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_muon_dRjet.pdf}
+    \caption{The real lepton efficiencies as a function of $\pt$, $|\eta|$ and $\Delta R(\ell, jet)$ measured on data and MC using the $Z$ tag-and-probe method.
+    The plots on the top row correspond to the real electron efficiencies and the plots on the bottown row correspond to the real muon efficiencies.
+    The 2015 + 2016 data are denoted by the black dots, the $Z\to\ell\ell$ MC are shown using red squares and are reweighted to the data pile-up.
+    The uncertainties shown in the plots are corresponding to the statistical uncertainties only.
+    Some differences between data and $Z\to \ell\ell$ MC can be seen in the low $\Delta R(\ell, jet)$ region.
+    The binning used for the real electron efficiencies as a function of $\eta$ corresponds to the geometry of the electromagnetic calorimeter.}
+    \label{fig:app_RLE_real_efficiency_pt_eta_dRjet}
+\end{figure}
+
+
+
+\subsubsection{Real lepton efficiency versus pileup}
+\label{subsubsec:RLE_vs_pileup}
+ 
+The relations between the real lepton efficiencies and the pileup are also studied.
+The efficiencies calculated using 2015 + 2016 data are compared with those obtained using $Z$ tag-and-probe method and truth matching MC samples.
+The \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC samples are also considered because we are interested in the behavior of the efficiencies with different event topologies.
+Figure~\ref{fig:RLE_vs_pileup} shows the electron and muon real efficiencies as a function of the average interactions per crossing $<\mu>$.
+The real electron efficiencies are about 92\% to 93\% at low $<\mu>$ and decrease when $<\mu>$ increase.
+Comparing with the real lepton efficiencies calculated by data samples, the efficiencies computed using $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC sample have lower efficiencies in both electron and muon cases.
+But the real lepton efficiencies computed by the \ttbar have similar efficiencies with the data one in the electron case and have lower efficiencies in the muon case.
+This is because the \ttbar MC has lower real muon efficiencies when $\pt<\SI{40}{GeV}$ with respect to data.
+If we require a $\pt>\SI{40}{GeV}$ requirement on the probe leptons, then the real muon efficiencies for \ttbar MC agree with data.
+The electron and muon real efficiencies as a function of $\pt$ compared with data and $Z\to\ell\ell$ are shown in Figure~\ref{fig:RLE_real_efficiency_ttbar_gtt}.
+From which we notice the real lepton efficiencies of \ttbar process is lower than the data one when $\pt<\SI{40}{GeV}$ and the $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ process has lower real lepton efficiencies in both electron and muon cases.
+
+\begin{figure}[htbp]
+\includegraphics[width=0.48\textwidth]{real_efficiency_vs_AvgMu_elec.pdf}
+\includegraphics[width=0.48\textwidth]{real_efficiency_vs_AvgMu_muon.pdf}
+\caption{
+The real lepton efficiencies as a function of the average interactions per crossing $<\mu>$.
+The data is shown as black dots and $Z\to \ell\ell$ tag-and-probe and truth matching are in red squares and blue triangles, respectively.
+The real lepton efficiencies calculated using \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC are also shown in magenta diamonds and yellow crosses.
+And they show the real lepton efficiencies with different event topoloties.
+The $|\eta|<2$ requirement has been applied on the \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC samples for the electron case.
+}
+\label{fig:RLE_vs_pileup}
+\end{figure}
+
+\begin{figure}[htbp]
+\includegraphics[width=0.48\textwidth]{real_efficiency_ratio_plot_electron_pt_ttbar_gtt.pdf}
+\includegraphics[width=0.48\textwidth]{real_efficiency_ratio_plot_muon_pt_ttbar_gtt.pdf}
+\caption{
+The electron and muon real efficiencies as a function of $\pt$.
+The black dots stands for data, the red squares and blue triangles indicate $Z\to\ell\ell$ tag-and-probe and truth matching, respectively.
+The \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ are represented by magenta diamonds and yellow crosses, respectively.
+All of the real lepton efficiencies computed by MC processes are agree with the data one when $\pt>\SI{40}{GeV}$.
+The differences in the $\pt<\SI{40}{GeV}$ region come from the different event topologies. 
+}
+\label{fig:RLE_real_efficiency_ttbar_gtt}
 \end{figure}
