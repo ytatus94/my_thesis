@@ -99,7 +99,7 @@ By inverting the calorimeter and track isolations, requesting the electron objec
 Three background templates are considered for the systematic study.
 The definitions of the background template are summarized in Table~\ref{tab:app_RLE_bkg_templates}.
 %
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{cccc}
@@ -124,7 +124,7 @@ The definitions of the background template are summarized in Table~\ref{tab:app_
 %
 Figure~\ref{fig:app_RLE_bkg_templates} shows the $m_{ee}$ distributions of the background template.
 %
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
             \includegraphics[scale=0.4]{bkg_template_electron_pt_1015_eta0201.pdf}
@@ -161,7 +161,7 @@ The fit is mostly driven by the $60 < m_{ee}^\mathrm{template} < 80$~{\GeV} due 
 After fitting is performed, the template in the tail region $N_\mathrm{template}^\mathrm{tail}$ is normalized to the background in the tail $N_{bkg}^\mathrm{tail}$ to get the correct estimated number of background events.
 The baseline $m_{ee}$ distributions before and after applying the background subtraction using the background template are shown in Fig.~\ref{fig:app_RLE_bkg_estimations}.
 %
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \begin{subfigure}[b]{0.32\textwidth}
         \begin{center}
             \includegraphics[scale=0.27]{bkg_subtraction_baseline_template_range_baseline_mll80_100_pt10_15_eta0_80_tag_trigger_matched.pdf}
@@ -221,7 +221,7 @@ Then, the background contamination in the $Z$ mass region $80 < m_{ee} < 100$~{\
 %
 Table~\ref{tab:app_RLE_bkg_estimations} summarize the background estimations in different \pt and $|\eta|$ regions.
 %
-\begin{table}[htb]
+\begin{table}[htbp]
     \begin{center}
         \begin{tabular}{cccc}
             \hline
@@ -243,7 +243,7 @@ The largest improvements are observed in the lowest \pt bin ($10 < \pt < 15$~{\G
 The background contamination is relatively small in the second lowest \pt bin ($15 < \pt < 20$~{\GeV}) providing the evidence that high purity of prompt leptons can be obtained using $Z$ tag-and-probe method.
 Table~\ref{tab:app_RLE_efficiency_before_and_after_background_subtraction} shows the real electron efficiencies before and after performing the background subtraction.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{ccccc}
@@ -273,7 +273,7 @@ Table~\ref{tab:app_RLE_efficiency_before_and_after_background_subtraction} shows
 \label{sec:app_RLE_cut_efficiencies}
 Figure~\ref{fig:app_RLE_cut_efficiencies} shows the efficiencies associated to each signal cut with respect to baseline definitions.
 %
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
             \includegraphics[scale=0.4]{cut_efficiency_electron.pdf}
@@ -313,7 +313,7 @@ For the electron case, the transverse impact parameter cut is already applied at
 \label{sec:app_RLE}
 The real lepton efficiencies as a function of \pt and $|\eta|$ are shown in Fig~\ref{fig:app_RLE_real_efficiency_total_systematics} where the background subtraction has been applied on the electron case in $10 < \pt < 15$~{\GeV} and $15 < \pt < 20$~{\GeV}.
 %
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
             \includegraphics[scale=0.4]{real_electron_efficiency_total_systematics.pdf}
@@ -346,13 +346,13 @@ It is expected that the electron efficiencies in $1.52<|\eta|<2.01$ are lower be
 The truth matched information in the $Z \to \ell \ell$ MC samples are used to verify the accuracy of $Z$ tag-and-probe method.
 Figure~\ref{fig:app_RLE_TandP_truth_match_comparisons} shows the real lepton efficiencies as a function of \pt, $|\eta|$, and $\Delta R(\ell, \mathrm{jet})$ using $Z$ tag-and-probe method and truth matching.
 %
-\begin{figure}[htb]
-    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_electron_pt.pdf}
-    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_electron_eta.pdf}
-    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_electron_dRjet.pdf}\\
-    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_muon_pt.pdf}
-    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_muon_eta.pdf}
-    \includegraphics[width=0.33\textwidth]{Compare_TandP_truth_match_muon_dRjet.pdf}
+\begin{figure}[htbp]
+    \includegraphics[width=0.32\textwidth]{Compare_TandP_truth_match_electron_pt.pdf}
+    \includegraphics[width=0.32\textwidth]{Compare_TandP_truth_match_electron_eta.pdf}
+    \includegraphics[width=0.32\textwidth]{Compare_TandP_truth_match_electron_dRjet.pdf}\\
+    \includegraphics[width=0.32\textwidth]{Compare_TandP_truth_match_muon_pt.pdf}
+    \includegraphics[width=0.32\textwidth]{Compare_TandP_truth_match_muon_eta.pdf}
+    \includegraphics[width=0.32\textwidth]{Compare_TandP_truth_match_muon_dRjet.pdf}
     \caption{The real lepton efficiencies computed by $Z$ tag-and-probe method (red dots) and truth matching (blue triangles).
     The electron cases are on the top row and muon cases are at the bottom row.
     The three columns from the left to the right are the real lepton efficiencies as a function \pt, $|\eta|$, and $\Delta R(\ell, \mathrm{jet})$, respectively.
@@ -372,100 +372,530 @@ The small differences between two methods indicate the robust of $Z$ tag-and-pro
 %%%
 
 \subsection{Data-to-MC comparisons}
-\label{subsec:RLE_data_to_mc_comparisons}
+\label{subsec:app_RLE_data_to_mc_comparisons}
 The real lepton efficiencies calculating by data and $Z\to \ell\ell$ MC samples are compared.
 All 2015 and 2016 data are considered corresponding to an integrated luminosity of 36.5 \ifb.
 All the lepton scale factors are applied on the MC samples and the simulation is reweighted to the pile-up observed in data.
 Figure~\ref{fig:app_RLE_real_efficiency_pt_eta_dRjet} shows the real efficiencies as a function of \pt, $|\eta|$ and $\Delta R(\ell, \mathrm{jet})$ using data and $Z\to \ell \ell$ MC samples, respectively.
-The associated uncertainties are statistical uncertainties only.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  computed using the $Z$ tag-and-probe method in  are compared to those using the simulated  processes.
-
-All the MC  provided by the CP group are applied and the simulation is reweighted to the pile-up observed in the data.
-%Besides, an additional truth match is added for the MC lepton selection.
-
-The associated uncertainties correspond to the statistical uncertainties only.
-A reasonable data to MC agreement is observed except the low $\Delta R(\ell, jet)$ region because of lacking statistics.
-The real electron efficiencies as a function of $|\eta|$ computed using the $Z\to ee$ MC are slightly lower than the one computed using data.
-The differences come from the efficiencies drop of $Z\to ee$ MC in the $40<\pt<\SI{50}{GeV}$. 
-
+%
 \begin{figure}[htbp]
-    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_electron_pt.pdf}
-    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_electron_eta.pdf}
-    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_electron_dRjet.pdf}\\
-    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_muon_pt.pdf}
-    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_muon_eta.pdf}
-    \includegraphics[width=0.33\textwidth]{real_efficiency_ratio_plot_muon_dRjet.pdf}
-    \caption{The real lepton efficiencies as a function of $\pt$, $|\eta|$ and $\Delta R(\ell, jet)$ measured on data and MC using the $Z$ tag-and-probe method.
-    The plots on the top row correspond to the real electron efficiencies and the plots on the bottown row correspond to the real muon efficiencies.
-    The 2015 + 2016 data are denoted by the black dots, the $Z\to\ell\ell$ MC are shown using red squares and are reweighted to the data pile-up.
-    The uncertainties shown in the plots are corresponding to the statistical uncertainties only.
-    Some differences between data and $Z\to \ell\ell$ MC can be seen in the low $\Delta R(\ell, jet)$ region.
-    The binning used for the real electron efficiencies as a function of $\eta$ corresponds to the geometry of the electromagnetic calorimeter.}
+    \includegraphics[width=0.32\textwidth]{real_efficiency_ratio_plot_electron_pt.pdf}
+    \includegraphics[width=0.32\textwidth]{real_efficiency_ratio_plot_electron_eta.pdf}
+    \includegraphics[width=0.32\textwidth]{real_efficiency_ratio_plot_electron_dRjet.pdf}\\
+    \includegraphics[width=0.32\textwidth]{real_efficiency_ratio_plot_muon_pt.pdf}
+    \includegraphics[width=0.32\textwidth]{real_efficiency_ratio_plot_muon_eta.pdf}
+    \includegraphics[width=0.32\textwidth]{real_efficiency_ratio_plot_muon_dRjet.pdf}
+    \caption{The real lepton efficiencies measured on 2015 + 2016 data (black dots) and $Z\to \ell\ell$ MC samples (red squares) using the $Z$ tag-and-probe method.
+    The electron cases are on the top row and muon cases are at the bottom row.
+    The three columns from the left to the right are the real lepton efficiencies as a function \pt, $|\eta|$, and $\Delta R(\ell, \mathrm{jet})$, respectively.
+    The MC samples have been reweighted to the pile-up observed in data.}
     \label{fig:app_RLE_real_efficiency_pt_eta_dRjet}
 \end{figure}
+%
+The associated uncertainties are statistical uncertainties only.
+Good agreement between data and MC can be seen in the \pt and $|\eta|$ plots.
+Larger differences exist in $\Delta R(\ell, \mathrm{jet})$ plots because of lacking statistics.
 
+%%%
+%%%
+%%%
 
+\subsection{Real lepton efficiency versus pileup}
+\label{subsec:app_RLE_vs_pileup}
+The relations between the real lepton efficiencies and the pile-up are also studied.
+The efficiencies computed by 2015 + 2016 data, $Z$ tag-and-probe method and truth matching MC samples are shown in Fig.~\ref{fig:app_RLE_vs_pileup}.
+%
+\begin{figure}[htbp]
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{real_efficiency_vs_AvgMu_elec.pdf}
+            \caption{Electron}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{real_efficiency_vs_AvgMu_muon.pdf}
+            \caption{Muon}
+        \end{center}
+    \end{subfigure}
+    \caption{The real lepton efficiencies as a function of the average interactions per crossing $<\mu>$.
+    The data is presented in black dots,  $Z\to \ell\ell$ tag-and-probe is presented in red squares, the truth matching is presented in blue triangles, the \ttbar is presented in magenta diamonds, and $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ is presented in yellow crosses.
+    The $|\eta|<2$ requirement has been applied on the \ttbar and $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ MC samples for the electron case.}
+\label{fig:app_RLE_vs_pileup}
+\end{figure}
+%
+In order to study the efficiencies with different event topologies, the \ttbar and $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ MC samples are considered.
+The real electron efficiencies are $\sim$92\% at low $<\mu>$ and decrease when $<\mu>$ increases.
+The measured real lepton efficiencies using $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ MC sample is lower then the data case.
+The \ttbar and data have similar real electron efficiencies.
+However, the real muon efficiencies for \ttbar is lower than the data because the efficiencies in $\pt < 40$~{\GeV} is lower.
+If a $\pt > 40$~{\GeV} requirement is applied on the \ttbar MC sample, then the efficiencies are agreed with data.
+Figure~\ref{fig:app_RLE_real_efficiency_ttbar_gtt} shows the measured real electron and muon efficiencies as a function of $\pt$ using data, $Z$ tag-and-probe method, truth matching, \ttbar, and $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ MC samples.
+%
+\begin{figure}[htbp]
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{real_efficiency_ratio_plot_electron_pt_ttbar_gtt.pdf}
+            \caption{Electron}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{real_efficiency_ratio_plot_muon_pt_ttbar_gtt.pdf}
+            \caption{Muon}
+        \end{center}
+    \end{subfigure}
+    \caption{The real electron and muon efficiencies as a function of $\pt$.
+    The data is presented in black dots,  $Z\to \ell\ell$ tag-and-probe is presented in red squares, the truth matching is presented in blue triangles, the \ttbar is presented in magenta diamonds, and $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ is presented in yellow crosses.
+    The differences in the $\pt < 40$~{\GeV} region come from the different event topologies.}
+    \label{fig:app_RLE_real_efficiency_ttbar_gtt}
+\end{figure}
+%
+The real lepton efficiencies of \ttbar process is lower than the data one in $\pt < 40$~{\GeV} region.
+The real lepton efficiencies of $\tilde{g} \to \ttbar \widetilde{\chi^{0}_{1}}$ process are lower than data in both electron and muon cases.
 
-\subsubsection{Real lepton efficiency versus pileup}
-\label{subsubsec:RLE_vs_pileup}
- 
-The relations between the real lepton efficiencies and the pileup are also studied.
-The efficiencies calculated using 2015 + 2016 data are compared with those obtained using $Z$ tag-and-probe method and truth matching MC samples.
-The \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC samples are also considered because we are interested in the behavior of the efficiencies with different event topologies.
-Figure~\ref{fig:RLE_vs_pileup} shows the electron and muon real efficiencies as a function of the average interactions per crossing $<\mu>$.
-The real electron efficiencies are about 92\% to 93\% at low $<\mu>$ and decrease when $<\mu>$ increase.
-Comparing with the real lepton efficiencies calculated by data samples, the efficiencies computed using $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC sample have lower efficiencies in both electron and muon cases.
-But the real lepton efficiencies computed by the \ttbar have similar efficiencies with the data one in the electron case and have lower efficiencies in the muon case.
-This is because the \ttbar MC has lower real muon efficiencies when $\pt<\SI{40}{GeV}$ with respect to data.
-If we require a $\pt>\SI{40}{GeV}$ requirement on the probe leptons, then the real muon efficiencies for \ttbar MC agree with data.
-The electron and muon real efficiencies as a function of $\pt$ compared with data and $Z\to\ell\ell$ are shown in Figure~\ref{fig:RLE_real_efficiency_ttbar_gtt}.
-From which we notice the real lepton efficiencies of \ttbar process is lower than the data one when $\pt<\SI{40}{GeV}$ and the $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ process has lower real lepton efficiencies in both electron and muon cases.
+%%%
+%%%
+%%%
+
+\section{Sources of systematic uncertainties}
+\label{sec:app_RLE_sources_of_systematic_uncertainties}
+
+%%%
+%%%
+%%%
+
+\subsection{Measurement systematics}
+\label{subsec:app_RLE_bkg_systematics}
+The measurement systematic uncertainties of the real lepton efficiency calculated by the $Z$ tag-and-probe mothod have been studied by varying the background template definitions, the template fitting ranges, and the $m_{\ell \ell}$ windows.
+The definition of 3 background templates are listed in Table~\ref{tab:app_RLE_bkg_templates}.
+The additional template fitting ranges are [60 \textendash 70] $\cup$ [100 \textendash 120]~{\GeV} and [65 \textendash 75] $\cup$ [100 \textendash 120]~{\GeV}.
+The two other $m_{\ell \ell}$ windows considered are $75 < m_{ee} < 105$~{\GeV} and $85 < m_{ee} < 95$~{\GeV}.
+Therefore, there are 27 variations are considered in $\pt < 20$~{\GeV} and 3 variations in $\pt > 20$~{\GeV} for the electron case.
+Because the background subtraction is applied on the electron case only, no background templates and template fitting ranges are considered in the muon case.
+There are only 3 $m_{\ell \ell}$ window variations considered for the systematic uncertainties of real muon efficiency.
+Table~\ref{tab:app_RLE_bkg_systematics_elec} and Table~\ref{tab:app_RLE_bkg_systematics_muon} show the measurement uncertainties for the electron and muon cases, respectively.
+
+\begin{table}[htbp]
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{cccc}
+            \hline
+            \hline
+            \multicolumn{4}{c}{Electrons (measurement)}\\
+            \hline
+            $|\eta|$                 & [0, 0.8]                          & [0.8, 1.37]                       & [1.52, 2.0]\\
+            \hline
+            $10 < \pt < 15$~{\GeV}   & 2.32\%(t) / 2.85\%(f) / 5.06\%(m) & 4.84\%(t) / 1.99\%(f) / 5.66\%(m) & 5.90\%(t) / 0.28\%(f) / 10.31\%(m)\\
+            $15 < \pt < 20$~{\GeV}   & 1.39\%(t) / 0.00\%(f) / 3.55\%(m) & 2.01\%(t) / 0.01\%(f) / 3.94\%(m) & 2.05\%(t) / 0.15\%(f) / 6.19\%(m)\\
+            $20 < \pt < 25$~{\GeV}   & 2.46\%                            & 3.34\%                            & 3.88\%\\
+            $25 < \pt < 30$~{\GeV}   & 1.69\%                            & 2.17\%                            & 2.66\%\\
+            $30 < \pt < 35$~{\GeV}   & 1.19\%                            & 1.75\%                            & 2.07\%\\
+            $35 < \pt < 40$~{\GeV}   & 0.70\%                            & 1.23\%                            & 1.32\%\\
+            $40 < \pt < 50$~{\GeV}   & 0.20\%                            & 0.30\%                            & 0.42\%\\
+            $50 < \pt < 60$~{\GeV}   & 0.15\%                            & 0.17\%                            & 0.20\%\\
+            $60 < \pt < 70$~{\GeV}   & 0.13\%                            & 0.14\%                            & 0.21\%\\
+            $70 < \pt < 80$~{\GeV}   & 0.10\%                            & 0.17\%                            & 0.18\%\\
+            $80 < \pt < 120$~{\GeV}  & 0.12\%                            & 0.11\%                            & 0.19\%\\
+            $120 < \pt < 150$~{\GeV} & 0.10\%                            & 0.16\%                            & 0.06\%\\
+            $150 < \pt < 200$~{\GeV} & 0.11\%                            & 0.03\%                            & 0.19\%\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    \caption{The systematic uncertainties for real electron efficiencies.
+    For the electron case, the background subtraction is applied on the first two \pt bins ($\pt < 20$~{\GeV}).
+    There are 3 sources of the systematic uncertainties: varying templates (t), varying fitting ranges (f), and varying $m_{\ell \ell}$ windows (m).
+    When $\pt > 20$~{\GeV}, only $m_{\ell\ell}$ window variation is considered.}
+    \label{tab:app_RLE_bkg_systematics_elec}
+\end{table}
+
+\begin{table}[htbp]
+    \begin{center}
+    %\resizebox{\textwidth}{!}{%
+        \begin{tabular}{ccccc}
+            \hline
+            \hline
+            \multicolumn{5}{c}{Muon (measurement)}\\
+            \hline
+            $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
+            \hline
+            $10 < \pt < 15$~{\GeV}   & 1.29\%   & 1.06\%     & 0.96\%     & 0.98\%\\
+            $15 < \pt < 20$~{\GeV}   & 0.44\%   & 0.38\%     & 0.56\%     & 0.64\%\\
+            $20 < \pt < 25$~{\GeV}   & 0.19\%   & 0.22\%     & 0.38\%     & 0.56\%\\
+            $25 < \pt < 30$~{\GeV}   & 0.09\%   & 0.12\%     & 0.22\%     & 0.36\%\\
+            $30 < \pt < 35$~{\GeV}   & 0.06\%   & 0.11\%     & 0.23\%     & 0.32\%\\
+            $35 < \pt < 40$~{\GeV}   & 0.05\%   & 0.07\%     & 0.13\%     & 0.26\%\\
+            $40 < \pt < 50$~{\GeV}   & 0.04\%   & 0.04\%     & 0.05\%     & 0.07\%\\
+            $50 < \pt < 60$~{\GeV}   & 0.06\%   & 0.06\%     & 0.09\%     & 0.07\%\\
+            $60 < \pt < 70$~{\GeV}   & 0.06\%   & 0.07\%     & 0.08\%     & 0.08\%\\
+            $70 < \pt < 80$~{\GeV}   & 0.06\%   & 0.08\%     & 0.11\%     & 0.05\%\\
+            $80 < \pt < 120$~{\GeV}  & 0.07\%   & 0.07\%     & 0.12\%     & 0.07\%\\
+            $120 < \pt < 150$~{\GeV} & 0.06\%   & 0.06\%     & 0.15\%     & 0.05\%\\
+            $150 < \pt < 200$~{\GeV} & 0.09\%   & 0.11\%     & 0.15\%     & 0.06\%\\
+            \hline
+            \hline
+        \end{tabular}
+    %}
+    \end{center}
+    \caption{The systematic uncertainties for real muon efficiencies.
+    Only the $m_{\ell\ell}$ window variation is considered because no background subtraction is applied on the muon case.}
+    \label{tab:app_RLE_bkg_systematics_muon}
+\end{table}
+
+Since electrons extracted from the $m_{\ell \ell}$ tail region are affected by bremsstrahlung effects, the contribution of the $m_{\ell \ell}$ window variations is larger in the systematic uncertainties.
+Using larger $m_{\ell \ell}$ window, the lower real electron efficiency we get.
+In $10 < \pt < 15$~{\GeV}, the contribution comes from the $m_{\ell\ell}$ window variation is $\sim$10\% wherease the background subtraction one is $\sim$6\%.
+This result shows the robustness of the background subtraction method.
+
+%%%
+%%%
+%%%
+
+\subsection{Trigger bias}
+\label{subsec:app_RLE_trigger_bias}
+The systematic uncertainties originate from different trigger strategies are also studied.
+The leptons entering in the signal regions are required to fire one of the di-lepton triggers.
+If the event fires the di-lepton trigger and the considered lepton is the leading lepton or the sub-leading lepton, then a trigger matching should be applied before the real lepton efficiency measurement.
+However, if the event fires the \met trigger or the considered lepton is the third leading lepton, then no trigger matching should be applied.
+The systematics uncertainties of are then assigned as the differences between the nominal values and the values measured with different trigger where the nominal value is obtained using events triggered by the single lepton triggers as listed in Table~\ref{tab:app_RLE_single_lepton_triggers}.
+In order to provide unbiased probe leptons for the real lepton efficiency measurements, the tag lepton must match single lepton trigger.
+Moreover, the \pt of the two leading leptons must satisfies $\pt > 20$~{\GeV}, the leptons with $\pt < 20$~{\GeV} will never be trigger matched to the di-lepton trigger.
+Hence, no systematics are assigned in the region $10 < \pt < 20$~{\GeV}.
+The real electron efficiencies as a function of \pt in 3 $|\eta|$ regions using different trigger strategies are shown in Fig.~\ref{fig:app_RLE_trigger_bias_electron}.
+The crack region, $1.37<|\eta|<1.52$, is removed from the study.
 
 \begin{figure}[htbp]
-\includegraphics[width=0.48\textwidth]{real_efficiency_vs_AvgMu_elec.pdf}
-\includegraphics[width=0.48\textwidth]{real_efficiency_vs_AvgMu_muon.pdf}
-\caption{
-The real lepton efficiencies as a function of the average interactions per crossing $<\mu>$.
-The data is shown as black dots and $Z\to \ell\ell$ tag-and-probe and truth matching are in red squares and blue triangles, respectively.
-The real lepton efficiencies calculated using \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC are also shown in magenta diamonds and yellow crosses.
-And they show the real lepton efficiencies with different event topoloties.
-The $|\eta|<2$ requirement has been applied on the \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ MC samples for the electron case.
-}
-\label{fig:RLE_vs_pileup}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_electron_eta080_ratio_plot.pdf}
+            \caption{$0 < |\eta| < 0.8$}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_electron_eta80137_ratio_plot.pdf}
+            \caption{$0.8 < |\eta| < 1.37$}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_electron_eta152201_ratio_plot.pdf}
+            \caption{$1.52 < |\eta| < 2.01$}
+        \end{center}
+    \end{subfigure}
+    \caption{The real electron efficiencies as a function of \pt in 3 $|\eta|$ regions.
+    Four different trigger strategies are applied.
+    The nominal values are obtained using the single lepton trigger with tag trigger matched.
+    The differences between the nominal values and the values measured using other strategies are assigned as the systematic uncertainties.}
+    \label{fig:app_RLE_trigger_bias_electron}
+\end{figure}
+
+The real muon efficiencies as a function of \pt in 4 $|\eta|$ regions using different trigger strategies are shown in Fig.~\ref{fig:app_RLE_trigger_bias_muon}.
+These plots indicate that the trigger strategy does not affect the real muon efficiency measurement.
+
+\begin{figure}[htbp]
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_muon_eta060_ratio_plot.pdf}
+            \caption{$0 < |\eta| < 0.6$}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_muon_eta60120_ratio_plot.pdf}
+            \caption{$0.6 < |\eta| < 1.2$}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_muon_eta120180_ratio_plot.pdf}
+            \caption{$1.2 < |\eta| < 1.8$}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{trigger_uncertainty_muon_eta180250_ratio_plot.pdf}
+            \caption{$1.8 < |\eta| < 2.5$}
+        \end{center}
+    \end{subfigure}
+    \caption{The real muon efficiencies as a function of \pt in 4 $|\eta|$ regions.
+    Four different trigger strategies are applied.
+    The nominal values are obtained using the single lepton trigger with tag trigger matched.
+    The differences between the nominal values and the values measured using other strategies are assigned as the systematic uncertainties.}
+    \label{fig:app_RLE_trigger_bias_muon}
+\end{figure}
+
+Table~\ref{tab:app_RLE_trigger_syst_elec} and Table~\ref{tab:app_RLE_trigger_syst_muon} show the systematic uncertainties due to the different trigger stratagies.
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{cccc}
+            \hline
+            \hline
+            \multicolumn{4}{c}{Electrons (trigger)}\\
+            \hline
+            $|\eta|$                 & [0, 0.8] & [0.8, 1.37] & [1.52, 2.0]\\
+            \hline
+            $10 < \pt < 15$~{\GeV}   & 2.46\%   & 1.32\%      & 3.02\%\\
+            $15 < \pt < 20$~{\GeV}   & 0.16\%   & 0.78\%      & 1.33\%\\
+            $20 < \pt < 25$~{\GeV}   & 0.29\%   & 0.84\%      & 1.18\%\\
+            $25 < \pt < 30$~{\GeV}   & 1.53\%   & 2.07\%      & 2.20\%\\
+            $30 < \pt < 35$~{\GeV}   & 1.28\%   & 1.63\%      & 1.81\%\\
+            $35 < \pt < 40$~{\GeV}   & 0.98\%   & 1.19\%      & 1.42\%\\
+            $40 < \pt < 50$~{\GeV}   & 0.73\%   & 0.90\%      & 1.05\%\\
+            $50 < \pt < 60$~{\GeV}   & 0.68\%   & 0.81\%      & 1.05\%\\
+            $60 < \pt < 70$~{\GeV}   & 0.61\%   & 0.70\%      & 1.13\%\\
+            $70 < \pt < 80$~{\GeV}   & 0.65\%   & 0.77\%      & 1.27\%\\
+            $80 < \pt < 120$~{\GeV}  & 0.60\%   & 0.66\%      & 1.11\%\\
+            $120 < \pt < 120$~{\GeV} & 0.38\%   & 0.40\%      & 0.79\%\\
+            $150 < \pt < 200$~{\GeV} & 0.43\%   & 0.22\%      & 0.25\%\\
+            \hline
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{The systematic uncertainties for real electron efficiencies due to the different trigger strategies.
+    The uncertainties of each trigger strategy are calculated with respect to the one applied single lepton trigger with tag trigger matched.
+    The total uncertainties are the quadratic sum of the uncertainties of each trigger strategy.}
+    \label{tab:app_RLE_trigger_syst_elec}
+\end{table}
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{ccccc}
+            \hline
+            \hline
+            \multicolumn{5}{c}{Muons (trigger)}\\
+            \hline
+            $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
+            \hline
+            $10 < \pt < 15$~{\GeV}   & 0.11\%   & 0.15\%     & 0.34\%     & 0.19\%\\
+            $15 < \pt < 20$~{\GeV}   & 0.14\%   & 0.50\%     & 0.75\%     & 0.77\%\\
+            $20 < \pt < 25$~{\GeV}   & 0.30\%   & 0.63\%     & 1.01\%     & 0.93\%\\
+            $25 < \pt < 30$~{\GeV}   & 0.90\%   & 1.38\%     & 2.12\%     & 1.83\%\\
+            $30 < \pt < 35$~{\GeV}   & 0.58\%   & 0.84\%     & 1.27\%     & 0.99\%\\
+            $35 < \pt < 40$~{\GeV}   & 0.33\%   & 0.37\%     & 0.57\%     & 0.46\%\\
+            $40 < \pt < 50$~{\GeV}   & 0.16\%   & 0.13\%     & 0.16\%     & 0.13\%\\
+            $50 < \pt < 60$~{\GeV}   & 0.06\%   & 0.06\%     & 0.07\%     & 0.07\%\\
+            $60 < \pt < 70$~{\GeV}   & 0.04\%   & 0.04\%     & 0.04\%     & 0.04\%\\
+            $70 < \pt < 80$~{\GeV}   & 0.05\%   & 0.06\%     & 0.04\%     & 0.06\%\\
+            $80 < \pt < 120$~{\GeV}  & 0.03\%   & 0.03\%     & 0.03\%     & 0.11\%\\
+            $120 < \pt < 120$~{\GeV} & 0.05\%   & 0.13\%     & 0.10\%     & 0.08\%\\
+            $150 < \pt < 200$~{\GeV} & 0.04\%   & 0.03\%     & 0.02\%     & 0.19\%\\
+            \hline
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{The systematic uncertainties for real muon efficiencies due to the different trigger strategies.
+    The uncertainties of each trigger strategy are calculated with respect to the one applied single lepton trigger with tag trigger matched.
+    The total uncertainties are the quadratic sum of the uncertainties of each trigger strategy.}
+    \label{tab:app_RLE_trigger_syst_muon}
+\end{table}
+
+%%%
+%%%
+%%%
+
+\subsection{Extrapolation to signal regions}
+\label{subsec:app_RLE_extrapolation_to_signal_region}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The real lepton efficiencies are measured with a sample enriched in $Z\to \ell\ell$ events characterized by well isolated leptons.
+The different processes entering in the signal region are accompanied by many ($b$-)jets and with a different event topology.
+Thus, the leptons presented in the final state are not necessary well isolated.
+As tighter isolation cuts are used for the signal lepton definitions, their associated real efficiencies can be smaller.
+A SUSY benchmark model $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ is used and the boosted event topoloties are selected by applying the requirement $\Delta m=m_{\tilde{g}}-m_{\chi^{0}_{1}}>\SI{1}{TeV}$ on the model.
+These differences in the real lepton efficiencies between the $Z\to \ell\ell$ processes and the $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ process are assigned as system uncertainties.
+As the topology of one of the main irreducible backgrounds $\ttbar V$ is close to the \ttbar one, the efficiencies measured with the leptons from \ttbar are also considered.
+The efficiency comparisons are made for each $\pt$ bin considering different $\Delta R(\ell, jets)$ ranges.
+
+The kinematic distributions of the baseline leptons from the $Z\to \ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ are showned in Figure~\ref{fig:RLE_kinematic}.
+The top row shows the \pt distributions for the baseline electrons on the left hand side and muons on the right hand side.
+The bottom row shows the $|\eta|$ distributions.
+These plots show that the leptons from SUSY process are more boosted and more central than the ones from $Z$ and \ttbar processes.
+The $\Delta R(\ell, jet)$ and the $N_{jets}$ distributions of the baseline leptons extracted from $Z\to\ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ processes are shown in Figure~\ref{fig:RLE_dRjet_Njet}.
+The left hand side is the electron case and the right hand side is the muon case.
+The $\Delta R(\ell, jet)$ distribution associated to the SUSY signals peak at 0.5 and most of the statistics are contained in $\Delta R(\ell, jet)<1$ region.
+In comparison, the leptons from the $Z\to\ell\ell$ processes are not accompanied with a signal jet and the $\Delta R(\ell, jet)$ distribution peak about $\Delta R(\ell, jet)=3$.
+The jet multiplicity of the $Z\to\ell\ell$ peak at 4 jets for the electron case, 3 jets for the muon case, but for the SUSY signal peaks at 9 jets.
+These plots confirm that the leptons produced in the SUSY signal are accompained with many more jets and are therefore less isolated than the $Z\to\ell\ell$ processes.
+This extreme topology enables us to assess a conservative SUSY signal extrapolation systematic uncertainty that should cover all SUSY signal processes considered by the analysis.
+
+\begin{figure}[htbp]
+    \includegraphics[width=0.96\textwidth]{baseline_kinematics.pdf}
+    \caption{The kinematic distributions of the baseline lepton from the processes considered for the systematic uncertainty study.
+    The top row shows the \pt distributions for the baseline electrons on the left hand side and muons on the right hand side.
+    The bottom row shows the $|\eta|$ distributions.
+    The $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ process is more boosted and centralized than the $Z\to\ell\ell$ and \ttbar processes.}
+    \label{fig:app_RLE_kinematic}
 \end{figure}
 
 \begin{figure}[htbp]
-\includegraphics[width=0.48\textwidth]{real_efficiency_ratio_plot_electron_pt_ttbar_gtt.pdf}
-\includegraphics[width=0.48\textwidth]{real_efficiency_ratio_plot_muon_pt_ttbar_gtt.pdf}
-\caption{
-The electron and muon real efficiencies as a function of $\pt$.
-The black dots stands for data, the red squares and blue triangles indicate $Z\to\ell\ell$ tag-and-probe and truth matching, respectively.
-The \ttbar and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ are represented by magenta diamonds and yellow crosses, respectively.
-All of the real lepton efficiencies computed by MC processes are agree with the data one when $\pt>\SI{40}{GeV}$.
-The differences in the $\pt<\SI{40}{GeV}$ region come from the different event topologies. 
-}
-\label{fig:RLE_real_efficiency_ttbar_gtt}
+    \includegraphics[width=0.96\textwidth]{baseline_deltaR_and_NJets.pdf}
+    \caption{The $\Delta R(\ell, jet)$ and the $N_{jets}$ distributions of the baseline leptons extracted from $Z\to\ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ processes.
+    Most of the statistics of $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ are located in $\Delta R(\ell, jet)<1$ region and higher $N_{jets}$ region.
+    In the contrat, the statistics of $Z\to\ell\ell$ processes are populated at higher $\Delta R(\ell, jet)<1$ region and lower $N_{jets}$ region.}
+    \label{fig:app_RLE_dRjet_Njet}
 \end{figure}
+
+The real lepton efficiencies as a functionof \pt using $Z\to\ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ are shown in Figure~\ref{fig:RLE_real_efficiency_ttbar_gtt}.
+The lower panel shows the ratio with respect to the data.
+In the left hand side plot shows the real electron efficiencies as a function of \pt and the right hand side shows the real muon efficiencies as a function of \pt. 
+The left hand side plot shows that the real electron efficiencies are \pt dependent in the $\pt<\SI{50}{GeV}$ region and become stable when $\pt>\SI{50}{GeV}$.
+The efficiencies computed using $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ are about 8\% lower than the efficiencies calculated using $Z\to ee$.
+The observed differences in the low \pt region are mostly due to the calorimeter isolation and the track isolation cuts.
+And the track isolation and $d_{0}/\sigma_{d_{0}}$ cuts are the main reasons cause the efficiency differences in the muon real efficiencies.
+
+The average efficiencies of $Z\to\ell\ell$ are calculated and the relative efficiency differences are computed with respect to the average efficiencies.
+The relative efficiency differences as a function of $\Delta R(\ell, jet)$ are considered for each measured \pt bins and are shown in Table~\ref{tab:RLE_syst_busy}.
+
+\begin{table}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{ccccccccc}
+            \hline
+            \hline
+            \multicolumn{9}{c}{electrons (busy environments)}\\
+            \hline
+            $\Delta R(e, \mathrm{jet})$ & [0, 0.1] & [0.1, 0.15] & [0.15, 0.2] & [0.2, 0.3] & [0.3, 0.35] & [0.35, 0.4] & [0.4, 0.6] & [0.6, 4]\\
+            \hline
+            $10 < \pt < 20$~{\GeV}      & -        & -           & -           & -          & -           & -           & 25.31\%    & 6.5\%\\
+            $20 < \pt < 30$~{\GeV}      & -        & -           & -           & -          & -           & 73.37\%     & 10.21\%    & 0.37\%\\
+            $30 < \pt < 40$~{\GeV}      & -        & -           & -           & 97.71\%    & 48.22\%     & 15.54\%     & 7.29\%     & 0.58\%\\
+            $40 < \pt < 50$~{\GeV}      & -        & -           & -           & 52.81\%    & 22.80\%     & 16.73\%     & 7.68\%     & 1.10\%\\
+            $50 < \pt < 60$~{\GeV}      & -        & -           & -           & 29.96\%    & 21.49\%     & 20.23\%     & 6.99\%     & 2.78\%\\
+            $60 < \pt < 80$~{\GeV}      & -        & -           & 55.89\%     & 24.31\%    & 17.40\%     & 24.77\%     & 6.20\%     & 2.87\%\\
+            $80 < \pt < 150$~{\GeV}     & -        & 57.52\%     & 30.24\%     & 16.45\%    & 12.73\%     & 20.92\%     & 4.44\%     & 2.73\%\\
+            $150 < \pt < 200$~{\GeV}    & 88.54\%  & 40.16\%     & 19.34\%     & 8.45\%     & 14.66\%     & 16.57\%     & 2.57\%     & 1.90\%\\
+            \hline
+            \hline
+            \multicolumn{9}{c}{muons (busy environments)}\\
+            \hline
+            $\Delta R(\mu, \mathrm{jet})$ & [0, 0.1] & [0.1, 0.15] & [0.15, 0.2] & [0.2, 0.3] & [0.3, 0.35] & [0.35, 0.4] & [0.4, 0.6] & [0.6, 4]\\
+            \hline
+            $10 < \pt < 20$~{\GeV}        & -        & -           & -           & -          & -           & -           & 33.59\%    & 5.18\%\\
+            $20 < \pt < 30$~{\GeV}        & -        & -           & -           & -          & -           & 82.34\%     & 22.27\%    & 3.39\%\\
+            $30 < \pt < 40$~{\GeV}        & -        & -           & -           & 98.54\%    & 56.36\%     & 31.89\%     & 14.22\%    & 2.24\%\\
+            $40 < \pt < 50$~{\GeV}        & -        & -           & -           & 53.10\%    & 21.33\%     & 13.90\%     & 6.81\%     & 1.45\%\\
+            $50 < \pt < 60$~{\GeV}        & -        & -           & -           & 24.98\%    & 13.72\%     & 9.62\%      & 3.83\%     & 0.79\%\\
+            $60 < \pt < 80$~{\GeV}        & -        & -           & 44.41\%     & 13.75\%    & 6.14\%      & 4.76\%      & 2.04\%     & 0.15\%\\
+            $80 < \pt < 150$~{\GeV}       & -        & 29.94\%     & 7.14\%      & 3.16\%     & 1.30\%      & 1.04\%      & 0.07\%     & 0.57\%\\
+            $150 < \pt < 200$~{\GeV}      & 82.26\%  & 4.14\%      & 1.02\%      & 0.17\%     & 0.29\%      & 0.62\%      & 1.02\%     & 1.13\%\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    \caption{The systematic uncertainties of the real lepton efficiency in busy environment using $\gluino \to \ttbar \widetilde{\chi_1^0}$.}
+    \label{tab:app_RLE_syst_busy}
+\end{table}
+
+%%%
+%%%
+%%%
+
+\subsection{Final uncertainties}
+\label{subsec:app_RLE_final_uncertainties}
+The final uncertainties are the quadratic sum of the statistical uncertainties and the systematic uncertainties.
+The sources of systematic uncertainty include the measurement uncertainty, the trigger uncertainty, the uncertainty comes from the differences between $Z$ tag-and-probe method and truth matching, and the uncertainty in the busy environment.
+Table~\ref{tab:app_RLE_syst_busy} shows the uncertainty in the busy environment.
+The uncertainty in the busy environment is measured as a function of \pT and $\Delta R$ so it doesn't combine with the other uncertainties which are function of \pT and $|\eta|$.
+Table~\ref{tab:app_RLE_final_uncertainties_elec} and Table~\ref{tab:app_RLE_final_uncertainties_muon} show the final uncertainties for electron and muon real efficiencies, respectively.
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{cccc}
+            \hline
+            \hline
+            \multicolumn{4}{c}{Electrons (final uncertainties)}\\
+            \hline
+            $|\eta|$                 & [0, 0.8] & [0.8, 1.37] & [1.52, 2.0]\\
+            \hline
+            $10 < \pt < 15$~{\GeV}   & 0.047    & 0.063       & 0.089\\
+            $15 < \pt < 20$~{\GeV}   & 0.027    & 0.042       & 0.062\\
+            $20 < \pt < 25$~{\GeV}   & 0.018    & 0.031       & 0.041\\
+            $25 < \pt < 30$~{\GeV}   & 0.029    & 0.024       & 0.027\\
+            $30 < \pt < 35$~{\GeV}   & 0.023    & 0.021       & 0.023\\
+            $35 < \pt < 40$~{\GeV}   & 0.014    & 0.018       & 0.018\\
+            $40 < \pt < 50$~{\GeV}   & 0.007    & 0.010       & 0.010\\
+            $50 < \pt < 60$~{\GeV}   & 0.008    & 0.010       & 0.010\\
+            $60 < \pt < 70$~{\GeV}   & 0.007    & 0.010       & 0.010\\
+            $70 < \pt < 80$~{\GeV}   & 0.008    & 0.011       & 0.012\\
+            $80 < \pt < 120$~{\GeV}  & 0.010    & 0.010       & 0.011\\
+            $120 < \pt < 120$~{\GeV} & 0.005    & 0.005       & 0.011\\
+            $150 < \pt < 200$~{\GeV} & 0.005    & 0.003       & 0.020\\
+            \hline
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{The final uncertainties of the real electron efficiencies.
+    TThe final uncertainties are the quadratic sum of the statistical uncertainties and the systematic uncertainties.
+    The systematic uncertainties include the measurement uncertainty, the trigger uncertainty, the uncertainty comes from the differences between $Z$ tag-and-probe method and truth matching.
+    The uncertainties in the busy environment do not incorporate in the final uncertainties calculation because it is measured as a function of \pT and $\Delta R$.
+    The trigger uncertainties are measured using $\pT > 20$~{\GeV} only.}
+    \label{tab:app_RLE_final_uncertainties_elec}
+\end{table}
+
+\begin{table}[htbp]
+    \begin{center}
+        \begin{tabular}{ccccc}
+            \hline
+            \hline
+            \multicolumn{5}{c}{Muons (final uncertainties)}\\
+            \hline
+            $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
+            \hline
+            $10 < \pt < 15$~{\GeV}   & 0.014    & 0.010      & 0.008      & 0.011\\
+            $15 < \pt < 20$~{\GeV}   & 0.005    & 0.006      & 0.008      & 0.011\\
+            $20 < \pt < 25$~{\GeV}   & 0.003    & 0.006      & 0.010      & 0.010\\
+            $25 < \pt < 30$~{\GeV}   & 0.011    & 0.015      & 0.022      & 0.019\\
+            $30 < \pt < 35$~{\GeV}   & 0.007    & 0.009      & 0.014      & 0.011\\
+            $35 < \pt < 40$~{\GeV}   & 0.004    & 0.004      & 0.006      & 0.006\\
+            $40 < \pt < 50$~{\GeV}   & 0.002    & 0.001      & 0.002      & 0.001\\
+            $50 < \pt < 60$~{\GeV}   & 0.001    & 0.001      & 0.001      & 0.001\\
+            $60 < \pt < 70$~{\GeV}   & 0.001    & 0.001      & 0.001      & 0.002\\
+            $70 < \pt < 80$~{\GeV}   & 0.002    & 0.001      & 0.001      & 0.002\\
+            $80 < \pt < 120$~{\GeV}  & 0.004    & 0.002      & 0.002      & 0.002\\
+            $120 < \pt < 120$~{\GeV} & 0.006    & 0.005      & 0.005      & 0.005\\
+            $150 < \pt < 200$~{\GeV} & 0.005    & 0.005      & 0.005      & 0.006\\
+            \hline
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{The final uncertainties of the real muon efficiencies.
+    TThe final uncertainties are the quadratic sum of the statistical uncertainties and the systematic uncertainties.
+    The systematic uncertainties include the measurement uncertainty, the trigger uncertainty, the uncertainty comes from the differences between $Z$ tag-and-probe method and truth matching.
+    The uncertainties in the busy environment do not incorporate in the final uncertainties calculation because it is measured as a function of \pT and $\Delta R$.}
+    \label{tab:app_RLE_final_uncertainties_muon}
+\end{table}

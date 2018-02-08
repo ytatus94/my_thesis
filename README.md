@@ -1,6 +1,12 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/08/2018
+* Work on RLE
+
+### 02/07/2018
+* Work on RLE
+
 ### 02/06/2018
 * Work on RLE
 
