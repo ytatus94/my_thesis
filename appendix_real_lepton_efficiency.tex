@@ -18,7 +18,7 @@ However, no additional requirement is applied for the $Z \to \mu \mu$ decay.
 The tag lepton is used to select the probe lepton only and the probe lepton is used for the real efficiency measurements.
 In this study, the tag and probe leptons are required to match the lepton triggers listed in Table~\ref{tab:app_RLE_single_lepton_triggers}.
 
-\begin{table}[htb]
+\begin{table}[ht]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{cccc}
@@ -43,33 +43,31 @@ In this study, the tag and probe leptons are required to match the lepton trigge
 
 Figure~\ref{fig:app_RLE_mll_distributions} shows the data-to-MC comparison of the tag-and-probe pair invariant mass distributions which indicate the need of subtracting the background especially for the probe electron with $\pt < 20$~{\GeV}.
 %
-\begin{figure}[htb]
-    \begin{center}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \begin{center}
-                \includegraphics[scale=0.4]{signal_level_Mee_pt1015_ratio_plot_MC_normalized.pdf}
-                \caption{The $m_{ee}$ distribution with $10 < \pt < 15$~{\GeV}.}
-            \end{center}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.48\textwidth}
-            \begin{center}
-                \includegraphics[scale=0.4]{signal_level_Mee_pt1520_ratio_plot_MC_normalized.pdf}
-                \caption{The $m_{ee}$ distribution with $15 < \pt < 20$~{\GeV}.}
-            \end{center}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \begin{center}
-                \includegraphics[scale=0.4]{signal_level_Mmumu_pt1015_ratio_plot_MC_normalized.pdf}
-                \caption{The $m_{\mu\mu}$ distribution with $10 < \pt < 15$~{\GeV}.}
-            \end{center}
-        \end{subfigure}%
-        \begin{subfigure}[b]{0.48\textwidth}
-            \begin{center}
-                \includegraphics[scale=0.4]{signal_level_Mmumu_pt1520_ratio_plot_MC_normalized.pdf}
-                \caption{The $m_{\mu\mu}$ distribution with $15 < \pt < 20$~{\GeV}.}
-            \end{center}
-        \end{subfigure}
-    \end{center}
+\begin{figure}[ht]
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{signal_level_Mee_pt1015_ratio_plot_MC_normalized.pdf}
+            \caption{The $m_{ee}$ distribution with $10 < \pt < 15$~{\GeV}.}
+        \end{center}
+    \end{subfigure}%
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{signal_level_Mee_pt1520_ratio_plot_MC_normalized.pdf}
+            \caption{The $m_{ee}$ distribution with $15 < \pt < 20$~{\GeV}.}
+        \end{center}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{signal_level_Mmumu_pt1015_ratio_plot_MC_normalized.pdf}
+            \caption{The $m_{\mu\mu}$ distribution with $10 < \pt < 15$~{\GeV}.}
+        \end{center}
+    \end{subfigure}%
+    \begin{subfigure}[b]{0.48\textwidth}
+        \begin{center}
+            \includegraphics[scale=0.4]{signal_level_Mmumu_pt1520_ratio_plot_MC_normalized.pdf}
+            \caption{The $m_{\mu\mu}$ distribution with $15 < \pt < 20$~{\GeV}.}
+        \end{center}
+    \end{subfigure}
     \caption{The invariant mass distributions of the tag-and-probe pair computed using $Z+jets$ MC and 2015 + 2016 data.
     The red color stands for the $Z$ tag-and-probe events, the blue color represents the $Z$ truth matched events, and the black dots are data.
     The MC distributions are scaled to the data using a Gaussian fit of the $Z$ mass peak $85 < m_{\ell \ell} < 95$~{\GeV}.}
@@ -98,8 +96,8 @@ The background template method is used to evaluate the background contamination 
 By inverting the calorimeter and track isolations, requesting the electron object to fail the medium LH identification, the background sample enriched template can be obtained.
 Three background templates are considered for the systematic study.
 The definitions of the background template are summarized in Table~\ref{tab:app_RLE_bkg_templates}.
-%
-\begin{table}[htbp]
+
+\begin{table}[ht]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{cccc}
@@ -121,10 +119,10 @@ The definitions of the background template are summarized in Table~\ref{tab:app_
     They are used to assess the systematic caused by the background contamination.}
     \label{tab:app_RLE_bkg_templates}
 \end{table}
-%
+
 Figure~\ref{fig:app_RLE_bkg_templates} shows the $m_{ee}$ distributions of the background template.
 %
-\begin{figure}[htbp]
+\begin{figure}[ht]
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
             \includegraphics[scale=0.4]{bkg_template_electron_pt_1015_eta0201.pdf}
@@ -161,7 +159,7 @@ The fit is mostly driven by the $60 < m_{ee}^\mathrm{template} < 80$~{\GeV} due 
 After fitting is performed, the template in the tail region $N_\mathrm{template}^\mathrm{tail}$ is normalized to the background in the tail $N_{bkg}^\mathrm{tail}$ to get the correct estimated number of background events.
 The baseline $m_{ee}$ distributions before and after applying the background subtraction using the background template are shown in Fig.~\ref{fig:app_RLE_bkg_estimations}.
 %
-\begin{figure}[htbp]
+\begin{figure}[ht]
     \begin{subfigure}[b]{0.32\textwidth}
         \begin{center}
             \includegraphics[scale=0.27]{bkg_subtraction_baseline_template_range_baseline_mll80_100_pt10_15_eta0_80_tag_trigger_matched.pdf}
@@ -220,8 +218,8 @@ Then, the background contamination in the $Z$ mass region $80 < m_{ee} < 100$~{\
 \end{equation}
 %
 Table~\ref{tab:app_RLE_bkg_estimations} summarize the background estimations in different \pt and $|\eta|$ regions.
-%
-\begin{table}[htbp]
+
+\begin{table}[ht]
     \begin{center}
         \begin{tabular}{cccc}
             \hline
@@ -238,12 +236,12 @@ Table~\ref{tab:app_RLE_bkg_estimations} summarize the background estimations in 
     The \pt and $|\eta|$ binnings correspond to the one used for the final measurements.}
     \label{tab:app_RLE_bkg_estimations}
 \end{table}
-%
+
 The largest improvements are observed in the lowest \pt bin ($10 < \pt < 15$~{\GeV}) where a sizeable background contamination is subtracted.
 The background contamination is relatively small in the second lowest \pt bin ($15 < \pt < 20$~{\GeV}) providing the evidence that high purity of prompt leptons can be obtained using $Z$ tag-and-probe method.
 Table~\ref{tab:app_RLE_efficiency_before_and_after_background_subtraction} shows the real electron efficiencies before and after performing the background subtraction.
 
-\begin{table}[htbp]
+\begin{table}[ht]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{ccccc}
@@ -476,7 +474,7 @@ Because the background subtraction is applied on the electron case only, no back
 There are only 3 $m_{\ell \ell}$ window variations considered for the systematic uncertainties of real muon efficiency.
 Table~\ref{tab:app_RLE_bkg_systematics_elec} and Table~\ref{tab:app_RLE_bkg_systematics_muon} show the measurement uncertainties for the electron and muon cases, respectively.
 
-\begin{table}[htbp]
+\begin{table}[htb]
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{cccc}
             \hline
@@ -509,32 +507,34 @@ Table~\ref{tab:app_RLE_bkg_systematics_elec} and Table~\ref{tab:app_RLE_bkg_syst
     \label{tab:app_RLE_bkg_systematics_elec}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[htb]
     \begin{center}
     %\resizebox{\textwidth}{!}{%
-        \begin{tabular}{ccccc}
-            \hline
-            \hline
-            \multicolumn{5}{c}{Muon (measurement)}\\
-            \hline
-            $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
-            \hline
-            $10 < \pt < 15$~{\GeV}   & 1.29\%   & 1.06\%     & 0.96\%     & 0.98\%\\
-            $15 < \pt < 20$~{\GeV}   & 0.44\%   & 0.38\%     & 0.56\%     & 0.64\%\\
-            $20 < \pt < 25$~{\GeV}   & 0.19\%   & 0.22\%     & 0.38\%     & 0.56\%\\
-            $25 < \pt < 30$~{\GeV}   & 0.09\%   & 0.12\%     & 0.22\%     & 0.36\%\\
-            $30 < \pt < 35$~{\GeV}   & 0.06\%   & 0.11\%     & 0.23\%     & 0.32\%\\
-            $35 < \pt < 40$~{\GeV}   & 0.05\%   & 0.07\%     & 0.13\%     & 0.26\%\\
-            $40 < \pt < 50$~{\GeV}   & 0.04\%   & 0.04\%     & 0.05\%     & 0.07\%\\
-            $50 < \pt < 60$~{\GeV}   & 0.06\%   & 0.06\%     & 0.09\%     & 0.07\%\\
-            $60 < \pt < 70$~{\GeV}   & 0.06\%   & 0.07\%     & 0.08\%     & 0.08\%\\
-            $70 < \pt < 80$~{\GeV}   & 0.06\%   & 0.08\%     & 0.11\%     & 0.05\%\\
-            $80 < \pt < 120$~{\GeV}  & 0.07\%   & 0.07\%     & 0.12\%     & 0.07\%\\
-            $120 < \pt < 150$~{\GeV} & 0.06\%   & 0.06\%     & 0.15\%     & 0.05\%\\
-            $150 < \pt < 200$~{\GeV} & 0.09\%   & 0.11\%     & 0.15\%     & 0.06\%\\
-            \hline
-            \hline
-        \end{tabular}
+        {\scriptsize
+            \begin{tabular}{ccccc}
+                \hline
+                \hline
+                \multicolumn{5}{c}{Muon (measurement)}\\
+                \hline
+                $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
+                \hline
+                $10 < \pt < 15$~{\GeV}   & 1.29\%   & 1.06\%     & 0.96\%     & 0.98\%\\
+                $15 < \pt < 20$~{\GeV}   & 0.44\%   & 0.38\%     & 0.56\%     & 0.64\%\\
+                $20 < \pt < 25$~{\GeV}   & 0.19\%   & 0.22\%     & 0.38\%     & 0.56\%\\
+                $25 < \pt < 30$~{\GeV}   & 0.09\%   & 0.12\%     & 0.22\%     & 0.36\%\\
+                $30 < \pt < 35$~{\GeV}   & 0.06\%   & 0.11\%     & 0.23\%     & 0.32\%\\
+                $35 < \pt < 40$~{\GeV}   & 0.05\%   & 0.07\%     & 0.13\%     & 0.26\%\\
+                $40 < \pt < 50$~{\GeV}   & 0.04\%   & 0.04\%     & 0.05\%     & 0.07\%\\
+                $50 < \pt < 60$~{\GeV}   & 0.06\%   & 0.06\%     & 0.09\%     & 0.07\%\\
+                $60 < \pt < 70$~{\GeV}   & 0.06\%   & 0.07\%     & 0.08\%     & 0.08\%\\
+                $70 < \pt < 80$~{\GeV}   & 0.06\%   & 0.08\%     & 0.11\%     & 0.05\%\\
+                $80 < \pt < 120$~{\GeV}  & 0.07\%   & 0.07\%     & 0.12\%     & 0.07\%\\
+                $120 < \pt < 150$~{\GeV} & 0.06\%   & 0.06\%     & 0.15\%     & 0.05\%\\
+                $150 < \pt < 200$~{\GeV} & 0.09\%   & 0.11\%     & 0.15\%     & 0.06\%\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     %}
     \end{center}
     \caption{The systematic uncertainties for real muon efficiencies.
@@ -567,19 +567,19 @@ The crack region, $1.37<|\eta|<1.52$, is removed from the study.
 \begin{figure}[htbp]
     \begin{subfigure}[b]{0.32\textwidth}
         \begin{center}
-            \includegraphics[scale=0.4]{trigger_uncertainty_electron_eta080_ratio_plot.pdf}
+            \includegraphics[scale=0.27]{trigger_uncertainty_electron_eta080_ratio_plot.pdf}
             \caption{$0 < |\eta| < 0.8$}
         \end{center}
     \end{subfigure}
     \begin{subfigure}[b]{0.32\textwidth}
         \begin{center}
-            \includegraphics[scale=0.4]{trigger_uncertainty_electron_eta80137_ratio_plot.pdf}
+            \includegraphics[scale=0.27]{trigger_uncertainty_electron_eta80137_ratio_plot.pdf}
             \caption{$0.8 < |\eta| < 1.37$}
         \end{center}
     \end{subfigure}
     \begin{subfigure}[b]{0.32\textwidth}
         \begin{center}
-            \includegraphics[scale=0.4]{trigger_uncertainty_electron_eta152201_ratio_plot.pdf}
+            \includegraphics[scale=0.27]{trigger_uncertainty_electron_eta152201_ratio_plot.pdf}
             \caption{$1.52 < |\eta| < 2.01$}
         \end{center}
     \end{subfigure}
@@ -627,31 +627,33 @@ These plots indicate that the trigger strategy does not affect the real muon eff
 
 Table~\ref{tab:app_RLE_trigger_syst_elec} and Table~\ref{tab:app_RLE_trigger_syst_muon} show the systematic uncertainties due to the different trigger stratagies.
 
-\begin{table}[htbp]
+\begin{table}[htb]
     \begin{center}
-        \begin{tabular}{cccc}
-            \hline
-            \hline
-            \multicolumn{4}{c}{Electrons (trigger)}\\
-            \hline
-            $|\eta|$                 & [0, 0.8] & [0.8, 1.37] & [1.52, 2.0]\\
-            \hline
-            $10 < \pt < 15$~{\GeV}   & 2.46\%   & 1.32\%      & 3.02\%\\
-            $15 < \pt < 20$~{\GeV}   & 0.16\%   & 0.78\%      & 1.33\%\\
-            $20 < \pt < 25$~{\GeV}   & 0.29\%   & 0.84\%      & 1.18\%\\
-            $25 < \pt < 30$~{\GeV}   & 1.53\%   & 2.07\%      & 2.20\%\\
-            $30 < \pt < 35$~{\GeV}   & 1.28\%   & 1.63\%      & 1.81\%\\
-            $35 < \pt < 40$~{\GeV}   & 0.98\%   & 1.19\%      & 1.42\%\\
-            $40 < \pt < 50$~{\GeV}   & 0.73\%   & 0.90\%      & 1.05\%\\
-            $50 < \pt < 60$~{\GeV}   & 0.68\%   & 0.81\%      & 1.05\%\\
-            $60 < \pt < 70$~{\GeV}   & 0.61\%   & 0.70\%      & 1.13\%\\
-            $70 < \pt < 80$~{\GeV}   & 0.65\%   & 0.77\%      & 1.27\%\\
-            $80 < \pt < 120$~{\GeV}  & 0.60\%   & 0.66\%      & 1.11\%\\
-            $120 < \pt < 120$~{\GeV} & 0.38\%   & 0.40\%      & 0.79\%\\
-            $150 < \pt < 200$~{\GeV} & 0.43\%   & 0.22\%      & 0.25\%\\
-            \hline
-            \hline
-        \end{tabular}
+        {\scriptsize
+            \begin{tabular}{cccc}
+                \hline
+                \hline
+                \multicolumn{4}{c}{Electrons (trigger)}\\
+                \hline
+                $|\eta|$                 & [0, 0.8] & [0.8, 1.37] & [1.52, 2.0]\\
+                \hline
+                $10 < \pt < 15$~{\GeV}   & 2.46\%   & 1.32\%      & 3.02\%\\
+                $15 < \pt < 20$~{\GeV}   & 0.16\%   & 0.78\%      & 1.33\%\\
+                $20 < \pt < 25$~{\GeV}   & 0.29\%   & 0.84\%      & 1.18\%\\
+                $25 < \pt < 30$~{\GeV}   & 1.53\%   & 2.07\%      & 2.20\%\\
+                $30 < \pt < 35$~{\GeV}   & 1.28\%   & 1.63\%      & 1.81\%\\
+                $35 < \pt < 40$~{\GeV}   & 0.98\%   & 1.19\%      & 1.42\%\\
+                $40 < \pt < 50$~{\GeV}   & 0.73\%   & 0.90\%      & 1.05\%\\
+                $50 < \pt < 60$~{\GeV}   & 0.68\%   & 0.81\%      & 1.05\%\\
+                $60 < \pt < 70$~{\GeV}   & 0.61\%   & 0.70\%      & 1.13\%\\
+                $70 < \pt < 80$~{\GeV}   & 0.65\%   & 0.77\%      & 1.27\%\\
+                $80 < \pt < 120$~{\GeV}  & 0.60\%   & 0.66\%      & 1.11\%\\
+                $120 < \pt < 120$~{\GeV} & 0.38\%   & 0.40\%      & 0.79\%\\
+                $150 < \pt < 200$~{\GeV} & 0.43\%   & 0.22\%      & 0.25\%\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     \end{center}
     \caption{The systematic uncertainties for real electron efficiencies due to the different trigger strategies.
     The uncertainties of each trigger strategy are calculated with respect to the one applied single lepton trigger with tag trigger matched.
@@ -659,31 +661,33 @@ Table~\ref{tab:app_RLE_trigger_syst_elec} and Table~\ref{tab:app_RLE_trigger_sys
     \label{tab:app_RLE_trigger_syst_elec}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[htb]
     \begin{center}
-        \begin{tabular}{ccccc}
-            \hline
-            \hline
-            \multicolumn{5}{c}{Muons (trigger)}\\
-            \hline
-            $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
-            \hline
-            $10 < \pt < 15$~{\GeV}   & 0.11\%   & 0.15\%     & 0.34\%     & 0.19\%\\
-            $15 < \pt < 20$~{\GeV}   & 0.14\%   & 0.50\%     & 0.75\%     & 0.77\%\\
-            $20 < \pt < 25$~{\GeV}   & 0.30\%   & 0.63\%     & 1.01\%     & 0.93\%\\
-            $25 < \pt < 30$~{\GeV}   & 0.90\%   & 1.38\%     & 2.12\%     & 1.83\%\\
-            $30 < \pt < 35$~{\GeV}   & 0.58\%   & 0.84\%     & 1.27\%     & 0.99\%\\
-            $35 < \pt < 40$~{\GeV}   & 0.33\%   & 0.37\%     & 0.57\%     & 0.46\%\\
-            $40 < \pt < 50$~{\GeV}   & 0.16\%   & 0.13\%     & 0.16\%     & 0.13\%\\
-            $50 < \pt < 60$~{\GeV}   & 0.06\%   & 0.06\%     & 0.07\%     & 0.07\%\\
-            $60 < \pt < 70$~{\GeV}   & 0.04\%   & 0.04\%     & 0.04\%     & 0.04\%\\
-            $70 < \pt < 80$~{\GeV}   & 0.05\%   & 0.06\%     & 0.04\%     & 0.06\%\\
-            $80 < \pt < 120$~{\GeV}  & 0.03\%   & 0.03\%     & 0.03\%     & 0.11\%\\
-            $120 < \pt < 120$~{\GeV} & 0.05\%   & 0.13\%     & 0.10\%     & 0.08\%\\
-            $150 < \pt < 200$~{\GeV} & 0.04\%   & 0.03\%     & 0.02\%     & 0.19\%\\
-            \hline
-            \hline
-        \end{tabular}
+        {\scriptsize
+            \begin{tabular}{ccccc}
+                \hline
+                \hline
+                \multicolumn{5}{c}{Muons (trigger)}\\
+                \hline
+                $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
+                \hline
+                $10 < \pt < 15$~{\GeV}   & 0.11\%   & 0.15\%     & 0.34\%     & 0.19\%\\
+                $15 < \pt < 20$~{\GeV}   & 0.14\%   & 0.50\%     & 0.75\%     & 0.77\%\\
+                $20 < \pt < 25$~{\GeV}   & 0.30\%   & 0.63\%     & 1.01\%     & 0.93\%\\
+                $25 < \pt < 30$~{\GeV}   & 0.90\%   & 1.38\%     & 2.12\%     & 1.83\%\\
+                $30 < \pt < 35$~{\GeV}   & 0.58\%   & 0.84\%     & 1.27\%     & 0.99\%\\
+                $35 < \pt < 40$~{\GeV}   & 0.33\%   & 0.37\%     & 0.57\%     & 0.46\%\\
+                $40 < \pt < 50$~{\GeV}   & 0.16\%   & 0.13\%     & 0.16\%     & 0.13\%\\
+                $50 < \pt < 60$~{\GeV}   & 0.06\%   & 0.06\%     & 0.07\%     & 0.07\%\\
+                $60 < \pt < 70$~{\GeV}   & 0.04\%   & 0.04\%     & 0.04\%     & 0.04\%\\
+                $70 < \pt < 80$~{\GeV}   & 0.05\%   & 0.06\%     & 0.04\%     & 0.06\%\\
+                $80 < \pt < 120$~{\GeV}  & 0.03\%   & 0.03\%     & 0.03\%     & 0.11\%\\
+                $120 < \pt < 120$~{\GeV} & 0.05\%   & 0.13\%     & 0.10\%     & 0.08\%\\
+                $150 < \pt < 200$~{\GeV} & 0.04\%   & 0.03\%     & 0.02\%     & 0.19\%\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     \end{center}
     \caption{The systematic uncertainties for real muon efficiencies due to the different trigger strategies.
     The uncertainties of each trigger strategy are calculated with respect to the one applied single lepton trigger with tag trigger matched.
@@ -697,92 +701,52 @@ Table~\ref{tab:app_RLE_trigger_syst_elec} and Table~\ref{tab:app_RLE_trigger_sys
 
 \subsection{Extrapolation to signal regions}
 \label{subsec:app_RLE_extrapolation_to_signal_region}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The real lepton efficiencies are measured with a sample enriched in $Z\to \ell\ell$ events characterized by well isolated leptons.
-The different processes entering in the signal region are accompanied by many ($b$-)jets and with a different event topology.
-Thus, the leptons presented in the final state are not necessary well isolated.
-As tighter isolation cuts are used for the signal lepton definitions, their associated real efficiencies can be smaller.
-A SUSY benchmark model $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ is used and the boosted event topoloties are selected by applying the requirement $\Delta m=m_{\tilde{g}}-m_{\chi^{0}_{1}}>\SI{1}{TeV}$ on the model.
-These differences in the real lepton efficiencies between the $Z\to \ell\ell$ processes and the $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ process are assigned as system uncertainties.
-As the topology of one of the main irreducible backgrounds $\ttbar V$ is close to the \ttbar one, the efficiencies measured with the leptons from \ttbar are also considered.
-The efficiency comparisons are made for each $\pt$ bin considering different $\Delta R(\ell, jets)$ ranges.
-
-The kinematic distributions of the baseline leptons from the $Z\to \ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ are showned in Figure~\ref{fig:RLE_kinematic}.
-The top row shows the \pt distributions for the baseline electrons on the left hand side and muons on the right hand side.
-The bottom row shows the $|\eta|$ distributions.
-These plots show that the leptons from SUSY process are more boosted and more central than the ones from $Z$ and \ttbar processes.
-The $\Delta R(\ell, jet)$ and the $N_{jets}$ distributions of the baseline leptons extracted from $Z\to\ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ processes are shown in Figure~\ref{fig:RLE_dRjet_Njet}.
-The left hand side is the electron case and the right hand side is the muon case.
-The $\Delta R(\ell, jet)$ distribution associated to the SUSY signals peak at 0.5 and most of the statistics are contained in $\Delta R(\ell, jet)<1$ region.
-In comparison, the leptons from the $Z\to\ell\ell$ processes are not accompanied with a signal jet and the $\Delta R(\ell, jet)$ distribution peak about $\Delta R(\ell, jet)=3$.
-The jet multiplicity of the $Z\to\ell\ell$ peak at 4 jets for the electron case, 3 jets for the muon case, but for the SUSY signal peaks at 9 jets.
-These plots confirm that the leptons produced in the SUSY signal are accompained with many more jets and are therefore less isolated than the $Z\to\ell\ell$ processes.
-This extreme topology enables us to assess a conservative SUSY signal extrapolation systematic uncertainty that should cover all SUSY signal processes considered by the analysis.
+Because $Z\to \ell\ell$ events are characterized by well isolated leptons, the leptons presented in the final state are not necessary well isolated using different processes.
+The processes other than $Z\to \ell\ell$ might contain many ($b$-)jets in the SR and with different event topologies.
+In order to study different event topoloties, a SUSY benchmark model $\tilde{g}\to\ttbar \widetilde{\chi}^{0}_{1}$ is used and $\Delta m = m_{\tilde{g}} - m_{\chi^{0}_{1}} > 1$~{\TeV} requirement is applied on the model to selected boosted event.
+Since one of the main irreducible background, $\ttbar V$, has similar event topology, the \ttbar samples are also consdered.
+The difference in the real lepton efficiencies between the two processes are assigned as system uncertainties.
+Figure~\ref{fig:app_RLE_kinematic} shows the kinematic distributions of the baseline leptons for $Z\to \ell\ell$, $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$, and \ttbar processes.
 
 \begin{figure}[htbp]
     \includegraphics[width=0.96\textwidth]{baseline_kinematics.pdf}
-    \caption{The kinematic distributions of the baseline lepton from the processes considered for the systematic uncertainty study.
-    The top row shows the \pt distributions for the baseline electrons on the left hand side and muons on the right hand side.
-    The bottom row shows the $|\eta|$ distributions.
-    The $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ process is more boosted and centralized than the $Z\to\ell\ell$ and \ttbar processes.}
+    \caption{The kinematic distributions of the baseline leptons for $Z\to \ell\ell$, $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$, and \ttbar processes.
+    The top row is the \pt distributions and the bottom row is the $|\eta|$ distributions.
+    The electron case is on the left hand side and the muon case is on the right hand side.
+    The $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$ process is more boosted and centralized than the $Z\to \ell \ell$ and \ttbar processes.}
     \label{fig:app_RLE_kinematic}
 \end{figure}
 
+The SUSY process $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$ is more boosted and centralized than the $Z\to \ell \ell$ and \ttbar processes.
+Figure~\ref{fig:app_RLE_dRjet_Njet} shows the $\Delta R(\ell, \mathrm{jet})$ and the $N_\mathrm{jets}$ distributions of the baseline leptons for $Z\to \ell\ell$, $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$, and \ttbar processes.
+
 \begin{figure}[htbp]
     \includegraphics[width=0.96\textwidth]{baseline_deltaR_and_NJets.pdf}
-    \caption{The $\Delta R(\ell, jet)$ and the $N_{jets}$ distributions of the baseline leptons extracted from $Z\to\ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ processes.
-    Most of the statistics of $\tilde{g}\to\ttbar\tilde{\chi}^{0}_{1}$ are located in $\Delta R(\ell, jet)<1$ region and higher $N_{jets}$ region.
-    In the contrat, the statistics of $Z\to\ell\ell$ processes are populated at higher $\Delta R(\ell, jet)<1$ region and lower $N_{jets}$ region.}
+    \caption{The $\Delta R(\ell, \mathrm{jet})$ and the $N_\mathrm{jets}$ distributions of the baseline leptons for $Z\to \ell\ell$, $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$, and \ttbar processes.
+    The top row is the $\Delta R(\ell, \mathrm{jet})$ distributions and the bottom row is the $N_\mathrm{jets}$ distributions.
+    The electron case is on the left hand side and the muon case is on the right hand side.
+    The statistics of $Z \to \ell \ell$ processes are populated at higher $\Delta R(\ell, \mathrm{jet}) < 1$ region and lower $N_\mathrm{jets}$ region.
+    The statistics of $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$ are located in $\Delta R(\ell, \mathrm{jet}) < 1$ region and higher $N_\mathrm{jets}$ region.}
     \label{fig:app_RLE_dRjet_Njet}
 \end{figure}
 
-The real lepton efficiencies as a functionof \pt using $Z\to\ell\ell$, \ttbar, and $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ are shown in Figure~\ref{fig:RLE_real_efficiency_ttbar_gtt}.
-The lower panel shows the ratio with respect to the data.
-In the left hand side plot shows the real electron efficiencies as a function of \pt and the right hand side shows the real muon efficiencies as a function of \pt. 
-The left hand side plot shows that the real electron efficiencies are \pt dependent in the $\pt<\SI{50}{GeV}$ region and become stable when $\pt>\SI{50}{GeV}$.
-The efficiencies computed using $\tilde{g}\to\ttbar\tilde{\chi^{0}_{1}}$ are about 8\% lower than the efficiencies calculated using $Z\to ee$.
-The observed differences in the low \pt region are mostly due to the calorimeter isolation and the track isolation cuts.
-And the track isolation and $d_{0}/\sigma_{d_{0}}$ cuts are the main reasons cause the efficiency differences in the muon real efficiencies.
+The leptons from the $Z \to \ell \ell$ processes are not accompanied with a signal jet and the $\Delta R(\ell, \mathrm{jet})$ distribution peak about $\Delta R(\ell, \mathrm{jet}) = 3$.
+The leptons from the SUSY process $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$ peak at $\Delta R(\ell, \mathrm{jet}) = 0.5$ and most of the statistics are located in $\Delta R(\ell, \mathrm{jet}) < 1$ region.
+The $Z \to \ell \ell$ peaks at $N_\mathrm{jets} = 4$ and $N_\mathrm{jets} = 3$ for the electron and muon case, respectively.
+The SUSY process $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$ peaks at $N_\mathrm{jets} = 9$.
+Hence, the leptons produced in the SUSY process are accompained with many jets and less isolated than the $Z \to \ell \ell$ process.
+If the isolation requirement is looser, then the associated real lepton efficiencies are larger.
+This extreme topology enables us to assess a conservative SUSY signal extrapolation systematic uncertainty that should cover all SUSY signal processes considered by the analysis.
 
-The average efficiencies of $Z\to\ell\ell$ are calculated and the relative efficiency differences are computed with respect to the average efficiencies.
-The relative efficiency differences as a function of $\Delta R(\ell, jet)$ are considered for each measured \pt bins and are shown in Table~\ref{tab:RLE_syst_busy}.
+Figure~\ref{fig:app_RLE_real_efficiency_ttbar_gtt} shows the real lepton efficiencies as a functionof \pt using $Z\to \ell\ell$, $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$, and \ttbar processes and the ratio with respect to the data is shown in the lower panel.
+The real electron efficiencies are \pt dependent when $\pt < 50$~{\GeV} and become stable when $ \pt > 50$~{\GeV}.
+The real electron efficiencies of $\tilde{g} \to \ttbar \widetilde{\chi}^{0}_{1}$ are $\sim$8\% lower than the efficiencies of $Z \to ee$.
+The observed differences in the low \pt region are mostly due to the calorimeter isolation and the track isolation requirements.
+The differences in the real muon efficiencies mainly come from the track isolation and $d_{0}/\sigma_{d_{0}}$ requirements.
+The average efficiencies of $Z \to \ell \ell$ are computed and the relative efficiency differences are calculated  with respect to the average efficiencies.
+Table~\ref{tab:app_RLE_syst_busy} shows the relative efficiency differences as a function of $\Delta R(\ell, jet)$ in  \pt bins.
 
-\begin{table}
+\begin{table}[htb]
     \resizebox{\textwidth}{!}{%
         \begin{tabular}{ccccccccc}
             \hline
@@ -817,7 +781,7 @@ The relative efficiency differences as a function of $\Delta R(\ell, jet)$ are c
             \hline
         \end{tabular}
     }
-    \caption{The systematic uncertainties of the real lepton efficiency in busy environment using $\gluino \to \ttbar \widetilde{\chi_1^0}$.}
+    \caption{The systematic uncertainties of the real lepton efficiency in busy environment using $\tilde{g} \to \ttbar \widetilde{\chi_1^0}$.}
     \label{tab:app_RLE_syst_busy}
 \end{table}
 
@@ -833,31 +797,33 @@ Table~\ref{tab:app_RLE_syst_busy} shows the uncertainty in the busy environment.
 The uncertainty in the busy environment is measured as a function of \pT and $\Delta R$ so it doesn't combine with the other uncertainties which are function of \pT and $|\eta|$.
 Table~\ref{tab:app_RLE_final_uncertainties_elec} and Table~\ref{tab:app_RLE_final_uncertainties_muon} show the final uncertainties for electron and muon real efficiencies, respectively.
 
-\begin{table}[htbp]
+\begin{table}[htb]
     \begin{center}
-        \begin{tabular}{cccc}
-            \hline
-            \hline
-            \multicolumn{4}{c}{Electrons (final uncertainties)}\\
-            \hline
-            $|\eta|$                 & [0, 0.8] & [0.8, 1.37] & [1.52, 2.0]\\
-            \hline
-            $10 < \pt < 15$~{\GeV}   & 0.047    & 0.063       & 0.089\\
-            $15 < \pt < 20$~{\GeV}   & 0.027    & 0.042       & 0.062\\
-            $20 < \pt < 25$~{\GeV}   & 0.018    & 0.031       & 0.041\\
-            $25 < \pt < 30$~{\GeV}   & 0.029    & 0.024       & 0.027\\
-            $30 < \pt < 35$~{\GeV}   & 0.023    & 0.021       & 0.023\\
-            $35 < \pt < 40$~{\GeV}   & 0.014    & 0.018       & 0.018\\
-            $40 < \pt < 50$~{\GeV}   & 0.007    & 0.010       & 0.010\\
-            $50 < \pt < 60$~{\GeV}   & 0.008    & 0.010       & 0.010\\
-            $60 < \pt < 70$~{\GeV}   & 0.007    & 0.010       & 0.010\\
-            $70 < \pt < 80$~{\GeV}   & 0.008    & 0.011       & 0.012\\
-            $80 < \pt < 120$~{\GeV}  & 0.010    & 0.010       & 0.011\\
-            $120 < \pt < 120$~{\GeV} & 0.005    & 0.005       & 0.011\\
-            $150 < \pt < 200$~{\GeV} & 0.005    & 0.003       & 0.020\\
-            \hline
-            \hline
-        \end{tabular}
+        {\scriptsize
+            \begin{tabular}{cccc}
+                \hline
+                \hline
+                \multicolumn{4}{c}{Electrons (final uncertainties)}\\
+                \hline
+                $|\eta|$                 & [0, 0.8] & [0.8, 1.37] & [1.52, 2.0]\\
+                \hline
+                $10 < \pt < 15$~{\GeV}   & 0.047    & 0.063       & 0.089\\
+                $15 < \pt < 20$~{\GeV}   & 0.027    & 0.042       & 0.062\\
+                $20 < \pt < 25$~{\GeV}   & 0.018    & 0.031       & 0.041\\
+                $25 < \pt < 30$~{\GeV}   & 0.029    & 0.024       & 0.027\\
+                $30 < \pt < 35$~{\GeV}   & 0.023    & 0.021       & 0.023\\
+                $35 < \pt < 40$~{\GeV}   & 0.014    & 0.018       & 0.018\\
+                $40 < \pt < 50$~{\GeV}   & 0.007    & 0.010       & 0.010\\
+                $50 < \pt < 60$~{\GeV}   & 0.008    & 0.010       & 0.010\\
+                $60 < \pt < 70$~{\GeV}   & 0.007    & 0.010       & 0.010\\
+                $70 < \pt < 80$~{\GeV}   & 0.008    & 0.011       & 0.012\\
+                $80 < \pt < 120$~{\GeV}  & 0.010    & 0.010       & 0.011\\
+                $120 < \pt < 120$~{\GeV} & 0.005    & 0.005       & 0.011\\
+                $150 < \pt < 200$~{\GeV} & 0.005    & 0.003       & 0.020\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     \end{center}
     \caption{The final uncertainties of the real electron efficiencies.
     TThe final uncertainties are the quadratic sum of the statistical uncertainties and the systematic uncertainties.
@@ -867,31 +833,33 @@ Table~\ref{tab:app_RLE_final_uncertainties_elec} and Table~\ref{tab:app_RLE_fina
     \label{tab:app_RLE_final_uncertainties_elec}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[htb]
     \begin{center}
-        \begin{tabular}{ccccc}
-            \hline
-            \hline
-            \multicolumn{5}{c}{Muons (final uncertainties)}\\
-            \hline
-            $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
-            \hline
-            $10 < \pt < 15$~{\GeV}   & 0.014    & 0.010      & 0.008      & 0.011\\
-            $15 < \pt < 20$~{\GeV}   & 0.005    & 0.006      & 0.008      & 0.011\\
-            $20 < \pt < 25$~{\GeV}   & 0.003    & 0.006      & 0.010      & 0.010\\
-            $25 < \pt < 30$~{\GeV}   & 0.011    & 0.015      & 0.022      & 0.019\\
-            $30 < \pt < 35$~{\GeV}   & 0.007    & 0.009      & 0.014      & 0.011\\
-            $35 < \pt < 40$~{\GeV}   & 0.004    & 0.004      & 0.006      & 0.006\\
-            $40 < \pt < 50$~{\GeV}   & 0.002    & 0.001      & 0.002      & 0.001\\
-            $50 < \pt < 60$~{\GeV}   & 0.001    & 0.001      & 0.001      & 0.001\\
-            $60 < \pt < 70$~{\GeV}   & 0.001    & 0.001      & 0.001      & 0.002\\
-            $70 < \pt < 80$~{\GeV}   & 0.002    & 0.001      & 0.001      & 0.002\\
-            $80 < \pt < 120$~{\GeV}  & 0.004    & 0.002      & 0.002      & 0.002\\
-            $120 < \pt < 120$~{\GeV} & 0.006    & 0.005      & 0.005      & 0.005\\
-            $150 < \pt < 200$~{\GeV} & 0.005    & 0.005      & 0.005      & 0.006\\
-            \hline
-            \hline
-        \end{tabular}
+        {\scriptsize
+            \begin{tabular}{ccccc}
+                \hline
+                \hline
+                \multicolumn{5}{c}{Muons (final uncertainties)}\\
+                \hline
+                $|\eta|$                 & [0, 0.6] & [0.6, 1.2] & [1.2, 1.8] & [1.8, 2.5]\\
+                \hline
+                $10 < \pt < 15$~{\GeV}   & 0.014    & 0.010      & 0.008      & 0.011\\
+                $15 < \pt < 20$~{\GeV}   & 0.005    & 0.006      & 0.008      & 0.011\\
+                $20 < \pt < 25$~{\GeV}   & 0.003    & 0.006      & 0.010      & 0.010\\
+                $25 < \pt < 30$~{\GeV}   & 0.011    & 0.015      & 0.022      & 0.019\\
+                $30 < \pt < 35$~{\GeV}   & 0.007    & 0.009      & 0.014      & 0.011\\
+                $35 < \pt < 40$~{\GeV}   & 0.004    & 0.004      & 0.006      & 0.006\\
+                $40 < \pt < 50$~{\GeV}   & 0.002    & 0.001      & 0.002      & 0.001\\
+                $50 < \pt < 60$~{\GeV}   & 0.001    & 0.001      & 0.001      & 0.001\\
+                $60 < \pt < 70$~{\GeV}   & 0.001    & 0.001      & 0.001      & 0.002\\
+                $70 < \pt < 80$~{\GeV}   & 0.002    & 0.001      & 0.001      & 0.002\\
+                $80 < \pt < 120$~{\GeV}  & 0.004    & 0.002      & 0.002      & 0.002\\
+                $120 < \pt < 120$~{\GeV} & 0.006    & 0.005      & 0.005      & 0.005\\
+                $150 < \pt < 200$~{\GeV} & 0.005    & 0.005      & 0.005      & 0.006\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     \end{center}
     \caption{The final uncertainties of the real muon efficiencies.
     TThe final uncertainties are the quadratic sum of the statistical uncertainties and the systematic uncertainties.
