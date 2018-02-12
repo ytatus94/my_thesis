@@ -1,7 +1,111 @@
+The SM background can be catogrized into the irreducible and reducible background.
+The irreducible background includes events containing two prompt leptons, \met, and jets.
+The reducible background includes events containing fake or non-prompt leptons.
+Since the background estimations rely on the choice of the control regions (CRs) and validation regions (VRs) heavily, the concepts of the CRs and VRs are introduced in Sect.~\ref{sec:bkg_control_and_validation_regions}.
+The detail discussions of the irreducible background is presented in Sect.~\ref{sec:bkg_irreducible_background} and of the reducible background is described in Sect.~\ref{sec:bkg_reducible_background}.
+Finally, the systematic uncertainty study for this analysis is mentioned in Sect.~\ref{sec:bkg_systematic_uncertainties}.
 
+%%%
+%%%
+%%%
+
+\section{Control and validation regions}
+\label{sec:bkg_control_and_validation_regions}
+
+%%%
+%%%
+%%%
+
+\subsection{The concepts}
+\label{subsec:bkg_SRs_CRs_VRs_concepts}
+Three different data regions are considered in any physics analysis: signal region (SR), control region (CR), and validation region (VR).
+The SR is a signal-enriched region, the CR is a background-enriched region, and the VR is a region used to validate the robustness of the signal and background predictions.
+The SR is a particular region of phase space where a set of selection criteria are applied on kinematic observables.
+In the SR, the number of predicted signal events have a significant excess over the number of predicted background events.
+The CR is enriched in a particular background process with low expected contamination from the signals considered, designed to be similiar to SR in the kinematic properties, and kept statistically independent from the SR.
+The background contamination in the SR can be estimated by extrapolating from the CR.
+The VR, usually placed in between the SR and CR, is used to validate the predicted number of background events in the SR.
+Figure~\ref{fig:bkg_SRs_CRs_VRs} shows the concepts of multiple SRs, CRs, and VRs.
+
+\begin{figure}[ht]
+    \begin{center}
+        \includegraphics[scale=0.4]{cartoon_CRVRSR_bw.pdf}
+        \caption{A illustration of multiple signal, control, and validation regions.
+        The background contamination in the SRs can be estimated by extrapolating from the CRs and is verified in the VRs which lie in between the SRs and CRs.
+        All regions can be single bin or multiple bins which are indicated by the dashed lines.
+        The figure is taken from~\cite{Baak:2014wma}.}
+        \label{fig:bkg_SRs_CRs_VRs}
+    \end{center}
+\end{figure}
+
+%%%
+%%%
+%%%
+
+\subsection{Specific to this analysis}
+\label{subsec:bkg_SRs_CRs_VRs_spicific}
+Table~\ref{tab:bkg_background_processes} lists the SM background processes for this analysis, the origins in the SR, and the estimation strategies.
+Table~\ref{tab:bkg_CRs_VRs_definitions} lists the definitions of CRs and VRs where the common selection criteria listed in Table~\ref{tab:event_signal_region} have been applied.
+
+\begin{table}[ht]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{lll}
+            \hline
+            \hline
+            Background process                             & Origin in SR                                             & Estimation strategy\\
+            \hline
+            \ttbar, $tW$ (2$\ell$)                         & irreducible, $b$-jet fails identification                & CR using $b$-tagging\\
+            $Z(\to \tau \tau)$+jets                        & irreducible fully leptonic $\tau$                        & CR using $m_{\tau \tau}$\\
+            $Z(\to ee, \mu \mu)$+jets                      & instrumental \met                                        & MC\\
+            loss mass Drell-Yen                            & instrumental \met                                        & MC, data-driven cross check\\
+            fakes ($W$+jets, $VV(1\ell)$, \ttbar($1\ell$)) & jet fakes $2^\mathrm{nd}$ lepton                         & fake factor, SS VR\\
+            $VV$                                           & irreducible dileptonic and missed $3^\mathrm{rd}$ lepton & MC, VR using $\met/H_\mathrm{T}^\mathrm{leptons}$\\
+            orther rare processes                          & irreducible leptonic decays                              & MC\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    %\end{center}
+    \caption{The background processes for the 2$\ell$ analysis and the strategy for estimating the background contamination in the SR.}
+    \label{tab:bkg_background_processes}
+\end{table}
+
+\begin{table}[ht]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        %{\scriptsize
+            \begin{tabular}{llll}
+                \hline
+                \hline
+                Region               & Leptons                                                                        & $\met/H_{\mathrm{T}}^{\mathrm{lep}}$                & Additional requirements\\
+                \hline
+                CR-top               & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $> 5$                                               & $\ge 1 b$-tagged jet(s)\\
+                CR-tau               & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $\in$ [4, 8]                                        & $m_{\tau \tau} \in$ [60, 120]~{\GeV}\\
+                \hline
+                VR-VV                & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $< 3$                                               & -\\
+                VR-SS                & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $> 5$                                               & -\\
+                VRDF-$m_{\ell \ell}$ & $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$                                         & $>$ max(5, 15 - 2 $m_{\ell \ell}/1~{\GeV}$) & $\Delta R_{\ell \ell} < 2$, $m_{\mathrm{T}}^{\ell_{1}} < 70$~{\GeV}\\
+                \hline
+                \hline
+            \end{tabular}
+        %}
+    }
+    %\end{center}
+    \caption{Definition of control regions and validation regions.}
+    \label{tab:bkg_CRs_VRs_definitions}
+\end{table}%
+
+The \ttbar, $tW$, $Z/\gamma(\to \tau \tau)$+jets decay to same flavor lepton pairs ($ee$ and $\mu \mu$) and different flavor lepton pairs ($e\mu$ and $\mu e$) at the same rates.
+
+%%%
+%%%
+%%%
 
 \section{Irreducible background}
 \label{sec:bkg_irreducible_background}
+The dominant sources of the irreducible background are \ttbar $tZ$, $WW/WZ$, $Z/\gamma(\to \tau \tau)$ + jets and are estimated using the MC simulation samples.
+These SM processes contain two prompt leptons, \met, and jets, therefore, they can mimic the Higgsino signal.
 
 %%%
 %%%

@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/12/2018
+* Work on background estimation
+
 ### 02/09/2018
 * Finish RLE
 
