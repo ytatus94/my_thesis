@@ -393,6 +393,7 @@ The event selection criteria for the SR are summarized in Table~\ref{tab:event_s
 There are 14 exclusive regions and 7 inclusive regions are defined.
 The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
 When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
+The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splitings up to 60~{\GeV}.
 
 \begin{table}[htb]
     \begin{center}
@@ -452,4 +453,194 @@ When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ 
     The SR is defined by a $m_{\ell \ell}$ range in {\GeV}.
     The exclusive bins are used to set the exclusion limits on the model and the inclusive bins are used to set the model-independent limits.}
     \label{tab:event_signal_region_binning}
+\end{table}%
+
+Figure~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1} and Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, show the kinematic variable distributions for the NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
+In order to compare the signal with background distributions, the NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
+When making these so called `$N-1$' plots, all the selections listed in Table~\ref{tab:event_signal_region} are applied, except the variable plotted.
+
+
+
+\begin{figure}[htbp]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_nJet30_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$N^{30}_{\mathrm{jets}}$}
+            \label{fig:event_nuhm2_m12_500_nJet30_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_nBJet20_MV2c10_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$N^{20}_{\mathrm{b-jets}}$}
+            \label{fig:event_nuhm2_m12_500_nBJet20_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_lep1Pt_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$p^{\ell_1}_{\mathrm{T}}$}
+            \label{fig:event_nuhm2_m12_500_lep1Pt_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_lep2Pt_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$p^{\ell_2}_{\mathrm{T}}$}
+            \label{fig:event_nuhm2_m12_500_lep2Pt_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_met_Et_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$E^{\mathrm{miss}}_{\mathrm{T}}$}
+            \label{fig:event_nuhm2_m12_500_met_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_METOverHTLep_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$E^{\mathrm{miss}}_{\mathrm{T}} / H^{\mathrm{leptons}}_{\mathrm{T}}$}
+            \label{fig:event_nuhm2_m12_500_METOverHTLep_SFOS}
+        \end{subfigure}
+    \end{center}
+    \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
+    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.}
+    \label{fig:event_nuhm2_kinematic_in_SR_SFOS_1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_mll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$m_{\ell\ell}$}
+            \label{fig:event_nuhm2_m12_500_mll_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_MTauTau_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$m_{\tau\tau}$}
+            \label{fig:event_nuhm2_m12_500_MTauTau_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_mt_lep1_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$m_{T}(\ell_{1})$}
+            \label{fig:event_nuhm2_m12_500_mt_lep1_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_Rll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$\Delta R_{\ell\ell}$}
+            \label{fig:event_nuhm2_m12_500_Rll_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_DPhiJ1Met_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$|\Delta \phi(\mathbf{p}^{j_{1}}_{\mathrm{T}}, \mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})|$}
+            \label{fig:event_nuhm2_m12_500_DPhiJ1Met_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_minDPhiAllJetsMet_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{min[$|\Delta \phi(\mathbf{p}^{\textrm{All jets}}_{\mathrm{T}}, \mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})|$]}
+            \label{fig:event_nuhm2_m12_500_minDPhiAllJetsMet_SFOS}
+        \end{subfigure}
+    \end{center}
+    \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
+    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.}
+    \label{fig:event_nuhm2_kinematic_in_SR_SFOS_2}
+\end{figure}
+
+
+
+The cutflows is a sequential cumulative yields after the event selections.
+Table~\ref{tab:event_cutflow_NUHM2_1} and Table~\ref{tab:event_cutflow_NUHM2_2} shows the signal selection cutflows table for the NUHM2 signal with $m_{1/2}$ ranging from 350 to 800~{\GeV}.
+The weighted number of events are normalized to 36.1~\ifb and the raw number of events are also shown.
+
+\begin{table}[ht]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        %{\tiny
+            \begin{tabular}{lllllllllllll}
+                \hline
+                \hline
+                Selection common to all SRs                                                         & \multicolumn{2}{c}{NUHM2 m12=350} & \multicolumn{2}{c}{NUHM2 m12=400} & \multicolumn{2}{c}{NUHM2 m12=500}\\
+                                                                                                    & Weighted & Raw                    & Weighted & Raw                    & Weighted & Raw\\
+                \hline
+                \met triggers, $\met>150$~{\GeV}, $N_\text{baseline}^\ell \geq 2$                   & $205$    & $968$                  & $196$    & $1262$                 & $122.7$  & $1882$\\
+                Stau veto                                                                           & $205$    & $968$                  & $196$    & $1262$                 & $122.7$  & $1882$\\
+                $N_\text{baseline}^\ell = 2$                                                        & $158$    & $741$                  & $156$    & $975$                  & $96.5$   & $1501$\\
+                $N_\text{signal}^\ell = 2$                                                          & $158$    & $741$                  & $156$    & $975$                  & $96.5$   & $1501$\\
+                Same flavour                                                                        & $94$     & $445$                  & $100$    & $598$                  & $64.1$   & $1010$\\
+                Opposite charge                                                                     & $78$     & $369$                  & $79$     & $503$                  & $55.1$   & $868$\\
+                Lepton truth matching                                                               & $78$     & $366$                  & $78$     & $493$                  & $54.0$   & $851$\\
+                Lepton author 16 veto                                                               & $77$     & $364$                  & $77$     & $487$                  & $53.8$   & $848$\\
+                $\met > 200$~{\GeV}                                                                 & $77$     & $364$                  & $77$     & $487$                  & $53.8$   & $848$\\
+                $N_\text{b-jets} = 0$                                                               & $38.0$   & $194$                  & $31.5$   & $234$                  & $22.2$   & $394$\\
+                $\pt(j_1) > 100$~{\GeV}                                                             & $38.0$   & $194$                  & $31.5$   & $234$                  & $22.2$   & $394$\\
+                $\Delta\phi\left(j_1, \mathbf{p}_\text{T}^\text{miss}\right) > 2.0$                 & $37.3$   & $190$                  & $30.3$   & $223$                  & $21.0$   & $372$\\
+                min($\Delta\phi\left(\text{any jet}, \mathbf{p}_\text{T}^\text{miss}\right)) > 0.4$ & $30.7$   & $153$                  & $25.9$   & $188$                  & $17.4$   & $316$\\
+                Veto $m_{\tau\tau} \in [0, 160]$~{\GeV}                                             & $26.2$   & $128$                  & $21.6$   & $161$                  & $15.8$   & $287$\\
+                $p_\text{T}^{\ell_1} > 5$~{\GeV}                                                    & $26.2$   & $128$                  & $21.6$   & $161$                  & $15.8$   & $287$\\
+                $m_{\ell\ell} > 1$~{\GeV}                                                           & $26.2$   & $128$                  & $21.6$   & $161$                  & $15.8$   & $287$\\
+                Veto $m_{\ell\ell} \in [3, 3.2]$~{\GeV}                                             & $26.2$   & $128$                  & $21.6$   & $161$                  & $15.7$   & $286$\\
+                $m_{\ell\ell} < 60$~{\GeV}                                                          & $26.2$   & $128$                  & $21.6$   & $161$                  & $15.7$   & $286$\\
+                $\Delta R_{\ell\ell} > 0.05$~{\GeV}                                                 & $26.2$   & $128$                  & $21.5$   & $160$                  & $15.7$   & $286$\\
+                \hline
+                SR$\ell\ell$-$m_{\ell\ell}$ selection                                               &          &                        &          &                        &          &\\
+                \hline
+                $\met / \HT^\text{lep} > \text{max}(5, 15-2\cdot m_{\ell\ell}/\text{GeV})$          & $12.4$   & $60$                   & $9.9$    & $71$                   & $7.9$    & $150$\\
+                $\Delta R_{\ell\ell} < 2.0$~{\GeV}                                                  & $6.5$    & $34$                   & $6.7$    & $51$                   & $5.6$    & $105$\\
+                $m_\text{T}^{\ell_1} < 70$~{\GeV}                                                   & $2.7$    & $14$                   & $2.5$    & $21$                   & $3.0$    & $52$\\
+                %$m_{\ell\ell} < 40$~{\GeV}                                                          & $2.7$    & $14$                   & $2.5$    & $21$                   & $2.9$    & $50$\\
+                %$m_{\ell\ell} < 30$~{\GeV}                                                          & $2.2$    & $11$                   & $1.9$    & $15$                   & $2.7$    & $46$\\
+                %$m_{\ell\ell} < 20$~{\GeV}                                                          & $1.4$    & $8$                    & $0.66$   & $6$                    & $1.30$   & $27$\\
+                %$m_{\ell\ell} < 10$~{\GeV}                                                          & $0.56$   & $3$                    & $0.13$   & $1$                    & $0.37$   & $8$\\
+                %$m_{\ell\ell} < 5$~{\GeV}                                                           & $0.0$    & $0$                    & $0.0$    & $0$                    & $0.0$    & $0$\\
+                %$m_{\ell\ell} < 3$~{\GeV}                                                           & $0.0$    & $0$                    & $0.0$    & $0$                    & $0.0$    & $0$\\
+                \hline
+                \hline
+            \end{tabular}
+        %}
+    }
+    %\end{center}
+    \caption{}
+    \label{tab:event_cutflow_NUHM2_1}
+\end{table}%
+
+\begin{table}[ht]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        %{\tiny
+            \begin{tabular}{lllllllllllll}
+                \hline
+                \hline
+                Selection common to all SRs                                                         & \multicolumn{2}{c}{NUHM2 m12=600} & \multicolumn{2}{c}{NUHM2 m12=700} & \multicolumn{2}{c}{NUHM2 m12=800}\\
+                                                                                                    & Weighted & Raw                    & Weighted & Raw                    & Weighted & Raw\\
+                \hline
+                \met triggers, $\met>150$~{\GeV}, $N_\text{baseline}^\ell \geq 2$                   & $76.1$   & $2321$                 & $41.2$   & $2471$                 & $22.2$   & $2500$\\
+                Stau veto                                                                           & $76.1$   & $2321$                 & $41.2$   & $2471$                 & $22.2$   & $2500$\\
+                $N_\text{baseline}^\ell = 2$                                                        & $63.0$   & $1904$                 & $33.1$   & $1993$                 & $18.1$   & $2029$\\
+                $N_\text{signal}^\ell = 2$                                                          & $63.0$   & $1904$                 & $33.1$   & $1993$                 & $18.1$   & $2029$\\
+                Same flavour                                                                        & $42.1$   & $1288$                 & $22.7$   & $1383$                 & $12.6$   & $1392$\\
+                Opposite charge                                                                     & $35.9$   & $1101$                 & $19.4$   & $1194$                 & $10.9$   & $1205$\\
+                Lepton truth matching                                                               & $35.2$   & $1079$                 & $19.1$   & $1174$                 & $10.8$   & $1192$\\
+                Lepton author 16 veto                                                               & $35.2$   & $1078$                 & $19.0$   & $1168$                 & $10.8$   & $1189$\\
+                $\met > 200$~{\GeV}                                                                 & $35.2$   & $1078$                 & $19.0$   & $1168$                 & $10.8$   & $1189$\\
+                $N_\text{b-jets} = 0$                                                               & $13.3$   & $453$                  & $6.8$    & $470$                  & $3.75$   & $477$\\
+                $\pt(j_1) > 100$~{\GeV}                                                             & $13.3$   & $453$                  & $6.8$    & $470$                  & $3.75$   & $477$\\
+                $\Delta\phi\left(j_1, \mathbf{p}_\text{T}^\text{miss}\right) > 2.0$                 & $12.4$   & $428$                  & $6.5$    & $453$                  & $3.59$   & $455$\\
+                min($\Delta\phi\left(\text{any jet}, \mathbf{p}_\text{T}^\text{miss}\right)) > 0.4$ & $10.6$   & $360$                  & $5.47$   & $379$                  & $3.07$   & $383$\\
+                Veto $m_{\tau\tau} \in [0, 160]$~{\GeV}                                             & $9.3$    & $315$                  & $4.77$   & $333$                  & $2.73$   & $340$\\
+                $p_\text{T}^{\ell_1} > 5$~{\GeV}                                                    & $9.3$    & $315$                  & $4.77$   & $333$                  & $2.73$   & $340$\\
+                $m_{\ell\ell} > 1$~{\GeV}                                                           & $9.3$    & $315$                  & $4.76$   & $332$                  & $2.72$   & $339$\\
+                Veto $m_{\ell\ell} \in [3, 3.2]$~{\GeV}                                             & $9.3$    & $315$                  & $4.76$   & $332$                  & $2.71$   & $337$\\
+                $m_{\ell\ell} < 60$~{\GeV}                                                          & $9.3$    & $315$                  & $4.76$   & $332$                  & $2.71$   & $337$\\
+                $\Delta R_{\ell\ell} > 0.05$~{\GeV}                                                 & $9.3$    & $315$                  & $4.76$   & $332$                  & $2.71$   & $337$\\
+                \hline
+                SR$\ell\ell$-$m_{\ell\ell}$ selection                                               &          &                        &          &                        &          &\\
+                \hline
+                $\met / \HT^\text{lep} > \text{max}(5, 15-2\cdot m_{\ell\ell}/\text{GeV})$          & $5.5$    & $188$                  & $3.05$   & $226$                  & $1.85$   & $235$\\
+                $\Delta R_{\ell\ell} < 2.0$~{\GeV}                                                  & $4.5$    & $153$                  & $2.55$   & $192$                  & $1.47$   & $194$\\
+                $m_\text{T}^{\ell_1} < 70$~{\GeV}                                                   & $2.06$   & $78$                   & $1.21$   & $95$                   & $0.64$   & $85$\\
+                %$m_{\ell\ell} < 40$~{\GeV}                                                          & $1.99$   & $74$                   & $1.17$   & $92$                   & $0.63$   & $83$\\
+                %$m_{\ell\ell} < 30$~{\GeV}                                                          & $1.93$   & $71$                   & $1.14$   & $89$                   & $0.59$   & $78$\\
+                %$m_{\ell\ell} < 20$~{\GeV}                                                          & $1.68$   & $61$                   & $1.04$   & $82$                   & $0.56$   & $73$\\
+                %$m_{\ell\ell} < 10$~{\GeV}                                                          & $0.47$   & $14$                   & $0.38$   & $32$                   & $0.33$   & $41$\\
+                %$m_{\ell\ell} < 5$~{\GeV}                                                           & $0.045$  & $2$                    & $0.070$  & $6$                    & $0.071$  & $8$\\
+                %$m_{\ell\ell} < 3$~{\GeV}                                                           & $0.024$  & $1$                    & $0.012$  & $1$                    & $0.045$  & $4$\\
+                \hline
+                \hline
+            \end{tabular}
+        %}
+    }
+    %\end{center}
+    \caption{}
+    \label{tab:event_cutflow_NUHM2_2}
 \end{table}%
