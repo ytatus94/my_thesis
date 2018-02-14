@@ -312,13 +312,16 @@ This is expected, as no requirement on the truth matching was used in the select
 
 \subsubsection{The NUHM2 generation}
 \label{subsubsec:data_NUHM2_generation}
-The NUHM2 signal events were generated using MG5\_{\scriptsize A}MC@NLO v2.4.2 with NNPDF23LO PDF set up to two extra partons in the ME.
+The \textsc{ISAJET} 7.84 SUSY mass spectrum generator are used to calculate the NUHM2 mass spectrum.
+The NUHM2 signal events were generated using MG5\_{\scriptsize A}MC@NLO v2.2.3 with NNPDF23LO PDF set up to two extra partons in the ME.
 The {\MADSPIN}~\cite{Artoisenet:2012st} were used to decay the electroweakinos which were required to produce at least two leptons in the final state.
 Then the results were interfaced with {\PYTHIA} v8.186 using the A14 tune to model the parton shower and hadronization.
+The \textsc{Prospino} v2.1~\cite{Beenakker:1996ed} is used to calculate the cross-section and theoretical uncertainties to the NLL level.
 A filter required 2 leptons of at least 3~{\GeV} and \met $\ge 50$~{\GeV} was added at the generator level.
 Table~\ref{tab:data_NUHM2_mcprod} lists the NUHM2 MC production samples used in this analysis.
 The $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ productions are considered in each $m_{1/2}$ mass point.
 The relative branching ratios were calculated using SUSY-HIT v1.5b~\cite{Djouadi:2006bz} and were used in the event weighting.
+Table~\ref{tab:data_susy_hit} compares the branching ratios for $\widetilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ and $\widetilde{\chi}^{\pm}_{1} \to \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ calculating by \textsc{ISAJET} and SUSY-HIT.
 In the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$ productions, the $\widetilde{\chi}^{0}_{2}$ decays via $\widetilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ and the $\widetilde{\chi}^{\pm}_{1}$ decays via $\widetilde{\chi}^{\pm}_{1} \to f\bar{f} \widetilde{\chi}^{0}_{1}$.
 But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ production, the $\widetilde{\chi}^{\pm}_{1}$ decays via $\widetilde{\chi}^{\pm}_{1} \to \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$.
 
@@ -368,4 +371,40 @@ But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ production, t
     %\end{center}
     \caption{The NUHM2 MC sample dataset ID (DSID), productions, cross-sections, and decay processes and its relevant branghing ratios, the filter efficiencies, and the uncertainties.}
     \label{tab:data_NUHM2_mcprod}
+\end{table}%
+
+\begin{table}[htb]
+    \begin{center}
+    %\resizebox{\textwidth}{!}{% <------ Don't forget this %
+        {\footnotesize
+        \begin{tabular}{lllll}
+            \hline
+            \hline
+            $m_{1/2}$~[{\GeV}]   & Process                                                                          & \multicolumn{2}{c}{Branching ratio} & Difference (\%)\\
+                                 &                                                                                  & \textsc{ISAJET} & SUSY-HIT          & \\
+            \hline
+            \multirow{2}{*}{350} & $\widetilde{\chi}^{\pm}_{1} \rightarrow \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ & 0.333335355     & 0.333257248       & 0.02\\
+                                 & $\widetilde{\chi}^{0}_{2} \rightarrow \ell \ell \widetilde{\chi}^{0}_{1}$        & 0.101330683     & 0.101384714       & 0.05\\
+            \multirow{2}{*}{400} & $\widetilde{\chi}^{\pm}_{1} \rightarrow \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ & 0.333336010     & 0.333237877       & 0.03\\
+                                 & $\widetilde{\chi}^{0}_{2} \rightarrow \ell \ell \widetilde{\chi}^{0}_{1}$        & 0.102880344     & 0.102934938       & 0.05\\
+            \multirow{2}{*}{500} & $\widetilde{\chi}^{\pm}_{1} \rightarrow \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ & 0.333335965     & 0.333195704       & 0.04\\
+                                 & $\widetilde{\chi}^{0}_{2} \rightarrow \ell \ell \widetilde{\chi}^{0}_{1}$        & 0.105169062     & 0.105384522       & 0.20\\
+            \multirow{2}{*}{600} & $\widetilde{\chi}^{\pm}_{1} \rightarrow \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ & 0.333335682     & 0.333158828       & 0.05\\
+                                 & $\widetilde{\chi}^{0}_{2} \rightarrow \ell \ell \widetilde{\chi}^{0}_{1}$        & 0.108826172     & 0.107603552       & 1.13\\
+            \multirow{2}{*}{700} & $\widetilde{\chi}^{\pm}_{1} \rightarrow \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ & 0.333335459     & 0.333131205       & 0.06\\
+                                 & $\widetilde{\chi}^{0}_{2} \rightarrow \ell \ell \widetilde{\chi}^{0}_{1}$        & 0.108425085     & 0.109700775       & 1.16\\
+            \multirow{2}{*}{800} & $\widetilde{\chi}^{\pm}_{1} \rightarrow \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ & 0.333335274     & 0.333112432       & 0.07\\
+                                 & $\widetilde{\chi}^{0}_{2} \rightarrow \ell \ell \widetilde{\chi}^{0}_{1}$        & 0.109469250     & 0.111642916       & 1.95\\
+            \hline
+            \hline
+        \end{tabular}
+        }
+    %}
+    \end{center}
+    \caption{The branching ratios calculated by \textsc{ISAJET} and SUSY-HIT.
+    The difference are calculated with respect to the SUSY-HIT branching ratio results.
+    Good agreement between the results from two branching ratio calculators can be seen.
+    The largest difference between the results calculating by \textsc{ISAJET} and SUSY-HIT is less than 2\%. 
+    }
+    \label{tab:data_susy_hit}
 \end{table}%

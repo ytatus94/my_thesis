@@ -1,6 +1,11 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/14/2018
+* Finish adding 5.2.2
+* Add distributions in appendix
+*
+
 ### 02/13/2018
 * Add some NUHM2 relative material in event selection 6.2.2
 * Also can add some NUHM2 relative material in signal MC 5.2.2
