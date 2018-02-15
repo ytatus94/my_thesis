@@ -1,10 +1,13 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/15/2018
+* Finish add 6.2.2
+* Add 6.2.3
+
 ### 02/14/2018
 * Finish adding 5.2.2
 * Add distributions in appendix
-*
 
 ### 02/13/2018
 * Add some NUHM2 relative material in event selection 6.2.2

@@ -389,6 +389,10 @@ This section provides the explaniations for various variables used to discrimina
 
 \subsection{Signal region}
 \label{subsec:event_signal_region}
+The events with 2 lepton final state are selected if the lepton pair satisfies same flavor and opposite charge (SFOS).
+To optomize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$ is calculated.
+In order to maximizing the $Z_{n}$, an integrated luminosity of 36~\ifb and a systematic uncertainty of 20\% on the background are assumed and at least one background event remaining is required after optimized cuts . 
+A set of binned dilepton invariant mass $m_{\ell \ell}$ are defined in SR and the kinematic distribution of $m_{\ell \ell}$ is used in a fit to extract the number of signal events.
 The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region} and the $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_binning}.
 There are 14 exclusive regions and 7 inclusive regions are defined.
 The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
@@ -429,6 +433,7 @@ The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the
         }
     \end{center}
     \caption{Summary of event selection criteria.
+    The upper part lists the common selection criteria and the lower part lists the SR requirement for this analysis searching electroweakinos.
     Signal leptons and signal jets are used when applying all requirements.
     The SR binning is listed in Table~\ref{tab:event_signal_region_binning}.}
     \label{tab:event_signal_region}
@@ -455,11 +460,91 @@ The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the
     \label{tab:event_signal_region_binning}
 \end{table}%
 
+%%%
+%%%
+%%%
+
+\subsection{Expected yields in SR}
+\label{subsec:event_expected_yields_in_SR}
+The expected yields in SR for the NUHM2 are estimated using the signal MC samples.
+Four kind  of production channels, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{+}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{-}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$, and 6 different $m_{1/2}$, 350, 400, 500, 600, 700, and 800~{\GeV}, are generated.
+The $\widetilde{\chi}^{0}_{2}$ decays to $\ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ only and $\widetilde{\chi}^{\pm}_{1}$ decays to $f\bar{f} \widetilde{\chi}^{0}_{1}$ for the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ channel and to $\ell \nu_{\ell} \widetilde{\chi}^{0}_{1}$ for $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ channel.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Truth study}
+\label{subsubsec:event_truth_study}
+The truth information in the signal MC samples are used to calculate the acceptance of the SR selection criteria.
+And the expected yields can be obtained by taking the product of luminosity (36.1~\ifb), acceptance, filter efficiency, cross-section, and the branching ratio.
+Table~\ref{tab:event_nuhm2_truth3} shows the acceptance, the cross-section, the branchings for different production channels, the 2LMET50 filter efficiency, and the expected yields in SR.
+
+% Truth3 results for NUHM2
+\begin{table}[htbp]
+    \begin{center}
+        {\tiny
+            \begin{tabular}{cccccc}
+                \hline
+                \hline
+                NUHM2 $m_{1/2}$~[{\GeV}] &                       & $\tilde{\chi}^{0}_{2}\tilde{\chi}^{0}_{1}$ & $\tilde{\chi}^{\pm}_{1}\tilde{\chi}^{\mp}_{1}$ & $\tilde{\chi}^{0}_{2}\tilde{\chi}^{+}_{1}$ & $\tilde{\chi}^{0}_{2}\tilde{\chi}^{-}_{1}$\\
+                \hline
+                \multirow{5}{*}{350}     & acceptance            & 0.030534                                   & 0.020215                                       & 0.017051                                   & 0.013404\\
+                                         & cross-section         & 0.583519                                   & 0.954870                                       & 0.683346                                   & 0.398366\\
+                                         & branching ratio       & 0.101385                                   & 0.111060                                       & 0.101385                                   & 0.101385\\
+                                         & filter efficiency     & 0.22768                                    & 0.12992                                        & 0.25578                                    & 0.25287\\
+                                         & expected events in SR & 14.85                                      & 10.05                                          & 10.91                                      & 4.94\\
+                \hline
+                \multirow{5}{*}{400}     & acceptance            & 0.032875                                   & 0.021152                                       & 0.017745                                   & 0.017960\\
+                                         & cross-section         & 0.625560                                   & 0.841584                                       & 0.684520                                   & 0.397684\\
+                                         & branching ratio       & 0.102935                                   & 0.111047                                       & 0.102935                                   & 0.102935\\
+                                         & filter efficiency     & 0.20416                                    & 0.12201                                        & 0.22389                                    & 0.22064\\
+                                         & expected events in SR & 15.60                                      & 8.71                                           & 10.11                                      & 5.85\\
+                \hline
+                \multirow{5}{*}{500}     & acceptance            & 0.036173                                   & 0.024281                                       & 0.023709                                   & 0.022937\\
+                                         & cross-section         & 0.660309                                   & 0.728079                                       & 0.681917                                   & 0.395590\\
+                                         & branching ratio       & 0.105385                                   & 0.111019                                       & 0.105385                                   & 0.105385\\
+                                         & filter efficiency     & 0.17602                                    & 0.10822                                        & 0.18806                                    & 0.18924\\
+                                         & expected events in SR & 15.99                                      & 7.66                                           & 11.57                                      & 6.53\\
+                \hline
+                \multirow{5}{*}{600}     & acceptance            & 0.042456                                   & 0.024326                                       & 0.027313                                   & 0.027153\\
+                                         & cross-section         & 0.665650                                   & 0.674514                                       & 0.679145                                   & 0.393040\\
+                                         & branching ratio       & 0.107604                                   & 0.110995                                       & 0.107604                                   & 0.107604\\
+                                         & filter efficiency     & 0.15353                                    & 0.10002                                        & 0.16926                                    & 0.16871\\
+                                         & expected events in SR & 16.85                                      & 6.57                                           & 12.19                                      & 6.99\\
+                \hline
+                \multirow{5}{*}{700}     & acceptance            & 0.044454                                   & 0.025197                                       & 0.031214                                   & 0.028996\\
+                                         & cross-section         & 0.664327                                   & 0.643884                                       & 0.676607                                   & 0.391328\\
+                                         & branching ratio       & 0.109701                                   & 0.110976                                       & 0.109701                                   & 0.109701\\
+                                         & filter efficiency     & 0.13788                                    & 0.093538                                       & 0.15874                                    & 0.15801\\
+                                         & expected events in SR & 16.12                                      & 6.08                                           & 13.27                                      & 7.10\\
+                \hline
+                \multirow{5}{*}{800}     & acceptance            & 0.043270                                   & 0.024337                                       & 0.030427                                   & 0.026019\\
+                                         & cross-section         & 0.659812                                   & 0.624032                                       & 0.674869                                   & 0.390607\\
+                                         & branching ratio       & 0.111643                                   & 0.110964                                       & 0.111643                                   & 0.111643\\
+                                         & filter efficiency     & 0.12825                                    & 0.087180                                       & 0.14631                                    & 0.13915\\
+                                         & expected events in SR & 14.75                                      & 5.30                                           & 12.11                                      & 5.68\\
+                \hline
+                \hline
+            \end{tabular}
+        }
+    \end{center}
+    \caption{The acceptance, the cross-section, the branchings for different production channels, the 2LMET50 filter efficiency, and the expected yields in SR common to $2\ell$ channel for four different production channels of NUHM2 signal MC samples.
+    The expected yields in the SR are obtained by taking the product of luminosity (36.1~\ifb), acceptance, filter efficiency, cross-section, and the branching ratio.}
+    \label{tab:event_nuhm2_truth3}
+\end{table}%
+
+%%%
+%%%
+%%%
+
+\subsubsection{Kinematic distributions}
+\label{subsubsec:event_kinematic_distributions}
 Figure~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1} and Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, show the kinematic variable distributions for the NUHM2 model with $m_{1/2} = 500$~{\GeV} in $1 < \mathrm{SR}\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
-The distributions for the other $m_{1/2}$ can be found in the App.~\ref{app:distributions}.
-In order to compare the signal with background distributions, the NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
+The distributions for the other $m_{1/2}$ mass points can be found in the App.~\ref{app:distributions}.
+In order to compare the signal with background distributions, the NUHM2 distributions are multiplied by 10 but the number of events listed in the legend use its actual values.
 When making these so called `$N-1$' plots, all the selections listed in Table~\ref{tab:event_signal_region} are applied, except the variable plotted.
-The bigger arrows in the upper pades presents the selection criteria of the plotting variable as listed in Table~\ref{tab:event_signal_region} and the uncertainty bands in the lower pads are the quadratic sum of the statistical uncertainty and a flat 20\% systematic uncertainty on the backgrounds.
+The bigger arrows in the upper pad present the selection criteria of the plotting variable as listed in Table~\ref{tab:event_signal_region} and the hatched uncertainty bands in the lower pad are the quadratic sum of the statistical uncertainty and a flat 20\% systematic uncertainty on the backgrounds.
 
 \begin{figure}[htbp]
     \begin{center}
@@ -495,7 +580,8 @@ The bigger arrows in the upper pades presents the selection criteria of the plot
         \end{subfigure}
     \end{center}
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
-    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.}
+    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
+    The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, $\pt^{\ell_{2}}$, \met, and $\met/H_\mathrm{T}^\mathrm{leptons}$ are shown.}
     \label{fig:event_nuhm2_kinematic_in_SR_SFOS_1}
 \end{figure}
 
@@ -533,14 +619,19 @@ The bigger arrows in the upper pades presents the selection criteria of the plot
         \end{subfigure}
     \end{center}
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
-    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.}
+    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
+    The distributions of $m_{\ell \ell}$, $m_{\tau \tau}$, $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.}
     \label{fig:event_nuhm2_kinematic_in_SR_SFOS_2}
 \end{figure}
 
+%%%
+%%%
+%%%
 
-
+\subsubsection{Cutflows}
+\label{subsubsec:event_cutflows}
 The cutflows is a sequential cumulative yields after the event selections.
-Table~\ref{tab:event_cutflow_NUHM2_1} and Table~\ref{tab:event_cutflow_NUHM2_2} shows the signal selection cutflows table for the NUHM2 signal with $m_{1/2}$ ranging from 350 to 800~{\GeV}.
+Table~\ref{tab:event_cutflow_NUHM2_1} and Table~\ref{tab:event_cutflow_NUHM2_2} shows the signal selection cutflows yield table for the NUHM2 signal with $m_{1/2}$ ranging from 350 to 800~{\GeV}.
 The weighted number of events are normalized to 36.1~\ifb and the raw number of events are also shown.
 
 \begin{table}[ht]
@@ -590,7 +681,9 @@ The weighted number of events are normalized to 36.1~\ifb and the raw number of 
         %}
     }
     %\end{center}
-    \caption{}
+    \caption{The yields after the initial preselection and the sequential selections (cutflows) for the SR.
+    The weighted number of events are normalized to 36.1~\ifb and the raw number of events are also shown.
+    This table only shows $m_{1/2} = 350$, 400, 500~{\GeV}.}
     \label{tab:event_cutflow_NUHM2_1}
 \end{table}%
 
@@ -641,6 +734,8 @@ The weighted number of events are normalized to 36.1~\ifb and the raw number of 
         %}
     }
     %\end{center}
-    \caption{}
+    \caption{The yields after the initial preselection and the sequential selections (cutflows) for the SR.
+    The weighted number of events are normalized to 36.1~\ifb and the raw number of events are also shown.
+    This table only shows $m_{1/2} = 600$, 700, 800~{\GeV}.}
     \label{tab:event_cutflow_NUHM2_2}
 \end{table}%
