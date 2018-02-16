@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/16/2018
+* Work on background estimation
+
 ### 02/15/2018
 * Finish add 6.2.2
 * Add 6.2.3

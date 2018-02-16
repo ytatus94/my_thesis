@@ -27,9 +27,9 @@ The background contamination in the SR can be estimated by extrapolating from th
 The VR, usually placed in between the SR and CR, is used to validate the predicted number of background events in the SR.
 Figure~\ref{fig:bkg_SRs_CRs_VRs} shows the concepts of multiple SRs, CRs, and VRs.
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \begin{center}
-        \includegraphics[scale=0.4]{cartoon_CRVRSR_bw.pdf}
+        \includegraphics[scale=0.5]{cartoon_CRVRSR_bw.pdf}
         \caption{A illustration of multiple signal, control, and validation regions.
         The background contamination in the SRs can be estimated by extrapolating from the CRs and is verified in the VRs which lie in between the SRs and CRs.
         All regions can be single bin or multiple bins which are indicated by the dashed lines.
@@ -45,9 +45,13 @@ Figure~\ref{fig:bkg_SRs_CRs_VRs} shows the concepts of multiple SRs, CRs, and VR
 \subsection{Specific to this analysis}
 \label{subsec:bkg_SRs_CRs_VRs_spicific}
 Table~\ref{tab:bkg_background_processes} lists the SM background processes for this analysis, the origins in the SR, and the estimation strategies.
+In order to estimate and validate the background contaminations in SR, two CRs and three VRs are defined.
 Table~\ref{tab:bkg_CRs_VRs_definitions} lists the definitions of CRs and VRs where the common selection criteria listed in Table~\ref{tab:event_signal_region} have been applied.
+The CR-top is used to estimate the \ttbar and $tW$ contaminations in SR.
+The CR-tau is used to estimate the  $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets contamination in SR.
+The VR-VV is used for validating diboson background, the VR-SS is used for validating same-sign dilepton background, and VRDF-$m_{\ell \ell}$ is used for validating the background come from different flavor leptons, which include both $e \mu$ and $\mu e$.
 
-\begin{table}[ht]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{lll}
@@ -71,7 +75,7 @@ Table~\ref{tab:bkg_CRs_VRs_definitions} lists the definitions of CRs and VRs whe
     \label{tab:bkg_background_processes}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         %{\scriptsize
@@ -96,30 +100,49 @@ Table~\ref{tab:bkg_CRs_VRs_definitions} lists the definitions of CRs and VRs whe
     \label{tab:bkg_CRs_VRs_definitions}
 \end{table}%
 
-The \ttbar, $tW$, $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets decay to same flavor lepton pairs ($ee$ and $\mu \mu$) and different flavor lepton pairs ($e \mu$ and $\mu e$) at the same rates.
-When defining the CR-top and CR-tau, all possible flavor $e^{\pm} e^{\mp}$, $\mu^{\pm} \mu^{\mp}$, $e^{\pm} \mu^{\pm}$, $\mu^{\pm} e^{\mp}$ are consider to enhance the statistics.
-By requiring the events with at least one $b$-tagged jet, the CR-top defined a top quarks enriched region with $\sim$72\% purity.
-The CR-top is used to estimate the \ttbar and $tW$ decaying to 2$\ell$ final states in the SR.
-By requiring the events satisfying $60 < m_{\tau \tau} < 120$~{\GeV} and $\met/H_{\mathrm{T}}^{\mathrm{lep}}$ between 4 and 8 to reduce the signal contaminations, the CR-tau defined a $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets enriched region with $\sim$80\% purity.
-The CR-tau is used to estimate the leptonic $\tau$ contaminations in the SR.
-Because the CAL mismearsuring jets in the $Z^{(*)}/\gamma^{*}(\to ee$ or $\mu \mu)$+jets processes cause the high offline \met in the SR with very small effects, the MC samples are used to estimate the contaminations in the SR. 
-The background of non-prompt leptons, or called fake leptons, mainly come from the $W$+jets, VV, \ttbar processes.
-In these processes, a jet is misidentified as a lepton and form a dilepton final state in the SR.
-A data-driven method is used to estimate the fake lepton contamination in the SR.  
-For the rare processes such as triboson and \ttbar$V$, their contributions in the SR are estimated using MC samples because of negigible contributions to the $2\ell$ final states.
-
-Three different VRs are constructed for this analysis.
-The VR-VV is used for validating diboson background, the VR-SS is used for validating same-sign dilepton background, and VRDF-$m_{\ell \ell}$ is used for validating the background come from different flavor leptons, which include both $e \mu$ and $\mu e$.
-By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in the VR-VV is at most 8\%.
-
 %%%
 %%%
 %%%
 
 \section{Irreducible background}
 \label{sec:bkg_irreducible_background}
-%The dominant sources of the irreducible background are \ttbar $tZ$, $WW/WZ$, $Z/\gamma(\to \tau \tau)$ + jets and are estimated using the MC simulation samples.
-%These SM processes contain two prompt leptons, \met, and jets, therefore, they can mimic the Higgsino signal.
+The irreducible background for this analysis are the SM processes containing two prompt leptons, \met, and jets.
+Therefor, they can enter the SR and mimic the signal events.
+The dominant sources are the \ttbar, $tW$, and $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets processes.
+These processes decay to same flavor lepton pairs ($ee$ and $\mu \mu$) and different flavor lepton pairs ($e \mu$ and $\mu e$) at the same rates.
+When defining the CR-top and CR-tau, all possible flavor $e^{\pm} e^{\mp}$, $\mu^{\pm} \mu^{\mp}$, $e^{\pm} \mu^{\pm}$, $\mu^{\pm} e^{\mp}$ are consider to enhance the statistics.
+By requiring the events with at least one $b$-tagged jet, the CR-top defined a top quarks enriched region with $\sim$72\% purity.
+The CR-top is used to estimate the \ttbar and $tW$ decaying to 2$\ell$ final states in the SR.
+By requiring the events satisfying $60 < m_{\tau \tau} < 120$~{\GeV} and $\met/H_{\mathrm{T}}^{\mathrm{lep}}$ between 4 and 8 to reduce the signal contaminations, the CR-tau defined a $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets enriched region with $\sim$80\% purity.
+The CR-tau is used to estimate the leptonic $\tau$ contaminations in the SR.
+The kinematic distributions of $\met/H_\mathrm{T}^\mathrm{lep}$ and $m_{\tau \tau}$ in the CR-top and CR-tau after performing background-only fit are shown in Fig~\ref{fig:bkg_kinematic_distributions_in_CRs}.
+All the event selection criteria are applied except the variable being plotted.
+The expected background contributions from different processes are stacked and compared with the data.
+
+\begin{figure}[ht]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{Higgsino_bkg_CRtop_CRtop_METOverHTLep_METOverHTLep.pdf}
+            \caption{The $\met/H_\mathrm{T}^\mathrm{lep}$ distribution in CR-top.}
+            \label{}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{Higgsino_bkg_CRtau_CRtau_MTauTau_MTauTau.pdf}
+            \caption{The $m_{\tau \tau}$ distribution in CR-tau.}
+            \label{}
+        \end{subfigure}
+        \caption{The kinematic distributions of $\met/H_\mathrm{T}^\mathrm{lep}$ and $m_{\tau \tau}$ in the CR-top and CR-tau, respectively.
+        All the event selection criteria are applied except the variable being plotted and the bickground-only fits are performed.
+        The selection requirement of the plotting variable is indicated by the blue arrows.
+        The expected background contributions from different processes are stacked and compared with the data.}
+        \label{fig:bkg_kinematic_distributions_in_CRs}
+    \end{center}
+\end{figure}
+
+The diboson $VV$ events and the rare processes are also contributioned to the irreducible background.
+But it is difficult to have pure diboson or rare sample that can be used to estimate the contaminations in SR.
+Therefore, the background contaminations are estimated using MC simulation and validated by the VR-VV.
+By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in the VR-VV is at most 8\% in the samples, the diboson events contribute $\sim$40\%, fake lepton events contribute $\sim$25\%, \ttbar and single top events contribute $\sim$23\%, and the rest parts are smaller and contributed by the other processes.
 
 %%%
 %%%
@@ -127,6 +150,21 @@ By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in t
 
 \section{Reducible background}
 \label{sec:bkg_reducible_background}
+The main contributions of the reducible background come from the non-prompt leptons and the processes that the reconstructed \met are instrumental in origin. 
+The background of non-prompt leptons, or called fake leptons, mainly come from the $W$+jets, VV, \ttbar processes.
+In these processes, a jet is misidentified as a lepton and form a dilepton final state in the SR.
+A data-driven method is used to estimate the fake lepton contamination in the SR. 
+
+
+
+
+
+
+Because the CAL mismearsuring jets in the $Z^{(*)}/\gamma^{*}(\to ee$ or $\mu \mu)$+jets processes cause the high offline \met in the SR with very small effects, the MC samples are used to estimate the contaminations in the SR.
+
+ 
+For the rare processes such as triboson and \ttbar$V$, their contributions in the SR are estimated using MC samples because of negigible contributions to the $2\ell$ final states.
+
 
 %%%
 %%%

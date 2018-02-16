@@ -371,7 +371,7 @@ This section provides the explaniations for various variables used to discrimina
     %
     \begin{figure}[htb]
         \begin{center}
-            \includegraphics[scale=0.4]{fig_03a.pdf}
+            \includegraphics[scale=0.5]{fig_03a.pdf}
             \caption{The distribution of $\met/H_{\textrm{T}}^{\textrm{lep}}$ as function of $m_{\ell\ell}$ for the electroweakino after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
             The red line indicates the SR selection.
             Events in the region below this line are rejected.
@@ -540,7 +540,7 @@ Table~\ref{tab:event_nuhm2_truth3} shows the acceptance, the cross-section, the 
 
 \subsubsection{Kinematic distributions}
 \label{subsubsec:event_kinematic_distributions}
-Figure~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1} and Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, show the kinematic variable distributions for the NUHM2 model with $m_{1/2} = 500$~{\GeV} in $1 < \mathrm{SR}\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
+Figure~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1}, Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, and Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_3} show the kinematic variable distributions for the NUHM2 model with $m_{1/2} = 500$~{\GeV} in $1 < \mathrm{SR}\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
 The distributions for the other $m_{1/2}$ mass points can be found in the App.~\ref{app:distributions}.
 In order to compare the signal with background distributions, the NUHM2 distributions are multiplied by 10 but the number of events listed in the legend use its actual values.
 When making these so called `$N-1$' plots, all the selections listed in Table~\ref{tab:event_signal_region} are applied, except the variable plotted.
@@ -549,79 +549,110 @@ The bigger arrows in the upper pad present the selection criteria of the plottin
 \begin{figure}[htbp]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_nJet30_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_nJet30_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$N^{30}_{\mathrm{jets}}$}
             \label{fig:event_nuhm2_m12_500_nJet30_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_nBJet20_MV2c10_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_nBJet20_MV2c10_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$N^{20}_{\mathrm{b-jets}}$}
             \label{fig:event_nuhm2_m12_500_nBJet20_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_lep1Pt_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_lep1Pt_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$p^{\ell_1}_{\mathrm{T}}$}
             \label{fig:event_nuhm2_m12_500_lep1Pt_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_lep2Pt_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_lep2Pt_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$p^{\ell_2}_{\mathrm{T}}$}
             \label{fig:event_nuhm2_m12_500_lep2Pt_SFOS}
         \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_met_Et_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
-            \caption{$E^{\mathrm{miss}}_{\mathrm{T}}$}
-            \label{fig:event_nuhm2_m12_500_met_SFOS}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_METOverHTLep_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
-            \caption{$E^{\mathrm{miss}}_{\mathrm{T}} / H^{\mathrm{leptons}}_{\mathrm{T}}$}
-            \label{fig:event_nuhm2_m12_500_METOverHTLep_SFOS}
-        \end{subfigure}
+        %\begin{subfigure}[b]{0.48\textwidth}
+        %    \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_met_Et_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+        %    \caption{$E^{\mathrm{miss}}_{\mathrm{T}}$}
+        %    \label{fig:event_nuhm2_m12_500_met_SFOS}
+        %\end{subfigure}
+        %\begin{subfigure}[b]{0.48\textwidth}
+        %    \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_METOverHTLep_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+        %    \caption{$E^{\mathrm{miss}}_{\mathrm{T}} / H^{\mathrm{leptons}}_{\mathrm{T}}$}
+        %    \label{fig:event_nuhm2_m12_500_METOverHTLep_SFOS}
+        %\end{subfigure}
     \end{center}
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
     The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
-    The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, $\pt^{\ell_{2}}$, \met, and $\met/H_\mathrm{T}^\mathrm{leptons}$ are shown.}
+    %The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, $\pt^{\ell_{2}}$, \met, and $\met/H_\mathrm{T}^\mathrm{leptons}$ are shown.}
+    The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, and $\pt^{\ell_{2}}$ are shown.}
     \label{fig:event_nuhm2_kinematic_in_SR_SFOS_1}
 \end{figure}
 
 \begin{figure}[htbp]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_mll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_met_Et_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$E^{\mathrm{miss}}_{\mathrm{T}}$}
+            \label{fig:event_nuhm2_m12_500_met_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_METOverHTLep_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \caption{$E^{\mathrm{miss}}_{\mathrm{T}} / H^{\mathrm{leptons}}_{\mathrm{T}}$}
+            \label{fig:event_nuhm2_m12_500_METOverHTLep_SFOS}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_mll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$m_{\ell\ell}$}
             \label{fig:event_nuhm2_m12_500_mll_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_MTauTau_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_MTauTau_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$m_{\tau\tau}$}
             \label{fig:event_nuhm2_m12_500_MTauTau_SFOS}
         \end{subfigure}
+    \end{center}
+    \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
+    The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
+    The distributions of \met, $\met/H_\mathrm{T}^\mathrm{leptons}$, $m_{\ell \ell}$, and $m_{\tau \tau}$ are shown.}
+    \label{fig:event_nuhm2_kinematic_in_SR_SFOS_2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \begin{center}
+        %\begin{subfigure}[b]{0.48\textwidth}
+        %    \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_mll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+        %    \caption{$m_{\ell\ell}$}
+        %    \label{fig:event_nuhm2_m12_500_mll_SFOS}
+        %\end{subfigure}
+        %\begin{subfigure}[b]{0.48\textwidth}
+        %    \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_MTauTau_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+        %    \caption{$m_{\tau\tau}$}
+        %    \label{fig:event_nuhm2_m12_500_MTauTau_SFOS}
+        %\end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_mt_lep1_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_mt_lep1_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$m_{T}(\ell_{1})$}
             \label{fig:event_nuhm2_m12_500_mt_lep1_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_Rll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_Rll_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$\Delta R_{\ell\ell}$}
             \label{fig:event_nuhm2_m12_500_Rll_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_DPhiJ1Met_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_DPhiJ1Met_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{$|\Delta \phi(\mathbf{p}^{j_{1}}_{\mathrm{T}}, \mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})|$}
             \label{fig:event_nuhm2_m12_500_DPhiJ1Met_SFOS}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{NUHM2_m12_500_and_Bkg_minDPhiAllJetsMet_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
+            \includegraphics[scale=0.4]{NUHM2_m12_500_and_Bkg_minDPhiAllJetsMet_SFOS_N_minus_one_distribution_in_SR_times_10_on_Nsig.pdf}
             \caption{min[$|\Delta \phi(\mathbf{p}^{\textrm{All jets}}_{\mathrm{T}}, \mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})|$]}
             \label{fig:event_nuhm2_m12_500_minDPhiAllJetsMet_SFOS}
         \end{subfigure}
     \end{center}
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
     The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
-    The distributions of $m_{\ell \ell}$, $m_{\tau \tau}$, $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.}
-    \label{fig:event_nuhm2_kinematic_in_SR_SFOS_2}
+    %The distributions of $m_{\ell \ell}$, $m_{\tau \tau}$, $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.}
+    The distributions of $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.}
+    \label{fig:event_nuhm2_kinematic_in_SR_SFOS_3}
 \end{figure}
 
 %%%
