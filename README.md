@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 02/20/2018
+* Add plots in results.
+
 ### 02/16/2018
 * Work on background estimation
 
