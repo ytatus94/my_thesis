@@ -134,6 +134,7 @@ The expected background contributions from different processes are stacked and c
         \caption{The kinematic distributions of $\met/H_\mathrm{T}^\mathrm{lep}$ and $m_{\tau \tau}$ in the CR-top and CR-tau, respectively.
         All the event selection criteria are applied except the variable being plotted and the bickground-only fits are performed.
         The selection requirement of the plotting variable is indicated by the blue arrows.
+        The first and last bins include the underflow and overflow, respectivley.
         The expected background contributions from different processes are stacked and compared with the data.}
         \label{fig:bkg_kinematic_distributions_in_CRs}
     \end{center}
@@ -144,6 +145,11 @@ But it is difficult to have pure diboson or rare sample that can be used to esti
 Therefore, the background contaminations are estimated using MC simulation and validated by the VR-VV.
 By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in the VR-VV is at most 8\% in the samples, the diboson events contribute $\sim$40\%, fake lepton events contribute $\sim$25\%, \ttbar and single top events contribute $\sim$23\%, and the rest parts are smaller and contributed by the other processes.
 
+The VRDF-$m_{\ell \ell}$ validation region is construced using different flavor ($e\mu$ and $\mu e$) leptons.
+This VR has the same selection criteria as the SR except the lepton flavor requirement.
+Since the irreducible background are symmetric in $ee+\mu\mu$ and $e\mu+\mu e$, the VRDF-$m_{\ell \ell}$ is used to check the eventual extrapolation in the fitting procedure within the same kinematic as SR.
+The signal contamination in this VR is less than 8\%.
+
 %%%
 %%%
 %%%
@@ -153,7 +159,7 @@ By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in t
 The main contributions of the reducible background come from the non-prompt leptons and the processes that the reconstructed \met are instrumental in origin. 
 The background of non-prompt leptons, or called fake leptons, mainly come from the $W$+jets, VV, \ttbar processes.
 In these processes, a jet is misidentified as a lepton and form a dilepton final state in the SR.
-A data-driven method is used to estimate the fake lepton contamination in the SR. 
+A data-driven Fake Factor method~\ref{ATLAS:2014aga} is used to estimate the fake lepton contamination in the SR. 
 
 
 
