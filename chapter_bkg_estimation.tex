@@ -1,6 +1,6 @@
 The SM background can be catogrized into the irreducible and reducible background.
 The irreducible background includes events containing two prompt leptons, \met, and jets.
-The reducible background includes events containing fake or non-prompt leptons.
+The reducible background includes events containing fake/non-prompt leptons.
 Since the background estimations rely on the choice of the control regions (CRs) and validation regions (VRs) heavily, the concepts of the CRs and VRs are introduced in Sect.~\ref{sec:bkg_control_and_validation_regions}.
 The detail discussions of the irreducible background is presented in Sect.~\ref{sec:bkg_irreducible_background} and of the reducible background is described in Sect.~\ref{sec:bkg_reducible_background}.
 Finally, the systematic uncertainty study for this analysis is mentioned in Sect.~\ref{sec:bkg_systematic_uncertainties}.
@@ -146,7 +146,7 @@ Therefore, the background contaminations are estimated using MC simulation and v
 By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in the VR-VV is at most 8\% in the samples, the diboson events contribute $\sim$40\%, fake lepton events contribute $\sim$25\%, \ttbar and single top events contribute $\sim$23\%, and the rest parts are smaller and contributed by the other processes.
 
 The VRDF-$m_{\ell \ell}$ validation region is construced using different flavor ($e\mu$ and $\mu e$) leptons.
-This VR has the same selection criteria as the SR except the lepton flavor requirement.
+This VR has the same selection criteria as the SR, except the leptons are composed by different flavor.
 Since the irreducible background are symmetric in $ee+\mu\mu$ and $e\mu+\mu e$, the VRDF-$m_{\ell \ell}$ is used to check the eventual extrapolation in the fitting procedure within the same kinematic as SR.
 The signal contamination in this VR is less than 8\%.
 
@@ -156,21 +156,55 @@ The signal contamination in this VR is less than 8\%.
 
 \section{Reducible background}
 \label{sec:bkg_reducible_background}
-The main contributions of the reducible background come from the non-prompt leptons and the processes that the reconstructed \met are instrumental in origin. 
+The main contributions of the reducible background come from the non-prompt leptons and the processes that the reconstructed \met are instrumental in origin.
+
+%%%
+%%%
+%%%
+
+\subsection{Fake/non-prompt lepton background}
+\label{subsec:bkg_fake_lepton_background}
 The background of non-prompt leptons, or called fake leptons, mainly come from the $W$+jets, VV, \ttbar processes.
 In these processes, a jet is misidentified as a lepton and form a dilepton final state in the SR.
-A data-driven Fake Factor method~\ref{ATLAS:2014aga} is used to estimate the fake lepton contamination in the SR. 
+Because the MC simulation couldn't model fake leptons well, a data-driven Fake Factor method~\cite{ATLAS:2014aga} is used to estimate the fake lepton contamination in the SR. 
+
+%%%
+%%%
+%%%
+
+\subsubsection{Faje factor method}
+\label{subsubsec:bkg_fake_factor_method}
+The Fake Factor method defined a tight set and a loose set of lepton identification ceiteria.
+The tight set refers as ID and the loose set refers as anti-ID.
+The ID criteria correspond to the requirements applied to signal leptons used in the analysis.
+The anti-ID criteria define a sample enriched in fake leptons by releasing or inverting one or more of the identification, isolation, or $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
+There the lepton samples in ID and anti-ID are orthogonal.
+Then the fake factor $F$ is defined as the ratio between the number of ID and the number of anti-ID leptons as shown in Eq.~\ref{eq:bkg_fake_factor}.
+
+\begin{equation}
+    F = \frac{N_\mathrm{ID}}{N_\mathrm{anti-ID}}
+    \label{eq:bkg_fake_factor}
+\end{equation}
+
+The $F$ for electron and muon are measured in a fake leptons enriched region as a function of reconstructed lepton \pt and are used to estimate the reducible background in the SR.
+These $F$ are applied to events in a measurement region which has the same selection criteria as SR, except an ID lepton is replaced by an anti-ID lepton.
 
 
 
 
 
 
-Because the CAL mismearsuring jets in the $Z^{(*)}/\gamma^{*}(\to ee$ or $\mu \mu)$+jets processes cause the high offline \met in the SR with very small effects, the MC samples are used to estimate the contaminations in the SR.
+%%%
+%%%
+%%%
 
- 
-For the rare processes such as triboson and \ttbar$V$, their contributions in the SR are estimated using MC samples because of negigible contributions to the $2\ell$ final states.
-
+\subsection{Instrumental \met background}
+\label{subsec:bkg_instrumental_met_background}
+Because the detector mismeasuring leptons or jets in the background processes cause the high offline \met in SR, the contributions arise from these background processes, for example, Drell-Yan dilepton production are studied using MC samples.
+By requiring $\met > 200$~{\GeV}, the contributions from these background processes are expected very small.
+By vetoing $J/\psi$ peak, $3.0 < m_{\ell \ell} < 3.2$~{\GeV}, the contributions from $J/\psi$ resonance can be removed efficiently.
+By requiring min($\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})) > 0.4$, the events contain mismeasured jet causing large \met can be suppressed.
+After applying these requirements, the instrumental \met background are foound to be negligible.
 
 %%%
 %%%
