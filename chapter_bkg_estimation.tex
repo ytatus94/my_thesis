@@ -176,8 +176,8 @@ Because the MC simulation couldn't model fake leptons well, a data-driven Fake F
 \label{subsubsec:bkg_fake_factor_method}
 The Fake Factor method defined a tight set and a loose set of lepton identification ceiteria.
 The tight set refers as ID and the loose set refers as anti-ID.
-The ID criteria correspond to the requirements applied to signal leptons used in the analysis.
-The anti-ID criteria define a fake leptons enriched sample by releasing or inverting one or more of the identification, isolation, or impact parameter $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
+The ID leptons correspond to the requirements applied to signal leptons used in the analysis.
+The anti-ID leptons define a fake leptons enriched sample by releasing or inverting one or more of the identification, isolation, or impact parameter $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
 Therefore, the leptons in ID and anti-ID are orthogonal.
 Then the fake factor $F$ is defined as the ratio between the number of ID and the number of anti-ID leptons as shown in Eq.~\ref{eq:bkg_fake_factor}.
 
@@ -212,6 +212,9 @@ The schematic illustration of the fake factor method is shown in Fig.~\ref{fig:b
 
 \subsubsection{Specific to this analysis}
 \label{subsubsec:bkg_fake_specific}
+The ID electrons are the signal electrons as shown in Table~\ref{tab:event_object_definitions} and the anti-ID electrons are baseline electrons passing \texttt{LooseAndBLayer} identification but failing at least one of the following requirements: \texttt{Tight} identification, \texttt{GradientLoose} isolation, or $|d_{0}/\sigma(d_{0})| < 5$.
+The ID muons are the signal muons as shown in Table~\ref{tab:event_object_definitions} and the anti-ID muons are baseline muons failing either \texttt{FixedCutTightTrackOnly} isolation or $|d_{0}/\sigma(d_{0})| < 3$.
+Both ID and anti-ID leptons are required to satisfy $|z_{0} \sin \theta| < 0.5$~mm to reduce the impact of pile up.
 Table~\ref{tab:bkg_ID_anti_ID_selection_criteria} summarizes the ID and anti-ID selection criteria for electrons and muons.
 
 \begin{table}[htbp]
@@ -220,16 +223,17 @@ Table~\ref{tab:bkg_ID_anti_ID_selection_criteria} summarizes the ID and anti-ID 
         \begin{tabular}{lll}
             \hline
             \hline
-                                     & Electrons                                   & Muons\\
+                             & Electrons                           & Muons\\
             \hline
-            \multirow{4}{*}{}        & $\pt > 4.5$~{\GeV}                          & $\pt > 4$~{\GeV}\\
-                                     & $|\eta| < 2.47$                             & $|\eta| < 2.5$\\
-                                     & $|z_{0} \sin \theta| < 0.5$~mm              & $|z_{0} \sin \theta| < 0.5$~mm\\
-                                     & pass \texttt{LooseAndBLayer} identification & pass \texttt{Medium} identification\\
+            Kinematic        & $\pt > 4.5$~{\GeV}, $|\eta| < 2.47$ & $\pt > 4$~{\GeV}, $|\eta| < 2.5$\\
+            Identification   & pass \texttt{LooseAndBLayerLLH}     & pass \texttt{Medium}\\
+            Impact parameter & $|z_{0} \sin \theta| < 0.5$~mm      & $|z_{0} \sin \theta| < 0.5$~mm\\
             \hline
-            \multirow{3}{*}{}        & !\texttt{Tight} identification              & \\
-                                     & or $|d_{0}/\sigma(d_{0})| > 5$              & $|d_{0}/\sigma(d_{0})| > 3$\\
-                                     & or !\texttt{GradientLoose} isolation        & or !\texttt{FixedCutTightTrackOnly} isolation\\
+            \multicolumn{3}{c}{anti-ID have to fail at least one of the requirements}\\
+            \hline
+            Identification   & \texttt{TightLLH}                   & -\\
+            Isolation        & \texttt{GradientLooseLLH}           & \texttt{FixedCutTightTrackOnlyLLH}\\
+            Impact parameter & $|d_{0}/\sigma(d_{0})| < 5$         & $|d_{0}/\sigma(d_{0})| < 3$\\
             \hline
             \hline
         \end{tabular}
@@ -239,8 +243,47 @@ Table~\ref{tab:bkg_ID_anti_ID_selection_criteria} summarizes the ID and anti-ID 
     \label{tab:bkg_ID_anti_ID_selection_criteria}
 \end{table}
 
-The leading jet \pt for the events used for fake factor measurement are required to be greater than 100~{\GeV} making the fake factor measurement region similar to SR.
-Because the muon fake factor depends on the $N_{b-\mathrm{jet}}$ in the events, the estimated number of fake lepton in CR-top is calculated using events with at least one $b$-jet while the estimated number of fake lepton in the other regions are computed using zero $b$-jet events.
+The electrons and muons fake factor depend on the lepton \pt largely and on the leading jet \pt.
+Therefore, the leading jet \pt for the events used for fake factor measurement are required to be greater than 100~{\GeV} making the fake factor measurement region similar to SR.
+The muon fake factor also depends on the $N_{b-\mathrm{jet}}$ in the events, the estimated number of fake lepton in CR-top is calculated using events with at least one $b$-jet while the estimated number of fake lepton in the other regions are computed using zero $b$-jet events.
+The electrons and muons fake factor are computered using events with $m_\mathrm{T} < 40$~{\GeV} in different \pt bins.
+Figure~\ref{} shows the electrons fake factors as a function of \pt and leading jet \pt and Fig~\ref{} shows the muons fake factor as a function of \pt with 0 $b$-jet and at least one $b$-jet.
+
+\begin{figure}[ht]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{FakeFactor_el_pt.pdf}
+            \caption{Electron \pt dependence}
+            \label{fig:bkg_electron_fake_factor_pt}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{FakeFactor_el_j1pt.pdf}
+            \caption{Leading jet \pt dependence}
+            \label{fig:bkg_electron_fake_factor_leading_jet_pt}
+        \end{subfigure}
+        \caption{The electron fake factor as a function of \pt and leading jet \pt.
+        The red line is the average electron fake factor.}
+        \label{fig:bkg_electron_fake_factor}
+    \end{center}
+\end{figure}
+
+\begin{figure}[ht]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{FakeFactor_mu_ptb0.pdf}
+            \caption{Muon \pt dependence with 0 $b$-jet}
+            \label{fig:bkg_muon_fake_factor_pt_0bjet}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{FakeFactor_mu_ptb1.pdf}
+            \caption{Muon \pt dependence with $\ge 1 b$-jet}
+            \label{fig:bkg_muon_fake_factor_pt_bjets}
+        \end{subfigure}
+        \caption{The muon fake factor as a function of \pt with 0 $b$-jet and at least one $b$-jet.
+        The red line is the average muon fake factor.}
+        \label{fig:bkg_muon_fake_factor}
+    \end{center}
+\end{figure}
 
 %%%
 %%%
