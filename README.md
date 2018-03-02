@@ -3,6 +3,10 @@ This is repository for my Ph.D. thesis
 
 ### 03/01/2018
 * Work on background estimation
+* Finish 7.3.2
+
+### 03/01/2018
+* Work on background estimation
 
 ### 02/27/2018
 * Work on background estimation

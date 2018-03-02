@@ -124,12 +124,12 @@ The expected background contributions from different processes are stacked and c
         \begin{subfigure}[b]{0.48\textwidth}
             \includegraphics[scale=0.4]{Higgsino_bkg_CRtop_CRtop_METOverHTLep_METOverHTLep.pdf}
             \caption{The $\met/H_\mathrm{T}^\mathrm{lep}$ distribution in CR-top.}
-            \label{}
+            \label{fig:bkg_kinematic_metOverHT_CRtop}
         \end{subfigure}
         \begin{subfigure}[b]{0.48\textwidth}
             \includegraphics[scale=0.4]{Higgsino_bkg_CRtau_CRtau_MTauTau_MTauTau.pdf}
             \caption{The $m_{\tau \tau}$ distribution in CR-tau.}
-            \label{}
+            \label{fig:bkg_kinematic_mtautau_CRtau}
         \end{subfigure}
         \caption{The kinematic distributions of $\met/H_\mathrm{T}^\mathrm{lep}$ and $m_{\tau \tau}$ in the CR-top and CR-tau, respectively.
         All the event selection criteria are applied except the variable being plotted and the bickground-only fits are performed.
@@ -177,8 +177,8 @@ Because the MC simulation couldn't model fake leptons well, a data-driven Fake F
 The Fake Factor method defined a tight set and a loose set of lepton identification ceiteria.
 The tight set refers as ID and the loose set refers as anti-ID.
 The ID criteria correspond to the requirements applied to signal leptons used in the analysis.
-The anti-ID criteria define a sample enriched in fake leptons by releasing or inverting one or more of the identification, isolation, or $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
-There the lepton samples in ID and anti-ID are orthogonal.
+The anti-ID criteria define a fake leptons enriched sample by releasing or inverting one or more of the identification, isolation, or impact parameter $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
+Therefore, the leptons in ID and anti-ID are orthogonal.
 Then the fake factor $F$ is defined as the ratio between the number of ID and the number of anti-ID leptons as shown in Eq.~\ref{eq:bkg_fake_factor}.
 
 \begin{equation}
@@ -186,13 +186,61 @@ Then the fake factor $F$ is defined as the ratio between the number of ID and th
     \label{eq:bkg_fake_factor}
 \end{equation}
 
+The $N_\mathrm{anti-ID}$ is the number of fake leptons in the anti-ID measurement region where the contributions from prompt leptons are subtracted using the MC simulation results.
 The $F$ for electron and muon are measured in a fake leptons enriched region as a function of reconstructed lepton \pt and are used to estimate the reducible background in the SR.
-These $F$ are applied to events in a measurement region which has the same selection criteria as SR, except an ID lepton is replaced by an anti-ID lepton.
+These $F$ are applied to events in anti-ID control region, which has the same selection criteria as SR, except an ID lepton is replaced by an anti-ID lepton.
+The total reducible background in the SR can be estimated by
 
+\begin{equation}
+    N^\mathrm{SR}_\mathrm{est} = F \cdot N^\mathrm{CR}_\mathrm{fake}
+    \label{eq:bkg_estimated_fake_leptons}
+\end{equation}
 
+The schematic illustration of the fake factor method is shown in Fig.~\ref{fig:bkg_fake_factor_method}.
 
+\begin{figure}[htb]
+    \begin{center}
+        \input{figures/bkg_estimation/fakefactor_schematic.tex}
+        \caption{The schematic illustration of the fake factor method used to estimate the fake lepton contribution in the SR.}
+        \label{fig:bkg_fake_factor_method}
+    \end{center}
+\end{figure}
 
+%%%
+%%%
+%%%
 
+\subsubsection{Specific to this analysis}
+\label{subsubsec:bkg_fake_specific}
+Table~\ref{tab:bkg_ID_anti_ID_selection_criteria} summarizes the ID and anti-ID selection criteria for electrons and muons.
+
+\begin{table}[htbp]
+    %\begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        \begin{tabular}{lll}
+            \hline
+            \hline
+                                     & Electrons                                   & Muons\\
+            \hline
+            \multirow{4}{*}{}        & $\pt > 4.5$~{\GeV}                          & $\pt > 4$~{\GeV}\\
+                                     & $|\eta| < 2.47$                             & $|\eta| < 2.5$\\
+                                     & $|z_{0} \sin \theta| < 0.5$~mm              & $|z_{0} \sin \theta| < 0.5$~mm\\
+                                     & pass \texttt{LooseAndBLayer} identification & pass \texttt{Medium} identification\\
+            \hline
+            \multirow{3}{*}{}        & !\texttt{Tight} identification              & \\
+                                     & or $|d_{0}/\sigma(d_{0})| > 5$              & $|d_{0}/\sigma(d_{0})| > 3$\\
+                                     & or !\texttt{GradientLoose} isolation        & or !\texttt{FixedCutTightTrackOnly} isolation\\
+            \hline
+            \hline
+        \end{tabular}
+    }
+    %\end{center}
+    \caption{The ID and anti-ID selection criteria for electrons and muons.}
+    \label{tab:bkg_ID_anti_ID_selection_criteria}
+\end{table}
+
+The leading jet \pt for the events used for fake factor measurement are required to be greater than 100~{\GeV} making the fake factor measurement region similar to SR.
+Because the muon fake factor depends on the $N_{b-\mathrm{jet}}$ in the events, the estimated number of fake lepton in CR-top is calculated using events with at least one $b$-jet while the estimated number of fake lepton in the other regions are computed using zero $b$-jet events.
 
 %%%
 %%%
@@ -200,11 +248,35 @@ These $F$ are applied to events in a measurement region which has the same selec
 
 \subsection{Instrumental \met background}
 \label{subsec:bkg_instrumental_met_background}
-Because the detector mismeasuring leptons or jets in the background processes cause the high offline \met in SR, the contributions arise from these background processes, for example, Drell-Yan dilepton production are studied using MC samples.
+The detector mismeasuring leptons or jets in the background processes which don't contain invisible particle might satisfy the $\met > 200$~{\GeV} requirement.
+For example, the $Z^{(*)}/\gamma^{*}(\to ee, \mu \mu)$+jets Drell-Yan dilepton production can enter the SR due to the instrumental \met.
 By requiring $\met > 200$~{\GeV}, the contributions from these background processes are expected very small.
-By vetoing $J/\psi$ peak, $3.0 < m_{\ell \ell} < 3.2$~{\GeV}, the contributions from $J/\psi$ resonance can be removed efficiently.
-By requiring min($\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})) > 0.4$, the events contain mismeasured jet causing large \met can be suppressed.
-After applying these requirements, the instrumental \met background are foound to be negligible.
+Using the MC simulation, these process are found to be negligible.
+The small mass splitting between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ causes the low invariant dilepton mass where the dilepton events are the decay product of $\widetilde{\chi}^{0}_{2}$.
+The $e^{\pm} e^{\mp}$ and $\mu^{\pm} \mu^{\mp}$ invariant masses for data events passing \met trigger and $|\Delta \phi(j_{1}, \mathbf{p}_\mathrm{T}^\mathrm{miss})| < 1.5$ are shown in Fig.~\ref{fig:bkg_invariant_mass} where a $J/\psi$ peak $3.0 < m_{\ell \ell} < 3.2$~{\GeV} can be seen.
+
+\begin{figure}[ht]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{dataCR_mll_ElEl_pre.pdf}
+            \caption{$ee$ invariant mass}
+            \label{fig:bkg_ee_invariant_mass}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{dataCR_mll_MuMu_pre.pdf}
+            \caption{$\mu \mu$ invariant mass}
+            \label{fig:bkg_mumu_invariant_mass}
+        \end{subfigure}
+        \caption{The opposite sign baseline dilepton mass $m_{\ell \ell}$ spectrum.
+        All data events are required to pass \met trigger and satisfies $|\Delta \phi(j_{1}, \mathbf{p}_\mathrm{T}^\mathrm{miss})| < 1.5$ requirement.
+        A low mass $J/\psi$ peak can be seen in $ee$ and $\mu \mu$ invariant mass.}
+        \label{fig:bkg_invariant_mass}
+    \end{center}
+\end{figure}
+
+By vetoing $3.0 < m_{\ell \ell} < 3.2$~{\GeV}, the contributions from $J/\psi$ resonance can be removed efficiently.
+By requiring min$|\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})| > 0.4$, the events contain mismeasured jet causing large \met can be suppressed.
+After applying these requirements, the instrumental \met background are found to be negligible.
 
 %%%
 %%%
