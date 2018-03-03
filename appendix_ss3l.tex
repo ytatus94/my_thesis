@@ -1,7 +1,7 @@
 The Monte Carlo (MC) samples are used to model the SUSY signals and to estimate the SM background.
 The MC samples are processed using a ATLAS detector full simulation (FullSim) or a fast simulation (AFII\footnote{AFII stands for ATLAS Fast II.}) based on {\GEANT}4~\cite{Agostinelli:2002hh} simulation package.
 The FullSim simulates the detailed properties of the ATLAS detector while the AFII uses a parameterized calorimeter response and simulates ID and MS~\cite{ATLAS:2010bfa} based on {\GEANT}4.
-The simulated MC events are reweighted to the observed pile-up conditions in the data.
+The simulated MC events are re-weighted to the observed pile-up conditions in the data.
 
 %%%
 %%%
@@ -15,7 +15,7 @@ The simulated MC events are reweighted to the observed pile-up conditions in the
 
 
 
-Table~\ref{tab:app_sample_strong} shows the event generator, parton shower, cross-section normalization, PDF set~\cite{Martin:2009iq}, and the set of tunned parameters for modelling for all samples.
+Table~\ref{tab:app_sample_strong} shows the event generator, parton shower, cross-section normalization, PDF set~\cite{Martin:2009iq}, and the set of tuned parameters for modeling for all samples.
 Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 package~\cite{Lange:2001uf} is used to model the properties of bottom and charm hadron decays for all MC samples.
 
 \begin{table}[htp]
@@ -24,7 +24,7 @@ Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 packag
         \begin{tabular}{ccccccc}
             \hline
             \hline
-            Signal/Background                                      & Physics process                   & Event generator                  & Parton shower     & Cross-section normalization & PDF set    & Set of tunned parameters\\
+            Signal/Background                                      & Physics process                   & Event generator                  & Parton shower     & Cross-section normalization & PDF set    & Set of tuned parameters\\
             \hline
             \hline
             \multirow{3}{*}{Signal}                                & RPC                               & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
@@ -35,7 +35,7 @@ Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 packag
                                                                    & $t\bar{t}H$                       & MG5\_{\scriptsize A}MC@NLO 2.3.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
                                                                    & 4$t$                              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
             \hline
-            \multirow{2}{*}{\shortstack{Dibosno\\background}}      & $ZZ, WZ$                          & {\SHERPA} 2.2.1                  & {\SHERPA} 2.2.1   & NLO                         & NNPDF2.3LO & {\SHERPA} default\\
+            \multirow{2}{*}{\shortstack{Diboson\\background}}      & $ZZ, WZ$                          & {\SHERPA} 2.2.1                  & {\SHERPA} 2.2.1   & NLO                         & NNPDF2.3LO & {\SHERPA} default\\
                                                                    & Other (inc. $W^{\pm}W^{\pm}$)     & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
             \hline
             \multirow{4}{*}{\shortstack{Rare\\background}}         & $t\bar{t}WW, t\bar{t}WZ$          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
@@ -48,7 +48,7 @@ Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 packag
     }
     %\end{center}
     \caption{The simulated signal and background MC samples.
-    The event generator, parton shower, cross-section normalization, PDF set, and the set of tunned parameters for each samples are shown.
+    The event generator, parton shower, cross-section normalization, PDF set, and the set of tuned parameters for each samples are shown.
     The $t\bar{t}WW, t\bar{t}WZ, tZ, tWZ, tt\bar{t}, WH, ZH$ and triboson background samples are labeled in the "rare" because they contribute a very small amount to the signal region.}
     \label{tab:app_sample_strong}
 \end{table}%

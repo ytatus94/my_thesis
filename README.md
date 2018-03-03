@@ -3,6 +3,7 @@ This is repository for my Ph.D. thesis
 
 ### 03/02/2018
 * Fihish 7.3
+* Spelling check: bib, appendix, abstract, acknowledgement, outhesis_template
 
 ### 03/01/2018
 * Work on background estimation
