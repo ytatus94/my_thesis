@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/03/2018
+* Spelling check
+
 ### 03/02/2018
 * Fihish 7.3
 * Spelling check: bib, appendix, abstract, acknowledgement, outhesis_template

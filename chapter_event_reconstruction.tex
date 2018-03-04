@@ -99,7 +99,7 @@ Besides all the requirements for the preselected electrons, the signal electrons
 \subsubsection{General muon reconstruction and identification}
 \label{subsubsec:event_muons_general}
 In the ATLAS experiment, muon objects are reconstructed and identified using the information from ID and muon spectrometer in the $\pt > 4$~{\GeV} and $|\eta| < 2.7$ region.
-Muon candidates are identified by applying quality requirements to suppress background which mainly come from pion and kion decays.
+Muon candidates are identified by applying quality requirements to suppress background which mainly come from pion and kaon decays.
 Four categories of muon identification, \texttt{Medium}, \texttt{Loose}, \texttt{Tight}, and \texttt{High}-\pt are provided for different physics analyses.
 The \texttt{Medium} minimizes the systematic uncertainties and is provided as the default selection for muons in ATLAS.
 The \texttt{Loose} maximize the reconstruction efficiency and is used for multilepton final state analyses.
@@ -116,7 +116,7 @@ More detail about the muon reconstruction performance can be found in Ref.~\cite
 \label{subsubsec:event_muons_specific}
 %Similar to the preselected electrons, the preselected muons are reconstructed by combining the tracks information from ID and the muon spectrometer.
 The preselected muons used in this analysis have to satisfy $\pt > 4$~{\GeV} and $|\eta| < 2.5$, pass the \texttt{Medium} identification, and require $|z_{0}\sin\theta| < 0.5$~mm on the longitudinal impact parameter.
-A tighter requirement is applied on the signal muons which in addition pass the \texttt{FixedCutTightTrackOnly} isolation together with $|d_{0}/\sigma(d_{0})| < 3$ on the transverse impace parameter.
+A tighter requirement is applied on the signal muons which in addition pass the \texttt{FixedCutTightTrackOnly} isolation together with $|d_{0}/\sigma(d_{0})| < 3$ on the transverse impact parameter.
 
 %%%
 %%%
@@ -164,7 +164,7 @@ In the ATLAS experiment, photons are reconstructed using the tracking informatio
 To distinguish prompt photons\footnote{Prompt photons are photons not originating from hadron decays} from background photons, the photon identification is based on a set of rectangular cuts on several discriminating variables computed from the energy deposited in the ECAL and from the shower leakage to the HCAL.
 The photon identification is separately applied to the converted and unconverted photons with $25 \le E_{\mathrm{T}} \le 1500$~{\GeV} and 4 $|\eta|$ intervals.
 Two identifications, \texttt{Loose} and \texttt{Tight}, are provided.
-The \texttt{Loose} provides high efficiency with low jet rejection and the \texttt{Tight}, which is recommanded for the analyses by the Combined Performance groups, provides high fake photon rejection and good efficiency.
+The \texttt{Loose} provides high efficiency with low jet rejection and the \texttt{Tight}, which is recommended for the analyses by the Combined Performance groups, provides high fake photon rejection and good efficiency.
 The \texttt{Tight} identification efficiency starts from 84\% at low $E_{\mathrm{T}}$ and reaches around 98\% in $1.37 < |\eta| < 1.81$ region for the unconverted photons.
 Similar to the unconverted photons, the efficiency for the converted photons increases with energy and reaches up to 98\%.
 More detail about the photon reconstruction and identification can be found in Ref.~\cite{ATLAS:2011kuc}.
@@ -251,7 +251,7 @@ The distance $\Delta R$ between two objects is used for overlap removal and $\De
 %
 where $y$ and $\phi$ are rapidity and azimuthal angle, respectively.
 The overlap removal procedure has to follow the steps listed below.
-In order to avoid the bremsstrahlung from muons followed by a photon conversion into electron pairs, electron candidate is reomved if it shares the same ID track with a muon object.
+In order to avoid the bremsstrahlung from muons followed by a photon conversion into electron pairs, electron candidate is removed if it shares the same ID track with a muon object.
 Jet is removed from the remaining electrons if $\Delta R(\mathrm{jets}, e) < 0.2$ unless it is a $b$-jet.
 If there are less than 3 tracks of jets with $\pt > 500$~{\MeV} and the distance between jets and a muon candidate less than 0.4, i.e. $\Delta R(\mathrm{jets}, \mu) < 0.4$, then the jets are removed.
 This step can suppress muon bremsstrahlung.
@@ -270,13 +270,13 @@ Finally, the electrons and muons are removed if the $e$ or $\mu$ lie in a distan
 
 \subsection{Discriminating variables}
 \label{subsec:event_discriminating_variables}
-This section provides the explaniations for various variables used to discriminate signals and background.
+This section provides the explanations for various variables used to discriminate signals and background.
 %
 \begin{itemize}
-    \item \textbf{Same flavour opposite sign (SFOS) lepton pair}: This analysis requires exactly two preselected and two signal leptons in the final state.
+    \item \textbf{Same flavor opposite sign (SFOS) lepton pair}: This analysis requires exactly two preselected and two signal leptons in the final state.
     These two leptons have to carry the same flavor and with opposite electric charge such as $e^{\pm}e^{\mp}$ and $\mu^{\pm}\mu^{\mp}$.
 
-    \item $\mathbf{\pt^{\ell_{1}}}$ and $\mathbf{\pt^{\ell_{2}}}$: The momentum of leading lepton $\pt^{\ell_{1}} > 5$~{\GeV} is required to suppressed fake/nonprompt leptons background and the threshold of the momentum of subleading lepton $\pt^{\ell_{2}} > 4.5$(4)~{\GeV} for electron (muon) is used to retain signal acceptance.
+    \item $\mathbf{\pt^{\ell_{1}}}$ and $\mathbf{\pt^{\ell_{2}}}$: The momentum of leading lepton $\pt^{\ell_{1}} > 5$~{\GeV} is required to suppressed fake/non-prompt leptons background and the threshold of the momentum of sub-leading lepton $\pt^{\ell_{2}} > 4.5$(4)~{\GeV} for electron (muon) is used to retain signal acceptance.
 
     \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined as Eq.~(\ref{eq:event_dilepton_distance}).
     %This variable provides good discrimination between the Higgsino and slepton because the dileptons from Higgsinos have small angular separation.
@@ -375,7 +375,7 @@ This section provides the explaniations for various variables used to discrimina
             \caption{The distribution of $\met/H_{\textrm{T}}^{\textrm{lep}}$ as function of $m_{\ell\ell}$ for the electroweakino after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
             The red line indicates the SR selection.
             Events in the region below this line are rejected.
-            The signal events are labled in colored circles for different mass splitting.}
+            The signal events are labeled in colored circles for different mass splitting.}
             \label{fig:event_METOverHT}
         \end{center}
     \end{figure}
@@ -390,14 +390,14 @@ This section provides the explaniations for various variables used to discrimina
 \subsection{Signal region}
 \label{subsec:event_signal_region}
 The events with 2 lepton final state are selected if the lepton pair satisfies same flavor and opposite charge (SFOS).
-To optomize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$ is calculated.
+To optimize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$ is calculated.
 In order to maximizing the $Z_{n}$, an integrated luminosity of 36~\ifb and a systematic uncertainty of 20\% on the background are assumed and at least one background event remaining is required after optimized cuts . 
 A set of binned dilepton invariant mass $m_{\ell \ell}$ are defined in SR and the kinematic distribution of $m_{\ell \ell}$ is used in a fit to extract the number of signal events.
 The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region} and the $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_binning}.
 There are 14 exclusive regions and 7 inclusive regions are defined.
 The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
 When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
-The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splitings up to 60~{\GeV}.
+The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
 
 \begin{table}[htb]
     \begin{center}
@@ -410,7 +410,7 @@ The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the
                 Number of leptons                                                      & = 2\\
                 Lepton charge and flavor                                               & $e^{+}e^{-}$ or $\mu^{+}\mu^{-}$\\
                 Leading lepton $\pt^{\ell_{1}}$                                        & $> 5$~{\GeV} for electron and muon\\
-                Subleading lepton  $\pt^{\ell_{2}}$                                    & $> 4.5$ (4)~{\GeV} for electron (muon)\\
+                Sub-leading lepton  $\pt^{\ell_{2}}$                                    & $> 4.5$ (4)~{\GeV} for electron (muon)\\
                 $\Delta R_{\ell \ell}$                                                 & $> 0.05$\\
                 $m_{\ell \ell}$                                                        & $\in$ [1, 60]~{\GeV} excluding [3.0, 3.2]~{\GeV}\\
                 \met                                                                   & $> 200$~{\GeV}\\
@@ -679,7 +679,7 @@ The weighted number of events are normalized to 36.1~\ifb and the raw number of 
                 Stau veto                                                                           & $205$    & $968$                  & $196$    & $1262$                 & $122.7$  & $1882$\\
                 $N_\text{baseline}^\ell = 2$                                                        & $158$    & $741$                  & $156$    & $975$                  & $96.5$   & $1501$\\
                 $N_\text{signal}^\ell = 2$                                                          & $158$    & $741$                  & $156$    & $975$                  & $96.5$   & $1501$\\
-                Same flavour                                                                        & $94$     & $445$                  & $100$    & $598$                  & $64.1$   & $1010$\\
+                Same flavor                                                                        & $94$     & $445$                  & $100$    & $598$                  & $64.1$   & $1010$\\
                 Opposite charge                                                                     & $78$     & $369$                  & $79$     & $503$                  & $55.1$   & $868$\\
                 Lepton truth matching                                                               & $78$     & $366$                  & $78$     & $493$                  & $54.0$   & $851$\\
                 Lepton author 16 veto                                                               & $77$     & $364$                  & $77$     & $487$                  & $53.8$   & $848$\\
@@ -732,7 +732,7 @@ The weighted number of events are normalized to 36.1~\ifb and the raw number of 
                 Stau veto                                                                           & $76.1$   & $2321$                 & $41.2$   & $2471$                 & $22.2$   & $2500$\\
                 $N_\text{baseline}^\ell = 2$                                                        & $63.0$   & $1904$                 & $33.1$   & $1993$                 & $18.1$   & $2029$\\
                 $N_\text{signal}^\ell = 2$                                                          & $63.0$   & $1904$                 & $33.1$   & $1993$                 & $18.1$   & $2029$\\
-                Same flavour                                                                        & $42.1$   & $1288$                 & $22.7$   & $1383$                 & $12.6$   & $1392$\\
+                Same flavor                                                                        & $42.1$   & $1288$                 & $22.7$   & $1383$                 & $12.6$   & $1392$\\
                 Opposite charge                                                                     & $35.9$   & $1101$                 & $19.4$   & $1194$                 & $10.9$   & $1205$\\
                 Lepton truth matching                                                               & $35.2$   & $1079$                 & $19.1$   & $1174$                 & $10.8$   & $1192$\\
                 Lepton author 16 veto                                                               & $35.2$   & $1078$                 & $19.0$   & $1168$                 & $10.8$   & $1189$\\

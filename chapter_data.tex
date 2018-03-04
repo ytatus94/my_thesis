@@ -52,7 +52,7 @@ This analysis uses inclusive \met triggers only.
 MC samples are used to model the SUSY signals and to estimated the SM background.
 All SM background MC samples were processed through a detailed ATLAS detector simulation based on {\GEANT}4~\cite{Agostinelli:2002hh} and the SUSY signal samples were simulated by a fast simulation (AF2) that parameterizes the calorimeter response~\cite{ATLAS:2010bfa}.
 To simulate the effects of additional $pp$ collisions (pile-up) in the same and nearby bunch crossings, inelastic interactions were generated using the soft QCD processes of {\PYTHIA} v8.186~\cite{Sjostrand:2007gs} with A2 tune~\cite{ATLAS:2012uec} and the MSTW2008LO PDF set~\cite{Martin:2009iq}.
-These MC events were overlaid onto each simulated hard-scatter event and reweighted to match the pile-up conditions observed in the data.
+These MC events were overlaid onto each simulated hard-scatter event and re-weighted to match the pile-up conditions observed in the data.
 
 %%%
 %%%
@@ -62,14 +62,14 @@ These MC events were overlaid onto each simulated hard-scatter event and reweigh
 \label{subsec:data_sm_bkg_samples}
 The {\SHERPA} 2.1.1, 2.2.1, and 2.2.2 ~\cite{Gleisberg:2008ta} were used to produce the $Z^{(*)}/\gamma^{*}$ + jets, diboson, and triboson events.
 The matrix elements (ME) were calculated for up to two partons at next-to-leading order (NLO) and up to four partons at leading order (LO) depending on the process.
-The $Z^{(*)}/\gamma^{*}$ + jets and diboson samples cover the dilepton invarant masses from 0.5~{\GeV} for $Z^{(*)}/\gamma^{*} \to e^{+}e^{-}/\mu^{+}\mu^{-}$ and from 3.8~{\GeV} for $Z^{(*)}/\gamma^{*} \to \tau^{+}\tau^{-}$.
+The $Z^{(*)}/\gamma^{*}$ + jets and diboson samples cover the dilepton invariant masses from 0.5~{\GeV} for $Z^{(*)}/\gamma^{*} \to e^{+}e^{-}/\mu^{+}\mu^{-}$ and from 3.8~{\GeV} for $Z^{(*)}/\gamma^{*} \to \tau^{+}\tau^{-}$.
 The {\POWHEG}-Box v1 and v2 interfaced to {\PYTHIA} 6.428 were used to simulated \ttbar and single-top production at NLO in the ME.
 The Higgs boson production were generated using {\POWHEG}-Box v2 interfaced to {\PYTHIA} 8.186.
 A Higgs boson in association with a $W$ or $Z$ boson production was simulated using MG5\_{\scriptsize A}MC@NLO 2.2.2 with {\PYTHIA} 8.186 and the ATLAS A14 tune.
 The processes containing \ttbar and at least one electroweak bosons were produced using MG5\_{\scriptsize A}MC@NLO 2.2.1, 2.2.2, 2.3.2, 2.3.3 with {\PYTHIA} 6.4.28 or 8.186.
 These processes were generated at NLO in the ME except for $t + Z$ and $t +$ \ttbar which were produced at LO.
 Table~\ref{tab:data_mc_samples} summarizes the event generator configurations of the ME, parton shower (PS), PDF set, and the cross-section normalization.
-Except those produced by {\SHERPA} event generator, the \textsc{Evtgen}\xspace v1.2.0~\cite{Lange:2001uf} was used to model the decay of bottom and charm hadrons in all MC samples.
+Except those produced by {\SHERPA} event generator, the \textsc{EvtGEN}\xspace v1.2.0~\cite{Lange:2001uf} was used to model the decay of bottom and charm hadrons in all MC samples.
 
 \begin{table}[ht]
     %\begin{center}
@@ -125,7 +125,7 @@ The mass spectra and decay branching ratios were calculated using \textsc{Isajet
 \subsubsection{The NUHM2 mass spectra}
 \label{subsubsec:data_NUHM2_mass_spectra}
 Figure~\ref{fig:data_mass_spectra} shows the mass spectra of the charginos $\widetilde{\chi}^{\pm}_{1,2}$ and neutralinos $\widetilde{\chi}^{0}_{1,2,3,4}$ as a function of $m_{1/2}$ in the NUHM2 model and the mass splitting spectra between electroweakinos as a function of $m_{1/2}$ are shown in Fig.~\ref{fig:data_mass_splitting_spectra}.
-The masses of lower mass electroweakinos $\widetilde{\chi}^{0}_{1,2}$ and $\widetilde{\chi}^{\pm}_{1}$ are roughtly flat when $m_{1/2} > 500$~{\GeV}, however, the masses of higher mass electroweakinos $\widetilde{\chi}^{0}_{3,4}$ and $\widetilde{\chi}^{\pm}_{2}$ increased with $m_{1/2}$.
+The masses of lower mass electroweakinos $\widetilde{\chi}^{0}_{1,2}$ and $\widetilde{\chi}^{\pm}_{1}$ are roughly flat when $m_{1/2} > 500$~{\GeV}, however, the masses of higher mass electroweakinos $\widetilde{\chi}^{0}_{3,4}$ and $\widetilde{\chi}^{\pm}_{2}$ increased with $m_{1/2}$.
 The mass splittings between the lower mass electroweakinos decrease with $m_{1/2}$ and the mass splittings between $\widetilde{\chi}^{0}_{3}$ and the lower mass chargino $\widetilde{\chi}^{\pm}_{1}$ or neutralinos $\widetilde{\chi}^{0}_{1,2}$ increase with $m_{1/2}$.
 In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly in the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$ but it varied such that the mass ratio varies from 1.61 to 1.21 as shown in Table~\ref{tab:data_mass_splitting_ratio}.
 
@@ -133,7 +133,7 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
     \begin{center}
         \includegraphics[scale=0.5]{mass_spectra.pdf}
         \caption{The mass spectra of the charginos $\widetilde{\chi}^{\pm}_{1,2}$ and neutralinos $\widetilde{\chi}^{0}_{1,2,3,4}$ as a function of $m_{1/2}$ in the NUHM2 model.
-        The $m_{\widetilde{\chi}^{0}_{1}}$, $m_{\widetilde{\chi}^{0}_{2}}$, and $m_{\widetilde{\chi}^{\pm}_{1}}$ are roughtly flat when $m_{1/2} > 500$~{\GeV}.
+        The $m_{\widetilde{\chi}^{0}_{1}}$, $m_{\widetilde{\chi}^{0}_{2}}$, and $m_{\widetilde{\chi}^{\pm}_{1}}$ are roughly flat when $m_{1/2} > 500$~{\GeV}.
         The $m_{\widetilde{\chi}^{0}_{3}}$, $m_{\widetilde{\chi}^{0}_{4}}$, and $m_{\widetilde{\chi}^{\pm}_{2}}$ are heavier and increase with $m_{1/2}$.}
         \label{fig:data_mass_spectra}
     \end{center}
@@ -144,7 +144,7 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
         \includegraphics[scale=0.5]{mass_difference.pdf}
         \caption{The mass splitting spectra between charginos and neutralinos in the NUHM2 model.
         The mass differences $\Delta m(\widetilde{\chi}^{0}_{3}, \widetilde{\chi}^{0}_{1,2})$ and $\Delta m(\widetilde{\chi}^{0}_{3}, \widetilde{\chi}^{\pm}_{1})$ increase with $m_{1/2}$.
-        The mass differences $\Delta m(\widetilde{\chi}^{\pm}_{1}, \widetilde{\chi}^{0}_{1})$, $\Delta m(\widetilde{\chi}^{0}_{2}, \widetilde{\chi}^{0}_{1})$, and $\Delta m(\widetilde{\chi}^{0}_{2}, \widetilde{\chi}^{\pm}_{1})$ decress with $m_{1/2}$.}
+        The mass differences $\Delta m(\widetilde{\chi}^{\pm}_{1}, \widetilde{\chi}^{0}_{1})$, $\Delta m(\widetilde{\chi}^{0}_{2}, \widetilde{\chi}^{0}_{1})$, and $\Delta m(\widetilde{\chi}^{0}_{2}, \widetilde{\chi}^{\pm}_{1})$ decrease with $m_{1/2}$.}
         \label{fig:data_mass_splitting_spectra}
     \end{center}
 \end{figure}
@@ -267,14 +267,14 @@ Since the $\widetilde{\chi}^{0}_{2} \to \gamma \widetilde{\chi}^{0}_{1}$ has ver
     \end{center}
     \caption{The possible $\widetilde{\chi}^{0}_{2}$ decays in NUHM2 model with $m_{1/2}=600$~{\GeV}.
     The $\widetilde{\chi}_{2}^{0} \to \gamma \widetilde{\chi}^{0}_{1}$ has the lowest branching ratio hence it is not considered in our study.
-    The rest of the decays are catogrized into 4 types as shown in the third column.}
+    The rest of the decays are categorized into 4 types as shown in the third column.}
     \label{tab:data_NUHM2_n2_decays}
 \end{table}%
 
 The MC samples for the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ generated by $pp$ collision are produced where four kinds of $\widetilde{\chi}^{0}_{2}$ decay are specified to determine the dominant one and the $\widetilde{\chi}^{\pm}_{1}$ decay is assumed to be $\widetilde{\chi}^{\pm}_{1} \to W^{\pm} \widetilde{\chi}^{0}_{1} \to f\bar{f} \widetilde{\chi}^{0}_{1}$.
 Since $\widetilde{\chi}^{0}_{2} \to q\bar{q} \widetilde{\chi}^{0}_{1}$ and $\widetilde{\chi}^{0}_{2} \to \nu\bar{\nu} \widetilde{\chi}^{0}_{1}$ do not satisfy the 2 leptons requirement, the $\widetilde{\chi}^{0}_{2}$ decay should be dominated by $\widetilde{\chi}^{0}_{2} \to W^{\pm} \widetilde{\chi}^{\mp}_{1}$ and $\widetilde{\chi}^{0}_{2} \to \ell^{+}\ell^{-} \widetilde{\chi}^{0}_{1}$.
 Table~\ref{tab:data_nuhm2_n2_decay_efficiency_and_percentage} shows the 2 leptons filter efficiency for the $\widetilde{\chi}^{0}_{2}$ decays considered, the number of events in each decay type, and the contributions to the whole $\widetilde{\chi}^{0}_{2}$ decay.
-Because the $\tilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \tilde{\chi}^{0}_{1}$ contributes more than 99\%, the other 3 decays can be negelected.
+Because the $\tilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \tilde{\chi}^{0}_{1}$ contributes more than 99\%, the other 3 decays can be neglected.
 Although $\tilde{\chi}^{0}_{2} \to q \bar{q} \tilde{\chi}^{0}_{1}$ and $\tilde{\chi}^{0}_{2} \to \nu \bar{\nu} \tilde{\chi}^{0}_{1}$ are expected to contribute nothing, due to the presence of the fake leptons, there are some contributions.
 This is expected, as no requirement on the truth matching was used in the selection.
 
@@ -313,7 +313,7 @@ In this plot, only the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ pro
     \begin{center}
         \includegraphics[scale=0.5]{mll_20171101.pdf}
         \caption{The $m_{\ell \ell}$ distributions for NUHM2 and simplified Higgsino models.
-        The four possible $\widetilde{\chi}^{0}_{2}$ decay contributions for NUHM2 model are stacked and the $\widetilde{\chi}^{0}_{2} \to \ell \ell \widetilde{\chi}^{0}_{1}$ is the dominant decay (shown in grea area).
+        The four possible $\widetilde{\chi}^{0}_{2}$ decay contributions for NUHM2 model are stacked and the $\widetilde{\chi}^{0}_{2} \to \ell \ell \widetilde{\chi}^{0}_{1}$ is the dominant decay (shown in grey area).
         The difference between two models come from the mass splitting $\Delta m = m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{0}_{1}}$ where $\Delta m = 22$~{\GeV} for NUHM2 and $\Delta m = 20$~{\GeV} for simplified Higgsino model.}
         \label{fig:data_mll_distribution}
     \end{center}
@@ -382,7 +382,7 @@ But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ production, t
         }
     }
     %\end{center}
-    \caption{The NUHM2 MC sample dataset ID (DSID), productions, cross-sections, and decay processes and its relevant branghing ratios, the filter efficiencies, and the uncertainties.}
+    \caption{The NUHM2 MC sample dataset ID (DSID), productions, cross-sections, and decay processes and its relevant branching ratios, the filter efficiencies, and the uncertainties.}
     \label{tab:data_NUHM2_mcprod}
 \end{table}%
 
