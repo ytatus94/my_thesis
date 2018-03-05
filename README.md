@@ -4,6 +4,7 @@ This is repository for my Ph.D. thesis
 ### 03/05/2018
 * Add last figure to chapter 7
 * Finish chapter 9 conclusion
+* Add plots into repository
 
 ### 03/04/2018
 * Finish chapter 7
