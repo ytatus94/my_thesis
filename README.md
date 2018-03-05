@@ -1,11 +1,15 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/05/2018
+* Add last figure to chapter 7
+* Finish chapter 9 conclusion
+
 ### 03/04/2018
-* finish chapter 7
+* Finish chapter 7
 
 ### 03/03/2018
-* Spelling check
+* Spelling check for all chapters
 
 ### 03/02/2018
 * Fihish 7.3
