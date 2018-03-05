@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/04/2018
+* finish chapter 7
+
 ### 03/03/2018
 * Spelling check
 

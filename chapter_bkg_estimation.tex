@@ -214,29 +214,31 @@ The schematic illustration of the fake factor method is shown in Fig.~\ref{fig:b
 \label{subsubsec:bkg_fake_specific}
 The ID electrons are the signal electrons as shown in Table~\ref{tab:event_object_definitions} and the anti-ID electrons are baseline electrons passing \texttt{LooseAndBLayer} identification but failing at least one of the following requirements: \texttt{Tight} identification, \texttt{GradientLoose} isolation, or $|d_{0}/\sigma(d_{0})| < 5$.
 The ID muons are the signal muons as shown in Table~\ref{tab:event_object_definitions} and the anti-ID muons are baseline muons failing either \texttt{FixedCutTightTrackOnly} isolation or $|d_{0}/\sigma(d_{0})| < 3$.
-Both ID and anti-ID leptons are required to satisfy $|z_{0} \sin \theta| < 0.5$~mm to reduce the impact of pile up.
+Both ID and anti-ID leptons are required to satisfy $|z_{0} \sin \theta| < 0.5$~mm to reduce the impact of pileup.
 Table~\ref{tab:bkg_ID_anti_ID_selection_criteria} summarizes the ID and anti-ID selection criteria for electrons and muons.
 
 \begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
-        \begin{tabular}{lll}
-            \hline
-            \hline
-                             & Electrons                           & Muons\\
-            \hline
-            Kinematic        & $\pt > 4.5$~{\GeV}, $|\eta| < 2.47$ & $\pt > 4$~{\GeV}, $|\eta| < 2.5$\\
-            Identification   & pass \texttt{LooseAndBLayerLLH}     & pass \texttt{Medium}\\
-            Impact parameter & $|z_{0} \sin \theta| < 0.5$~mm      & $|z_{0} \sin \theta| < 0.5$~mm\\
-            \hline
-            \multicolumn{3}{c}{anti-ID have to fail at least one of the requirements}\\
-            \hline
-            Identification   & \texttt{TightLLH}                   & -\\
-            Isolation        & \texttt{GradientLooseLLH}           & \texttt{FixedCutTightTrackOnlyLLH}\\
-            Impact parameter & $|d_{0}/\sigma(d_{0})| < 5$         & $|d_{0}/\sigma(d_{0})| < 3$\\
-            \hline
-            \hline
-        \end{tabular}
+        {\scriptsize
+            \begin{tabular}{lll}
+                \hline
+                \hline
+                                 & Electrons                           & Muons\\
+                \hline
+                Kinematic        & $\pt > 4.5$~{\GeV}, $|\eta| < 2.47$ & $\pt > 4$~{\GeV}, $|\eta| < 2.5$\\
+                Identification   & pass \texttt{LooseAndBLayerLLH}     & pass \texttt{Medium}\\
+                Impact parameter & $|z_{0} \sin \theta| < 0.5$~mm      & $|z_{0} \sin \theta| < 0.5$~mm\\
+                \hline
+                \multicolumn{3}{c}{anti-ID have to fail at least one of the requirements}\\
+                \hline
+                Identification   & \texttt{TightLLH}                   & -\\
+                Isolation        & \texttt{GradientLooseLLH}           & \texttt{FixedCutTightTrackOnlyLLH}\\
+                Impact parameter & $|d_{0}/\sigma(d_{0})| < 5$         & $|d_{0}/\sigma(d_{0})| < 3$\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     }
     %\end{center}
     \caption{The ID and anti-ID selection criteria for electrons and muons.}
@@ -321,36 +323,101 @@ By vetoing $3.0 < m_{\ell \ell} < 3.2$~{\GeV}, the contributions from $J/\psi$ r
 By requiring min$|\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})| > 0.4$, the events contain mismeasured jet causing large \met can be suppressed.
 After applying these requirements, the instrumental \met background are found to be negligible.
 
+A validation region VR-SS, which has the similar kinematic as the SR, is constructed by requiring same sign leptons in the events.
+This VR is fake/non-prompt lepton enriched and can be used as a cross-checked of the fake prediction. 
+Typically, the leading lepton is the real lepton and the subleading lepton is the fake/non-prompt lepton.
+By considering the rate of the anti-ID leptons in data, the probability of both leptons are fake/non-prompt is found very small.
+Therefore, the VR-SS are devided into $ee+\mu e$ and $\mu \mu + e\mu$ final states where the left lepton and right lepton in the pair denote the leading and subleading leptons, respectively.
+The electroweakino signal contamination in VR-SS is very small and can be negelected.
+Figure~\ref{fig:bkg_fake_distributions} shows the data and fake/non-prompt leptons \met distributions for $ee+\mu e$ and $\mu \mu + e\mu$ final states in the VR-SS.
+
+\begin{figure}[ht]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{hist1d_met_Et_VR-SS-ee-me.pdf}
+            \caption{$ee+\mu e$}
+            \label{fig:bkg_ee_mue_fake_distribution}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.4]{hist1d_met_Et_VR-SS-mm-em.pdf}
+            \caption{$\mu \mu + e\mu$}
+            \label{fig:bkg_mumu_emu_fake_distribution}
+        \end{subfigure}
+        \caption{The data and fake/non-prompt leptons \met distributions in the VR-SS.}
+        \label{fig:bkg_fake_distributions}
+    \end{center}
+\end{figure}
+
 %%%
 %%%
 %%%
 
 \section{Systematic uncertainties}
 \label{sec:bkg_systematic_uncertainties}
+The systematic uncertainty includes the uncertainties due to theoretical modeling and experiment sources.
+The theoretical uncertainty arises from the MC simulation such as cross-section calculation, the parton distribution function (PDF), and renormalization and factorization scales.
+The experimental uncertainty arises from the object reconstruction, pileup measurement, and estimation using data-driven method.
 
 %%%
 %%%
 %%%
 
-%\begin{table}[ht]
-%    \begin{center}
-%        {\scriptsize
-%            \begin{tabular}{llll}
-%                \hline
-%                \hline
-%                Region               & Leptons                                                                        & $\met/H_{\mathrm{T}}^{\mathrm{lep}}$                & Additional requirements\\
-%                \hline
-%                CR-top               & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $> 5$                                               & $\ge 1 b$-tagged jet(s)\\
-%                CR-tau               & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $\in$ [4, 8]                                        & $m_{\tau \tau} \in$ [60, 120]~{\GeV}\\
-%                \hline
-%                VR-VV                & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $< 3$                                               &\\
-%                VR-SS                & $e^{\pm}e^{\mp}$, $\mu^{\pm}\mu^{\mp}$, $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$ & $> 5$                                               &\\
-%                VRDF-$m_{\ell \ell}$ & $e^{\pm}\mu^{\mp}$, $\mu^{\pm}e^{\mp}$                                         & $>$ max(5, 15 - 2 $\frac{m_{\ell \ell}}{1~{\GeV}}$) & $\Delta R_{\ell \ell} < 2$, $m_{\mathrm{%T}}^{\ell_{1}} < 70$~{\GeV}\\
-%                \hline
-%                \hline
-%            \end{tabular}
-%        }
-%    \end{center}
-%    \caption{Definition of control regions and validation regions.}
-%    \label{tab:bkg_}
-%\end{table}%
+\subsection{Theoretical uncertainty}
+\label{subsec:bkg_theoretical_uncertainty}
+
+%%%
+%%%
+%%%
+
+\subsubsection{SUSY signal uncertainty}
+\label{subsubsec:bkg_susy_signal_uncertainty}
+The theoretical uncertainty in the SUSY signal is measured by varying the renormalization, factorization parameters and CKKW-L matching scales in the MG5\_{\scriptsize A}MC@NLO
+generator and the shower tune parameters in the {\PYTHIA}.
+The uncertainties are found to range from 20\% to 40\% in the signal acceptance depending on the mass splitting of the SUSY particles and the production process.
+The uncertainties due to PDF uncertainties are studied and amount to 15\% at most for large $\widetilde{\chi}^{0}_{2}$ mass.
+
+%%%
+%%%
+%%%
+
+\subsubsection{SM background uncertainty}
+\label{subsubsec:bkg_sm_bkg_uncertainty}
+There are three major factors affect the dominant SM backgrounds \ttbar, $tW$, $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets, and diboson process.
+The envelop is assigned to the theoretical uncertainty.
+The uncertainties due to the QCD renormalization and factorization scales are evaluted by varying the generator parameters up and down by a factor of 2.
+The uncertainties due to the sctrong coupling constant $\alpha_{S}$ are evaluted by varying the $\alpha_{S}$.
+The impact on the acceptance is assigned to the theoretical uncertainty.
+The uncertainties due to the PDF are evaluted by PDF sets \texttt{CT14}, \texttt{MMHT2014}, and \texttt{NNPDF}.
+The variations in acceptance are summarized and the envelope is assigned to the theoretical uncertainty.
+Events with all lepton flavors are used and the uncertainties are evaluted in all SRs and CRs.
+The final uncertainty is evaluted by adding all components in quadrature.
+
+%%%
+%%%
+%%%
+
+\subsection{Experimental uncertainty}
+\label{subsec:bkg_experimental_uncertainty}
+
+%%%
+%%%
+%%%
+
+\subsubsection{Combined performance uncertainty}
+\label{subsubsec:bkg_combined_performance uncertainty}
+The uncertainties of lepton reconstruction, identification, and isolation as well as the uncertainties of energy and momentum scale and resolution are considered, but they are found to be small.
+The pileup in the MC samples is not the same as the one observed in data.
+The $\langle \mu \rangle$ profile is the average number of interactions per bunch crossing and the $\langle \mu \rangle$ in data is scaled by 1/1.16 to obtain a better data/MC agreement.
+The uncertainty of the pileup re-weighting is obtained by varying the scaling factor between 1.00 and 1.23.
+The uncertainties from the jet energy scale (JES) and resolution (JER) are considered.
+Five up and down variations are used to obtain JES uncertainty and a up variation is used to obtain JER uncertainty.
+Finally, the luminosity uncertainty is 3.2\% for 2015+2016 combined datasets.
+
+%%%
+%%%
+%%%
+
+\subsubsection{Fake factor uncertainty}
+\label{subsubsec:bkg_fake_factor_uncertainty}
+The major experimental uncertainty is the fake/non-prompt lepton prediction from the fake factor method.
+The fake factor uncertainty arises from the sample size used to measure the fake factors, the prompt lepton contamination in anti-ID region, the kinematic between the measurement region and the SRs, and the differences between the fake factor estimation and observed data in the VR-SS.
