@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/07/2018
+* Work on results
+
 ### 03/05/2018
 * Add last figure to chapter 7
 * Finish chapter 9 conclusion
