@@ -260,47 +260,14 @@ The detail of the reweighted $m_{\ell \ell}$ distributions are shown in Sect.~\r
 \label{subsec:results_reweighted_mll_distributions}
 Using the $m_{\ell \ell}$ reweighting method, the simplified Higgsino samples could be reproduced the NUHM2 distributions at the reconstruction level.
 The $m_{\ell \ell}$ distributions for the NUHM2 and the simplified Higgsino samples can be calculated by the $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{1}}$ using the Eq.~\ref{eq:results_mll_formula}.
-From the ratio of the $m_{\ell \ell}$ distributions between two models, the event weighting is performed.
+From the ratio of the $m_{\ell \ell}$ distributions between two models and the cross-section weight, the event weighting is performed.
 The event-by-event reweighting of the $m_{\ell \ell}$ distributions between two models are examined at the TRUTH level.
-Figure~\ref{fig:results_nuhm2_reweighting} shows the $m_{\ell \ell}$ distributions before and after reweighting for NUHM2 and the simplified Higgsino model.
 
-\begin{figure}[htbp]
-    \begin{center}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_160_100_m12_350.pdf}
-            \caption{NUHM2 $m_{1/2}=350$~{\GeV}}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_190_150_m12_400.pdf}
-            \caption{NUHM2 $m_{1/2}=400$~{\GeV}}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_190_150_m12_500.pdf}
-            \caption{NUHM2 $m_{1/2}=500$~{\GeV}}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_190_150_m12_600.pdf}
-            \caption{NUHM2 $m_{1/2}=600$~{\GeV}}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_170_150_m12_700.pdf}
-            \caption{NUHM2 $m_{1/2}=700$~{\GeV}}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_170_150_m12_700.pdf}
-            \caption{NUHM2 $m_{1/2}=800$~{\GeV}}
-        \end{subfigure}
-    \end{center}
-    \caption{
-    {\small The $m_{\ell \ell}$ distributions before and after reweighting for NUHM2 and the simplified Higgsino model.
-    The blue and green solid lines are the TRUTH $m_{\ell \ell}$ distributions and the dashed lines are the distributions obtained from the Eq.~\ref{eq:results_mll_formula}.
-    The good agreement between solid and dashed lines indicate the robustness of the formula.
-    The red line is the event-by-event reweighting of the simplified Higgsino to the NUHM2 $m_{\ell \ell}$ which agrees with the prediction (blue dashed line).}
-    }
-    \label{fig:results_nuhm2_reweighting}
-\end{figure}
-
-The grid points are selected to have similar $m_{\widetilde{\chi}^{0}_{1}}$, $m_{\widetilde{\chi}^{0}_{1}}$, and $\Delta m$.
+A number of details have to be considered in the $m_{\ell \ell}$ reweighting procedure.
+The reweighting method only considers the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$ and $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ productions because the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ most contributes to the tail region of the $m_{\ell \ell}$ distribution which is not sensitive in this analysis.
+% The $\Delta m = m_{\widetilde{\chi}^{2}_{1}} - m_{\widetilde{\chi}^{0}_{1}}$ of the simplified Higgsino sample has to be higher than and compared to the one in the NUHM2.
+% The Higgsino grid points used in the $m_{\ell \ell}$ reweighting method have to be as close as possible to the  $m_{\widetilde{\chi}^{0}_{2}}$ and $m_{\widetilde{\chi}^{0}_{1}}$ in NUHM2.
+The grid points have to be selected with similar $m_{\widetilde{\chi}^{0}_{2}}$, $m_{\widetilde{\chi}^{0}_{1}}$, and $\Delta m = m_{\widetilde{\chi}^{2}_{1}} - m_{\widetilde{\chi}^{0}_{1}}$.
 Table~\ref{tab:results_reweighting_grid_points} shows the grid points used for the $m_{\ell \ell}$ reweighting.
 
 \begin{table}[htp]
@@ -354,25 +321,47 @@ Table~\ref{tab:results_reweighting_cross_section_ratio} shows the cross-section 
     \label{tab:results_reweighting_cross_section_ratio}
 \end{table}%
 
+Figure~\ref{fig:results_nuhm2_reweighting} shows the $m_{\ell \ell}$ distributions before and after reweighting for NUHM2 and the simplified Higgsino model.
+The blue and green solid lines are the TRUTH $m_{\ell \ell}$ distributions for NUHM2 and simplified Higgsino models, respectively.
+The blue and green dashed lines are the theoretical distribution predicted by the Eq.~\ref{eq:results_mll_formula}.
+Good agreement can be seen between the TRUTH (solid line) and the predicted (dashed line) distributions.
+The distribution of reweighted Higgsino sample is shown in red line which matches well with the NUHM2 (blue solid line).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure}[htbp]
+    \begin{center}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_160_100_m12_350.pdf}
+            \caption{NUHM2 $m_{1/2}=350$~{\GeV}}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_190_150_m12_400.pdf}
+            \caption{NUHM2 $m_{1/2}=400$~{\GeV}}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_190_150_m12_500.pdf}
+            \caption{NUHM2 $m_{1/2}=500$~{\GeV}}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_190_150_m12_600.pdf}
+            \caption{NUHM2 $m_{1/2}=600$~{\GeV}}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_170_150_m12_700.pdf}
+            \caption{NUHM2 $m_{1/2}=700$~{\GeV}}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.3]{reweight_Lorenzo_Higgsino_170_150_m12_700.pdf}
+            \caption{NUHM2 $m_{1/2}=800$~{\GeV}}
+        \end{subfigure}
+    \end{center}
+    \caption{
+    {\small The $m_{\ell \ell}$ distributions before and after reweighting for NUHM2 and the simplified Higgsino model.
+    The blue and green solid lines are the TRUTH $m_{\ell \ell}$ distributions and the dashed lines are the distributions obtained from the Eq.~\ref{eq:results_mll_formula}.
+    The good agreement between solid and dashed lines indicate the robustness of the formula.
+    The red line is the event-by-event reweighting of the simplified Higgsino to the NUHM2 $m_{\ell \ell}$ which agrees with the prediction (blue dashed line).}
+    }
+    \label{fig:results_nuhm2_reweighting}
+\end{figure}
 
 %%%
 %%%
@@ -515,6 +504,19 @@ Therefore, the reweighted Higgsino samples can be used for the NUHM2 interpretat
 
 \subsection{NUHM2 interpretation using the $m_{\ell \ell}$ reweighting}
 \label{subsec:results_mll_reweighting_interpretation}
+The NUHM2 interpretation is performed using the reweighted Higgsino samples to obtain the NUHM2 distributions at the reconstruction level.
+All systemtic uncertainties are considered in the calculation.
+The upper limits of the cross-section combining $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ productions are shown in Fig.~\ref{fig:results_nuhm2_interpretation_reweighting}.
+The upper limits of cross-section are labeled by the grey number on each $m_{1/2}$ amd the lower axis shows the $\Delta m = m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{0}_{1}}$.
+None of the NUHM2 $m_{1/2}$ points are excluded at the 95\% CL.
+
+\begin{figure}[htbp]
+    \begin{center}
+        \includegraphics[scale=0.4]{nuhm2_UL_rew.pdf}
+        \caption{The upper limits of the cross-section for NUHM2 using the $m_{\ell \ell}$ reweighting method.}
+        \label{fig:results_nuhm2_interpretation_reweighting}
+    \end{center}
+\end{figure}
 
 %%%
 %%%
