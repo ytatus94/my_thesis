@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/09/2018
+* Correct the layout
+
 ### 03/08/2018
 * Work on results
 * Finish section 8.2

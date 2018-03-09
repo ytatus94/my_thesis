@@ -269,7 +269,7 @@
     \vspace*{3.5cm} \\
     BY
   \end{center}
-  \vspace*{3em}
+  \vspace*{10em}
   \def\sigskip{1.1cm}
   \begin{flushright}
     \begin{minipage}[t]{2.5in}
@@ -484,27 +484,21 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-  %\vspace*{50\p@}%
   \vspace*{0\p@}%
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
         \large\bfseries \MakeUppercase{\@chapapp}\space \thechapter
         %\large\bfseries \@chapapp\space \thechapter
-        %\huge\bfseries \@chapapp\space \thechapter
         \par\nobreak
         \vskip 10\p@
-        %\rule[.5ex]{\textwidth}{.4pt}%
-        %\vskip 20\p@
       \fi
     \fi
     \interlinepenalty\@M
     \renewcommand{\baselinestretch}{1.2}\large \bfseries \MakeUppercase{#1}\par\nobreak
     %\renewcommand{\baselinestretch}{1.2}\large \bfseries #1\par\nobreak
-    %\renewcommand{\baselinestretch}{1.2}\Huge \bfseries #1\par\nobreak
     \rule[.5ex]{\textwidth}{.4pt}%
-    %\vskip 40\p@
-    \vskip 20\p@
+    \vskip 10\p@
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -513,13 +507,12 @@
                    \@afterheading
                  \fi}
 \def\@makeschapterhead#1{%
-  \vspace*{50\p@}%
+  \vspace*{0\p@}%
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
-    \Large \bfseries  #1\par\nobreak
-    %\Huge \bfseries  #1\par\nobreak
-    \vskip 40\p@
+    \large \bfseries  #1\par\nobreak
+    \vskip 20\p@
   }}
 \newcommand\section{\@startsection {section}{1}{\z@}%
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
