@@ -50,7 +50,8 @@
 
 %\usepackage{\ATLASLATEXPATH atlasbiblatex} % Style file with biblatex options for ATLAS documents.
 \usepackage{\ATLASLATEXPATH atlasphysics} % Useful macros
-\usepackage[margin=1.0in]{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+%\usepackage[margin=1.0in]{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage[top=1.0in, bottom=1.0in, left=1.6in, right=1.0in]{geometry}
 %\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
 \usepackage{graphicx}
 %\usepackage{subfigure} % obsolete. Use subcaption instead.
@@ -64,7 +65,7 @@
 \usepackage{booktabs} % enable the use of \toprule, \midrule, and \bottomrule
 \usepackage{color} % for setting font color
 \usepackage{bm} % bold and itatic in math mode
-
+\usepackage{layout}
 
 \geometry{a4paper} % or letter or a5paper or ... etc
 % \geometry{landscape} % rotated page geometry
@@ -127,13 +128,13 @@
  
 %%% BEGIN DOCUMENT
 \begin{document}
-
+\layout
 %% Place Dissertation information here
 \author{Yu-Ting Shen}
 \university{University of Oklahoma}
 \college{Graduate College}
 \department{Homer L. Dodge Department of Physics and Astronomy}
-\title{Search for electroweak production of supersymmetric states in NUHM2 compressed scenario at $\sqrt{s} = 13$~{\GeV} with the ATLAS detector}
+\title{SEARCH FOR ELECTROWEAK PRODUCTION OF SUPERSYMMETRIC STATES IN NUHM2 COMPRESSED SCENARIO WITH THE ATLAS DETECTOR}
 \address{Norman, Oklahoma}
 \yr{2018}
 \dgname{Doctor of Philosophy}
@@ -155,9 +156,9 @@
 \end{acknowledgements}
 
 %% Put your abstract here.
-%\begin{abstract}
-%   \input{abstract}
-%\end{abstract}
+\begin{abstract}
+	\input{abstract}
+\end{abstract}
 
 \frontmatter
 

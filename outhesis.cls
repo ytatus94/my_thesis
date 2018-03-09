@@ -484,21 +484,27 @@
                       \@afterheading
                     \fi}
 \def\@makechapterhead#1{%
-  \vspace*{50\p@}%
+  %\vspace*{50\p@}%
+  \vspace*{0\p@}%
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
+        \large\bfseries \MakeUppercase{\@chapapp}\space \thechapter
         %\large\bfseries \@chapapp\space \thechapter
-        \huge\bfseries \@chapapp\space \thechapter
+        %\huge\bfseries \@chapapp\space \thechapter
         \par\nobreak
-        %\vskip 10\p@
-        \vskip 20\p@
+        \vskip 10\p@
+        %\rule[.5ex]{\textwidth}{.4pt}%
+        %\vskip 20\p@
       \fi
     \fi
     \interlinepenalty\@M
-    %\renewcommand{\baselinestretch}{1.2}\Large \bfseries #1\par\nobreak
-    \renewcommand{\baselinestretch}{1.2}\Huge \bfseries #1\par\nobreak
-    \vskip 40\p@
+    \renewcommand{\baselinestretch}{1.2}\large \bfseries \MakeUppercase{#1}\par\nobreak
+    %\renewcommand{\baselinestretch}{1.2}\large \bfseries #1\par\nobreak
+    %\renewcommand{\baselinestretch}{1.2}\Huge \bfseries #1\par\nobreak
+    \rule[.5ex]{\textwidth}{.4pt}%
+    %\vskip 40\p@
+    \vskip 20\p@
   }}
 \def\@schapter#1{\if@twocolumn
                    \@topnewpage[\@makeschapterhead{#1}]%
@@ -511,14 +517,14 @@
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
-    %\Large \bfseries  #1\par\nobreak
-    \Huge \bfseries  #1\par\nobreak
+    \Large \bfseries  #1\par\nobreak
+    %\Huge \bfseries  #1\par\nobreak
     \vskip 40\p@
   }}
 \newcommand\section{\@startsection {section}{1}{\z@}%
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
-                                   {\normalfont\Large\bfseries}}
+                                   {\normalfont\large\bfseries}}
 \newcommand\subsection{\@startsection{subsection}{2}{\z@}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
@@ -869,7 +875,7 @@
     \parindent 1em%
     \noindent
     \hb@xt@1.8em{\hss\@makefnmark}\renewcommand{\baselinestretch}{1.0}\footnotesize#1}
-\newcommand\contentsname{Contents}
+\newcommand\contentsname{Table of Contents}
 \newcommand\listfigurename{List of Figures}
 \newcommand\listtablename{List of Tables}
 \newcommand\bibname{References}
