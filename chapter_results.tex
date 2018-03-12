@@ -525,28 +525,39 @@ None of the NUHM2 $m_{1/2}$ points are excluded at the 95\% CL.
 Although the NUHM2 interpretation using the $m_{\ell \ell}$ reweighting Higgsino samples is shown in Sect.~\ref{subsec:results_mll_reweighting_interpretation}, the final results need to be done using the MC production samples.
 The NUHM2 signal MC production has been mentioned in Sect.~\ref{subsubsec:data_NUHM2_generation} and the signal region selection is described in Sect.~\ref{subsec:event_signal_region}.
 The kinematic distributions in the SR$\ell \ell$-$m_{\ell \ell}$ are shown in Figs.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1}, \ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, and \ref{fig:event_nuhm2_kinematic_in_SR_SFOS_3} and the yields are provided in Tables~\ref{tab:event_cutflow_NUHM2_1} and \ref{tab:event_cutflow_NUHM2_2}.
+The statistical interpretation is performed using the HiggsinoFitter which wraps the HistFitter~\cite{Baak:2014wma}.
+Table~\ref{tab:results_nuhm2_cls} shows the calculated CLs values for NUHM2 with and without systematic uncertainties.
 
-
-
-
-
-
-
-
-\begin{figure}[htbp]
+\begin{table}[htp]
     \begin{center}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.35]{nuhm2_UL_mcprod_NoSys.pdf}
-            \caption{No systematics}
-        \end{subfigure}
-        \begin{subfigure}[b]{0.48\textwidth}
-            \includegraphics[scale=0.35]{nuhm2_UL_mcprod_AllSys.pdf}
-            \caption{All systematics}
-        \end{subfigure}
+        {\footnotesize
+            \begin{tabular}{cllll}
+                \hline
+                \hline
+                \multirow{2}{*}{$m_{1/2}$~[{\GeV}]} & \multicolumn{2}{c}{No systematics} & \multicolumn{2}{c}{All systematics}\\
+                & $CLs_{obs}$ & $CLs_{exp}$ & $CLs_{obs}$ & $CLs_{exp}$\\
+                \hline
+                350 & 0.6198885 & 0.5434401 & 0.6458337 & 0.600724\\
+                400 & 0.5549458 & 0.5232649 & 0.5566812 & 0.584395\\
+                500 & 0.3811002 & 0.3555793 & 0.4021327 & 0.449390\\
+                600 & 0.3417218 & 0.2305462 & 0.3808340 & 0.313335\\
+                700 & 0.2457024 & 0.0879370 & 0.2929172 & 0.136177\\
+                800 & 0.2036754 & 0.0915838 & 0.2265301 & 0.130744\\
+                \hline
+                \hline
+            \end{tabular}
+        }
     \end{center}
-    \caption{}
-    \label{fig:results_nuhm2_interpretation_mc_production}
-\end{figure}
+    \caption{The calculated CLs values for NUHM2 with and without systematic uncertainties in the statistical interpretation.}
+    \label{tab:results_nuhm2_cls}
+\end{table}%
+
+In the with and without systematics cases, the $CLs_{obs}$ should be worse (higher) than the $CLs_{exp}$ due to a small excess observed in some $m_{\ell \ell}$ bins.
+Two exceptions in NUHM2 $m_{1/2} = 400$ and 500~{\GeV} with all systematics are observed.
+The $CLs_{exp}$ are slightly higher than $CLs_{obs}$ for these two mass points.
+Since this situation does not seen in the without systematics case, therefore, this situation happens when increasing systematic uncertainties for these two $m_{1/2}$.
+Although the exceptions exist, the $CLs_{obs}$ and $CLs_{exp}$ with and without systematics have good agreement.
+Figure~\ref{fig:results_nuhm2_signal_strength} shows the signal strength $\mu_\mathrm{sig}$ for all NUHM2 points, all plots are consistent.
 
 \begin{figure}[htbp]
     \begin{center}
@@ -575,34 +586,34 @@ The kinematic distributions in the SR$\ell \ell$-$m_{\ell \ell}$ are shown in Fi
             \caption{NUHM2 $m_{1/2} = 800$~{\GeV}}
         \end{subfigure}
     \end{center}
-    \caption{The signal strength $\mu_\mathrm{sig}$ for the NUHM2.}
+    \caption{The signal strength $\mu_\mathrm{sig}$ for the NUHM2 mass points.}
     \label{fig:results_nuhm2_signal_strength}
 \end{figure}
 
-\begin{table}[htp]
+The upper limit of the cross-section is calculated by
+%
+\begin{equation}
+	\sigma_{UL} = \mu_\mathrm{sig} \times \big[ \sigma_{prod}(\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}) + \sigma_{prod}(\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{+}_{1}) + \sigma_{prod}(\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{-}_{1}) + \sigma_{prod}(\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}) \big] \quad ,
+\end{equation}
+%
+where $\mu_\mathrm{sig}$ is the signal strength, and the four $\sigma_{prod}$ are the cross-section for different productions at next-to-leading-logarithm (NLL) accuracy.
+The upper limit of the cross-section plot with and without systematics are shown in Fig.~\ref{fig:results_nuhm2_interpretation_mc_production}.
+The grey numbers are the upper limits of the cross-section in $pb$.
+The all systematics case has higher upper limits than the one without systematics as expected.
+None of the NUHM2 $m_{1/2}$ points are excluded at the 95\% CL and the observed upper limits have higher then the theoretical prediction.
+
+\begin{figure}[htbp]
     \begin{center}
-        {\footnotesize
-            \begin{tabular}{cllll}
-                \hline
-                \hline
-                \multirow{2}{*}{$m_{1/2}$~[{\GeV}]} & \multicolumn{2}{c}{No systematics} & \multicolumn{2}{c}{All systematics}\\
-                & $CLs_{obs}$ & $CLs_{exp}$ & $CLs_{obs}$ & $CLs_{exp}$\\
-                \hline
-                350 & 0.6198885 & 0.5434401 & 0.6458337 & 0.600724\\
-                400 & 0.5549458 & 0.5232649 & 0.5566812 & 0.584395\\
-                500 & 0.3811002 & 0.3555793 & 0.4021327 & 0.449390\\
-                600 & 0.3417218 & 0.2305462 & 0.3808340 & 0.313335\\
-                700 & 0.2457024 & 0.0879370 & 0.2929172 & 0.136177\\
-                800 & 0.2036754 & 0.0915838 & 0.2265301 & 0.130744\\
-                \hline
-                \hline
-            \end{tabular}
-        }
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.35]{nuhm2_UL_mcprod_NoSys.pdf}
+            \caption{No systematics}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.48\textwidth}
+            \includegraphics[scale=0.35]{nuhm2_UL_mcprod_AllSys.pdf}
+            \caption{All systematics}
+        \end{subfigure}
     \end{center}
-    \caption{}
-    \label{tab:results_nuhm2_cls}
-\end{table}%
-
-
-
-
+    \caption{The upper limit of the cross-section of NUHM2 for with and without systematics.
+    The grey numbers are the upper limits in $pb$.}
+    \label{fig:results_nuhm2_interpretation_mc_production}
+\end{figure}

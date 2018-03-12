@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/12/2018
+* Finish section 8.3
+
 ### 03/11/2018
 * Correct ch.3 as Dick suggested
 
