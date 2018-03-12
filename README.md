@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/11/2018
+* Correct ch.3 as Dick suggested
+
 ### 03/09/2018
 * Correct the layout
 
