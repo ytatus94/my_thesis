@@ -1,6 +1,6 @@
 This chapter describes the collision data and simulated event samples used in searching for electroweak production of SUSY states in the compressed scenarios.
 The collision data are presented in Sect.~\ref{sec:data_collision_data} and the Monte Carlo (MC) simulated event samples are detailed in Sect.~\ref{sec:data_MC_samples}.
-The samples used for searching the strongly-produced SUSY particles in final states with two same-sign or three lepton and jets (SS/3L+jets) can be found in the App.~\ref{sec:app_samples_strong}.
+%The samples used for searching the strongly-produced SUSY particles in final states with two same-sign or three lepton and jets (SS/3L+jets) can be found in the App.~\ref{sec:app_samples_strong}.
 
 
 \section{Collision data}
@@ -12,8 +12,8 @@ The average number of $pp$ interactions per bunch crossing (pileup) is 13.5 in t
 The data samples are required to satisfy the following good runs list (GRLs) as recommended by the ATLAS collaboration
 %
 \begin{itemize}
-    \item {\scriptsize \texttt{data15\_13TeV.periodAllYear\_DetStatus-v79-repro20-02\_DQDefects-00-02-02\_PHYS\_StandardGRL\_All\_Good\_25ns.xml}}
-    \item {\scriptsize \texttt{data16\_13TeV.periodAllYear\_DetStatus-v88-pro20-21\_DQDefects-00-02-04\_PHYS\_StandardGRL\_All\_Good\_25ns.xml}}
+    \item {\tiny \texttt{data15\_13TeV.periodAllYear\_DetStatus-v79-repro20-02\_DQDefects-00-02-02\_PHYS\_StandardGRL\_All\_Good\_25ns.xml}}
+    \item {\tiny \texttt{data16\_13TeV.periodAllYear\_DetStatus-v88-pro20-21\_DQDefects-00-02-04\_PHYS\_StandardGRL\_All\_Good\_25ns.xml}}
 \end{itemize}
 %
 Events are selected using different inclusive \met triggers depending on the run period as listed in Table.~\ref{tab:data_triggers}.
@@ -114,7 +114,7 @@ Except those produced by {\SHERPA} event generator, the \textsc{EvtGEN}\xspace v
 \subsection{The SUSY signal samples}
 \label{subsec:data_susy_signal_samples}
 The NUHM2 model allows the masses of the Higgs doublets $m_{H_{u}}$ and $m_{H_{d}}$ differ from the universal scalar mass $m_{0}$ at the GUT scale.
-The parameters of the NUHM2 model were fixed to $m_{0} = 5$~{\TeV}, $m_{A} = 1$~{\TeV}, $A_{0} = -1.6 m_{0}$, $\tan\beta = 15$, $\mu = 150$~{\GeV}, and the $m_{1/2}$ is varied from 350 to 800~{\GeV} as suggested in Ref.~\cite{Baer:2013xua}.
+The parameters of the NUHM2 model are fixed to $m_{0} = 5$~{\TeV}, $m_{A} = 1$~{\TeV}, $A_{0} = -1.6 m_{0}$, $\tan\beta = 15$, $\mu = 150$~{\GeV}, and the $m_{1/2}$ is varied from 350 to 800~{\GeV} as suggested in Ref.~\cite{Baer:2013xua}.
 These parameter settings lead to RNS with low EWFT which keeps the Higgs boson mass about 125~{\GeV}, the masses of $\tilde{g}$ and $\tilde{q}$ about {\TeV} scale, and the light Higgsino mass about $\mu$.
 The mass spectra and decay branching ratios were calculated using \textsc{Isajet}\xspace v7.84~\cite{Baer:1999sp} and the cross-sections and the theoretical uncertainties were calculated to NLO using \textsc{Prospino}\xspace v2.1~\cite{Beenakker:1999xh}.
 
@@ -329,7 +329,7 @@ The \textsc{ISAJET} 7.84 SUSY mass spectrum generator are used to calculate the 
 The NUHM2 signal events were generated using MG5\_{\scriptsize A}MC@NLO v2.2.3 with NNPDF23LO PDF set up to two extra partons in the ME.
 The {\MADSPIN}~\cite{Artoisenet:2012st} were used to decay the electroweakinos which were required to produce at least two leptons in the final state.
 Then the results were interfaced with {\PYTHIA} v8.186 using the A14 tune to model the parton shower and hadronization.
-The \textsc{Prospino} v2.1~\cite{Beenakker:1996ed} is used to calculate the cross-section and theoretical uncertainties to the NLL level.
+The \textsc{Prospino} v2.1~\cite{Beenakker:1996ed} is used to calculate the cross-section and theoretical uncertainties to the next-to-leading-logarithm (NLL) level.
 A filter required 2 leptons of at least 3~{\GeV} and \met $\ge 50$~{\GeV} was added at the generator level.
 Table~\ref{tab:data_NUHM2_mcprod} lists the NUHM2 MC production samples used in this analysis.
 The $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ productions are considered in each $m_{1/2}$ mass point.

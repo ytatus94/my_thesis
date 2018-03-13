@@ -1,6 +1,11 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/13/2018
+* Correct typo in ch5
+* Change the outside member from Varahan to Shi
+* Upload the first draft to github and send to Pat
+
 ### 03/12/2018
 * Finish section 8.3
 
