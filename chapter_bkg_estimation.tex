@@ -2,8 +2,8 @@ The SM background can be categorized into the irreducible and reducible backgrou
 The irreducible background includes events containing two prompt leptons, \met, and jets.
 The reducible background includes events containing fake/non-prompt leptons.
 Since the background estimations rely on the choice of the control regions (CRs) and validation regions (VRs) heavily, the concepts of the CRs and VRs are introduced in Sect.~\ref{sec:bkg_control_and_validation_regions}.
-The detail discussions of the irreducible background is presented in Sect.~\ref{sec:bkg_irreducible_background} and of the reducible background is described in Sect.~\ref{sec:bkg_reducible_background}.
-Finally, the systematic uncertainty study for this analysis is mentioned in Sect.~\ref{sec:bkg_systematic_uncertainties}.
+A detailed discussion of the irreducible background is presented in Sect.~\ref{sec:bkg_irreducible_background} and of the reducible background in Sect.~\ref{sec:bkg_reducible_background}.
+Finally, a systematic uncertainty study for this analysis is given in Sect.~\ref{sec:bkg_systematic_uncertainties}.
 
 %%%
 %%%
@@ -107,15 +107,15 @@ The VR-VV is used for validating diboson background, the VR-SS is used for valid
 \section{Irreducible background}
 \label{sec:bkg_irreducible_background}
 The irreducible background for this analysis are the SM processes containing two prompt leptons, \met, and jets.
-Therefor, they can enter the SR and mimic the signal events.
+Therefore, they can enter the SR and mimic the signal events.
 The dominant sources are the \ttbar, $tW$, and $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets processes.
 These processes decay to same flavor lepton pairs ($ee$ and $\mu \mu$) and different flavor lepton pairs ($e \mu$ and $\mu e$) at the same rates.
-When defining the CR-top and CR-tau, all possible flavor $e^{\pm} e^{\mp}$, $\mu^{\pm} \mu^{\mp}$, $e^{\pm} \mu^{\pm}$, $\mu^{\pm} e^{\mp}$ are consider to enhance the statistics.
+When defining the CR-top and CR-tau, all possible flavor $e^{\pm} e^{\mp}$, $\mu^{\pm} \mu^{\mp}$, $e^{\pm} \mu^{\pm}$, $\mu^{\pm} e^{\mp}$ are considered to enhance the statistics.
 By requiring the events with at least one $b$-tagged jet, the CR-top defined a top quarks enriched region with $\sim$72\% purity.
 The CR-top is used to estimate the \ttbar and $tW$ decaying to 2$\ell$ final states in the SR.
 By requiring the events satisfying $60 < m_{\tau \tau} < 120$~{\GeV} and $\met/H_{\mathrm{T}}^{\mathrm{lep}}$ between 4 and 8 to reduce the signal contaminations, the CR-tau defined a $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets enriched region with $\sim$80\% purity.
 The CR-tau is used to estimate the leptonic $\tau$ contaminations in the SR.
-The kinematic distributions of $\met/H_\mathrm{T}^\mathrm{lep}$ and $m_{\tau \tau}$ in the CR-top and CR-tau after performing background-only fit are shown in Fig~\ref{fig:bkg_kinematic_distributions_in_CRs}.
+The kinematic distributions of $\met/H_\mathrm{T}^\mathrm{lep}$ and $m_{\tau \tau}$ in the CR-top and CR-tau after performing background-only fits are shown in Fig~\ref{fig:bkg_kinematic_distributions_in_CRs}.
 All the event selection criteria are applied except the variable being plotted.
 The expected background contributions from different processes are stacked and compared with the data.
 
@@ -140,14 +140,14 @@ The expected background contributions from different processes are stacked and c
     \end{center}
 \end{figure}
 
-The diboson $VV$ events and the rare processes are also contributed to the irreducible background.
-But it is difficult to have pure diboson or rare sample that can be used to estimate the contaminations in SR.
+The $VV$ diboson events and the rare processes also contributed to the irreducible background.
+But it is difficult to have pure diboson or rare samples that can be used to estimate the contaminations in SR.
 Therefore, the background contaminations are estimated using MC simulation and validated by the VR-VV.
-By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in the VR-VV is at most 8\% in the samples, the diboson events contribute $\sim$40\%, fake lepton events contribute $\sim$25\%, \ttbar and single top events contribute $\sim$23\%, and the rest parts are smaller and contributed by the other processes.
+By requiring $\met/H_\mathrm{T}^\mathrm{lep} < 3$, the signal contamination in the VR-VV is at most 8\% in the samples, the diboson events contribute $\sim$40\%, fake lepton events contribute $\sim$25\%, \ttbar and single top events contribute $\sim$23\%, and the remaining parts are smaller and contributed by the other processes.
 
 The VRDF-$m_{\ell \ell}$ validation region is constructed using different flavor ($e\mu$ and $\mu e$) leptons.
-This VR has the same selection criteria as the SR, except the leptons are composed by different flavor.
-Since the irreducible background are symmetric in $ee+\mu\mu$ and $e\mu+\mu e$, the VRDF-$m_{\ell \ell}$ is used to check the eventual extrapolation in the fitting procedure within the same kinematic as SR.
+This VR has the same selection criteria as the SR, except the leptons have different flavor.
+Since the irreducible backgrounds are symmetric in $ee+\mu\mu$ and $e\mu+\mu e$, the VRDF-$m_{\ell \ell}$ is used to check the eventual extrapolation in the fitting procedure within the same kinematics as the SR.
 The signal contamination in this VR is less than 8\%.
 
 %%%
@@ -156,7 +156,7 @@ The signal contamination in this VR is less than 8\%.
 
 \section{Reducible background}
 \label{sec:bkg_reducible_background}
-The main contributions of the reducible background come from the non-prompt leptons and the processes that the reconstructed \met are instrumental in origin.
+The main contributions of the reducible background come from the non-prompt leptons and the processes associated with miss-reconstruction of \met.% that the reconstructed \met are instrumental in origin.
 
 %%%
 %%%
@@ -164,9 +164,9 @@ The main contributions of the reducible background come from the non-prompt lept
 
 \subsection{Fake/non-prompt lepton background}
 \label{subsec:bkg_fake_lepton_background}
-The background of non-prompt leptons, or called fake leptons, mainly come from the $W$+jets, VV, \ttbar processes.
+The background of non-prompt leptons, called fake leptons, mainly come from the $W$+jets, VV, \ttbar processes.
 In these processes, a jet is misidentified as a lepton and form a dilepton final state in the SR.
-Because the MC simulation couldn't model fake leptons well, a data-driven Fake Factor method~\cite{ATLAS:2014aga} is used to estimate the fake lepton contamination in the SR. 
+Because the MC simulation could not model fake leptons well, a data-driven Fake Factor method~\cite{ATLAS:2014aga} is used to estimate the fake lepton contamination in the SR. 
 
 %%%
 %%%
@@ -174,25 +174,25 @@ Because the MC simulation couldn't model fake leptons well, a data-driven Fake F
 
 \subsubsection{Fake factor method}
 \label{subsubsec:bkg_fake_factor_method}
-The Fake Factor method defined a tight set and a loose set of lepton identification criteria.
-The tight set refers as ID and the loose set refers as anti-ID.
-The ID leptons correspond to the requirements applied to signal leptons used in the analysis.
-The anti-ID leptons define a fake leptons enriched sample by releasing or inverting one or more of the identification, isolation, or impact parameter $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
-Therefore, the leptons in ID and anti-ID are orthogonal.
-Then the fake factor $F$ is defined as the ratio between the number of ID and the number of anti-ID leptons as shown in Eq.~\ref{eq:bkg_fake_factor}.
+The Fake Factor method defines a tight set and a loose set of lepton identification criteria.
+The tight set referred as the ID leptons and the loose set as anti-ID leptons.
+The ID leptons correspond to requirements applied to signal leptons used in the analysis.
+The anti-ID leptons define a fake lepton enriched sample by releasing or inverting one or more of the identification, isolation, or impact parameter $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
+Therefore, the ID and anti-ID lepton sets are orthogonal.
+The fake factor $F$ is defined then as the ratio between the number of ID and the number of anti-ID leptons as shown in Eq.~\ref{eq:bkg_fake_factor}.
 
 \begin{equation}
-    F = \frac{N_\mathrm{ID}}{N_\mathrm{anti-ID}}
+    F = \frac{N_\mathrm{ID}}{N_\mathrm{anti-ID}} \quad .
     \label{eq:bkg_fake_factor}
 \end{equation}
 
-The $N_\mathrm{anti-ID}$ is the number of fake leptons in the anti-ID measurement region where the contributions from prompt leptons are subtracted using the MC simulation results.
-The $F$ for electron and muon are measured in a fake leptons enriched region as a function of reconstructed lepton \pt and are used to estimate the reducible background in the SR.
-These $F$ are applied to events in anti-ID control region, which has the same selection criteria as SR, except an ID lepton is replaced by an anti-ID lepton.
+$N_\mathrm{anti-ID}$ is the number of fake leptons in the anti-ID measurement region where the contributions from prompt leptons are subtracted using the MC simulation results.
+The fake factors for electrons and muons are measured in a fake leptons enriched region as a function of reconstructed lepton \pt and are used to estimate the reducible background in the SR.
+These $F$ are applied to events in the anti-ID control region, which has the same selection criteria as the SR, except an ID lepton is replaced by an anti-ID lepton.
 The total reducible background in the SR can be estimated by
 
 \begin{equation}
-    N^\mathrm{SR}_\mathrm{est} = F \cdot N^\mathrm{CR}_\mathrm{fake}
+    N^\mathrm{SR}_\mathrm{est} = F \cdot N^\mathrm{CR}_\mathrm{fake} \quad .
     \label{eq:bkg_estimated_fake_leptons}
 \end{equation}
 
@@ -245,11 +245,11 @@ Table~\ref{tab:bkg_ID_anti_ID_selection_criteria} summarizes the ID and anti-ID 
     \label{tab:bkg_ID_anti_ID_selection_criteria}
 \end{table}
 
-The electrons and muons fake factor depend on the lepton \pt largely and on the leading jet \pt.
-Therefore, the leading jet \pt for the events used for fake factor measurement are required to be greater than 100~{\GeV} making the fake factor measurement region similar to SR.
-The muon fake factor also depends on the $N_{b-\mathrm{jet}}$ in the events, the estimated number of fake lepton in CR-top is calculated using events with at least one $b$-jet while the estimated number of fake lepton in the other regions are computed using zero $b$-jet events.
-The electrons and muons fake factor are computed using events with $m_\mathrm{T} < 40$~{\GeV} in different \pt bins.
-Figure~\ref{fig:bkg_electron_fake_factor} shows the electrons fake factors as a function of \pt and leading jet \pt and Fig~\ref{fig:bkg_muon_fake_factor} shows the muons fake factor as a function of \pt with 0 $b$-jet and at least one $b$-jet.
+The electron and muon fake factors depend on the lepton \pt largely and on the leading jet \pt.
+Therefore, the leading jet \pt for the events used for fake factor measurements are required to be greater than 100~{\GeV}, making the fake factor measurement region similar to SR.
+The muon fake factor also depends on the $N_{b-\mathrm{jet}}$ in the events because the estimated number of fake lepton in CR-top is calculated using events with at least one $b$-jet while the estimated number of fake lepton in the other regions are computed using zero $b$-jet events.
+The electron and muon fake factors are computed using events with $m_\mathrm{T} < 40$~{\GeV} in different \pt bins.
+Figure~\ref{fig:bkg_electron_fake_factor} shows the electrons fake factors as a function of \pt and leading jet \pt and Fig~\ref{fig:bkg_muon_fake_factor} shows the muons fake factor as a function of \pt with 0 $b$-jets and at least one $b$-jet.
 
 \begin{figure}[ht]
     \begin{center}
@@ -293,9 +293,9 @@ Figure~\ref{fig:bkg_electron_fake_factor} shows the electrons fake factors as a 
 
 \subsection{Instrumental \met background}
 \label{subsec:bkg_instrumental_met_background}
-The detector mismeasuring leptons or jets in the background processes which don't contain invisible particle might satisfy the $\met > 200$~{\GeV} requirement.
-For example, the $Z^{(*)}/\gamma^{*}(\to ee, \mu \mu)$+jets Drell-Yan dilepton production can enter the SR due to the instrumental \met.
-By requiring $\met > 200$~{\GeV}, the contributions from these background processes are expected very small.
+Detector mismeasurement of leptons or jets in background processes that do not contain invisible particles might satisfy the $\met > 200$~{\GeV} requirement.
+For example, $Z^{(*)}/\gamma^{*}(\to ee, \mu \mu)$+jets Drell-Yan dilepton production can enter the SR due to the instrumental \met.
+By requiring $\met > 200$~{\GeV}, the contributions from these background processes are expected to be very small.
 Using the MC simulation, these process are found to be negligible.
 The small mass splitting between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ causes the low invariant dilepton mass where the dilepton events are the decay product of $\widetilde{\chi}^{0}_{2}$.
 The $e^{\pm} e^{\mp}$ and $\mu^{\pm} \mu^{\mp}$ invariant masses for data events passing \met trigger and $|\Delta \phi(j_{1}, \mathbf{p}_\mathrm{T}^\mathrm{miss})| < 1.5$ are shown in Fig.~\ref{fig:bkg_invariant_mass} where a $J/\psi$ peak $3.0 < m_{\ell \ell} < 3.2$~{\GeV} can be seen.
@@ -320,14 +320,14 @@ The $e^{\pm} e^{\mp}$ and $\mu^{\pm} \mu^{\mp}$ invariant masses for data events
 \end{figure}
 
 By vetoing $3.0 < m_{\ell \ell} < 3.2$~{\GeV}, the contributions from $J/\psi$ resonance can be removed efficiently.
-By requiring min$|\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})| > 0.4$, the events contain mismeasured jet causing large \met can be suppressed.
+By requiring min$|\Delta \phi($any jet, $\mathbf{p}^{\mathrm{miss}}_{\mathrm{T}})| > 0.4$, the events containing mismeasured jets causing large \met can be suppressed.
 After applying these requirements, the instrumental \met background are found to be negligible.
 
 A validation region VR-SS, which has the similar kinematic as the SR, is constructed by requiring same sign leptons in the events.
-This VR is fake/non-prompt lepton enriched and can be used as a cross-checked of the fake prediction. 
+This VR is fake/non-prompt lepton enriched and can be used as a cross-check of the fake prediction. 
 Typically, the leading lepton is the real lepton and the subleading lepton is the fake/non-prompt lepton.
-By considering the rate of the anti-ID leptons in data, the probability of both leptons are fake/non-prompt is found very small.
-Therefore, the VR-SS are devided into $ee+\mu e$ and $\mu \mu + e\mu$ final states where the left lepton and right lepton in the pair denote the leading and subleading leptons, respectively.
+By considering the rate of the anti-ID leptons in data, the probability of both leptons are fake/non-prompt is found to be very small.
+Therefore, the VR-SS are divided into $ee+\mu e$ and $\mu \mu + e\mu$ final states where the left lepton and right lepton in the pairs denote the leading and subleading leptons, respectively.
 The electroweakino signal contamination in VR-SS is very small and can be negelected.
 Figure~\ref{fig:bkg_fake_distributions} shows the data and fake/non-prompt leptons \met distributions for $ee+\mu e$ and $\mu \mu + e\mu$ final states in the VR-SS.
 
@@ -382,15 +382,15 @@ The uncertainties due to PDF uncertainties are studied and amount to 15\% at mos
 
 \subsubsection{SM background uncertainty}
 \label{subsubsec:bkg_sm_bkg_uncertainty}
-There are three major factors affect the dominant SM backgrounds \ttbar, $tW$, $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets, and diboson process.
-The envelop is assigned to the theoretical uncertainty.
-The uncertainties due to the QCD renormalization and factorization scales are evaluted by varying the generator parameters up and down by a factor of 2.
-The uncertainties due to the sctrong coupling constant $\alpha_{S}$ are evaluted by varying the $\alpha_{S}$.
+Three major factors affect the dominant SM backgrounds \ttbar, $tW$, $Z^{(*)}/\gamma^{*}(\to \tau \tau)$+jets, and diboson processes.
+The envelope is assigned to the theoretical uncertainty.
+The uncertainties due to the QCD renormalization and factorization scales are evaluated by varying the generator parameters up and down by a factor of 2.
+The uncertainties due to the sctrong coupling constant $\alpha_{S}$ are evaluated by varying the $\alpha_{S}$.
 The impact on the acceptance is assigned to the theoretical uncertainty.
-The uncertainties due to the PDF are evaluted by PDF sets \texttt{CT14}, \texttt{MMHT2014}, and \texttt{NNPDF}.
+The uncertainties due to the PDF are evaluated by PDF sets \texttt{CT14}, \texttt{MMHT2014}, and \texttt{NNPDF}.
 The variations in acceptance are summarized and the envelope is assigned to the theoretical uncertainty.
-Events with all lepton flavors are used and the uncertainties are evaluted in all SRs and CRs.
-The final uncertainty is evaluted by adding all components in quadrature.
+Events with all lepton flavors are used and the uncertainties are evaluated in all SRs and CRs.
+The final uncertainty is evaluated by adding all components in quadrature.
 
 %%%
 %%%
@@ -410,7 +410,7 @@ The pileup in the MC samples is not the same as the one observed in data.
 The $\langle \mu \rangle$ profile is the average number of interactions per bunch crossing and the $\langle \mu \rangle$ in data is scaled by 1/1.16 to obtain a better data/MC agreement.
 The uncertainty of the pileup reweighting is obtained by varying the scaling factor between 1.00 and 1.23.
 The uncertainties from the jet energy scale (JES) and resolution (JER) are considered.
-Five up and down variations are used to obtain JES uncertainty and a up variation is used to obtain JER uncertainty.
+Five up and down variations are used to obtain the JES uncertainty and a up variation is used to obtain the JER uncertainty.
 Finally, the luminosity uncertainty is 3.2\% for 2015+2016 combined datasets.
 
 %%%
@@ -420,10 +420,10 @@ Finally, the luminosity uncertainty is 3.2\% for 2015+2016 combined datasets.
 \subsubsection{Fake factor uncertainty}
 \label{subsubsec:bkg_fake_factor_uncertainty}
 The major experimental uncertainty is the fake/non-prompt lepton prediction from the fake factor method.
-The fake factor uncertainty arises from the sample size used to measure the fake factors, the prompt lepton contamination in anti-ID region, the kinematic between the measurement region and the SRs, and the differences between the fake factor estimation and observed data in the VR-SS.
+The fake factor uncertainty arises from the sample size used to measure the fake factors, the prompt lepton contamination in anti-ID region, the kinematic differences between the measurement region and the SRs, and the differences between the fake factor estimation and observed data in the VR-SS.
 
-Figure~\ref{fig:bkg_relative_systematic_uncertainties} shpws the relative size of various uncertainties in the background predictions in the exclusive electroweakino SRs.
-The fake factor uncertainty is shown separatively from the other experimental uncertainties due to the relatively large contribution.
+Figure~\ref{fig:bkg_relative_systematic_uncertainties} shows the relative size of various uncertainties in the background predictions in the exclusive electroweakino SRs.
+The fake factor uncertainty is shown separately from the other experimental uncertainties due to the relatively large contribution.
 
 \begin{figure}[htbp]
     \begin{center}

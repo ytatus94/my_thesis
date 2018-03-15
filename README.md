@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/14/2018
+* Correct ch.7 as Dick suggested
+* Spelling check ch.8
+
 ### 03/13/2018
 * Correct typo in ch5
 * Change the outside member from Varahan to Shi
