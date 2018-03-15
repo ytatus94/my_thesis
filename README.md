@@ -1,6 +1,18 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/15/2018
+* Correct thesis as Pat suggested.
+  * `abstract.tex`
+  * `chapter_introduction.tex`
+  * `chapter_standard_model.tex`
+  * `chapter_supersymmetry.tex`
+  * `chapter_atlas_experiment.tex`
+  * `chapter_conclusion.tex`
+  * `appendix_distributions.tex`
+* This version is the first version send to committee members
+  * `YuTingShen_dissertation_20180315.pdf`
+
 ### 03/14/2018
 * Correct ch.7 as Dick suggested
 * Spelling check ch.8
