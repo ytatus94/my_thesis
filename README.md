@@ -1,6 +1,12 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/19/2018
+* Finish the electron isolation
+* Correct ch.8 as Dick suggested
+* Correct ch.5 as Ximo suggested
+* Correct ch1. and ch9 as Pat suggested
+
 ### 03/15/2018
 * Correct thesis as Pat suggested.
   * `abstract.tex`

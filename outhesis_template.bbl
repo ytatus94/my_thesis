@@ -10,6 +10,11 @@ G.~Aad et~al.
 \newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
 \newblock {\em JINST}, 3:S08003, 2008.
 
+\bibitem{ATLAS:twiki_trigger}
+Atlas twiki: Trigger naming run 2.
+\newblock
+  \url{https://twiki.cern.ch/twiki/bin/viewauth/Atlas/TriggerNamingRun2}.
+
 \bibitem{Aaboud:2016wna}
 Morad Aaboud et~al.
 \newblock {Dark matter interpretations of ATLAS searches for the electroweak
@@ -78,6 +83,30 @@ A.~Ruiz Martínez.
 M.~Baak, G.~J. Besjes, D.~Côte, A.~Koutsman, J.~Lorenz, and D.~Short.
 \newblock {HistFitter software framework for statistical data analysis}.
 \newblock {\em Eur. Phys. J.}, C75:153, 2015.
+
+\bibitem{ATLAS:2016iqc}
+The~ATLAS collaboration.
+\newblock {Electron efficiency measurements with the ATLAS detector using the
+  2015 LHC proton-proton collision data}.
+\newblock 2016.
+
+\bibitem{Aaboud:2016vfy}
+Morad Aaboud et~al.
+\newblock {Electron efficiency measurements with the ATLAS detector using 2012
+  LHC proton–proton collision data}.
+\newblock {\em Eur. Phys. J.}, C77(3):195, 2017.
+
+\bibitem{ATLAS:EGAM-2017-003}
+Electron reconstruction and identification efficiency measurements in 2016
+  data.
+\newblock
+  \url{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PLOTS/EGAM-2017-003/index.html}.
+
+\bibitem{ATLAS:EGAM-2016-005}
+Atlas electron/photon identification and calibration performance as a function
+  of pile-up during the 2016 lhc data taking.
+\newblock
+  \url{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PLOTS/EGAM-2016-005/index.html}.
 
 \bibitem{Weinberg:1975gm}
 Steven Weinberg.
@@ -542,12 +571,6 @@ The analysis release twiki.
 \newblock
   \url{https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/AnalysisRelease}.
 
-\bibitem{ATLAS:2016iqc}
-The~ATLAS collaboration.
-\newblock {Electron efficiency measurements with the ATLAS detector using the
-  2015 LHC proton-proton collision data}.
-\newblock 2016.
-
 \bibitem{Aad:2016jkr}
 Georges Aad et~al.
 \newblock {Muon reconstruction performance of the ATLAS detector in
@@ -588,6 +611,12 @@ Georges Aad et~al.
 \newblock {Observation and measurement of Higgs boson decays to WW$^*$ with the
   ATLAS detector}.
 \newblock {\em Phys. Rev.}, D92(1):012006, 2015.
+
+\bibitem{Aad:2016upy}
+Georges Aad et~al.
+\newblock {Topological cell clustering in the ATLAS calorimeters and its
+  performance in LHC Run 1}.
+\newblock {\em Eur. Phys. J.}, C77:490, 2017.
 
 \bibitem{ATLAS-CONF-2014-018}
 {Tagging and suppression of pileup jets with the ATLAS detector}.
