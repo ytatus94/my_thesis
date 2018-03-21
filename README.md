@@ -2,6 +2,9 @@
 This is repository for my Ph.D. thesis
 
 ### 03/21/2018
+* Use NUHM2 METOverHT vs mll plot
+
+### 03/21/2018
 * Correct abstract and acknowledge as John suggested
 * Correct ch.9 as Dick suggested
 
