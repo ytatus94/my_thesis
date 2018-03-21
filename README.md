@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/21/2018
+* Correct abstract and acknowledge as John suggested
+* Correct ch.9 as Dick suggested
+
 ### 03/19/2018
 * Finish the electron isolation
 * Correct ch.8 as Dick suggested
