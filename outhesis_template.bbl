@@ -618,6 +618,25 @@ Georges Aad et~al.
   performance in LHC Run 1}.
 \newblock {\em Eur. Phys. J.}, C77:490, 2017.
 
+\bibitem{Aaboud:2017dmy}
+Morad Aaboud et~al.
+\newblock {Search for supersymmetry in final states with two same-sign or three
+  leptons and jets using 36 fb$^{-1}$ of $\sqrt{s}=13$ TeV $pp$ collision data
+  with the ATLAS detector}.
+\newblock {\em JHEP}, 09:084, 2017.
+
+\bibitem{Aad:2014pda}
+Georges Aad et~al.
+\newblock {Search for supersymmetry at $\sqrt{s}$=8 TeV in final states with
+  jets and two same-sign leptons or three leptons with the ATLAS detector}.
+\newblock {\em JHEP}, 06:035, 2014.
+
+\bibitem{ATLAS-CONF-2012-151}
+{Search for supersymmetry using events with three leptons, multiple jets, and
+  missing transverse momentum in 13.0 fb$^{-1}$ of pp collisions with the ATLAS
+  detector at $\sqrt{s}=8$ TeV}.
+\newblock Technical Report ATLAS-CONF-2012-151, CERN, Geneva, Nov 2012.
+
 \bibitem{ATLAS-CONF-2014-018}
 {Tagging and suppression of pileup jets with the ATLAS detector}.
 \newblock Technical Report ATLAS-CONF-2014-018, CERN, Geneva, May 2014.
