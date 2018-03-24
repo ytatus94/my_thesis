@@ -7,9 +7,9 @@ This chapter is a complement to the NUHM2 interpretation for the same-sign or th
 
 \section{Monte Carlo event samples and data set}
 \label{app:ss3l_MC_samples}
-The NUHM2 model involves the gluino pair production where gluinos decay into $\ttbar \widetilde{\chi}^{0}_{1}$ and $tb \widetilde{\chi}^{\pm}_{1}$ as shown in Fig.~\ref{fig:app_ss3l_feynman_diagram}
+The NUHM2 model involves the gluino pair production where gluinos decay into $\ttbar \widetilde{\chi}^{0}_{1}$ and $t\bar{b} \widetilde{\chi}^{\pm}_{1}$ as shown in Fig.~\ref{fig:app_ss3l_feynman_diagram}
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
             \includegraphics[scale=1.0]{gogo-ttttN1N1.pdf}
@@ -19,7 +19,7 @@ The NUHM2 model involves the gluino pair production where gluinos decay into $\t
     \begin{subfigure}[b]{0.48\textwidth}
         \begin{center}
             \includegraphics[scale=1.0]{gogo-ttWWbbN1N1.pdf}
-            \caption{$\widetilde{g} \to tb \widetilde{\chi}^{\pm}_{1}$}
+            \caption{$\widetilde{g} \to t\bar{b} \widetilde{\chi}^{\pm}_{1} \to t\bar{b} W^{\pm} \widetilde{\chi}^{0}_{1}$}
         \end{center}
     \end{subfigure}
     \caption{The Feynman diagrams for the NUHM2 SUSY signal process.}
@@ -33,7 +33,7 @@ The simulated MC events are re-weighted to the observed pileup conditions in the
 Table~\ref{tab:app_ss3l_MC_samples} shows the event generator, parton shower, cross-section normalization, PDF set~\cite{Martin:2009iq}, and the set of tuned parameters for modeling for all samples.
 Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 package~\cite{Lange:2001uf} is used to model the properties of bottom and charm hadron decays for all MC samples.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{ccccccc}
@@ -65,7 +65,7 @@ Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 packag
     %\end{center}
     \caption{The simulated NUHM2 SUSY signal and SM background MC samples.
     The event generator, parton shower, cross-section normalization, PDF set, and the set of tuned parameters for each samples are shown.
-    The $t\bar{t}WW, t\bar{t}WZ, tZ, tWZ, tt\bar{t}, WH, ZH$ and triboson background samples are labeled in the "rare" because they contribute a very small amount to the signal region.}
+    The $\ttbar WW$, $\ttbar WZ$, $tZ$, $tWZ$, $t \ttbar$, $WH$, $ZH$ and triboson background samples are labeled in the "rare" because they contribute a very small amount to the signal region.}
     \label{tab:app_ss3l_MC_samples}
 \end{table}%
 
@@ -86,8 +86,9 @@ The combined luminosity uncertainty for 2015 and 2016 is 3.2\%.
 \section{Event reconstruction and signal region selection}
 \label{app:ss3l_event_reconstruction_and_SR_selection}
 Events are selected using the trigger strategy shown in Table~\ref{tab:app_ss3l_trigger_strategy}.
+The definition of objects used in this analysis are based on the recommendations by Combined Performance groups and are summarized in Table~\ref{tab:app_ss3l_object_definitions}
 
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         \begin{tabular}{lll}
@@ -108,8 +109,6 @@ Events are selected using the trigger strategy shown in Table~\ref{tab:app_ss3l_
     \caption{The trigger strategy used in the same-sign or three leptons and jets analysis.}
     \label{tab:app_ss3l_trigger_strategy}
 \end{table}%
-
-The definition of objects used in this analysis are based on the recommendations by Combined Performance groups and are summarized in Table~\ref{tab:app_ss3l_object_definitions}
 
 \begin{table}[htb]
     \begin{center}
@@ -149,20 +148,22 @@ The definition of objects used in this analysis are based on the recommendations
 
 The objects are divided into two categories: preselected and signal objects where signal objects are a subset of preselected objects. 
 Unless otherwise stated, the recommendations implemented in SUSYTools-00-08-58 and AnalysisBase 2.4.29 are used for all the objects.
-The overlaps between the different objects are applied after the object identification depending the distance $\Delta R \equiv \sqrt{(\Delta y)^{2} + (\Delta \phi)^{2}}$.
-The jet is discarded if the $\Delta R(e, jets) < 0.2$ unless the jet is a $b$-tagged jet, in which case the lepton is removed.
-For the muon case, If the jet has less than three associated tracks, then the muon is retained and the jet is discarded.
+The overlaps between the different objects are applied after the object identification depending on the distance $\Delta R \equiv \sqrt{(\Delta y)^{2} + (\Delta \phi)^{2}}$.
+For the electron case, the jet is discarded if the $\Delta R(e, \mathrm{jet}) < 0.2$ unless the jet is a $b$-tagged jet, in which case the electron is removed.
+For the muon case, if the jet has less than three associated tracks, then the muon is retained and the jet is discarded.
 The remaining lepton is removed if the lepton is in a cone $\Delta R = \mathrm{min}(0.4, 0.1 + 9.6$~{\GeV}$/\pt(\ell))$ of a jet.
 The events are selected if there are at least two signal leptons with $\pt > 20$~{\GeV} and two signal leptons must have the same electric charge.
 The events are removed if they contain any jet not satisfying the jet requirement listed in the Table~\ref{tab:app_ss3l_object_definitions}.
+The signal region is defined in Table~\ref{tab:app_ss3l_SR} to maximize the sensitivity of the NUHM2 model.
+The $m_\mathrm{eff}$ in the Table~\ref{tab:app_ss3l_SR} is the scalar sum of the signal leptons \pt, jets \pt and the \met.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     \begin{center}
         {\scriptsize
             \begin{tabular}{lllllll}
                 \hline
                 \hline
-                Signal Region & $N^\mathrm{signal}_\mathrm{lepton}$ & $N_{b\mathrm{-jets}}$ & $N_\mathrm{jets}$ & $\pt^\mathrm{jet}$~[{\GeV}] & $m_\mathrm{meff}$~[{\GeV}] & $\met/m_\mathrm{eff}$\\
+                Signal Region & $N^\mathrm{signal}_\mathrm{lepton}$ & $N_{b\mathrm{-jets}}$ & $N_\mathrm{jets}$ & $\pt^\mathrm{jet}$~[{\GeV}] & $m_\mathrm{eff}$~[{\GeV}] & $\met/m_\mathrm{eff}$\\
                 \hline
                 NUHM2         & $\ge 2$SS                           & $\ge 2$               & $\ge 6$           & $> 25$                      & $> 1800$                   & $> 0.15$\\
                 \hline
@@ -216,12 +217,11 @@ The events are removed if they contain any jet not satisfying the jet requiremen
 %     \label{tab:app_}
 % \end{table}%
 
-The signal region is defined in Table~\ref{tab:app_ss3l_SR} to maximize the sensitivity of the NUHM2 model where the $m_\mathrm{eff}$ is the scalar sum of the signal leptons \pt, jets \pt and the \met.
 Because the $Z$+jets background is important for the NUHM2 model, the events are vetoed if the invariant mass of two same-sign electrons is close to the $Z$ mass.
 Table~\ref{tab:app_ss3l_cutflow} shows the cutflows yield table for the NUHM2 signal with $m_{1/2}$ ranging from 300 to 800 GeV.
 %The weighted number of events are normalized to 36.1~{\ifb} and the raw number of events are also shown.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         {\scriptsize
@@ -247,21 +247,21 @@ Table~\ref{tab:app_ss3l_cutflow} shows the cutflows yield table for the NUHM2 si
                 Same-sign                                                          & 2357  & 2693  & 2839  & 2693  & 2480  & 2245  & 2152\\
                 \hline
                 \textbf{Electron-electron channel}\\
-                Channel seperation, same-sign electron-electron                    & 508   & 585   & 558   & 504   & 508   & 430   & 438\\
+                Channel separation, same-sign electron-electron                    & 508   & 585   & 558   & 504   & 508   & 430   & 438\\
                 Trigger matching                                                   & 504   & 579   & 557   & 497   & 501   & 430   & 438\\
                 $N_{b\mathrm{-jet}} \ge 1$ with $\pt > 20$~{\GeV}                  & 488   & 558   & 545   & 484   & 489   & 409   & 422\\
                 4 jets with $\pt > 50$~{\GeV}                                      & 461   & 523   & 516   & 464   & 471   & 383   & 397\\
                 $\met > 125$~{\GeV}                                                & 374   & 459   & 460   & 427   & 451   & 372   & 387\\
                 \hline
                 \textbf{Electron-muon channel}\\
-                Channel seperation, same-sign electron-muon                        & 1105  & 1330  & 1414  & 1346  & 1208  & 1111  & 1058\\
+                Channel separation, same-sign electron-muon                        & 1105  & 1330  & 1414  & 1346  & 1208  & 1111  & 1058\\
                 Trigger matching                                                   & 1066  & 1296  & 1381  & 1329  & 1201  & 1102  & 1051\\
                 $N_{b\mathrm{-jet}} \ge 1$ with $\pt > 20$~{\GeV}                  & 1046  & 1269  & 1328  & 1295  & 1157  & 1057  & 1010\\
                 4 jets with $\pt > 50$~{\GeV}                                      & 980   & 1182  & 1260  & 1246  & 1101  & 1013  & 971\\
                 $\met > 125$~{\GeV}                                                & 799   & 1040  & 1135  & 1176  & 1060  & 988   & 956\\
                 \hline
                 \textbf{Muon-muon channel}\\
-                Channel seperation, same-sign muon-muon                            & 744   & 778   & 867   & 843   & 764   & 704   & 656\\
+                Channel separation, same-sign muon-muon                            & 744   & 778   & 867   & 843   & 764   & 704   & 656\\
                 Trigger matching                                                   & 741   & 772   & 861   & 843   & 763   & 704   & 655\\
                 $N_{b\mathrm{-jet}} \ge 1$ with $\pt > 20$~{\GeV}                  & 711   & 754   & 842   & 813   & 736   & 679   & 623\\
                 4 jets with $\pt > 50$~{\GeV}                                      & 667   & 703   & 808   & 778   & 711   & 639   & 590\\
@@ -272,7 +272,8 @@ Table~\ref{tab:app_ss3l_cutflow} shows the cutflows yield table for the NUHM2 si
         }
     }
     %\end{center}
-    \caption{The cutflow yields table for the NUHM2 signal with $m_{1/2}$ ranging from 300 to 800 GeV.}
+    \caption{The cutflow yields table for the NUHM2 signal with $m_{1/2}$ ranging from 300 to 800 GeV.
+    The number of events in the table are the raw events.}
     \label{tab:app_ss3l_cutflow}
 \end{table}%
 
@@ -283,11 +284,11 @@ Table~\ref{tab:app_ss3l_cutflow} shows the cutflows yield table for the NUHM2 si
 \section{Background estimation and systematic uncertainties}
 \label{app:ss3l_bkg_estimation_and_systematic_uncertainties}
 The irreducible background are events with two same-sign or at least three prompt leptons.
-The main sources of the irreducible background are the diboson and $\ttbar V$ events.
+The main sources of the irreducible background are the diboson $VV$ events and $\ttbar V$ events.
 The contributions of the irreducible background are estimated using the MC samples and validated by dedicated validation regions (VRs).
 Table~\ref{tab:app_ss3l_irreducible_backgroun_validation_regions} lists the definitions of the VRs.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         {\scriptsize
@@ -319,22 +320,22 @@ Table~\ref{tab:app_ss3l_irreducible_backgroun_validation_regions} lists the defi
     \caption{The definitions of the validation regions for the irreducible background.
     The $b$-jets are required to have $\pt > 20$~{\GeV}.
     The $\ell_{1}$, $\ell_{2}$ represent the leading and sub-leading leptons.
-    The SFOS means the same-flavour opposite sign lepton.}
+    The SFOS means the same-flavor opposite sign lepton.}
     \label{tab:app_ss3l_irreducible_backgroun_validation_regions}
 \end{table}%
 
 The reducible background is events including electrons with mismeasured charge and fake or non-prompt leptons.
 The electrons with mismeasured charge, or called charge-flip, mainly come from \ttbar production.
 The charge-flip probability is measured using a likelihood fit to the $Z/\gamma^{*} \to ee$ data sample with events in 10~{\GeV} $Z$ mass window.
-The fake or non-prompt leptons mainly come from hadron misidentified as leptons, photon conversions, and leptons from pion ro kaon decays.
+The fake or non-prompt leptons mainly come from hadron misidentified as leptons, photon conversions, and leptons from pion or kaon decays.
 Two data-driven methods, matrix method~\cite{Aad:2014pda} and MC template method~\cite{Aad:2014pda, ATLAS-CONF-2012-151}, are used to estimate the fake or non-prompt lepton background.
 The contributions of the reducible background in the signal region are estimated using data-driven methods and validated by the validation regions.
 
 The various systematic uncertainties related to the background, such as the fake or non-prompt leptons using two different methods, the electron charge-flip probability, diboson background, are considered.
-The theoretical modelling and the cross-section calculation uncertainties are also assigned.
+The theoretical modeling and the cross-section calculation uncertainties are also assigned.
 The number of estimated background events and the observed data in the validation regions after considering the statistic and systematic uncertainties are listed in Table~\ref{tab:app_ss3l_VRs_yields}.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
         {\scriptsize
@@ -380,8 +381,8 @@ The number of estimated background events and the observed data in the validatio
 \section{NUHM2 interpretation and conclusion}
 \label{app:ss3l_NUHM2_interpretation_and_conclusion}
 Table~\ref{tab:app_ss3l_SR_yields} shows the number of observed data events and the expected background in the signal region.
-
-\begin{table}[htb]
+%
+\begin{table}[htbp]
     \begin{center}
     %\resizebox{\textwidth}{!}{% <------ Don't forget this %
         {\scriptsize
@@ -389,6 +390,7 @@ Table~\ref{tab:app_ss3l_SR_yields} shows the number of observed data events and 
                 \hline
                 \hline
                                                      & Number of events\\
+                \hline
                 $\ttbar W$ and $\ttbar Z/\gamma^{*}$ & $0.44 \pm 0.14$\\
                 $\ttbar H$                           & $0.10 \pm 0.06$\\
                 $4t$                                 & $0.18 \pm 0.09$\\
@@ -417,7 +419,7 @@ Table~\ref{tab:app_ss3l_SR_yields} shows the number of observed data events and 
     The p-value ($p_{0}$) shows the probability to observe a deviation from the number of expected background events as large as the one in the data.}
     \label{tab:app_ss3l_SR_yields}
 \end{table}%
-
+%
 The number of observed data events and the expected background are consistent within the uncertainties.
 Because no significant deviation from the SM prediction is observed, the exclusion limit with 95\% CL on the cross-section as a function of $m_{1/2}$ in the NUHM2 model is calculated and shown in Fig~\ref{tab:app_ss3l_nuhm2_exclusion_plot}.
 The $m_{1/2} < 650$~{\GeV} region is excluded.

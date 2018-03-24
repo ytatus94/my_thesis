@@ -179,22 +179,22 @@ The ID leptons correspond to requirements applied to signal leptons used in the 
 The anti-ID leptons define a fake lepton enriched sample by releasing or inverting one or more of the identification, isolation, or impact parameter $|d_{0}|/\sigma(d_{0})$ requirements relative to the signal leptons.
 Therefore, the ID and anti-ID lepton sets are orthogonal.
 The fake factor $F$ is defined then as the ratio between the number of ID and the number of anti-ID leptons as shown in Eq.~\ref{eq:bkg_fake_factor}.
-
+%
 \begin{equation}
     F = \frac{N_\mathrm{ID}}{N_\mathrm{anti-ID}} \quad .
     \label{eq:bkg_fake_factor}
 \end{equation}
-
+%
 $N_\mathrm{anti-ID}$ is the number of fake leptons in the anti-ID measurement region where the contributions from prompt leptons are subtracted using the MC simulation results.
 The fake factors for electrons and muons are measured in a fake leptons enriched region as a function of reconstructed lepton \pt and are used to estimate the reducible background in the SR.
 These $F$ are applied to events in the anti-ID control region, which has the same selection criteria as the SR, except an ID lepton is replaced by an anti-ID lepton.
 The total reducible background in the SR can be estimated by
-
+%
 \begin{equation}
     N^\mathrm{SR}_\mathrm{est} = F \cdot N^\mathrm{CR}_\mathrm{fake} \quad .
     \label{eq:bkg_estimated_fake_leptons}
 \end{equation}
-
+%
 The schematic illustration of the fake factor method is shown in Fig.~\ref{fig:bkg_fake_factor_method}.
 
 \begin{figure}[htb]
@@ -250,7 +250,7 @@ The muon fake factor also depends on the $N_{b-\mathrm{jet}}$ in the events beca
 The electron and muon fake factors are computed using events with $m_\mathrm{T} < 40$~{\GeV} in different \pt bins.
 Figure~\ref{fig:bkg_electron_fake_factor} shows the electrons fake factors as a function of \pt and leading jet \pt and Fig~\ref{fig:bkg_muon_fake_factor} shows the muons fake factor as a function of \pt with 0 $b$-jets and at least one $b$-jet.
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
             \includegraphics[scale=0.35]{FakeFactor_el_pt.pdf}
@@ -268,7 +268,7 @@ Figure~\ref{fig:bkg_electron_fake_factor} shows the electrons fake factors as a 
     \end{center}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
             \includegraphics[scale=0.35]{FakeFactor_mu_ptb0.pdf}
@@ -299,7 +299,7 @@ Using the MC simulation, these process are found to be negligible.
 The small mass splitting between $\widetilde{\chi}^{0}_{2}$ and $\widetilde{\chi}^{0}_{1}$ causes the low invariant dilepton mass where the dilepton events are the decay product of $\widetilde{\chi}^{0}_{2}$.
 The $e^{\pm} e^{\mp}$ and $\mu^{\pm} \mu^{\mp}$ invariant masses for data events passing \met trigger and $|\Delta \phi(j_{1}, \mathbf{p}_\mathrm{T}^\mathrm{miss})| < 1.5$ are shown in Fig.~\ref{fig:bkg_invariant_mass} where a $J/\psi$ peak $3.0 < m_{\ell \ell} < 3.2$~{\GeV} can be seen.
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
             \includegraphics[scale=0.35]{dataCR_mll_ElEl_pre.pdf}
@@ -330,7 +330,7 @@ Therefore, the VR-SS are divided into $ee+\mu e$ and $\mu \mu + e\mu$ final stat
 The electroweakino signal contamination in VR-SS is very small and can be negelected.
 Figure~\ref{fig:bkg_fake_distributions} shows the data and fake/non-prompt leptons \met distributions for $ee+\mu e$ and $\mu \mu + e\mu$ final states in the VR-SS.
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \begin{center}
         \begin{subfigure}[b]{0.48\textwidth}
             \includegraphics[scale=0.35]{hist1d_met_Et_VR-SS-ee-me.pdf}

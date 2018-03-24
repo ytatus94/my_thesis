@@ -303,19 +303,20 @@ This section provides the explanations for various variables used to discriminat
     \item \textbf{min($\mathbf{\Delta \phi(\textbf{any jet}, \pt^{\textbf{miss}})}$)}: By requiring $\Delta \phi(\textrm{any jet}, \pt^{\textbf{miss}}) > 0.4$, the effect of jet-energy mismeasurement on \met can be reduced.
 
     \item $\mathbf{N}_{\mathbf{b}\textbf{-jet}}$: Requiring $N_{b\textrm{-jet}} = 0$, the \ttbar and single-top backgrounds can be reduced significantly.
+\end{itemize}
 
+\begin{figure}[htb]
+    \begin{center}
+        \input{figures/event_reconstruction/ditau_schematic.tex}
+        \caption{The illustration of the $Z \to \tau\tau$ + jets decay where $\tau$ decays leptonically $\tau \to \ell \nu_{\ell} \nu_{\tau}$.}
+        \label{fig:event_mtautau}
+    \end{center}
+\end{figure}
+
+\begin{itemize}
     \item $\mathbf{m_{\tau\tau}}$: The di-tau invariant $m_{\tau\tau}(p_{\ell_{1}}, p_{\ell_{2}}, \mathbf{p}_{\mathrm{T}}^{\mathrm{miss}})$ variable is defined as the signed square root of $m^{2}_{\tau\tau}$.
     The $m_{\tau\tau}$ is used to reconstructed the $Z \to \tau \tau$ process where $\tau$ decays leptonically $\tau \to \ell \nu_{\ell} \nu_{\tau}$.
     Figure~\ref{fig:event_mtautau} shows the $Z$ boson leptonic decay process.
-    %
-    \begin{figure}[htb]
-        \begin{center}
-            \input{figures/event_reconstruction/ditau_schematic.tex}
-            \caption{The illustration of the $Z \to \tau\tau$ + jets decay where $\tau$ decays leptonically $\tau \to \ell \nu_{\ell} \nu_{\tau}$.}
-            \label{fig:event_mtautau}
-        \end{center}
-    \end{figure}
-    %
     The $m^{2}_{\tau\tau}$ is defined in Eq.~(\ref{eq:event_mtautau2})
     %
     \begin{equation}
@@ -368,21 +369,19 @@ This section provides the explanations for various variables used to discriminat
     \end{equation}
     %
     Figure~\ref{fig:event_METOverHT} shows the $\met/H_{\textrm{T}}^{\textrm{lep}}$ requirement for the electroweakino SR after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
-    %
-    \begin{figure}[htb]
-        \begin{center}
-            % \includegraphics[scale=0.4]{fig_03a.pdf}
-            \includegraphics[scale=0.4]{METOverHT_vs_mll.png}
-            \caption{The distribution of $\met/H_{\textrm{T}}^{\textrm{lep}}$ as function of $m_{\ell\ell}$ for the electroweakino after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
-            The red line indicates the SR selection.
-            Events in the region below this line are rejected.
-            The signal events are labeled in colored circles for different mass splitting.}
-            \label{fig:event_METOverHT}
-        \end{center}
-    \end{figure}
-    %
 \end{itemize}
-%
+
+\begin{figure}[htb]
+    \begin{center}
+        % \includegraphics[scale=0.4]{fig_03a.pdf}
+        \includegraphics[scale=0.4]{METOverHT_vs_mll.png}
+        \caption{The distribution of $\met/H_{\textrm{T}}^{\textrm{lep}}$ as function of $m_{\ell\ell}$ for the electroweakino after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
+        The red line indicates the SR selection.
+        Events in the region below this line are rejected.
+        The signal events are labeled in colored circles for different mass splitting.}
+        \label{fig:event_METOverHT}
+    \end{center}
+\end{figure}
 
 %%%
 %%%
@@ -394,11 +393,7 @@ The events with 2 lepton final state are selected if the lepton pair satisfies s
 To optimize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$ is calculated.
 In order to maximizing the $Z_{n}$, an integrated luminosity of 36~\ifb and a systematic uncertainty of 20\% on the background are assumed and at least one background event remaining is required after optimized cuts . 
 A set of binned dilepton invariant mass $m_{\ell \ell}$ are defined in SR and the kinematic distribution of $m_{\ell \ell}$ is used in a fit to extract the number of signal events.
-The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region} and the $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_binning}.
-There are 14 exclusive regions and 7 inclusive regions are defined.
-The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
-When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
-The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
+The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region}.
 
 \begin{table}[htb]
     \begin{center}
@@ -461,6 +456,12 @@ The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the
     \label{tab:event_signal_region_binning}
 \end{table}%
 
+The $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_binning}.
+There are 14 exclusive regions and 7 inclusive regions are defined.
+The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
+When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
+The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
+
 %%%
 %%%
 %%%
@@ -482,7 +483,7 @@ And the expected yields after SR selection in the truth level can be obtained by
 Table~\ref{tab:event_nuhm2_truth3} shows the acceptance, the cross-section, the branchings for different production channels, the 2LMET50 filter efficiency, and the expected yields in SR using the truth level information.
 
 % Truth3 results for NUHM2
-\begin{table}[htbp]
+\begin{table}[p]
     \begin{center}
         {\tiny
             \begin{tabular}{cccccc}

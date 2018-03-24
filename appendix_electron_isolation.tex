@@ -1,10 +1,10 @@
-The electron reconstruction, identification, and isolation play a crucial role for many ATLAS analysis.
-The electrons\footnote{The electrons and positron are referred to as electrons.} leave tracks in the inner detector and energy deposits in the ECAL.
-The reconstruction algorithm combines the signals in the calorimeter and the tracks in the inner detector to defined the electron candidates.
-The reconstructed candidates are identified as electrons based on a likelihood discrimination which distinguishes the electron candidates from the hadrons, non-prompt electrons originating from photon conversions, and heavy flavor hadron decays.
-Additionally, the electron candidates are required to be isolated to further distinguish the signal and the background objects.
-The electron efficiency measurements are performed based on the tag-and-probe method using the $Z \to eel$ and $J/\psi \to ee$ samples.
-This chapter describes the basic concept of the electron reconstruction and identification briefly and will focus on the electron isolation measurement using the $Z \to ee$ samples only.
+Electron reconstruction, identification, and isolation play a crucial role for many ATLAS analyses.
+Electrons\footnote{The electrons and positrons are referred to as electrons.} leave tracks in the inner detector and energy deposits in the ECAL.
+The reconstruction algorithm combines the signals in the calorimeter and the tracks in the inner detector to define electron candidates.
+Reconstructed candidates are identified as electrons based on a likelihood discrimination which distinguishes the electron candidates from the hadrons, non-prompt electrons originating from photon conversions, and heavy flavor hadron decays.
+Additionally, electron candidates are required to be isolated to further distinguish the signal and the background objects.
+Electron efficiency measurements are performed based on the tag-and-probe method using $Z \to ee$ and $J/\psi \to ee$ samples.
+This chapter briefly describes the basic concept of electron reconstruction and identification and focuses on the electron isolation measurement using the $Z \to ee$ samples only.
 
 %%%
 %%%
@@ -12,10 +12,10 @@ This chapter describes the basic concept of the electron reconstruction and iden
 
 \section{Tag-and-probe method}
 \label{sec:app_tag_and_probe_method}
-In order to measure the electron efficiency, the tag-and-probe method and an unbiased and clean electron enriched $Z \to ee$ or $J/\psi \to ee$ sample are used.
+In order to measure the electron efficiency, the tag-and-probe method and unbiased and clean electron enriched $Z \to ee$ or $J/\psi \to ee$ samples are used.
 A strict selection criteria are applied on one of the electron candidates (called ``tag'') together with the requirements based on the invariant mass window allows for a loose pre-identification of the other electron candidate (``probe'').
 Only the probe electrons are used in the electron efficiency measurement after subtracting the background.
-Each the valid combination of electron tag-and-probe pairs in the events is considered, therefore, an electron can be the tag in one tag-and-probe pair and the probe in another.
+Each valid combination of electron tag-and-probe pairs in the events is considered; therefore, an electron can be the tag in one tag-and-probe pair and the probe in another.
 There are two background estimation methods using $Z \to ee$ events: the $Z_{mass}$ and the $Z_{iso}$ methods.
 The $Z_{mass}$ method constructs background templates by reverting the identification and isolation requirements.
 The background templates are then normalized using the events in the side band region.
@@ -42,11 +42,13 @@ Figure~\ref{fig:app_electron_isolation_Zee_background_subtraction_methods} shows
 
 The electrons in $J/\Psi$ samples have prompt and non-prompt components.
 The prompt electron comes from the prompt production of $J/\Psi$ which comes from the $pp$ collisions and the non-prompt one arises from the non-prompt production of $J/\Psi$ which comes from $b$ decay.
-The prompt electron is expected more isolated than the non-prompt one.
+Prompt electrons are expected more isolated than the non-prompt ones.
 By using this distinguish feature, a tag-and-probe pair can be constructed.
 There are two background estimation methods: short-$\tau$ and $\tau$-fit methods.
-The short-$\tau$ method uses the events with short pseudo-proper time to find the prompt electron and the $\tau$-fit method considers the full $\tau$-range to extract the non-prompt electron by fitting the pseudo-proper time distribution.
+The short-$\tau$ method uses events with short pseudo-proper time to find the prompt electron.
+The $\tau$-fit method considers the full $\tau$-range to extract the non-prompt electron by fitting the pseudo-proper time distribution.
 Figure~\ref{fig:app_electron_isolation_JPsi_background_subtraction_methods} shows the background estimations using the short-$\tau$ and $\tau$-fit methods.
+In the electron isolation, the $Z \to ee$ samples and $Z_{mass}$ method are used.
 
 \begin{figure}[htbp]
     \begin{subfigure}[b]{0.48\textwidth}
@@ -65,28 +67,26 @@ Figure~\ref{fig:app_electron_isolation_JPsi_background_subtraction_methods} show
     \label{fig:app_electron_isolation_JPsi_background_subtraction_methods}
 \end{figure}
 
-In the electron isolation, the $Z \to ee$ sample and the $Z_{mass}$ method are used.
-
 %%%
 %%%
 %%%
 
 \section{Electron reconstruction and identification}
 \label{sec:app_electron_reconstruction_and_identification}
-The electrons candidates are reconstructed in the central region of the ATLAS detector ($|\eta| < 2.47$) using information from the inner detector and ECAL.
-Then the electron identification (ID) algorithms are used to distinguish the signal or background-like candidates based on multivariate likelihood discriminant.
-The signal-like electrons should be prompt and isolated.
-The background-like electrons coming from photon conversions, hadronic jets misidentification, and heavy flavor decays are non-prompt.
-The IBL added for Run-2 can provide good discrimination between electrons and converted photons.
+Electron candidates are reconstructed in the central region of the ATLAS detector ($|\eta| < 2.47$) using information from the inner detector and ECAL.
+Then the electron identification (ID) algorithms are used to distinguish signal or background-like candidates based on multivariate likelihood discriminant.
+Signal-like electrons should be prompt and isolated.
+Background-like electrons coming from photon conversions, hadronic jets misidentification, and heavy flavor decays are non-prompt.
+The IBL added for Run-2 provides good discrimination between electrons and converted photons.
 Three electron ID operating points \texttt{Tight}, \texttt{Medium}, and \texttt{Loose} are provided.
 The \texttt{Tight} ID provides the highest background rejection power, the \texttt{Loose} has the lowest background rejection power, and \texttt{Medium} ID in between.
-Figure~\ref{fig:app_electron_isolation_schematic_view_of_electron_reco_ID} shows the schematic view of the electron reconstruction and identification.
+Figure~\ref{fig:app_electron_isolation_schematic_view_of_electron_reco_ID} shows a schematic view of the electron reconstruction and identification.
 The electron reconstruction and identification efficiencies for 2016 data corresponding 33.9~\ifb are shown in Fig.~\ref{fig:app_electron_isolation_2016_electron_ID_efficiencies}.
 
 \begin{figure}[htbp]
     \begin{center}
         \includegraphics[scale=0.6]{figaux_03.pdf}
-        \caption{The schematic view of the electron reconstruction and identification~\cite{ATLAS:2016iqc}.}
+        \caption{A schematic view of the electron reconstruction and identification~\cite{ATLAS:2016iqc}.}
         \label{fig:app_electron_isolation_schematic_view_of_electron_reco_ID}
     \end{center}
 \end{figure}
@@ -121,19 +121,19 @@ The electron reconstruction and identification efficiencies for 2016 data corres
 
 \section{Electron isolation}
 \label{sec:app_electron_isolation}
-The electrons produced in the LHC $pp$ collisions cover a wide range of \met from a few {\GeV} to several {\TeV}.
-The reconstructed electrons suffer large backgrounds from misidentified hadrons, photon conversions, and heavy-flavor decays.
+Electrons produced in the LHC $pp$ collisions cover a wide range of \met from a few {\GeV} to several {\TeV}.
+Reconstructed electrons suffer large backgrounds from misidentified hadrons, photon conversions, and heavy-flavor decays.
 In order to further discriminate signal and background, most analyses require electrons to be isolated in addition to the identification criteria.
-The background electrons are produced in association with other objects such as jets, therefore they have larger values of isolation. 
-However, the signal electrons tend to have low values of isolation as they are uncorrelated with other jet activities in the event.
-The isolation variables quantify the energy deposited in a cone centered around the electron candidates and allow to disentangle prompt electrons from non-isolated electrons.
-Hence, the electron isolation is a very powerful tool to reject backgrounds.
+Background electrons are produced in association with other objects such as jets, therefore they have larger values of isolation. 
+However, signal electrons tend to have low values of isolation as they are uncorrelated with other jet activities in the event.
+The isolation variables quantify the energy deposited in a cone centered around the electron candidates and allow prompt electrons to be disentangled from non-isolated electrons.
+Hence, electron isolation is a very powerful tool to reject backgrounds.
 Two discriminating variables have been designed for that purpose: a calorimetric isolation energy $E_\mathrm{T}^\mathrm{cone\ 0.2}$ and a track isolation $p_\mathrm{T}^\mathrm{varcone\ 0.2}$.
-The $E_\mathrm{T}^\mathrm{cone\ 0.2}$ is defined as the sum of transverse energies of topological clusters~\cite{Aad:2016upy} within a cone of $\Delta R = 0.2$ around the candidate electron cluster and excluding the contribution in a region $\Delta \eta \times \Delta \phi = 0.125 \times 0.175$ centered around the electron cluster barycentre.
+The $E_\mathrm{T}^\mathrm{cone\ 0.2}$ is defined as the sum of transverse energies of topological clusters~\cite{Aad:2016upy} within a cone of $\Delta R = 0.2$ around the candidate electron cluster and excluding the contribution in a region $\Delta \eta \times \Delta \phi = 0.125 \times 0.175$ centered around the electron cluster barycenter.
 Only clusters with positive $E_\mathrm{T}$ are considered in the sum.
-The energy leakage outside the clusters, the pileup contributions, and the underlying event activity are corrected. 
+The energy leakage outside the clusters, pileup contributions, and the underlying event activity are corrected. 
 The $p_\mathrm{T}^\mathrm{varcone\ 0.2}$ is defined as the sum of transverse momenta of all tracks within a cone of $\Delta R = \mathrm{min}(0.2, 10~{\GeV}/E_\mathrm{T})$ around the candidate electron track and originating from the reconstructed primary vertex of the hard collision.
-The track must satisfies $E_\mathrm{T} > 1$~{\GeV}, $|\Delta z_{0} \sin \theta| < 3$~mm, and $n_\mathrm{Si} \ge 7$, $n_\mathrm{Si}^\mathrm{hole} \le 2$, $n_\mathrm{pixel}^\mathrm{hole} \le 1$, and $n_\mathrm{mod}^\mathrm{sh} \le 1$, where $n_\mathrm{Si}^\mathrm{hole}$ and $n_\mathrm{pixel}^\mathrm{hole}$ are the number of missing hits in the silicon and pixel detector respectively and $n_\mathrm{mod}^\mathrm{sh}$ is the number of hits in the silicon detector assigned to more than one track.
+The track must satisfy $E_\mathrm{T} > 1$~{\GeV}, $|\Delta z_{0} \sin \theta| < 3$~mm, and $n_\mathrm{Si} \ge 7$, $n_\mathrm{Si}^\mathrm{hole} \le 2$, $n_\mathrm{pixel}^\mathrm{hole} \le 1$, and $n_\mathrm{mod}^\mathrm{sh} \le 1$, where $n_\mathrm{Si}^\mathrm{hole}$ and $n_\mathrm{pixel}^\mathrm{hole}$ are the number of missing hits in the silicon and pixel detector respectively and $n_\mathrm{mod}^\mathrm{sh}$ is the number of hits in the silicon detector assigned to more than one track.
 The distributions of $E_\mathrm{T}^\mathrm{cone\ 0.2}$ and $p_\mathrm{T}^\mathrm{varcone\ 0.2}$ are shown in Fig.~\ref{fig:app_electron_isolation_ETcone20_PTvarcone20}.
 
 \begin{figure}[htbp]
@@ -200,12 +200,12 @@ The fixed requirement working points are used in analyses with low $E_\mathrm{T}
 The probe electron candidates with $E_\mathrm{T} > 7$~{\GeV} are used in the electron isolation efficiency measurement.
 The tag-and-probe method with $Z \to ee$ events are used for the efficiency measurement and the $Z_{mass}$ method is used to estimate background.
 The isolation efficiency is defined as
-
+%
 \begin{equation}
-    \epsilon_{iso} = \frac{N_{\mathrm{identification} \cap \mathrm{isolation}}}{N_\mathrm{identification}}
+    \epsilon_{iso} = \frac{N_{\mathrm{identification} \cap \mathrm{isolation}}}{N_\mathrm{identification}} \quad .
 \end{equation}
-
-The efficiency are measured for all isolation working points listed in Table~\ref{tab:app_electron_isolation_working_points} with respect to three likelihood identifications \texttt{TightLLH}, \texttt{MediumLLH}, and \texttt{LooseLLH}.
+%
+The efficiencies are measured for all isolation working points listed in Table~\ref{tab:app_electron_isolation_working_points} with respect to three likelihood identifications \texttt{TightLLH}, \texttt{MediumLLH}, and \texttt{LooseLLH}.
 The electron isolation efficiencies depend on the transverse energy $E_\mathrm{T}$ and pseudorapidity $\eta$.
 Fig~\ref{fig:app_electron_isolation_isolation_plots} shows the electron isolation efficiencies for the fixedCutLoose working point and data-to-MC ratios as a function of the transverse energy $E_\mathrm{T}$ and pseudorapidity $\eta$, respectively.
 Larger discrepancies between data and MC are observed for $E_\mathrm{T} < 20$~{\GeV} and good agreement is found when $E_\mathrm{T} > 20$~{\GeV}.

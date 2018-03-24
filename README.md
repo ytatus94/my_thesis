@@ -1,6 +1,11 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/24/2018
+* Finish ss3l
+* Correct appendix c as Dick suggested
+* Change the positions of tables and figures
+
 ### 03/23/2018
 * Working on ss3l
 
