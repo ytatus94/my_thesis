@@ -4,6 +4,8 @@ This is repository for my Ph.D. thesis
 ### 03/26/2018
 * Correct appendix d as Dick suggested
 * Correct ch6 as Ximo suggested.
+* Change the table font size
+* Change the decimal in the table as Ximo suggested
 
 ### 03/24/2018
 * Finish ss3l

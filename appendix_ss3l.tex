@@ -36,31 +36,33 @@ Except those produced by the {\SHERPA}, the \textsc{EvtGEN}\xspace v1.2.0 packag
 \begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
-        \begin{tabular}{ccccccc}
-            \hline
-            \hline
-            Signal/Background                                      & Physics process                   & Event generator                  & Parton shower     & Cross-section normalization & PDF set    & Set of tuned parameters\\
-            \hline
-            \hline
-            Signal                                                 & NUHM2                             & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
-            % \multirow{3}{*}{Signal}                                & RPC                               & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
-            %                                                        & RPV (except Figure~\ref{})        & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.210   & or                          & NNPDF2.3LO & A14\\
-            %                                                        & RPV (Figure~\ref{})               & {\HERWIGpp} 2.7.1                & {\HERWIGpp} 2.7.1 & NLO-Prospino2               & CTEQ6L1    & UEEE5\\
-            \hline
-            \multirow{3}{*}{\shortstack{$t\bar{t}+X$\\background}} & $t\bar{t}W, t\bar{t}Z/\gamma^{*}$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                                   & $t\bar{t}H$                       & MG5\_{\scriptsize A}MC@NLO 2.3.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                                   & 4$t$                              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-            \hline
-            \multirow{2}{*}{\shortstack{Diboson\\background}}      & $ZZ, WZ$                          & {\SHERPA} 2.2.1                  & {\SHERPA} 2.2.1   & NLO                         & NNPDF2.3LO & {\SHERPA} default\\
-                                                                   & Other (inc. $W^{\pm}W^{\pm}$)     & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
-            \hline
-            \multirow{4}{*}{\shortstack{Rare\\background}}         & $t\bar{t}WW, t\bar{t}WZ$          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                                   & $tZ, tWZ, tt\bar{t}$              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & LO                          & NNPDF2.3LO & A14\\
-                                                                   & $WH, ZH$                          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
-                                                                   & Triboson                          & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
-            \hline
-            \hline
-        \end{tabular}
+        % {\footnotesize
+            \begin{tabular}{ccccccc}
+                \hline
+                \hline
+                Signal/Background                                      & Physics process                   & Event generator                  & Parton shower     & Cross-section normalization & PDF set    & Set of tuned parameters\\
+                \hline
+                \hline
+                Signal                                                 & NUHM2                             & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
+                % \multirow{3}{*}{Signal}                                & RPC                               & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.186   & NLO+NLL                     & NNPDF2.3LO & A14\\
+                %                                                        & RPV (except Figure~\ref{})        & MG5\_{\scriptsize A}MC@NLO 2.2.3 & {\PYTHIA} 8.210   & or                          & NNPDF2.3LO & A14\\
+                %                                                        & RPV (Figure~\ref{})               & {\HERWIGpp} 2.7.1                & {\HERWIGpp} 2.7.1 & NLO-Prospino2               & CTEQ6L1    & UEEE5\\
+                \hline
+                \multirow{3}{*}{\shortstack{$t\bar{t}+X$\\background}} & $t\bar{t}W, t\bar{t}Z/\gamma^{*}$ & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                       & $t\bar{t}H$                       & MG5\_{\scriptsize A}MC@NLO 2.3.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                       & 4$t$                              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                \hline
+                \multirow{2}{*}{\shortstack{Diboson\\background}}      & $ZZ, WZ$                          & {\SHERPA} 2.2.1                  & {\SHERPA} 2.2.1   & NLO                         & NNPDF2.3LO & {\SHERPA} default\\
+                                                                       & Other (inc. $W^{\pm}W^{\pm}$)     & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
+                \hline
+                \multirow{4}{*}{\shortstack{Rare\\background}}         & $t\bar{t}WW, t\bar{t}WZ$          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                       & $tZ, tWZ, tt\bar{t}$              & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & LO                          & NNPDF2.3LO & A14\\
+                                                                       & $WH, ZH$                          & MG5\_{\scriptsize A}MC@NLO 2.2.2 & {\PYTHIA} 8.186   & NLO                         & NNPDF2.3LO & A14\\
+                                                                       & Triboson                          & {\SHERPA} 2.1.1                  & {\SHERPA} 2.1.1   & NLO                         & CT10       & {\SHERPA} default\\
+                \hline
+                \hline
+            \end{tabular}
+        % }
     }
     %\end{center}
     \caption{The simulated NUHM2 SUSY signal and SM background MC samples.
@@ -91,28 +93,31 @@ The definition of objects used in this analysis are based on the recommendations
 \begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
-        \begin{tabular}{lll}
-        \hline
-        \hline
-        Year                  & \met requirement    & triggers\\
-        \hline
-        \multirow{2}{*}{2015} & $\met < 250$~{\GeV} & \texttt{HLT\_2e12\_lhloose\_L12EM10VH} $\cup$ \texttt{HLT\_e17\_lhloose\_mu14} $\cup$ \texttt{HLT\_mu18\_mu8noL1}\\
-                              & $\met > 250$~{\GeV} & \texttt{HLT\_2e12\_lhloose\_L12EM10VH} $\cup$ \texttt{HLT\_e17\_lhloose\_mu14} $\cup$ \texttt{HLT\_mu18\_mu8noL1} $\cup$ \texttt{HLT\_xe70}\\
-        \hline
-        \multirow{2}{*}{2016} & $\met < 250$~{\GeV} & \texttt{HLT\_2e17\_lhvloose\_nod0} $\cup$ \texttt{HLT\_e17\_lhloose\_nod0\_mu14} $\cup$ \texttt{HLT\_mu22\_mu8noL1}\\
-                              & $\met > 250$~{\GeV} & \texttt{HLT\_2e17\_lhvloose\_nod0} $\cup$ \texttt{HLT\_e17\_lhloose\_nod0\_mu14} $\cup$ \texttt{HLT\_mu22\_mu8noL1} $\cup$ \texttt{HLT\_xe100\_mht\_L1XE50} $\cup$ \texttt{HLT\_xe110\_mht\_L1XE50}\\
-        \hline
-        \hline
-        \end{tabular}
+        % {\footnotesize
+            \begin{tabular}{lll}
+            \hline
+            \hline
+            Year                  & \met requirement    & triggers\\
+            \hline
+            \multirow{2}{*}{2015} & $\met < 250$~{\GeV} & \texttt{HLT\_2e12\_lhloose\_L12EM10VH} $\cup$ \texttt{HLT\_e17\_lhloose\_mu14} $\cup$ \texttt{HLT\_mu18\_mu8noL1}\\
+                                  & $\met > 250$~{\GeV} & \texttt{HLT\_2e12\_lhloose\_L12EM10VH} $\cup$ \texttt{HLT\_e17\_lhloose\_mu14} $\cup$ \texttt{HLT\_mu18\_mu8noL1} $\cup$ \texttt{HLT\_xe70}\\
+            \hline
+            \multirow{2}{*}{2016} & $\met < 250$~{\GeV} & \texttt{HLT\_2e17\_lhvloose\_nod0} $\cup$ \texttt{HLT\_e17\_lhloose\_nod0\_mu14} $\cup$ \texttt{HLT\_mu22\_mu8noL1}\\
+                                  & $\met > 250$~{\GeV} & \texttt{HLT\_2e17\_lhvloose\_nod0} $\cup$ \texttt{HLT\_e17\_lhloose\_nod0\_mu14} $\cup$ \texttt{HLT\_mu22\_mu8noL1} $\cup$ \texttt{HLT\_xe100\_mht\_L1XE50} $\cup$ \texttt{HLT\_xe110\_mht\_L1XE50}\\
+            \hline
+            \hline
+            \end{tabular}
+        % }
     }
     %\end{center}
     \caption{The trigger strategy used in the same-sign or three leptons and jets analysis.}
     \label{tab:app_ss3l_trigger_strategy}
 \end{table}%
 
-\begin{table}[htb]
-    \begin{center}
-        {\scriptsize
+\begin{table}[htbp]
+    % \begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        % {\footnotesize
             \begin{tabular}{lll}
                 \hline
                 \hline
@@ -140,8 +145,9 @@ The definition of objects used in this analysis are based on the recommendations
                 \hline
                 \hline
             \end{tabular}
-        }
-    \end{center}
+        % }
+    }
+    % \end{center}
     \caption{Summary of object definitions used in the same-sign or three leptons and jets analysis.}
     \label{tab:app_ss3l_object_definitions}
 \end{table}%
@@ -159,7 +165,7 @@ The $m_\mathrm{eff}$ in the Table~\ref{tab:app_ss3l_SR} is the scalar sum of the
 
 \begin{table}[htbp]
     \begin{center}
-        {\scriptsize
+        {\footnotesize
             \begin{tabular}{lllllll}
                 \hline
                 \hline
@@ -224,7 +230,7 @@ Table~\ref{tab:app_ss3l_cutflow} shows the cutflow yields table for the NUHM2 si
 \begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
-        {\scriptsize
+        {\footnotesize
             \begin{tabular}{llllllll}
                 \hline
                 \hline
@@ -291,7 +297,7 @@ Table~\ref{tab:app_ss3l_irreducible_backgroun_validation_regions} lists the defi
 \begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
-        {\scriptsize
+        {\footnotesize
             \begin{tabular}{llllllll}
                 \hline
                 \hline
@@ -338,7 +344,7 @@ The number of estimated background events and the observed data in the validatio
 \begin{table}[htbp]
     %\begin{center}
     \resizebox{\textwidth}{!}{% <------ Don't forget this %
-        {\scriptsize
+        {\footnotesize
             \begin{tabular}{llllll}
                 \hline
                 \hline
@@ -385,7 +391,7 @@ Table~\ref{tab:app_ss3l_SR_yields} shows the number of observed data events and 
 \begin{table}[htbp]
     \begin{center}
     %\resizebox{\textwidth}{!}{% <------ Don't forget this %
-        {\scriptsize
+        {\footnotesize
             \begin{tabular}{ll}
                 \hline
                 \hline
