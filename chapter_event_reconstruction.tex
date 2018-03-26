@@ -1,8 +1,7 @@
 Candidate events are required to have at least a reconstructed $pp$ interaction vertex with at least two $\pt > 400$~{\MeV} associated tracks.
 The vertex with the largest $\sum \pt^{2}$ of the associated tracks is selected as the primary vertex of the event. 
-In this chapter, the various object reconstructions and  identifications in the ATLAS experiment are presented.
-The electron, muon, and tau objects are presented in Sect.~\ref{subsec:event_electrons},~\ref{subsec:event_muons}, and~\ref{subsec:event_Taus}, respectively.
-Followed by the photons in Sect.~\ref{subsec:event_photons}, jets in Sect.~\ref{subsec:event_jets}, and \met in Sect.~\ref{subsec:event_met}.
+In this chapter, the various object reconstruction and  identification criteria in the ATLAS experiment are presented.
+The electron, muon, and tau objects are presented in Sect.~\ref{subsec:event_electrons},~\ref{subsec:event_muons}, and~\ref{subsec:event_Taus}, respectively, followed by the photons in Sect.~\ref{subsec:event_photons}, jets in Sect.~\ref{subsec:event_jets}, and \met in Sect.~\ref{subsec:event_met}.
 Finally, the signal region (SR) selection is described in Sect.~\ref{sec:event_signal_region_selection}.
 
 %%%
@@ -66,12 +65,12 @@ Unless otherwise stated, the recommendations implemented in \texttt{SUSYTools-00
 \subsubsection{General electron reconstruction and identification}
 \label{subsubsec:event_electrons_general}
 In the ATLAS experiment, electron\footnote{Electrons and positrons are collectively referred to as electrons.} objects are reconstructed and identified using the information from the ID tracks matched to energy clusters in the ECAL.
-Electron candidates with $\pt > 4$~{\GeV} and $|\eta| < 2.47$ are selected using the tag-and-probe method for $Z \to ee$ and $J/\psi \to ee$ processes.
+%Electron candidates with $\pt > 4$~{\GeV} and $|\eta| < 2.47$ are selected using the tag-and-probe method for $Z \to ee$ and $J/\psi \to ee$ processes.
 Three likelihood based electron identification algorithms, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight} are applied to determine the signal-like reconstructed electron candidates.
 These three identifications use the same variables to define the likelihood discriminant but with different selection criteria.
 Depending on the electron identification used, the reconstruction efficiency varies from 78 to 90\% and increases with \met.
-The electron isolation varies between 90\% and 99\% depending on the isolation selection criteria.
-More detail about the electron reconstruction performance can be found in Ref.~\cite{ATLAS:2016iqc} and a detail description about the electron isolation, which is my authorship project, can be found in the App.~\ref{app:electron_isolation}.
+The electron isolation efficiency varies between 90\% and 99\% depending on the isolation selection criteria.
+More details about the electron reconstruction performance can be found in Ref.~\cite{ATLAS:2016iqc} and a detailed description about the electron isolation, which is my ATLAS authorship project, can be found in the App.~\ref{app:electron_isolation}.
 
 %%%
 %%%
@@ -101,12 +100,12 @@ Besides all the requirements for the preselected electrons, the signal electrons
 In the ATLAS experiment, muon objects are reconstructed and identified using the information from ID and muon spectrometer in the $\pt > 4$~{\GeV} and $|\eta| < 2.7$ region.
 Muon candidates are identified by applying quality requirements to suppress background which mainly come from pion and kaon decays.
 Four categories of muon identification, \texttt{Medium}, \texttt{Loose}, \texttt{Tight}, and \texttt{High}-\pt are provided for different physics analyses.
-The \texttt{Medium} minimizes the systematic uncertainties and is provided as the default selection for muons in ATLAS.
-The \texttt{Loose} maximize the reconstruction efficiency and is used for multilepton final state analyses.
-The \texttt{Tight} maximize the purity of muons and the \texttt{High}-\pt maximize the momentum resolution for $\pt > 100$~{\GeV}.
-The muon reconstruction efficiency is about 99\% in $5 < \pt < 100$~{\GeV} and $|\eta| < 2.5$ phase space.
+The \texttt{Medium} identification minimizes the systematic uncertainties and is provided as the default selection for muons in ATLAS.
+The \texttt{Loose} identification maximizes the reconstruction efficiency and is used for analyses with multilepton final states.
+The \texttt{Tight} identification maximizes the purity of muons and the \texttt{High}-\pt identification maximizes the momentum resolution for $\pt > 100$~{\GeV}.
+The muon reconstruction efficiency is about 99\% in the $5 < \pt < 100$~{\GeV} and $|\eta| < 2.5$ phase space.
 The muon isolation efficiency varies between 93\% and 100\% depending on the isolation selection criteria.
-More detail about the muon reconstruction performance can be found in Ref.~\cite{Aad:2016jkr}.
+More details about the muon reconstruction performance can be found in Ref.~\cite{Aad:2016jkr}.
 
 %%%
 %%%
@@ -131,13 +130,13 @@ A tighter requirement is applied on the signal muons which in addition pass the 
 
 \subsubsection{General $\tau$ reconstruction and identification}
 \label{subsubsec:event_taus_general}
-The mass of $\tau$ lepton is 1.77~{\GeV} and the decay length is 80~$\mu$m which is too short to make $\tau$ reaches the active region of the ATLAS detector.
+The mass of $\tau$ lepton is 1.77~{\GeV} and the decay length is 80~$\mu$m which is too short to make $\tau$ reach the active region of the ATLAS detector.
 The $\tau$ can decay either leptonically ($\tau \to \ell \nu_{\ell}$, $\ell = e, \mu$) or hadronically ($\tau \to$ hadrons + $\nu_{\tau}$).
-The hadronic tau decays are about 65\% of all possible decay modes and the decay products contain one charged pions (22\%) or three charged pions (72\%) of all cases.
-Tau candidates are seeded by jets using the method described in Ref.~\cite{ATLAS:2017mpa} and they are required to have $\pt > 10$~{\GeV} and $|\eta| < 2.5$ but veto the candidates in the crack region $1.37 < |\eta| < 1.52$.
+The hadronic tau decays are about 65\% of all possible decay modes and the decay products contain one charged pion (22\%) or three charged pions (72\%) of all cases.
+Tau candidates are seeded by jets using the method described in Ref.~\cite{ATLAS:2017mpa} and they are required to have $\pt > 10$~{\GeV} and $|\eta| < 2.5$ but vetoing the candidates in the crack region $1.37 < |\eta| < 1.52$.
 A boosted decision tree (BDT) based algorithm is used to identify the $\tau$ candidate and to reject backgrounds from quark- and gluon-initiated jets.
-Three identifications, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight} are provided with the efficiency 60\%, 55\%, and 45\% for 1-track and 50\%, 40\%, and 30\% for 3-tracks, respectively.
-More detail about the $\tau$ lepton reconstruction and identification performance can be found in Ref.~\cite{ATLAS:2017mpa}.
+Three identification criteria, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight} are provided with the efficiency 60\%, 55\%, and 45\% for 1-track and 50\%, 40\%, and 30\% for 3-tracks, respectively.
+More details about the $\tau$ lepton reconstruction and identification performance can be found in Ref.~\cite{ATLAS:2017mpa}.
 
 %%%
 %%%
@@ -160,14 +159,14 @@ The di-tau invariant mass $m_{\tau\tau}$ is used in this analysis and addressed 
 
 \subsubsection{General photons reconstruction and identification}
 \label{subsubsec:event_photons_general}
-In the ATLAS experiment, photons are reconstructed using the tracking information in ID and the energy deposits in the CAL.
+In the ATLAS experiment, photons are reconstructed using the tracking information in the ID and the energy deposits in the CAL.
 To distinguish prompt photons\footnote{Prompt photons are photons not originating from hadron decays} from background photons, the photon identification is based on a set of rectangular cuts on several discriminating variables computed from the energy deposited in the ECAL and from the shower leakage to the HCAL.
-The photon identification is separately applied to the converted and unconverted photons with $25 \le E_{\mathrm{T}} \le 1500$~{\GeV} and 4 $|\eta|$ intervals.
-Two identifications, \texttt{Loose} and \texttt{Tight}, are provided.
-The \texttt{Loose} provides high efficiency with low jet rejection and the \texttt{Tight}, which is recommended for the analyses by the Combined Performance groups, provides high fake photon rejection and good efficiency.
-The \texttt{Tight} identification efficiency starts from 84\% at low $E_{\mathrm{T}}$ and reaches around 98\% in $1.37 < |\eta| < 1.81$ region for the unconverted photons.
-Similar to the unconverted photons, the efficiency for the converted photons increases with energy and reaches up to 98\%.
-More detail about the photon reconstruction and identification can be found in Ref.~\cite{ATLAS:2011kuc}.
+The photon identification is separately applied to the converted and unconverted photons with $25 \le E_{\mathrm{T}} \le 1500$~{\GeV} and four $|\eta|$ intervals.
+Two identification criteria, \texttt{Loose} and \texttt{Tight}, are provided.
+The \texttt{Loose} identification provides high efficiency with low jet rejection and the \texttt{Tight} identification, which is recommended for the analyses by the Combined Performance groups, provides high fake photon rejection and good efficiency.
+The \texttt{Tight} identification efficiency starts from 84\% at low $E_{\mathrm{T}}$ and reaches around 98\% in the $1.37 < |\eta| < 1.81$ region for unconverted photons.
+Similar to the unconverted photons, the efficiency for converted photons increases with energy and reaches up to 98\%.
+More details about the photon reconstruction and identification can be found in Ref.~\cite{ATLAS:2011kuc}.
 
 %%%
 %%%
@@ -192,9 +191,9 @@ Photons are required to pass \texttt{Tight} identification and have $\pt > 25$~{
 \label{subsubsec:event_jets_general}
 In the ATLAS experiment, jets are reconstructed using the anti-$k_{t}$ algorithm with radius parameter $R = 0.4$.
 The reconstruction algorithm uses calorimeter topological clusters in $|\eta| < 4.5$ as input.
-Four jet cleaning selections, \texttt{Looser}, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight}, are provided to reject the background.
+Four jet cleaning selections, \texttt{Looser}, \texttt{Loose}, \texttt{Medium}, and \texttt{Tight}, are provided.
 The \texttt{Looser} has the highest efficiency, $\sim$99.8\%, and the \texttt{Tight} has the highest background rejection with efficiency 85\% at $\pt = 25$~{\GeV} and 98\% at $\pt > 50$~{\GeV}.
-More detail about the jets reconstruction using anti-$k_{t}$ algorithm can be found in Ref.~\cite{Cacciari:2008gp}.
+More details about the jets reconstruction using anti-$k_{t}$ algorithm can be found in Ref.~\cite{Cacciari:2008gp}.
 
 %%%
 %%%
@@ -202,10 +201,10 @@ More detail about the jets reconstruction using anti-$k_{t}$ algorithm can be fo
 
 \subsubsection{$b$-tagging}
 \label{subsubsec:event_bjets}
-In the ATLAS experiment, it is very important to identify jets containing $b$ hadrons from light flavor jets\footnote{The light flavor jets mean jets containing $u$, $d$, $s$, $c$, or gluons.}.
-Many $b$-tagging algorithms were developed to maintain high $b$-tagging efficiency of real $b$-jets and to retain very low misidentification efficiency of the light flavor jets.
-The new developed multivariable algorithm, MV2, improving the $c$-jet rejection $\sim$40\% at 77\% $b$-tagging efficiency and the rejection power at high $b$-jet \pt is also improved.
-More detail about the $b$-tagging can be found in Ref.~\cite{ATL-PHYS-PUB-2015-022, ATL-PHYS-PUB-2016-012}.
+In the ATLAS experiment, it is very important to identify jets containing $b$ hadrons and discriminate them from light flavor jets\footnote{The light flavor jets mean jets containing $u$, $d$, $s$, $c$, or gluons.}.
+Many $b$-tagging algorithms were developed to maintain a high $b$-tagging efficiency for real $b$-jets and to retain very low misidentification efficiency of the light flavor jets.
+The newly developed multivariable algorithm, MV2, improving the $c$-jet rejection $\sim$40\% at 77\% $b$-tagging efficiency and the rejection power at high $b$-jet \pt is also improved.
+More details about the $b$-tagging can be found in Ref.~\cite{ATL-PHYS-PUB-2015-022, ATL-PHYS-PUB-2016-012}.
 
 %%%
 %%%
@@ -214,7 +213,7 @@ More detail about the $b$-tagging can be found in Ref.~\cite{ATL-PHYS-PUB-2015-0
 \subsubsection{Specific to this analysis}
 \label{subsubsec:event_jets_specific}
 The preselected jets are reconstructed with the anti-$k_{t}$ algorithm with radius parameter $R = 0.4$ and required $\pt > 20$~{\GeV} and $|\eta| < 4.5$.
-Jets with $\pt < 60$~{\GeV} and $|\eta| < 2.4$ are required to satisfy \texttt{Medium} jet vertex tagger requirement which can suppress pileup jets.
+Jets with $\pt < 60$~{\GeV} and $|\eta| < 2.4$ are required to satisfy \texttt{Medium} jet vertex tagger requirement which can suppress pileup jets~\cite{Aad:2015ina}.
 The MV2c10 $b$-tagging algorithm with an 85\% efficiency is applied on the preselected jets with $|\eta| < 2.5$.
 The signal jets are required to satisfy $\pt > 30$~{\GeV} and $|\eta| < 2.8$.
 
@@ -225,16 +224,16 @@ The signal jets are required to satisfy $\pt > 30$~{\GeV} and $|\eta| < 2.8$.
 \subsection{Missing transverse energy}
 \label{subsec:event_met}
 The missing transverse energy \met is defined as the negative vector sum of \pt of all reconstructed objects including leptons, jets, and soft term as show in Eq.~(\ref{eq:event_met}).
-The soft term is constructed from all tracks associated to the primary vertex but not associated with any physics object.
-There two kinds of soft term, calorimeter based soft term (CST) and track based soft term (TST) are used in \met calculation.
-The CST \met is constructed form the energy deposits in the CAL not associated with hard objects and the TST \met is built form ID tracks which not match to any reconstructed object.
-More detail about the \met reconstruction performance can be found in Ref.~\cite{ATL-PHYS-PUB-2015-023}.
 %
 \begin{equation}
     \met = - (\sum \mathbf{p}_{\mathrm{T}}^{\mathrm{hard}} + \mathbf{p}_{\mathrm{T}}^{\mathrm{soft}})
     \label{eq:event_met}
 \end{equation}
 %
+The soft term is constructed from all tracks associated to the primary vertex but not associated with any physics object.
+Two kinds of soft term, calorimeter based soft term (CST) and track based soft term (TST) can be used in \met calculation.
+The CST \met is constructed from the energy deposits in the calorimeters not associated with hard objects and the TST \met is built from ID tracks which do not match to any reconstructed object.
+More details about the \met reconstruction performance can be found in Ref.~\cite{ATL-PHYS-PUB-2015-023}.
 
 %%%
 %%%
@@ -252,8 +251,8 @@ The distance $\Delta R$ between two objects is used for overlap removal and $\De
 where $y$ and $\phi$ are rapidity and azimuthal angle, respectively.
 The overlap removal procedure has to follow the steps listed below.
 In order to avoid the bremsstrahlung from muons followed by a photon conversion into electron pairs, electron candidate is removed if it shares the same ID track with a muon object.
-Jet is removed from the remaining electrons if $\Delta R(\mathrm{jets}, e) < 0.2$ unless it is a $b$-jet.
-If there are less than 3 tracks of jets with $\pt > 500$~{\MeV} and the distance between jets and a muon candidate less than 0.4, i.e. $\Delta R(\mathrm{jets}, \mu) < 0.4$, then the jets are removed.
+Jet is removed if $\Delta R(\mathrm{jets}, e) < 0.2$ from the remaining electrons unless it is a $b$-jet.
+If there are less than 3 tracks with $\pt > 500$~{\MeV} in a jet and the distance between jets and a muon candidate less than 0.4, i.e. $\Delta R(\mathrm{jets}, \mu) < 0.4$, then the jet is removed.
 This step can suppress muon bremsstrahlung.
 Finally, the electrons and muons are removed if the $e$ or $\mu$ lie in a distance $\Delta R(\mathrm{jets}, e/\mu) < 0.4$ of the surviving jets so that charm and bottom hadron decays are suppressed.
 
@@ -281,7 +280,7 @@ This section provides the explanations for various variables used to discriminat
     \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined as Eq.~(\ref{eq:event_dilepton_distance}).
     %This variable provides good discrimination between the Higgsino and slepton because the dileptons from Higgsinos have small angular separation.
     %However, the leptons originate from the slepton don't have strong restrictions on their angular separation.
-    The $\Delta R_{\ell\ell}$ variable, which is required to greater than 0.05, suppresses the leptons originating from photon conversions or muons.
+    The $\Delta R_{\ell\ell}$ variable, which is required to greater than 0.05, suppresses muons causing fake pairs of tracks or the lepton pairs originating from photon conversions.
     %
     \begin{equation}
         \Delta R_{\ell \ell} = \sqrt{(\eta_{\ell_{1}} - \eta_{\ell_{2}})^{2} + (\phi_{\ell_{1}} - \phi_{\ell_{2}})^{2}}
@@ -289,12 +288,12 @@ This section provides the explanations for various variables used to discriminat
     \end{equation}
     %
 
-    \item $\mathbf{m_{\ell\ell}}$: The dilepton invariant mass $m_{\ell\ell}$ is bounded by the mass splitting $m(\widetilde{\chi}^{0}_{2}) - m(\widetilde{\chi}^{0}_{1})$ providing the background suppression power.
-    The background originates from on-shell $Z$ decay can be suppressed if the upper bound of $m_{\ell\ell}$ is set to 60~{\GeV} and the contributions from $J/\psi$ are vetoed by required a $3 < m_{\ell\ell} < 3.2$~{\GeV} window.
+    \item $\mathbf{m_{\ell\ell}}$: The dilepton invariant mass $m_{\ell\ell}$ is bounded by the mass splitting $m(\widetilde{\chi}^{0}_{2}) - m(\widetilde{\chi}^{0}_{1})$ for signal events providing the background suppression power.
+    The background originating from on-shell $Z$ decay can be suppressed if the upper bound of $m_{\ell\ell}$ is set to 60~{\GeV} and the contributions from $J/\psi$ are vetoed by required a $3 < m_{\ell\ell} < 3.2$~{\GeV} window.
 
     \item $\mathbf{\met}$: In order to keep the \met trigger efficiency exceeding 95\%, \met is required to be greater than 200~{\GeV}.
 
-    \item $N_{\mathrm{jet}}$: The number of jets is required to greater than or equal to 1 because of the initial state radiation (ISR) jets.
+    \item $N_{\mathrm{jet}}$: The presence of at least one jet is required because of the initial state radiation (ISR) jets.
 
     \item $\mathbf{\pt^{j_{1}}}$: The momentum of the leading jet is required to greater than 100~{\GeV}.
 
@@ -302,7 +301,7 @@ This section provides the explanations for various variables used to discriminat
 
     \item \textbf{min($\mathbf{\Delta \phi(\textbf{any jet}, \pt^{\textbf{miss}})}$)}: By requiring $\Delta \phi(\textrm{any jet}, \pt^{\textbf{miss}}) > 0.4$, the effect of jet-energy mismeasurement on \met can be reduced.
 
-    \item $\mathbf{N}_{\mathbf{b}\textbf{-jet}}$: Requiring $N_{b\textrm{-jet}} = 0$, the \ttbar and single-top backgrounds can be reduced significantly.
+    \item $\mathbf{N}_{\mathbf{b}\textbf{-jet}}$: By vetoing the presence of $b$-jets ($N_{b\textrm{-jet}} = 0$), the \ttbar and single-top backgrounds can be reduced significantly.
 \end{itemize}
 
 \begin{figure}[htb]
@@ -327,7 +326,7 @@ This section provides the explanations for various variables used to discriminat
     where $p_{\ell_{1}}$ and $p_{\ell_{2}}$ are the momenta of the leptons and the $\xi_{1}$ and $\xi_{1}$ are the scale factor which can be determined by solving $\mathbf{p}_\mathrm{T}^\mathrm{miss} = \xi_{1} \mathbf{p}_\mathrm{T}^{\ell_{1}} + \xi_{2} \mathbf{p}_\mathrm{T}^{\ell_{2}}$.
     From the Eq.~(\ref{eq:event_mtautau2}), the $m^{2}_{\tau\tau}$ can be negative when either $1 + \xi_{1} < 0$ or $1 + \xi_{2} < 0$.
     This situation occurs when only one lepton moves in the same direction as $\mathbf{p}_{hadronic}$ and $|\mathbf{p}_{\ell}|$ is small. 
-    This rarely happens for highly boosted $Z \to \tau \tau$ decays but it happens with larger frequency for less boosted heavy particles which decays back-to-back.
+    This rarely happens for highly boosted $Z \to \tau \tau$ decays but it happens with larger frequency for less boosted heavy particles which decay back-to-back.
     The $m_{\tau\tau}$ is calculated in Eq.~(\ref{eq:event_mtautau}).
     %
     \begin{align}
@@ -374,7 +373,7 @@ This section provides the explanations for various variables used to discriminat
 \begin{figure}[htb]
     \begin{center}
         % \includegraphics[scale=0.4]{fig_03a.pdf}
-        \includegraphics[scale=0.4]{METOverHT_vs_mll.png}
+        \includegraphics[scale=0.25]{METOverHT_vs_mll.png}
         \caption{The distribution of $\met/H_{\textrm{T}}^{\textrm{lep}}$ as function of $m_{\ell\ell}$ for the electroweakino after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
         The red line indicates the SR selection.
         Events in the region below this line are rejected.
@@ -389,15 +388,16 @@ This section provides the explanations for various variables used to discriminat
 
 \subsection{Signal region}
 \label{subsec:event_signal_region}
-The events with 2 lepton final state are selected if the lepton pair satisfies same flavor and opposite charge (SFOS).
-To optimize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$ is calculated.
-In order to maximizing the $Z_{n}$, an integrated luminosity of 36~\ifb and a systematic uncertainty of 20\% on the background are assumed and at least one background event remaining is required after optimized cuts . 
+Events with 2 lepton final state are selected if the lepton pair satisfies same flavor and opposite charge (SFOS).
+To optimize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$~\cite{RooStats::NumberCountingUtils::BinomialExpZ} is calculated.
+In order to maximizing the $Z_{n}$, an integrated luminosity of 36~\ifb and a systematic uncertainty of 20\% on the background are assumed and at least one background event remaining is required after optimized cuts.
 A set of binned dilepton invariant mass $m_{\ell \ell}$ are defined in SR and the kinematic distribution of $m_{\ell \ell}$ is used in a fit to extract the number of signal events.
 The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region}.
 
-\begin{table}[htb]
-    \begin{center}
-        {\scriptsize
+\begin{table}[htbp]
+    % \begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        {\tiny
             \begin{tabular}{ll}
                 \hline
                 \hline
@@ -427,7 +427,8 @@ The event selection criteria for the SR are summarized in Table~\ref{tab:event_s
                 \hline
             \end{tabular}
         }
-    \end{center}
+    }
+    % \end{center}
     \caption{Summary of event selection criteria.
     The upper part lists the common selection criteria and the lower part lists the SR requirement for this analysis searching electroweakinos.
     Signal leptons and signal jets are used when applying all requirements.
@@ -436,8 +437,9 @@ The event selection criteria for the SR are summarized in Table~\ref{tab:event_s
 \end{table}%
 
 \begin{table}[htb]
-    \begin{center}
-        {\scriptsize
+    % \begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
+        % {\scriptsize
             \begin{tabular}{lllllllll}
                 \hline
                 \hline
@@ -448,8 +450,9 @@ The event selection criteria for the SR are summarized in Table~\ref{tab:event_s
                 \hline
                 \hline
             \end{tabular}
-        }
-    \end{center}
+        % }
+    }
+    % \end{center}
     \caption{The SR binnings for the electroweakino SRs.
     The SR is defined by a $m_{\ell \ell}$ range in {\GeV}.
     The exclusive bins are used to set the exclusion limits on the model and the inclusive bins are used to set the model-independent limits.}
@@ -460,7 +463,8 @@ The $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_bin
 There are 14 exclusive regions and 7 inclusive regions are defined.
 The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
 When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
-The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
+%The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
+The tightest inclusive region allowing the mass splitting up to 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
 
 %%%
 %%%
@@ -479,12 +483,13 @@ The $\widetilde{\chi}^{0}_{2}$ decays to $\ell^{+} \ell^{-} \widetilde{\chi}^{0}
 \subsubsection{Truth level study}
 \label{subsubsec:event_truth_level_study}
 The truth level information in the signal MC samples are used to calculate the acceptance of the SR selection criteria.
-And the expected yields after SR selection in the truth level can be obtained by taking the product of luminosity (36.1~\ifb), acceptance, filter efficiency, cross-section, and the branching ratio.
+The expected yields after SR selection in the truth level can be obtained by taking the product of luminosity (36.1~\ifb), acceptance, filter efficiency, cross-section, and the branching ratio.
 Table~\ref{tab:event_nuhm2_truth3} shows the acceptance, the cross-section, the branchings for different production channels, the 2LMET50 filter efficiency, and the expected yields in SR using the truth level information.
 
 % Truth3 results for NUHM2
 \begin{table}[p]
-    \begin{center}
+    % \begin{center}
+    \resizebox{\textwidth}{!}{% <------ Don't forget this %
         {\tiny
             \begin{tabular}{cccccc}
                 \hline
@@ -530,7 +535,8 @@ Table~\ref{tab:event_nuhm2_truth3} shows the acceptance, the cross-section, the 
                 \hline
             \end{tabular}
         }
-    \end{center}
+    }
+    % \end{center}
     \caption{The acceptance, the cross-section, the branchings for different production channels, the 2LMET50 filter efficiency, and the expected yields in SR common to $2\ell$ channel for four different production channels of NUHM2 signal MC samples.
     The expected yields in the SR are obtained by taking the product of luminosity (36.1~\ifb), acceptance, filter efficiency, cross-section, and the branching ratio.}
     \label{tab:event_nuhm2_truth3}
@@ -542,7 +548,7 @@ Table~\ref{tab:event_nuhm2_truth3} shows the acceptance, the cross-section, the 
 
 \subsubsection{Kinematic distributions}
 \label{subsubsec:event_kinematic_distributions}
-Figure~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1}, Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, and Fig.~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_3} show the kinematic variable distributions for the NUHM2 model with $m_{1/2} = 500$~{\GeV} in $1 < \mathrm{SR}\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
+Figure~\ref{fig:event_nuhm2_kinematic_in_SR_SFOS_1}, \ref{fig:event_nuhm2_kinematic_in_SR_SFOS_2}, and \ref{fig:event_nuhm2_kinematic_in_SR_SFOS_3} show the kinematic variable distributions for the NUHM2 model with $m_{1/2} = 500$~{\GeV} in $1 < \mathrm{SR}\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
 The distributions for the other $m_{1/2}$ mass points can be found in the App.~\ref{app:distributions}.
 In order to compare the signal with background distributions, the NUHM2 distributions are multiplied by 10 but the number of events listed in the legend use its actual values.
 When making these so called `$N-1$' plots, all the selections listed in Table~\ref{tab:event_signal_region} are applied, except the variable plotted.
@@ -584,7 +590,8 @@ The bigger arrows in the upper pad present the selection criteria of the plottin
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
     The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
     %The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, $\pt^{\ell_{2}}$, \met, and $\met/H_\mathrm{T}^\mathrm{leptons}$ are shown.}
-    The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, and $\pt^{\ell_{2}}$ are shown.}
+    The distributions of $N_\mathrm{jets}^{30}$, $N_\mathrm{b-jets}^{20}$, $\pt^{\ell_{1}}$, and $\pt^{\ell_{2}}$ are shown.
+    The uncertainties combine the SM statistical uncertainty and assuming 20\% of the systematic uncertainty in quadrature.}
     \label{fig:event_nuhm2_kinematic_in_SR_SFOS_1}
 \end{figure}
 
@@ -613,7 +620,8 @@ The bigger arrows in the upper pad present the selection criteria of the plottin
     \end{center}
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
     The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
-    The distributions of \met, $\met/H_\mathrm{T}^\mathrm{leptons}$, $m_{\ell \ell}$, and $m_{\tau \tau}$ are shown.}
+    The distributions of \met, $\met/H_\mathrm{T}^\mathrm{leptons}$, $m_{\ell \ell}$, and $m_{\tau \tau}$ are shown.
+    The uncertainties combine the SM statistical uncertainty and assuming 20\% of the systematic uncertainty in quadrature.}
     \label{fig:event_nuhm2_kinematic_in_SR_SFOS_2}
 \end{figure}
 
@@ -653,7 +661,8 @@ The bigger arrows in the upper pad present the selection criteria of the plottin
     \caption{The `$N-1$' distributions for NUHM2 model with $m_{1/2} = 500$~{\GeV} in SR region $1 < $SR$\ell \ell$-$m_{\ell \ell} < 60$~{\GeV}.
     The NUHM2 distributions are multiplied by 10 but the number of events in the legend use its actual values.
     %The distributions of $m_{\ell \ell}$, $m_{\tau \tau}$, $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.}
-    The distributions of $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.}
+    The distributions of $m_{T}(\ell_{1})$, $\Delta R_{\ell \ell}$, $|\Delta \phi(\mathbf{p}_\mathrm{T}^{j_{1}}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$, and min[$|\Delta \phi(\mathbf{p}_\mathrm{T}^\mathrm{All\ jets}, \mathbf{p}_\mathrm{T}^\mathrm{miss})|$] are shown.
+    The uncertainties combine the SM statistical uncertainty and assuming 20\% of the systematic uncertainty in quadrature.}
     \label{fig:event_nuhm2_kinematic_in_SR_SFOS_3}
 \end{figure}
 
@@ -665,7 +674,7 @@ The bigger arrows in the upper pad present the selection criteria of the plottin
 \label{subsubsec:event_cutflows}
 The cutflows is a sequential cumulative yields after the event selections.
 Table~\ref{tab:event_cutflow_NUHM2_1} and Table~\ref{tab:event_cutflow_NUHM2_2} shows the signal selection cutflows yield table for the NUHM2 signal with $m_{1/2}$ ranging from 350 to 800~{\GeV}.
-The weighted number of events are normalized to 36.1~\ifb and the raw number of events are also shown.
+The weighted number of events are normalized to 36.1~\ifb and the raw number of events is also shown.
 
 \begin{table}[ht]
     %\begin{center}

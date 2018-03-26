@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/26/2018
+* Correct appendix d as Dick suggested
+* Correct ch6 as Ximo suggested.
+
 ### 03/24/2018
 * Finish ss3l
 * Correct appendix c as Dick suggested
