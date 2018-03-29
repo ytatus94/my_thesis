@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/29/2018
+* Add new plots
+* Change the size of plots
+
 ### 03/28/2018
 * This version is the second version send to committee members
   * `YuTingShen_dissertation_20180327.pdf`
