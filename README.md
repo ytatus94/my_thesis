@@ -1,6 +1,12 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/28/2018
+* This version is the second version send to committee members
+  * `YuTingShen_dissertation_20180327.pdf`
+* Remove ATLAS internal from the plots
+* Add citations for plots copied from papers.
+
 ### 03/26/2018
 * Correct appendix d as Dick suggested
 * Correct ch6 as Ximo suggested.
