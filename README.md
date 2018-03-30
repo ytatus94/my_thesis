@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 03/30/2018
+* Graduate college ask me to move biblography to the front of appendix
+
 ### 03/29/2018
 * Add new plots
 * Change the size of plots
