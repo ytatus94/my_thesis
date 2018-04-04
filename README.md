@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 04/03/2018
+* Add slides tex file and figures
+
 ### 03/30/2018
 * Graduate college ask me to move biblography to the front of appendix
 
