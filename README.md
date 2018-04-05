@@ -1,6 +1,10 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 04/04/2018
+* Add keynote slides
+* Stop working on tex slides
+
 ### 04/03/2018
 * Add slides tex file and figures
 
