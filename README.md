@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 04/05/2018
+* Add LHC and ATLAS in keynote
+
 ### 04/04/2018
 * Add keynote slides
 * Stop working on tex slides
