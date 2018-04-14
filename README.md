@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 04/14/2018
+* Work on keynote slides
+
 ### 04/10/2018
 * Work on keynote slides
 
