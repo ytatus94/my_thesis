@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 04/21/2018
+* Modify thesis based on Strauss's suggestion
+
 ### 04/14/2018
 * Work on keynote slides
 

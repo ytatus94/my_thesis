@@ -1,4 +1,4 @@
-Candidate events are required to have at least a reconstructed $pp$ interaction vertex with at least two $\pt > 400$~{\MeV} associated tracks.
+Candidate events are required to have a reconstructed $pp$ interaction vertex with at least two $\pt > 400$~{\MeV} associated tracks.
 The vertex with the largest $\sum \pt^{2}$ of the associated tracks is selected as the primary vertex of the event. 
 In this chapter, the various object reconstruction and  identification criteria in the ATLAS experiment are presented.
 The electron, muon, and tau objects are presented in Sect.~\ref{subsec:event_electrons},~\ref{subsec:event_muons}, and~\ref{subsec:event_Taus}, respectively, followed by the photons in Sect.~\ref{subsec:event_photons}, jets in Sect.~\ref{subsec:event_jets}, and \met in Sect.~\ref{subsec:event_met}.
@@ -82,7 +82,7 @@ More details about the electron reconstruction performance can be found in Ref.~
 \label{subsubsec:event_electrons_specific}
 The preselected electrons used in this analysis have to satisfy $\pt > 4.5$~{\GeV} and $|\eta| < 2.47$ and pass the likelihood-based \texttt{VeryLooseLLH} identification.
 The electron tracks are required to satisfy the longitudinal impact parameter $|z_{0}\sin\theta| < 0.5$~mm.
-The electrons coming from the photon conversion are rejected by veto the \texttt{author==16}.
+The electrons coming from the photon conversion are rejected by veto the \texttt{author==16}. 
 The signal electrons have a tighter selection criteria.
 Besides all the requirements for the preselected electrons, the signal electrons are also required to pass \texttt{TightLLH} identification, \texttt{GradientLoose} isolation, and the transverse impact parameter $|d_{0}/\sigma(d_{0})| < 5$ requirements.
 
@@ -132,7 +132,7 @@ A tighter requirement is applied on the signal muons which in addition pass the 
 
 \subsubsection{General $\tau$ reconstruction and identification}
 \label{subsubsec:event_taus_general}
-The mass of $\tau$ lepton is 1.77~{\GeV} and the decay length is 80~$\mu$m which is too short to make $\tau$ reach the active region of the ATLAS detector.
+The mass of $\tau$ lepton is 1.77~{\GeV} and the decay length is 80~$\mu$m which is too short for the $\tau$ to reach the active region of the ATLAS detector.
 The $\tau$ can decay either leptonically ($\tau \to \ell \nu_{\ell}$, $\ell = e, \mu$) or hadronically ($\tau \to$ hadrons + $\nu_{\tau}$).
 The hadronic tau decays are about 65\% of all possible decay modes and the decay products contain one charged pion (22\%) or three charged pions (72\%) of all cases.
 Tau candidates are seeded by jets using the method described in Ref.~\cite{ATLAS:2017mpa} and they are required to have $\pt > 10$~{\GeV} and $|\eta| < 2.5$ but vetoing the candidates in the crack region $1.37 < |\eta| < 1.52$.
@@ -252,9 +252,9 @@ The distance $\Delta R$ between two objects is used for overlap removal and $\De
 %
 where $y$ and $\phi$ are rapidity and azimuthal angle, respectively.
 The overlap removal procedure has to follow the steps listed below.
-In order to avoid the bremsstrahlung from muons followed by a photon conversion into electron pairs, electron candidate is removed if it shares the same ID track with a muon object.
-Jet is removed if $\Delta R(\mathrm{jets}, e) < 0.2$ from the remaining electrons unless it is a $b$-jet.
-If there are less than 3 tracks with $\pt > 500$~{\MeV} in a jet and the distance between jets and a muon candidate less than 0.4, i.e. $\Delta R(\mathrm{jets}, \mu) < 0.4$, then the jet is removed.
+In order to avoid the bremsstrahlung from muons followed by a photon conversion into electron pairs, the electron candidate is removed if it shares the same ID track with a muon object.
+The jet is removed if $\Delta R(\mathrm{jets}, e) < 0.2$ from the remaining electrons unless it is a $b$-jet.
+If there are less than 3 tracks with $\pt > 500$~{\MeV} in a jet and the distance between jets and a muon candidate is less than 0.4, i.e. $\Delta R(\mathrm{jets}, \mu) < 0.4$, then the jet is removed.
 This step can suppress muon bremsstrahlung.
 Finally, the electrons and muons are removed if the $e$ or $\mu$ lie in a distance $\Delta R(\mathrm{jets}, e/\mu) < 0.4$ of the surviving jets so that charm and bottom hadron decays are suppressed.
 
@@ -277,9 +277,9 @@ This section provides the explanations for various variables used to discriminat
     \item \textbf{Same flavor opposite sign (SFOS) lepton pair}: This analysis requires exactly two preselected and two signal leptons in the final state.
     These two leptons have to carry the same flavor and with opposite electric charge such as $e^{\pm}e^{\mp}$ and $\mu^{\pm}\mu^{\mp}$.
 
-    \item $\mathbf{\pt^{\ell_{1}}}$ and $\mathbf{\pt^{\ell_{2}}}$: The momentum of leading lepton $\pt^{\ell_{1}} > 5$~{\GeV} is required to suppressed fake/non-prompt leptons background and the threshold of the momentum of subleading lepton $\pt^{\ell_{2}} > 4.5$(4)~{\GeV} for electron (muon) is used to retain signal acceptance.
+    \item $\mathbf{\pt^{\ell_{1}}}$ and $\mathbf{\pt^{\ell_{2}}}$: The momentum of the leading lepton $\pt^{\ell_{1}} > 5$~{\GeV} is required to suppressed fake/non-prompt leptons background and the threshold of the momentum of the subleading lepton $\pt^{\ell_{2}} > 4.5$(4)~{\GeV} for electron (muon) is used to retain signal acceptance.
 
-    \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined as Eq.~(\ref{eq:event_dilepton_distance}).
+    \item $\mathbf{\Delta R_{\ell\ell}}$: The dilepton distance is defined by Eq.~(\ref{eq:event_dilepton_distance}).
     %This variable provides good discrimination between the Higgsino and slepton because the dileptons from Higgsinos have small angular separation.
     %However, the leptons originate from the slepton don't have strong restrictions on their angular separation.
     The $\Delta R_{\ell\ell}$ variable, which is required to greater than 0.05, suppresses muons causing fake pairs of tracks or the lepton pairs originating from photon conversions.
@@ -291,15 +291,15 @@ This section provides the explanations for various variables used to discriminat
     %
 
     \item $\mathbf{m_{\ell\ell}}$: The dilepton invariant mass $m_{\ell\ell}$ is bounded by the mass splitting $m(\widetilde{\chi}^{0}_{2}) - m(\widetilde{\chi}^{0}_{1})$ for signal events providing the background suppression power.
-    The background originating from on-shell $Z$ decay can be suppressed if the upper bound of $m_{\ell\ell}$ is set to 60~{\GeV} and the contributions from $J/\psi$ are vetoed by required a $3 < m_{\ell\ell} < 3.2$~{\GeV} window.
+    Background originating from on-shell $Z$ decay can be suppressed if the upper bound of $m_{\ell\ell}$ is set to 60~{\GeV} and the contributions from $J/\psi$ are vetoed by required a $3 < m_{\ell\ell} < 3.2$~{\GeV} window.
 
     \item $\mathbf{\met}$: In order to keep the \met trigger efficiency exceeding 95\%, \met is required to be greater than 200~{\GeV}.
 
     \item $N_{\mathrm{jet}}$: The presence of at least one jet is required because of the initial state radiation (ISR) jets.
 
-    \item $\mathbf{\pt^{j_{1}}}$: The momentum of the leading jet is required to greater than 100~{\GeV}.
+    \item $\mathbf{\pt^{j_{1}}}$: The momentum of the leading jet is required to be greater than 100~{\GeV}.
 
-    \item $\mathbf{\Delta \phi(j_{1}, \pt^{\textbf{miss}})}$: The azimuthal separation between $j_{1}$ and $\mathbf{\pt^{\textrm{miss}}}$ is required to greater than 2 to suppress the QCD and $Z$+jets background.
+    \item $\mathbf{\Delta \phi(j_{1}, \pt^{\textbf{miss}})}$: The azimuthal separation between $j_{1}$ and $\mathbf{\pt^{\textrm{miss}}}$ is required to be greater than 2 to suppress the QCD and $Z$+jets background.
 
     \item \textbf{min($\mathbf{\Delta \phi(\textbf{any jet}, \pt^{\textbf{miss}})}$)}: By requiring $\Delta \phi(\textrm{any jet}, \pt^{\textbf{miss}}) > 0.4$, the effect of jet-energy mismeasurement on \met can be reduced.
 
@@ -326,10 +326,10 @@ This section provides the explanations for various variables used to discriminat
     \end{equation}
     %
     where $p_{\ell_{1}}$ and $p_{\ell_{2}}$ are the momenta of the leptons and the $\xi_{1}$ and $\xi_{1}$ are the scale factor which can be determined by solving $\mathbf{p}_\mathrm{T}^\mathrm{miss} = \xi_{1} \mathbf{p}_\mathrm{T}^{\ell_{1}} + \xi_{2} \mathbf{p}_\mathrm{T}^{\ell_{2}}$.
-    From the Eq.~(\ref{eq:event_mtautau2}), the $m^{2}_{\tau\tau}$ can be negative when either $1 + \xi_{1} < 0$ or $1 + \xi_{2} < 0$.
+    From Eq.~(\ref{eq:event_mtautau2}), the $m^{2}_{\tau\tau}$ can be negative when either $1 + \xi_{1} < 0$ or $1 + \xi_{2} < 0$.
     This situation occurs when only one lepton moves in the same direction as $\mathbf{p}_{hadronic}$ and $|\mathbf{p}_{\ell}|$ is small. 
     This rarely happens for highly boosted $Z \to \tau \tau$ decays but it happens with larger frequency for less boosted heavy particles which decay back-to-back.
-    The $m_{\tau\tau}$ is calculated in Eq.~(\ref{eq:event_mtautau}).
+    The $m_{\tau\tau}$ is calculated using Eq.~(\ref{eq:event_mtautau}).
     %
     \begin{align}
         m_{\tau\tau} & = \mathrm{sign}(m^{2}_{\tau\tau}) \sqrt{|m^{2}_{\tau\tau}|}\\
@@ -341,7 +341,7 @@ This section provides the explanations for various variables used to discriminat
         \label{eq:event_mtautau}
     \end{align}
     %
-    Despite there is a discontinuity at $m_{\tau\tau} = 0$, this variable can be used to discriminate the leptons originating from $Z\to \tau\tau$.
+    Despite a discontinuity at $m_{\tau\tau} = 0$, this variable can be used to discriminate the leptons originating from $Z\to \tau\tau$.
 
     \item $\mathbf{m_{T}^{\ell_{1}}}$: The transverse mass of \met and the leading lepton is defined in Eq.~(\ref{eq:event_transverse_mass}).
     The \ttbar, $WW/WZ$, and $W$+jets background can be reduced by requiring $m_{\textrm{T}}^{\ell_{1}} < 70$~{\GeV}.
@@ -372,7 +372,7 @@ This section provides the explanations for various variables used to discriminat
     Figure~\ref{fig:event_METOverHT} shows the $\met/H_{\textrm{T}}^{\textrm{lep}}$ requirement for the electroweakino SR after applying all the SR common requirements and the $\Delta R_{\ell\ell} < 2$.
 \end{itemize}
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \begin{center}
         % \includegraphics[scale=0.4]{fig_03a.pdf}
         \includegraphics[scale=0.5]{METOverHT_vs_mll.png}
@@ -390,10 +390,10 @@ This section provides the explanations for various variables used to discriminat
 
 \subsection{Signal region}
 \label{subsec:event_signal_region}
-Events with 2 lepton final state are selected if the lepton pair satisfies same flavor and opposite charge (SFOS).
+Events with 2 lepton final state are selected if the lepton pair satisfies the same flavor and opposite charge (SFOS) requirement.
 To optimize the signal selection criteria, a number of scans over the cut values of discriminating variables listed in Sect.~\ref{subsec:event_discriminating_variables} are performed and the significance $Z_{n}$~\cite{RooStats::NumberCountingUtils::BinomialExpZ} is calculated.
 In order to maximizing the $Z_{n}$, an integrated luminosity of 36~\ifb and a systematic uncertainty of 20\% on the background are assumed and at least one background event remaining is required after optimized cuts.
-A set of binned dilepton invariant mass $m_{\ell \ell}$ are defined in SR and the kinematic distribution of $m_{\ell \ell}$ is used in a fit to extract the number of signal events.
+A set of binned dilepton invariant mass $m_{\ell \ell}$ are defined in the SR and the kinematic distribution of $m_{\ell \ell}$ is used in a fit to extract the number of signal events.
 The event selection criteria for the SR are summarized in Table~\ref{tab:event_signal_region}.
 
 \begin{table}[htbp]
@@ -464,7 +464,7 @@ The event selection criteria for the SR are summarized in Table~\ref{tab:event_s
 The $m_{\ell\ell}$ binnings are listed in Table~\ref{tab:event_signal_region_binning}.
 There are 14 exclusive regions and 7 inclusive regions are defined.
 The exclusive regions are used to set model-dependent limits while the inclusive regions are used to set the model-independent upper limits.
-When derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
+To derive the exclusion limits on the signal model, the SR$ee$-$m_{\ell\ell}$ and SR$\mu\mu$-$m_{\ell\ell}$ regions are combined and fit simultaneously.
 %The tightest inclusive region allows the mass splitting 1 $\sim$ 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
 The tightest inclusive region allowing the mass splitting up to 3~{\GeV} is the most compressed scenario while the looser regions allow large mass splittings up to 60~{\GeV}.
 
