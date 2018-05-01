@@ -17,7 +17,7 @@ The data samples are required to satisfy the following good runs list (GRLs) as 
 \end{itemize}
 %
 Events are selected using different inclusive \met triggers depending on the run period as listed in Table.~\ref{tab:data_triggers}.
-Two new triggers, \texttt{HLT\_mu4\_j125\_xe90\_mht} and \texttt{HLT\_2mu4\_j85\_xe50\_mht}\footnote{\texttt{HLT\_mu4\_j125\_xe90\_mht} means high level trigger with $\pt(\mu) > 4$, $\pt(\mathrm{jets}) > 125$, and $\met > 90$~{\GeV} and \texttt{HLT\_2mu4\_j85\_xe50\_mht} means high level trigger two muons with $\pt > 4$, $\pt(\mathrm{jets}) > 85$, and $\met > 50$~{\GeV}.}, are developed for compressed scenarios starting from run number 308084.
+Two new triggers, \texttt{HLT\_mu4\_j125\_xe90\_mht} and \texttt{HLT\_2mu4\_j85\_xe50\_mht}\footnote{\texttt{HLT\_mu4\_j125\_xe90\_mht} means high level trigger with $\pt(\mu) > 4$, $\pt(\mathrm{jets}) > 125$, and $\met > 90$~{\GeV} and \texttt{HLT\_2mu4\_j85\_xe50\_mht} means high level trigger requiring two muons with $\pt > 4$, $\pt(\mathrm{jets}) > 85$, and $\met > 50$~{\GeV}.}, are developed for compressed scenarios starting from run number 308084.
 However, these new triggers only contribute a small gain compared to the inclusive \met triggers.
 This analysis uses inclusive \met triggers only.
 
@@ -65,12 +65,12 @@ Table~\ref{tab:data_mc_samples} summarizes the event generator configurations of
 {\SHERPA} 2.1.1, 2.2.1, and 2.2.2 ~\cite{Gleisberg:2008ta} were used to produce the $Z^{(*)}/\gamma^{*}$ + jets, diboson, and triboson events.
 The matrix elements (ME) were calculated for up to two partons at next-to-leading order (NLO) and up to four partons at leading order (LO) depending on the process.
 The $Z^{(*)}/\gamma^{*}$ + jets and diboson samples cover the dilepton invariant masses from 0.5~{\GeV} for $Z^{(*)}/\gamma^{*} \to e^{+}e^{-}/\mu^{+}\mu^{-}$ and from 3.8~{\GeV} for $Z^{(*)}/\gamma^{*} \to \tau^{+}\tau^{-}$.
-{\POWHEG}-Box v1 and v2 interfaced to {\PYTHIA} 6.428 were used to simulated \ttbar and single-top production at NLO in the ME.
+{\POWHEG}-Box v1 and v2 interfaced to {\PYTHIA} 6.428 were used to simulate \ttbar and single-top production at NLO in the ME.
 The Higgs boson production was generated using {\POWHEG}-Box v2 interfaced to {\PYTHIA} 8.186.
 A Higgs boson in association with a $W$ or $Z$ boson production was simulated using MG5\_{\scriptsize A}MC@NLO 2.2.2 with {\PYTHIA} 8.186 and the ATLAS A14 tune.
-The processes containing \ttbar and at least one electroweak bosons were produced using MG5\_{\scriptsize A}MC@NLO 2.2.1, 2.2.2, 2.3.2, 2.3.3 with {\PYTHIA} 6.4.28 or 8.186.
+The processes containing \ttbar and at least one electroweak boson were produced using MG5\_{\scriptsize A}MC@NLO 2.2.1, 2.2.2, 2.3.2, 2.3.3 with {\PYTHIA} 6.4.28 or 8.186.
 These processes were generated at NLO in the ME except for $t + Z$ and $t +$ \ttbar which were produced at LO.
-Except those produced by {\SHERPA} event generator, the \textsc{EvtGEN}\xspace v1.2.0~\cite{Lange:2001uf} was used to model the decay of bottom and charm hadrons in all MC samples.
+Except those produced by the {\SHERPA} event generator, the \textsc{EvtGEN}\xspace v1.2.0~\cite{Lange:2001uf} was used to model the decay of bottom and charm hadrons in all MC samples.
 
 \begin{table}[ht]
     %\begin{center}
@@ -116,7 +116,7 @@ Except those produced by {\SHERPA} event generator, the \textsc{EvtGEN}\xspace v
 \label{subsec:data_susy_signal_samples}
 The NUHM2 model allows the masses of the Higgs doublets $m_{H_{u}}$ and $m_{H_{d}}$ to differ from the universal scalar mass $m_{0}$ at the GUT scale for the signal sample generation.
 The parameters of the NUHM2 model are fixed to $m_{0} = 5$~{\TeV}, $m_{A} = 1$~{\TeV}, $A_{0} = -1.6 m_{0}$, $\tan\beta = 15$, $\mu = 150$~{\GeV}, and the $m_{1/2}$ is varied from 350 to 800~{\GeV} as suggested in Ref.~\cite{Baer:2013xua}.
-These parameter settings lead to RNS with low EWFT which keeps the Higgs boson mass about 125~{\GeV}, the masses of $\tilde{g}$ and $\tilde{q}$ about {\TeV} scale, and the light Higgsino mass about $\mu$.
+These parameter settings lead to RNS with low EWFT which keeps the Higgs boson mass about 125~{\GeV}, the masses of $\tilde{g}$ and $\tilde{q}$ about the {\TeV} scale, and the light Higgsino mass about $\mu$.
 The mass spectra and decay branching ratios were calculated using \textsc{Isajet}\xspace v7.84~\cite{Baer:1999sp} and the cross-sections and the theoretical uncertainties were calculated to NLO using \textsc{Prospino}\xspace v2.1~\cite{Beenakker:1999xh}.
 
 %%%
@@ -129,7 +129,7 @@ Figure~\ref{fig:data_mass_spectra} shows the mass spectra of the charginos $\wid
 The masses of lower mass electroweakinos $\widetilde{\chi}^{0}_{1,2}$ and $\widetilde{\chi}^{\pm}_{1}$ are roughly flat when $m_{1/2} > 500$~{\GeV}.
 However, the masses of higher mass electroweakinos $\widetilde{\chi}^{0}_{3,4}$ and $\widetilde{\chi}^{\pm}_{2}$ increased with $m_{1/2}$.
 The mass splittings between the lower mass electroweakinos decrease with $m_{1/2}$ and the mass splittings between $\widetilde{\chi}^{0}_{3}$ and the lower mass chargino $\widetilde{\chi}^{\pm}_{1}$ or neutralinos $\widetilde{\chi}^{0}_{1,2}$ increase with $m_{1/2}$.
-In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly in the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$ but it varied such that the mass ratio varies from 1.61 to 1.21 as shown in Table~\ref{tab:data_mass_splitting_ratio}.
+In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ is not exactly in the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$ but it varied such that the mass ratio varies from 1.61 to 1.21 as shown in Table~\ref{tab:data_mass_splitting_ratio}.
 
 \begin{figure}[htbp]
     \begin{center}
@@ -171,7 +171,7 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
         }
     \end{center}
     \caption{The masses of $\widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2}$, and $\widetilde{\chi}^{\pm}_{1}$ and the ratios of the mass difference between ($m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{\pm}_{1}}$) and ($m_{\widetilde{\chi}^{\pm}_{1}} - m_{\widetilde{\chi}^{0}_{1}}$).
-    The $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$.}
+    The $m_{\widetilde{\chi}^{\pm}_{1}}$ is not in the middle between $m_{\widetilde{\chi}^{0}_{1}}$ and $m_{\widetilde{\chi}^{0}_{2}}$.}
     \label{tab:data_mass_splitting_ratio}
 \end{table}%
 
@@ -183,11 +183,11 @@ In the NUHM2 model, the $m_{\widetilde{\chi}^{\pm}_{1}}$ doesn't set to exactly 
 \label{subsubsed:data_NUHM2_cross_sections}
 The electroweakinos are divided into two categories, compressed and accessible, in the NUHM2 model.
 The compressed category contains the lower mass charginos $\widetilde{\chi}^{\pm}_{1}$ and neutralinos $\widetilde{\chi}^{0}_{1,2}$ and the accessible category contains the higher mass charginos $\widetilde{\chi}^{\pm}_{2}$ and neutralinos $\widetilde{\chi}^{0}_{3,4}$.
-Figures~\ref{fig:data_NUHM2_cross_sections_individual_and_total} shows the cross-sections for different combinations of electroweakino production and the detail values can be found in App.~\ref{app:cross_sections}.
-The largest cross-section is the compressed + compressed production\footnote{Compressed + compressed means two particles belong to compressed category.} and is almost independent of $m_{1/2}$.
-The cross-section of compressed + accessible\footnote{Compressed + accessible means one particle belongs to compressed category and another particle belongs to accessible.} and accessible + accessible\footnote{Accessible + accessible means two particles belong to accessible category.} productions are much smaller than the compressed + compressed production and they decrease quickly when $m_{1/2}$ increases.
+Figure~\ref{fig:data_NUHM2_cross_sections_individual_and_total} shows the cross-sections for different combinations of electroweakino production and the detailed values can be found in App.~\ref{app:cross_sections}.
+The largest cross-section is the compressed + compressed production\footnote{Compressed + compressed means two particles belong to the compressed category.} and is almost independent of $m_{1/2}$.
+The cross-section of compressed + accessible\footnote{Compressed + accessible means one particle belongs to the compressed category and another particle belongs to the accessible.} and accessible + accessible\footnote{Accessible + accessible means two particles belong to the accessible category.} productions are much smaller than the compressed + compressed production and they decrease quickly when $m_{1/2}$ increases.
 Therefore, only the different combinations of compressed production are considered in this analysis.
-The compressed + compressed production has cross-section about pb scale at 13~{\TeV}, hence the Higgsino analysis is expected to have good sensitivity for NUHM2 model.
+The compressed + compressed production has cross-sections about the pb scale at 13~{\TeV}, hence the Higgsino analysis is expected to have good sensitivity for the NUHM2 model.
 
 \begin{figure}[htbp]
     \begin{center}
@@ -219,8 +219,8 @@ The compressed + compressed production has cross-section about pb scale at 13~{\
 The compressed category contains $\widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{0}_{2}$.
 Therefore, the compressed + compressed productions can be specified by $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{2}$, $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{2}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$.
 Because the highest sensitivity of this analysis is expected using two leptons, only the productions which can lead to events with two leptons are considered.
-The $R$-parity conservation requires $\widetilde{\chi}^{0}_{1}$, which is LSP, to be stable.
-Therefore, the $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{1}$ production cannot lead to events with two leptons requirement.
+The $R$-parity conservation requires $\widetilde{\chi}^{0}_{1}$, which is the LSP, to be stable.
+Therefore, the $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{0}_{1}$ production cannot lead to events with the two leptons requirement.
 The cross-section of $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{2}$ production is very small so it can be neglected.
 The $\widetilde{\chi}^{\pm}_{1}$ decays into a $W^{\pm}$ and a $\widetilde{\chi}^{0}_{1}$, therefore, the $\widetilde{\chi}^{0}_{1} \widetilde{\chi}^{\pm}_{1}$ production does not lead to two leptons in the final state.
 Only the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ productions are considered in this analysis.
@@ -390,8 +390,8 @@ In this plot, only the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ pro
     \begin{center}
         \includegraphics[scale=0.7]{mll_20171101.pdf}
         \caption{The $m_{\ell \ell}$ distributions for NUHM2 and simplified Higgsino models.
-        The four possible $\widetilde{\chi}^{0}_{2}$ decay contributions for NUHM2 model are stacked and the $\widetilde{\chi}^{0}_{2} \to \ell \ell \widetilde{\chi}^{0}_{1}$ is the dominant decay (shown in grey area).
-        The difference between two models come from the mass splitting $\Delta m = m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{0}_{1}}$ where $\Delta m = 22$~{\GeV} for NUHM2 and $\Delta m = 20$~{\GeV} for simplified Higgsino model.}
+        The four possible $\widetilde{\chi}^{0}_{2}$ decay contributions for the NUHM2 model are stacked and $\widetilde{\chi}^{0}_{2} \to \ell \ell \widetilde{\chi}^{0}_{1}$ is the dominant decay (shown in grey area).
+        The difference between the two models come from the mass splitting $\Delta m = m_{\widetilde{\chi}^{0}_{2}} - m_{\widetilde{\chi}^{0}_{1}}$ where $\Delta m = 22$~{\GeV} for NUHM2 and $\Delta m = 20$~{\GeV} for simplified Higgsino model.}
         \label{fig:data_mll_distribution}
     \end{center}
 \end{figure}
@@ -404,14 +404,14 @@ In this plot, only the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$ pro
 \label{subsubsec:data_NUHM2_generation}
 The \textsc{ISAJET} 7.84 SUSY mass spectrum generator is used to calculate the NUHM2 mass spectrum.
 The NUHM2 signal events were generated using MG5\_{\scriptsize A}MC@NLO v2.2.3 with NNPDF23LO PDF set up to two extra partons in the ME.
-The {\MADSPIN}~\cite{Artoisenet:2012st} were used to decay the electroweakinos which were required to produce at least two leptons in the final state.
+The {\MADSPIN}~\cite{Artoisenet:2012st} was used to decay the electroweakinos which were required to produce at least two leptons in the final state.
 Then the results were interfaced with {\PYTHIA} v8.186 using the A14 tune to model the parton shower and hadronization.
 The \textsc{Prospino} v2.1~\cite{Beenakker:1996ed} is used to calculate the cross-section and theoretical uncertainties to the next-to-leading-logarithm (NLL) level.
 A filter required two leptons of at least 3~{\GeV} and \met $\ge 50$~{\GeV} was added at the generator level.
 Table~\ref{tab:data_NUHM2_mcprod} lists the NUHM2 MC production samples used in this analysis.
 The $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$, and $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\pm}_{1}$ productions are considered in each $m_{1/2}$ mass point.
 The relative branching ratios were calculated using SUSY-HIT v1.5b~\cite{Djouadi:2006bz} and were used in the event weighting.
-Table~\ref{tab:data_susy_hit} compares the branching ratios for $\widetilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ and $\widetilde{\chi}^{\pm}_{1} \to \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ calculating by \textsc{ISAJET} and SUSY-HIT.
+Table~\ref{tab:data_susy_hit} compares the branching ratios for $\widetilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ and $\widetilde{\chi}^{\pm}_{1} \to \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$ calculated by \textsc{ISAJET} and SUSY-HIT.
 Good agreement can be seen using two different branching ratio calculators.
 In the $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{\pm}_{1}$, $\widetilde{\chi}^{0}_{2} \widetilde{\chi}^{0}_{1}$ productions, the $\widetilde{\chi}^{0}_{2}$ decays via $\widetilde{\chi}^{0}_{2} \to \ell^{+} \ell^{-} \widetilde{\chi}^{0}_{1}$ and the $\widetilde{\chi}^{\pm}_{1}$ decays via $\widetilde{\chi}^{\pm}_{1} \to f\bar{f} \widetilde{\chi}^{0}_{1}$.
 But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ production, the $\widetilde{\chi}^{\pm}_{1}$ decays via $\widetilde{\chi}^{\pm}_{1} \to \ell \bar{\nu} \widetilde{\chi}^{0}_{1}$.
@@ -460,7 +460,7 @@ But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ production, t
         }
     }
     %\end{center}
-    \caption{The NUHM2 MC sample dataset ID (DSID), productions, cross-sections, and decay processes and its relevant branching ratios, the filter efficiencies, and the uncertainties.}
+    \caption{The NUHM2 MC sample dataset ID (DSID), productions, cross-sections, and decay processes and its relevant branching ratios, the filter efficiencies, and the uncertainties are given.}
     \label{tab:data_NUHM2_mcprod}
 \end{table}%
 % \begin{table}[htb]
@@ -545,9 +545,9 @@ But in the $\widetilde{\chi}^{\pm}_{1} \widetilde{\chi}^{\mp}_{1}$ production, t
     %}
     \end{center}
     \caption{The branching ratios calculated by \textsc{ISAJET} and SUSY-HIT.
-    The difference are calculated with respect to the SUSY-HIT branching ratio results.
-    Good agreement between the results from two branching ratio calculators can be seen.
-    The largest difference between the results calculating by \textsc{ISAJET} and SUSY-HIT is less than 2\%. 
+    The differences are calculated with respect to the SUSY-HIT branching ratio results.
+    Good agreement between the results from the two branching ratio calculators can be seen.
+    The largest difference between the results calculated by \textsc{ISAJET} and SUSY-HIT is less than 2\%. 
     }
     \label{tab:data_susy_hit}
 \end{table}%

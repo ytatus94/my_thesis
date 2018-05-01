@@ -1,8 +1,13 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 05/01/2018
+* Modify thesis based on Skubic's suggestions
+* This is the final version submitted to Graduate college and library.
+* Rename `slides_for_defense.key` to qYuTingShen_slides_for_defense.key`
+
 ### 04/21/2018
-* Modify thesis based on Strauss's suggestion
+* Modify thesis based on Strauss's suggestions
 
 ### 04/14/2018
 * Work on keynote slides
