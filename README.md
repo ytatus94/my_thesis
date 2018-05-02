@@ -3,6 +3,12 @@ This is repository for my Ph.D. thesis
 
 ### 05/02/2018
 * Remove slides from git
+* Because of "this exceeds GitHub's file size limit of 100.00 MB", I mess my repository.
+  - Expecially the slides directory
+  - 7fd222:slides_for_defense.key is the same as 724214:slide_for_defense.key
+  - copy 724214:my-template.tex, 724214:my-template.pdf, 968c59:oral_script.rtf
+  - remove slides_for_defense.key form git and commit this.
+
 
 ### 05/01/2018
 * Modify thesis based on Skubic's suggestions
