@@ -11,6 +11,8 @@ This is repository for my Ph.D. thesis
 * Add `dissertation_check_1.pdf` and `dissertation_check_2.pdf` then commit this change
 * Add `2018_Shen_Yu-Ting_Dissertation.tar.gz`
   * This is the tarball submit to SHAREOK as required by graduate college.
+* Make tarball for `slides/YuTingShen_slides_for_defense.key` and `slides/slides_for_defense.key`
+  * Add two tarballs to git and commit, and push to remote
 
 ### 05/01/2018
 * Modify thesis based on Skubic's suggestions
