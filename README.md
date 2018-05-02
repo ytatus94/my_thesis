@@ -1,6 +1,9 @@
 # my_thesis
 This is repository for my Ph.D. thesis
 
+### 05/02/2018
+* Remove slides from git
+
 ### 05/01/2018
 * Modify thesis based on Skubic's suggestions
 * This is the final version submitted to Graduate college and library.
