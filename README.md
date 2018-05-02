@@ -3,17 +3,17 @@ This is repository for my Ph.D. thesis
 
 ### 05/02/2018
 * Remove slides from git
-* Because of "this exceeds GitHub's file size limit of 100.00 MB", I mess my repository.
-  - Expecially the slides directory
-  - 7fd222:slides_for_defense.key is the same as 724214:slide_for_defense.key
-  - copy 724214:my-template.tex, 724214:my-template.pdf, 968c59:oral_script.rtf
-  - remove slides_for_defense.key form git and commit this.
-
+* Because of "this exceeds GitHub's file size limit of 100.00 MB" problem, I mess my repository.
+  * Expecially the slides directory
+  * `7fd222:slides_for_defense.key` is the same as `724214:slide_for_defense.key`
+  * copy `724214:my-template.tex`, `724214:my-template.pdf`, `968c59:oral_script.rtf` to master
+  * remove `slides_for_defense.key` form master and commit this change
+* Add `dissertation_check_1.pdf` and `dissertation_check_2.pdf` then commit this change
 
 ### 05/01/2018
 * Modify thesis based on Skubic's suggestions
 * This is the final version submitted to Graduate college and library.
-* Rename `slides_for_defense.key` to qYuTingShen_slides_for_defense.key`
+* Rename `slides_for_defense.key` to `YuTingShen_slides_for_defense.key`
 
 ### 04/21/2018
 * Modify thesis based on Strauss's suggestions
@@ -127,7 +127,7 @@ This is repository for my Ph.D. thesis
 
 ### 03/02/2018
 * Fihish 7.3
-* Spelling check: bib, appendix, abstract, acknowledgement, outhesis_template
+* Spelling check: bib, appendix, abstract, acknowledgement, `outhesis_template`
 
 ### 03/01/2018
 * Work on background estimation
@@ -247,11 +247,11 @@ This is repository for my Ph.D. thesis
 
 ### 12/20/2107
 * Remove old empty files:
-  * chapter_Suppersymmetry.tex
-  * chapter_electron_isolation.tex 
-  * chapter_real_lepton_efficiencies.tex
+  * `chapter_Suppersymmetry.tex`
+  * `chapter_electron_isolation.tex`
+  * `chapter_real_lepton_efficiencies.tex`
 * Add correct chapter 3 tex file:
-  * chapter_suppersymmetry.tex
+  * `chapter_suppersymmetry.tex`
 
 ### 12/19/2017
 * Working on chapter 3.
