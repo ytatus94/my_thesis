@@ -9,6 +9,8 @@ This is repository for my Ph.D. thesis
   * copy `724214:my-template.tex`, `724214:my-template.pdf`, `968c59:oral_script.rtf` to master
   * remove `slides_for_defense.key` form master and commit this change
 * Add `dissertation_check_1.pdf` and `dissertation_check_2.pdf` then commit this change
+* Add `2018_Shen_Yu-Ting_Dissertation.tar.gz`
+  * This is the tarball submit to SHAREOK as required by graduate college.
 
 ### 05/01/2018
 * Modify thesis based on Skubic's suggestions
